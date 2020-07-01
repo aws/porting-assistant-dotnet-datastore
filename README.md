@@ -1,9 +1,9 @@
-## AWS Porting Assistant for .NET
+## Porting Assistant for .NET
 Porting Assistant for .NET is an analysis tool that scans .NET Framework applications and generates a .NET Core compatibility assessment, helping customers port their applications to Linux faster.
 
 Porting Assistant for .NET quickly scans .NET Framework applications to identify incompatibilities with .NET Core, finds known replacements, and generates detailed compatibility assessment reports. This reduces the manual effort involved in modernizing the applications to Linux.
 
-### AWS Porting Assistant Dotnet DataStore
+### Porting Assistant Dotnet DataStore
 This repository contains the location of data store in S3. The data store contains data files that show package and API compatibility with .NET Core and .NET Standard. 
 
 * Porting assistant uses these data files for finding the compatibility of packages and their APIs
