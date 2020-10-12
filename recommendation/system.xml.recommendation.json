@@ -1,0 +1,3003 @@
+{
+    "Name": "System.Xml",
+    "EncoreVersion": "1.0.0",
+    "Packages": [
+        {
+            "System.Xml": {
+                "Type": "SDK",
+                "Name": "System.Xml"
+            }
+        }
+    ],
+    "Recommendedations": [
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlWriter.Close()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.Read()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlWriter.WriteNode(System.Xml.XPath.XPathNavigator, bool)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas), and poll whether null to detect if it has been disposed. (Close() is deprecated.).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.GetAttribute(int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Encoding()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlConvert.ToDateTime(string, System.Xml.XmlDateTimeSerializationMode)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "sl2",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlReader.ReadElementString(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.ReadElementContentAsString().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Depth()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.TextReader)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Xml.XmlTextReader.get_DtdProcessing()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Namespaces()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Item(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_CanReadBinaryContent()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_QuoteChar()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlConvert.ToString(ushort)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Cast to char or other supported type first.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_WhitespaceHandling()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlReader.ReadElementString()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.ReadElementContentAsString().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.Xml.XmlNameTable)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadString()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Xml.XmlTextReader",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlReader.ReadString()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.ReadElementContentAsString().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.System.Xml.IXmlNamespaceResolver.LookupNamespace(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_DtdProcessing()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.BaseURI.get_BaseURI()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.Prefix.get_Prefix()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.Skip()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_AttributeCount()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadInnerXml()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.set_ProhibitDtd(bool)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.GetAttribute(string, string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.IO.TextReader, System.Xml.XmlNameTable)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadBinHex(byte[], int, int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_NodeType()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_LinePosition()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadChars(char[], int, int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.IO.Stream, System.Xml.XmlNameTable)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlReaderSettings.Schemas.get_Schemas()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadContentAsBinHex(byte[], int, int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_IsDefault()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.MoveToNextAttribute()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.IO.TextReader)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Item(string, string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_EOF()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_HasValue()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlConvert.ToString(System.DateTime, System.Xml.XmlDateTimeSerializationMode)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "sl2",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas), and poll whether null to detect if it has been disposed. (Close() is deprecated.).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlDictionaryReaderQuotas.XmlDictionaryReaderQuotas()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Available in System.Runtime.Serialization.Xml contract.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ResolveEntity()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_LineNumber()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.MoveToFirstAttribute()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ResetState()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.Xml.XmlNameTable)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Name()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.Close()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.TextReader, System.Xml.XmlNameTable)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlReader.Close()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadBase64(byte[], int, int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.GetRemainder()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.GetNamespacesInScope(System.Xml.XmlNamespaceScope)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlNode.SelectSingleNode(string, System.Xml.XmlNamespaceManager)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Create one of the XPathNavigator implementations. There are 3 implementations of the CreateNavigator () method in  XPathDocument, System.Xml.XPath.XDocument, and System.Xml.XPath.XmlDocument, use this to find your node.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.GetAttribute(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlReaderSettings.set_ValidationType(System.Xml.ValidationType)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Normalization()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadElementContentAsBinHex(byte[], int, int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.System.Xml.IXmlNamespaceResolver.LookupPrefix(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.Stream, System.Xml.XmlNodeType, System.Xml.XmlParserContext)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.set_Namespaces(bool)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_XmlLang()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.MoveToAttribute(string, string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.LookupNamespace(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlConvert.ToString(byte)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.Normalization.set_Normalization(bool)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_NameTable()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.set_DtdProcessing(System.Xml.DtdProcessing)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_NamespaceURI()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadElementContentAsBase64(byte[], int, int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.set_XmlResolver(System.Xml.XmlResolver)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_ProhibitDtd()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_EntityHandling()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.MoveToElement()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_ReadState()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.HasLineInfo()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_CanResolveEntity()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Value()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.Stream)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlNode.SelectSingleNode(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Create one of the XPathNavigator implementations. There are 3 implementations of the CreateNavigator () method in  XPathDocument, System.Xml.XPath.XDocument, and System.Xml.XPath.XmlDocument, use this to find your node.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlDocument.Load(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas), and poll whether null to detect if it has been disposed. (Close() is deprecated.).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Settings()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.MoveToAttribute(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadContentAsBase64(byte[], int, int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_CanReadValueChunk()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.IO.Stream)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadOuterXml()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlDictionaryReaderQuotas.CopyTo(System.Xml.XmlDictionaryReaderQuotas)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use object.MemberwiseClone() method or directly copy desired fields.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.MoveToAttribute(int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream, System.Text.Encoding, System.Xml.XmlDictionaryReaderQuotas, System.Xml.OnXmlDictionaryReaderClose)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas), and poll whether null to detect if it has been disposed. (Close() is deprecated.).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlWriter.Create(string,System.Xml.XmlWriterSettings)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlWriter.Create(System.IO.Stream, System.xml.XmlWriterSettings).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadAttributeValue()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlWriter.Create(string)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlWriter.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.WhitespaceHandling.set_WhitespaceHandling(System.Xml.WhitespaceHandling)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_IsEmptyElement()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_Item(int)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.Stream, System.Xml.XmlNameTable)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_XmlSpace()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Xml",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlWriter.Create(System.IO.Stream).",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlWriter.Create(System.IO.Stream, System.xml.XmlWriterSettings).",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Create one of the XPathNavigator implementations. There are 3 implementations of the CreateNavigator () method in  XPathDocument, System.Xml.XPath.XDocument, and System.Xml.XPath.XmlDocument, use this to find your node.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.ReadElementContentAsString().",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.System.Xml.IXmlLineInfo.HasLineInfo()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.Xml.XmlNodeType, System.Xml.XmlParserContext)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.set_EntityHandling(System.Xml.EntityHandling)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Xml.XmlTextReader.set_DtdProcessing(System.Xml.DtdProcessing)",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.get_LocalName()",
+            "Reference": "System.Xml",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        }
+    ]
+}
