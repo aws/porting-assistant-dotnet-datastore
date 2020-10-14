@@ -1,6 +1,7 @@
 {
     "Name": "System.Deployment.Internal",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Deployment.Internal"
@@ -17,6 +18,29 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+    "Packages": [
+        {
+            "System.Deployment.Internal": {
+                "Type": "SDK",
+                "Name": "System.Deployment.Internal"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentComponentManifest(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "Click Once won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,15 +49,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetApplicationManifestBytes(System.ActivationContext)",
-            "Name": "GetApplicationManifestBytes",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetActivationContextData(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "Click Once won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -43,9 +69,78 @@
         {
             "Type": "Namespace",
             "Value": "System.Deployment.Internal",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "Click Once won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetApplicationComponentManifest(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Click Once won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetApplicationManifestBytes(System.ActivationContext)",
+            "Name": "GetApplicationManifestBytes",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentManifestBytes(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Click Once won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "System.Deployment.Internal",
             "Name": "System.Deployment.Internal",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.PrepareForExecution(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -59,10 +154,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentComponentManifest(System.ActivationContext)",
             "Name": "GetDeploymentComponentManifest",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.IsFirstRun(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -76,10 +177,30 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Deployment.Internal.InternalApplicationIdentityHelper.GetInternalAppId(System.ApplicationIdentity)",
             "Name": "GetInternalAppId",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Deployment.Internal.InternalApplicationIdentityHelper.GetActivationContextData(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [],
+                    "Description": "Click Once won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Deployment.Internal.InternalActivationContextHelper.GetApplicationManifestBytes(System.ActivationContext)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -93,10 +214,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Deployment.Internal.InternalActivationContextHelper.IsFirstRun(System.ActivationContext)",
             "Name": "IsFirstRun",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Deployment.Internal.InternalApplicationIdentityHelper.GetInternalAppId(System.ApplicationIdentity)",
+            "Reference": "System.Deployment.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

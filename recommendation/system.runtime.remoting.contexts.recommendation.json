@@ -1,6 +1,7 @@
 {
     "Name": "System.Runtime.Remoting.Contexts",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Runtime.Remoting.Contexts"
@@ -17,6 +18,29 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+    "Packages": [
+        {
+            "System.Runtime.Remoting.Contexts": {
+                "Type": "SDK",
+                "Name": "System.Runtime.Remoting.Contexts"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContextProperty.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -26,133 +50,16 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Contexts.Context.ToString()",
-            "Name": "ToString",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context, System.Runtime.Remoting.Activation.IConstructionCallMessage)",
-            "Name": "IsContextOK",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.Context.Freeze()",
-            "Name": "Freeze",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.Context.UnregisterDynamicProperty(string, System.ContextBoundobject, System.Runtime.Remoting.Contexts.Context)",
-            "Name": "UnregisterDynamicProperty",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.IsOKToActivate(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
-            "Name": "IsOKToActivate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.Context.GetProperty(string)",
-            "Name": "GetProperty",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Runtime.Remoting.Contexts",
-            "Name": "System.Runtime.Remoting.Contexts",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.IContextProperty.Freeze(System.Runtime.Remoting.Contexts.Context)",
-            "Name": "Freeze",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -162,14 +69,16 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.SynchronizationAttribute(bool)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -178,15 +87,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverServerContextToClientContext(System.Runtime.Remoting.Activation.IConstructionReturnMessage)",
-            "Name": "DeliverServerContextToClientContext",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Runtime.Remoting.Contexts.Context.Finalize()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -195,49 +106,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode()",
-            "Name": "GetHashCode",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Runtime.Remoting.Contexts.IContextProperty.Freeze(System.Runtime.Remoting.Contexts.Context)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.Context.ContextID.get_ContextID()",
-            "Name": "get_ContextID",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.IDynamicProperty.get_Name()",
-            "Name": "get_Name",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -247,14 +126,16 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Contexts.IContributeDynamicSink.GetDynamicSink()",
-            "Name": "GetDynamicSink",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -263,8 +144,105 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.IContributeEnvoySink.GetEnvoySink(System.MarshalByRefobject, System.Runtime.Remoting.Messaging.IMessageSink)",
-            "Name": "GetEnvoySink",
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetServerContextSink(System.Runtime.Remoting.Messaging.IMessageSink)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.CollectFromClientContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContributeServerContextSink.GetServerContextSink(System.Runtime.Remoting.Messaging.IMessageSink)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.Context.ToString()",
+            "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -272,6 +250,94 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Runtime.Remoting.Contexts.Context.ContextID.get_ContextID()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.ContextAttribute(string)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.CrossContextDelegate.CrossContextDelegate(object, System.IntPtr)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.get_Locked()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.get_Name()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -281,9 +347,396 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Contexts.Context.AllocateDataSlot()",
-            "Name": "AllocateDataSlot",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IDynamicProperty.get_Name()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.CrossContextDelegate.Invoke()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.FreeNamedDataSlot(string)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.ContextProperty.get_Name()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.get_ContextProperties()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.ContextProperty.get_Property()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.IsOKToActivate(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.Context()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.UnregisterDynamicProperty(string, System.ContextBoundobject, System.Runtime.Remoting.Contexts.Context)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.SynchronizationAttribute(int)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.SynchronizationAttribute(int, bool)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context, System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context, System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Name": "IsContextOK",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.Freeze(System.Runtime.Remoting.Contexts.Context)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.SetData(System.LocalDataStoreSlot, object)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.CollectFromServerContext(System.Runtime.Remoting.Activation.IConstructionReturnMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.CrossContextDelegate.BeginInvoke(System.AsyncCallback, object)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.Freeze()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -297,10 +750,16 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Contexts.IContextProperty.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)",
-            "Name": "IsNewContextOK",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.Context.Freeze()",
+            "Name": "Freeze",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.Context.SetProperty(System.Runtime.Remoting.Contexts.IContextProperty)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -313,11 +772,512 @@
             ]
         },
         {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.Context.UnregisterDynamicProperty(string, System.ContextBoundobject, System.Runtime.Remoting.Contexts.Context)",
+            "Name": "UnregisterDynamicProperty",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.Context.AllocateNamedDataSlot(string)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.IsOKToActivate(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Name": "IsOKToActivate",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetClientContextSink(System.Runtime.Remoting.Messaging.IMessageSink)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.Context.GetProperty(string)",
+            "Name": "GetProperty",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverClientContextToServerContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.GetNamedDataSlot(string)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContributeClientContextSink.GetClientContextSink(System.Runtime.Remoting.Messaging.IMessageSink)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "System.Runtime.Remoting.Contexts",
+            "Name": "System.Runtime.Remoting.Contexts",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContributeObjectSink.GetObjectSink(System.MarshalByRefObject,System.Runtime.Remoting.Messaging.IMessageSink)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.IContextProperty.Freeze(System.Runtime.Remoting.Contexts.Context)",
+            "Name": "Freeze",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.IContributeEnvoySink.GetEnvoySink(System.MarshalByRefobject, System.Runtime.Remoting.Messaging.IMessageSink)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.SynchronizationAttribute(bool)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.SynchronizationAttribute()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverServerContextToClientContext(System.Runtime.Remoting.Activation.IConstructionReturnMessage)",
+            "Name": "DeliverServerContextToClientContext",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.Context.RegisterDynamicProperty(System.Runtime.Remoting.Contexts.IDynamicProperty, System.ContextBoundobject, System.Runtime.Remoting.Contexts.Context)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContextProperty.get_Name()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode()",
+            "Name": "GetHashCode",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.get_IsReEntrant()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.Context.ContextID.get_ContextID()",
+            "Name": "get_ContextID",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.IDynamicMessageSink.ProcessMessageStart(System.Runtime.Remoting.Messaging.IMessage, bool, bool)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.IDynamicProperty.get_Name()",
+            "Name": "get_Name",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.IContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context, System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.IContributeDynamicSink.GetDynamicSink()",
+            "Name": "GetDynamicSink",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context, System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.GetData(System.LocalDataStoreSlot)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.SynchronizationAttribute.set_Locked(bool)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.IContributeEnvoySink.GetEnvoySink(System.MarshalByRefobject, System.Runtime.Remoting.Messaging.IMessageSink)",
+            "Name": "GetEnvoySink",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.Context.get_DefaultContext()",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.DoCallBack(System.Runtime.Remoting.Contexts.CrossContextDelegate)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IDynamicMessageSink.ProcessMessageFinish(System.Runtime.Remoting.Messaging.IMessage, bool, bool)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.Context.GetProperty(string)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.Context.AllocateDataSlot()",
+            "Name": "AllocateDataSlot",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.Equals(object)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverServerContextToClientContext(System.Runtime.Remoting.Activation.IConstructionReturnMessage)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Contexts.IContextProperty.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)",
+            "Name": "IsNewContextOK",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Contexts.CrossContextDelegate.EndInvoke(System.IAsyncResult)",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Contexts.ContextAttribute.Freeze(System.Runtime.Remoting.Contexts.Context)",
             "Name": "Freeze",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Namespace",
+            "Value": "System.Runtime.Remoting.Contexts",
+            "Reference": "System.Runtime.Remoting.Contexts",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

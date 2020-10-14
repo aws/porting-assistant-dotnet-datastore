@@ -1,6 +1,7 @@
 {
     "Name": "System.Activities.Debugger.Symbol",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Activities.Debugger.Symbol"
@@ -17,6 +18,26 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+    "Packages": [
+        {
+            "System.Activities.Debugger.Symbol": {
+                "Type": "SDK",
+                "Name": "System.Activities.Debugger.Symbol"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.DebugSymbol.SetSymbol(object, object)",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,32 +46,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.set_Symbols(System.Collections.Generic.ICollection{System.Activities.Debugger.Symbol.ActivitySymbol})",
-            "Name": "set_Symbols",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Activities.Debugger.Symbol.ActivitySymbol.get_StartLine()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Activities.Debugger.Symbol",
-            "Name": "System.Activities.Debugger.Symbol",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -59,15 +62,94 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.set_FileName(string)",
-            "Name": "set_FileName",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.GetChecksum()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.ToString()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.ActivitySymbol.get_EndLine()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.WorkflowSymbol()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.ActivitySymbol.get_Id()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.CalculateChecksum()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -77,9 +159,71 @@
         {
             "Type": "Method",
             "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.Decode(string)",
-            "Name": "Decode",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+>>>>>>> master
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.set_Symbols(System.Collections.Generic.ICollection{System.Activities.Debugger.Symbol.ActivitySymbol})",
+<<<<<<< HEAD
+            "Name": "set_Symbols",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.ActivitySymbol.ToString()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "System.Activities.Debugger.Symbol",
+            "Name": "System.Activities.Debugger.Symbol",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Activities.Debugger.Symbol.DebugSymbol.GetSymbol(object)",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -93,10 +237,62 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.set_FileName(string)",
+            "Name": "set_FileName",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.get_FileName()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.Decode(string)",
+            "Name": "Decode",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Debugger.Symbol.ActivitySymbol.get_StartColumn()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Debugger.Symbol.DebugSymbol.GetSymbol(object)",
             "Name": "GetSymbol",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Debugger.Symbol.ActivitySymbol.get_EndColumn()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -127,10 +323,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.WorkflowSymbol()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.get_Symbols()",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -144,10 +346,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.GetChecksum()",
             "Name": "GetChecksum",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Debugger.Symbol.WorkflowSymbol.set_FileName(string)",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -160,11 +368,18 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.Activities.Debugger.Symbol.ActivitySymbol.ToString()",
             "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Namespace",
+            "Value": "System.Activities.Debugger.Symbol",
+            "Reference": "System.Activities.Debugger.Symbol",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

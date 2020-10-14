@@ -1,6 +1,7 @@
 {
     "Name": "Microsoft.CSharp.Activities",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "Microsoft.CSharp.Activities"
@@ -12,11 +13,26 @@
             "Name": "get_Language",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "Microsoft.CSharp.Activities": {
+                "Type": "SDK",
+                "Name": "Microsoft.CSharp.Activities"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.set_ExpressionText(string)",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,15 +41,46 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.CacheMetadata(CodeActivityMetadata)",
-            "Name": "CacheMetadata",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.get_RequiresCompilation()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.Execute(CodeActivityContext)",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.set_ExpressionText(string)",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -43,9 +90,9 @@
         {
             "Type": "Method",
             "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.CSharpValue<TResult>(string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -58,16 +105,123 @@
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "Microsoft.CSharp.Activities",
-            "Name": "Microsoft.CSharp.Activities",
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.CacheMetadata(CodeActivityMetadata)",
+            "Name": "CacheMetadata",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.GetExpressionTree()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.CSharpValue<TResult>(string)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.get_ExpressionText()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "Microsoft.CSharp.Activities",
+            "Name": "Microsoft.CSharp.Activities",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.CSharpReference<TResult>()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.Execute(CodeActivityContext)",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.CSharpValue<TResult>()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.get_Language()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>..ctor(string)",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -77,48 +231,13 @@
         {
             "Type": "Method",
             "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.CSharpValue<TResult>()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.get_Language()",
-            "Name": "get_Language",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.GetExpressionTree()",
-            "Name": "GetExpressionTree",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -128,9 +247,49 @@
         {
             "Type": "Method",
             "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.CacheMetadata(CodeActivityMetadata)",
-            "Name": "CacheMetadata",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.get_RequiresCompilation()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.get_Language()",
+            "Name": "get_Language",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Namespace",
+            "Value": "Microsoft.CSharp.Activities",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -144,10 +303,78 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.GetExpressionTree()",
+            "Name": "GetExpressionTree",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.CacheMetadata(CodeActivityMetadata)",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.CacheMetadata(CodeActivityMetadata)",
+            "Name": "CacheMetadata",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.get_ExpressionText()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.get_Language()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "Microsoft.CSharp.Activities.CSharpReference<TResult>.CSharpReference<TResult>()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "Microsoft.CSharp.Activities.CSharpValue<TResult>.GetExpressionTree()",
+            "Reference": "Microsoft.CSharp.Activities",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

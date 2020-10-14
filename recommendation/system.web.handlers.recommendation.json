@@ -1,6 +1,7 @@
 {
     "Name": "System.Web.Handlers",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Web.Handlers"
@@ -12,11 +13,27 @@
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.Web.Handlers": {
+                "Type": "SDK",
+                "Name": "System.Web.Handlers"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Namespace",
+            "Value": "System.Web.Handlers",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,32 +42,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Handlers.ScriptModule.Dispose()",
-            "Name": "Dispose",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Handlers.ScriptResourceHandler.System.Web.IHttpHandler.get_IsReusable()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Handlers.TraceHandler.System.Web.IHttpHandler.get_IsReusable()",
-            "Name": "System.Web.IHttpHandler.get_IsReusable",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -60,9 +60,161 @@
         {
             "Type": "Method",
             "Value": "System.Web.Handlers.ScriptModule.System.Web.IHttpModule.Dispose()",
-            "Name": "System.Web.IHttpModule.Dispose",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.ScriptResourceHandler.System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.ScriptModule.Init(System.Web.HttpApplication)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.TraceHandler.ShowRequests(System.Collections.IList)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.TraceHandler.ProcessRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.ScriptModule.Dispose()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.TraceHandler.ShowDetails(System.Data.DataSet)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.ScriptResourceHandler.ProcessRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.TraceHandler.ShowRequests(System.Collections.ArrayList)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.TraceHandler.TraceHandler()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -76,10 +228,131 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Handlers.ScriptModule.Dispose()",
+            "Name": "Dispose",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Handlers.TraceHandler.System.Web.IHttpHandler.get_IsReusable()",
+            "Name": "System.Web.IHttpHandler.get_IsReusable",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Handlers.ScriptResourceHandler.ScriptResourceHandler()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Handlers.ScriptModule.System.Web.IHttpModule.Dispose()",
+            "Name": "System.Web.IHttpModule.Dispose",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Handlers.TraceHandler.get_IsReusable()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Handlers.ScriptResourceHandler.ScriptResourceHandler()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Handlers.TraceHandler.System.Web.IHttpHandler.get_IsReusable()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.get_IsReusable()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.TraceHandler.System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -110,10 +383,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Handlers.TraceHandler.ProcessRequest(System.Web.HttpContext)",
             "Name": "ProcessRequest",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Handlers.ScriptModule.System.Web.IHttpModule.Init(System.Web.HttpApplication)",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -127,6 +406,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Handlers.TraceHandler.System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)",
             "Name": "System.Web.IHttpHandler.ProcessRequest",
             "KeyType": "",
@@ -136,6 +416,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Handlers.AssemblyResourceLoader.AssemblyResourceLoader()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -144,10 +435,33 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.get_IsReusable()",
             "Name": "System.Web.IHttpHandler.get_IsReusable",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Handlers.TraceHandler.ShowVersionDetails()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Handlers.ScriptResourceHandler.get_IsReusable()",
+            "Reference": "System.Web.Handlers",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

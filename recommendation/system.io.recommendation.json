@@ -1,6 +1,7 @@
 {
     "Name": "System.IO",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.IO"
@@ -12,6 +13,753 @@
             "Name": "get_IsReadOnly",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.IO": {
+                "Type": "SDK",
+                "Name": "System.IO"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BeginRead(byte[], int, int, System.AsyncCallback, object)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextWriter.Write(string, object)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StringReader.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileSystemInfo.get_LastAccessTimeUtc()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.Write(System.ReadOnlySpan{byte})",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.0",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.IO.BufferedStream",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.0",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileSystemInfo.get_LastWriteTimeUtc()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextWriter.Write(string, object, object)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamWriter.StreamWriter(string, bool, System.Text.Encoding)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.WriteAsync(System.ReadOnlyMemory{byte}, System.Threading.CancellationToken)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.0",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.IO",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamWriter.StreamWriter(string)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.IO.FileInfo.set_IsReadOnly(bool)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.CanRead.get_CanRead()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.Flush()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_CanWrite()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.IO.FileInfo.get_IsReadOnly()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.SetLength(long)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileSystemInfo.set_LastAccessTimeUtc(System.DateTime)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BufferedStream(System.IO.Stream)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.EndWrite(System.IAsyncResult)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding, bool, int)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileInfo.get_IsReadOnly()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileSystemInfo.LastWriteTimeUtc.set_LastWriteTimeUtc(System.DateTime)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.ReadByte()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.StreamReader(string)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextReader.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -25,6 +773,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.EndWrite(System.IAsyncResult)",
             "Name": "EndWrite",
             "KeyType": "",
@@ -46,19 +795,29 @@
             "Name": "Write",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.IO.StringWriter.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
+<<<<<<< HEAD
                     "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
+=======
+                    "Description": "Use Dispose() instead.",
+>>>>>>> master
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.MemoryStream.GetBuffer()",
             "Name": "GetBuffer",
             "KeyType": "",
@@ -70,6 +829,29 @@
                         "netcoreapp3.1"
                     ],
                     "Description": "Use an overload that supplies a buffer and maintain that buffer outside of memory stream.   If you need the internal buffer, create a copy via .ToArray().",
+=======
+            "Value": "System.IO.File.ReadAllLines(string, System.Text.Encoding)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.ReadLines().",
+>>>>>>> master
                     "Actions": []
                 }
             ]
@@ -93,10 +875,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
             "Name": "BeginWrite",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.IO.BufferedStream.ReadAsync(System.Memory{byte}, System.Threading.CancellationToken)",
+            "Reference": "System.IO",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -110,6 +898,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.Write(System.ReadOnlySpan{byte})",
             "Name": "Write",
             "KeyType": "",
@@ -118,14 +907,36 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.StreamWriter.StreamWriter(string, bool)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
                     "Actions": []
                 }
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Attribute",
             "Value": "System.IO.FileSystemInfo.get_LastWriteTimeUtc()",
             "Name": "get_LastWriteTimeUtc",
@@ -135,15 +946,37 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Type": "Method",
+            "Value": "System.IO.File.ReadAllLines(string)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
+                    "Description": "Use File.ReadLines().",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.CopyToAsync(System.IO.Stream, int, System.Threading.CancellationToken)",
             "Name": "CopyToAsync",
             "KeyType": "",
@@ -152,14 +985,36 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding, bool)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
                     "Actions": []
                 }
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Attribute",
             "Value": "System.IO.FileInfo.get_IsReadOnly()",
             "Name": "get_IsReadOnly",
@@ -169,6 +1024,83 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Type": "Method",
+            "Value": "System.IO.Stream.EndRead(System.IAsyncResult)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Stream.ReadAsync.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BinaryWriter.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_Position()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
                     "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
@@ -178,6 +1110,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.CopyTo(System.IO.Stream, int)",
             "Name": "CopyTo",
             "KeyType": "",
@@ -186,15 +1119,37 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.StreamWriter.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use Dispose() instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.Stream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
             "Name": "BeginWrite",
             "KeyType": "",
@@ -206,11 +1161,53 @@
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Stream.WriteAsync.",
+=======
+            "Value": "System.IO.File.WriteAllLines(string, string[])",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.WriteAllLines(String, IEnumerable<System.String>) instead.",
                     "Actions": []
                 }
             ]
         },
         {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.CopyToAsync(System.IO.Stream, int, System.Threading.CancellationToken)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.0",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+>>>>>>> master
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
             "Type": "Type",
             "Value": "System.IO.BufferedStream",
             "Name": "System.IO.BufferedStream",
@@ -220,6 +1217,27 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.Write(byte[], int, int)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -229,23 +1247,50 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.Stream.Close()",
             "Name": "Close",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.IO.BufferedStream.Seek(long, System.IO.SeekOrigin)",
+            "Reference": "System.IO",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
+<<<<<<< HEAD
                     "Description": "Use Dispose() instead.",
+=======
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+            "Value": "System.IO.BufferedStream.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+>>>>>>> master
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.TextReader.Close()",
             "Name": "Close",
             "KeyType": "",
@@ -257,12 +1302,35 @@
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Dispose() instead.",
+=======
+            "Value": "System.IO.BufferedStream.EndRead(System.IAsyncResult)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+>>>>>>> master
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.FileSystemInfo.get_LastWriteTimeUtc()",
             "Name": "get_LastWriteTimeUtc",
             "KeyType": "",
@@ -271,6 +1339,26 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.BufferedStream.get_CanSeek()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
                     "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
@@ -280,6 +1368,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding, bool, int)",
             "Name": ".ctor",
             "KeyType": "",
@@ -288,6 +1377,26 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.BufferedStream.WriteAsync(byte[], int, int, System.Threading.CancellationToken)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
                     "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
@@ -297,6 +1406,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.WriteByte(byte)",
             "Name": "WriteByte",
             "KeyType": "",
@@ -305,6 +1415,48 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.BinaryReader.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_UnderlyingStream()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "netstandard21",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -314,10 +1466,43 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.TextWriter.Close()",
             "Name": "Close",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.IO.TextWriter.Write(string, object, object, object)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -331,6 +1516,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.File.ReadAllLines(string, System.Text.Encoding)",
             "Name": "ReadAllLines",
             "KeyType": "",
@@ -342,12 +1528,37 @@
                         "netcoreapp3.1"
                     ],
                     "Description": "Use File.ReadLines().",
+=======
+            "Value": "System.IO.Stream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Stream.WriteAsync.",
+>>>>>>> master
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.Close()",
             "Name": "Close",
             "KeyType": "",
@@ -356,6 +1567,18 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.BufferedStream.Read(System.Span{byte})",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.0",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -364,6 +1587,7 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.IO.StreamReader.StreamReader(string)",
             "Name": ".ctor",
@@ -373,19 +1597,94 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Type": "Attribute",
+            "Value": "System.IO.FileSystemInfo.get_LastAccessTimeUtc()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+            "Value": "System.IO.BufferedStream.DisposeAsync()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netstandard21",
+                        "netcoreapp3.0",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Method",
             "Value": "System.IO.BufferedStream.get_Length()",
             "Name": "get_Length",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Attribute",
+            "Value": "System.IO.FileSystemInfo.get_LastWriteTimeUtc()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BufferedStream(System.IO.Stream, int)",
+            "Reference": "System.IO",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -399,10 +1698,124 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.Stream.EndRead(System.IAsyncResult)",
             "Name": "EndRead",
             "KeyType": "",
             "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Value": "System.IO.FileStream.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_Length()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.WriteByte(byte)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.Read(byte[], int, int)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Stream.ReadAsync.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.IO.StreamWriter.Close()",
+            "Name": "Close",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.IO.Stream.BeginRead(byte[], int, int, System.AsyncCallback, object)",
+            "Reference": "System.IO",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -416,14 +1829,109 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.StreamWriter.Close()",
-            "Name": "Close",
+<<<<<<< HEAD
+            "Value": "System.IO.BufferedStream.DisposeAsync()",
+            "Name": "DisposeAsync",
             "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.MemoryStream.GetBuffer()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use an overload that supplies a buffer and maintain that buffer outside of memory stream.   If you need the internal buffer, create a copy via .ToArray().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.CopyTo(System.IO.Stream, int)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.0",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextWriter.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Dispose() instead.",
@@ -433,18 +1941,30 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.DisposeAsync()",
-            "Name": "DisposeAsync",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.IO.FileInfo.set_IsReadOnly(bool)",
+            "Reference": "System.IO",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
                     "Actions": []
+<<<<<<< HEAD
                 }
             ]
         },
@@ -458,15 +1978,34 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard13",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use fileInfo.Attributes = fileInfo.Attributes | FileAttributes.ReadOnly to set read-only and fileInfo.Attributes = fileInfo.Attributes & ~FileAttributes.ReadOnly to clear it.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.IO.BufferedStream.BufferedStream(System.IO.Stream, int)",
             "Name": ".ctor",
             "KeyType": "",
@@ -475,6 +2014,172 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+=======
+            "Value": "System.IO.StreamWriter.StreamWriter(string, bool, System.Text.Encoding, int)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.IO.BufferedStream.Seek(long, System.IO.SeekOrigin)",
+            "Name": "Seek",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Value": "System.IO.Stream.Close()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_BufferSize()",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "netstandard21",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+<<<<<<< HEAD
+=======
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.StreamReader(string, bool)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.ReadAsync(byte[], int, int, System.Threading.CancellationToken)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono45",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -484,20 +2189,59 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.Seek(long, System.IO.SeekOrigin)",
-            "Name": "Seek",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.IO.BufferedStream.set_Position(long)",
+            "Reference": "System.IO",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard15",
+                        "netcoreapp1.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp2.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
                     "Actions": []
                 }
             ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.Stream.EndWrite(System.IAsyncResult)",
+            "Reference": "System.IO",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Stream.WriteAsync.",
+                    "Actions": []
+                }
+            ]
+>>>>>>> master
         }
     ]
 }

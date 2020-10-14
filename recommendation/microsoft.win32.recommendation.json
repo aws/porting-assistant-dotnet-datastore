@@ -1,6 +1,7 @@
 {
     "Name": "Microsoft.Win32",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "Microsoft.Win32"
@@ -12,11 +13,32 @@
             "Name": "SetAccessControl",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "Microsoft.Win32": {
+                "Type": "SDK",
+                "Name": "Microsoft.Win32"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
+            "Reference": "Microsoft.Win32",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
                     ],
                     "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
                     "Actions": []
@@ -25,10 +47,55 @@
         },
         {
             "Type": "Method",
+            "Value": "Microsoft.Win32.RegistryKey.OpenSubKey(string, Microsoft.Win32.RegistryKeyPermissionCheck, System.Security.AccessControl.RegistryRights)",
+            "Reference": "Microsoft.Win32",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove: CAS is not supported.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
             "Name": "GetAccessControl",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "Microsoft.Win32.RegistryKey.Close()",
+            "Reference": "Microsoft.Win32",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
+            "Reference": "Microsoft.Win32",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

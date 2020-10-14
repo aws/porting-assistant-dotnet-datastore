@@ -1,6 +1,7 @@
 {
     "Name": "System.Web.Services",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Web.Services"
@@ -12,45 +13,27 @@
             "Name": "set_EmitConformanceClaims",
             "KeyType": "",
             "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
+=======
+    "Packages": [
+        {
+            "System.Web.Services": {
+                "Type": "SDK",
+                "Name": "System.Web.Services"
+            }
+        }
+    ],
+    "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Web.Services.WebMethodAttribute.set_MessageName(string)",
-            "Name": "set_MessageName",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.EnterpriseServices.TransactionOption, int, bool)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Services.WebService.get_Context()",
-            "Name": "get_Context",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -60,14 +43,16 @@
         {
             "Type": "Method",
             "Value": "System.Web.Services.WebMethodAttribute.get_TransactionOption()",
-            "Name": "get_TransactionOption",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -76,15 +61,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Services.WebService.get_User()",
-            "Name": "get_User",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Services.WebServiceBindingAttribute.get_Location()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -93,15 +80,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Services.WebServiceBindingAttribute.WebServiceBindingAttribute(string, string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -110,15 +99,34 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.Web.Services.TransactionOption, int, bool)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Services.WebServiceBindingAttribute.set_ConformsTo(System.Web.Services.WsiProfiles)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebService.get_SoapVersion()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -128,31 +136,16 @@
         {
             "Type": "Method",
             "Value": "System.Web.Services.WebMethodAttribute.get_BufferResponse()",
-            "Name": "get_BufferResponse",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Services.WebMethodAttribute.set_CacheDuration(int)",
-            "Name": "set_CacheDuration",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -162,14 +155,16 @@
         {
             "Type": "Method",
             "Value": "System.Web.Services.WebMethodAttribute.set_EnableSession(bool)",
-            "Name": "set_EnableSession",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -178,15 +173,129 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Services.WebMethodAttribute.get_Description()",
-            "Name": "get_Description",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Services.WebServiceBindingAttribute.get_Namespace()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceAttribute.get_Description()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.get_EnableSession()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.EnterpriseServices.TransactionOption)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceBindingAttribute.set_EmitConformanceClaims(bool)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -196,9 +305,60 @@
         {
             "Type": "Method",
             "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.Web.Services.TransactionOption, int)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "xamarinandroid10",
+                        "xamarinios10"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebService.get_Context()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebService.WebService()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.set_BufferResponse(bool)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -212,8 +372,32 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Services.WebServiceAttribute.get_Namespace()",
-            "Name": "get_Namespace",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.set_MessageName(string)",
+            "Name": "set_MessageName",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Services.WebServiceAttribute.WebServiceAttribute()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebService.get_Context()",
+            "Name": "get_Context",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -221,6 +405,143 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebService.get_Server()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceBindingAttribute.get_ConformsTo()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.get_TransactionOption()",
+            "Name": "get_TransactionOption",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebServiceBindingAttribute.get_Name()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebService.get_User()",
+            "Name": "get_User",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Services.WebMethodAttribute.set_CacheDuration(int)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Services.WebServiceBindingAttribute.WebServiceBindingAttribute()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.Web.Services.TransactionOption, int, bool)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebMethodAttribute.get_Description()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -230,9 +551,431 @@
         {
             "Type": "Method",
             "Value": "System.Web.Services.WebServiceBindingAttribute.WebServiceBindingAttribute(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.get_BufferResponse()",
+            "Name": "get_BufferResponse",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.Web.Services.TransactionOption, int, bool)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "xamarinandroid10",
+                        "xamarinios10"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.set_MessageName(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.set_CacheDuration(int)",
+            "Name": "set_CacheDuration",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.Web.Services.TransactionOption)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "xamarinandroid10",
+                        "xamarinios10"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.set_EnableSession(bool)",
+            "Name": "set_EnableSession",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebMethodAttribute.set_Description(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.get_Description()",
+            "Name": "get_Description",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebService.get_Application()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.Web.Services.TransactionOption, int)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Services.WebServiceBindingAttribute.get_EmitConformanceClaims()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.WebMethodAttribute(bool, System.EnterpriseServices.TransactionOption, int)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Web.Services",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceBindingAttribute.set_Namespace(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceBindingAttribute.WebServiceBindingAttribute(string, string, string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceAttribute.set_Description(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebServiceAttribute.get_Namespace()",
+            "Name": "get_Namespace",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebServiceBindingAttribute.set_Name(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Services.WebServiceBindingAttribute.WebServiceBindingAttribute(string)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Services.WebService.get_Session()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceAttribute.get_Namespace()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.get_MessageName()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceAttribute.set_Name(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceAttribute.Namespace.set_Namespace(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceAttribute.Name.get_Name()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Services.WebServiceBindingAttribute.set_Location(string)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -263,6 +1006,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Services.WebServiceAttribute.WebServiceAttribute()",
             "Name": ".ctor",
             "KeyType": "",
@@ -272,6 +1016,19 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebMethodAttribute.get_CacheDuration()",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -280,6 +1037,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Services.WebServiceBindingAttribute.set_Namespace(string)",
             "Name": "set_Namespace",
             "KeyType": "",
@@ -289,6 +1047,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Services.WebMethodAttribute.set_TransactionOption(System.Web.Services.TransactionOption)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "xamarinandroid10",
+                        "xamarinios10"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -296,6 +1065,7 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.Web.Services",
             "Name": "System.Web.Services",
@@ -306,6 +1076,18 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Type": "Method",
+            "Value": "System.Web.Services.WebMethodAttribute.set_TransactionOption(System.EnterpriseServices.TransactionOption)",
+            "Reference": "System.Web.Services",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []

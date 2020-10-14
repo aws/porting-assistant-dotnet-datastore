@@ -1,6 +1,7 @@
 {
     "Name": "System.Web.SessionState",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Web.SessionState"
@@ -17,6 +18,26 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+    "Packages": [
+        {
+            "System.Web.SessionState": {
+                "Type": "SDK",
+                "Name": "System.Web.SessionState"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.get_Keys()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -24,6 +45,25 @@
             ]
         },
         {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.Add(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.Web.SessionState",
             "Name": "System.Web.SessionState",
@@ -34,6 +74,18 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateModule.Init(System.Web.HttpApplication)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -42,10 +94,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.ISessionStateItemCollection.RemoveAt(int)",
             "Name": "RemoveAt",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.StateRuntime.StopProcessing()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -59,10 +117,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateItemCollection.RemoveAt(int)",
             "Name": "RemoveAt",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.Clear()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -76,10 +140,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Item(int)",
             "Name": "get_Item",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateItemCollection.set_Item(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -93,10 +163,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateModule.Init(System.Web.HttpApplication)",
             "Name": "Init",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.GetItemExclusive(System.Web.HttpContext,string,bool@,System.TimeSpan@,object@,System.Web.SessionState.SessionStateActions@)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -110,6 +186,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionStateContainer.get_LCID()",
             "Name": "get_LCID",
             "KeyType": "",
@@ -119,6 +196,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.Remove(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -127,6 +215,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionState.get_Timeout()",
             "Name": "get_Timeout",
             "KeyType": "",
@@ -136,6 +225,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionIDManager.Decode(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -144,10 +244,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.IHttpSessionState.RemoveAll()",
             "Name": "RemoveAll",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_CodePage()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -161,10 +267,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionState.get_Mode()",
             "Name": "get_Mode",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr, int, string, int, int, int, int, int, int, System.IntPtr)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -178,6 +290,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr, int, string, int, int, int, int, int, int, System.IntPtr)",
             "Name": "ProcessRequest",
             "KeyType": "",
@@ -187,6 +300,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_LCID()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -195,10 +319,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.IHttpSessionState.set_Item(string, object)",
             "Name": "set_Item",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionIDManager.GetSessionID(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -212,6 +342,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionStateContainer.set_LCID(int)",
             "Name": "set_LCID",
             "KeyType": "",
@@ -221,6 +352,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.get_SyncRoot()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -229,10 +371,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.IPartialSessionState.get_PartialSessionStateKeys()",
             "Name": "get_PartialSessionStateKeys",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.set_LCID(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -246,10 +394,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionStateContainer.get_SessionID()",
             "Name": "get_SessionID",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_Item(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -263,6 +417,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateStoreProviderBase.SetItemExpireCallback(System.Web.SessionState.SessionStateItemExpireCallback)",
             "Name": "SetItemExpireCallback",
             "KeyType": "",
@@ -272,6 +427,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.CopyTo(System.Array, int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -280,10 +446,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateModule.ReleaseSessionState(System.Web.HttpContext)",
             "Name": "ReleaseSessionState",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionIDManager.get_SessionIDMaxLength()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -297,6 +469,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.ISessionIDManager.InitializeRequest(System.Web.HttpContext, bool, bool)",
             "Name": "InitializeRequest",
             "KeyType": "",
@@ -306,6 +479,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.CreateNewStoreData(System.Web.HttpContext, int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -314,6 +498,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateModule.remove_Start(System.EventHandler)",
             "Name": "remove_Start",
             "KeyType": "",
@@ -323,6 +508,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionStateUtility.set_SerializationSurrogateSelector(System.Runtime.Serialization.ISurrogateSelector)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -331,10 +527,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionState.get_CookieMode()",
             "Name": "get_CookieMode",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.SetAndReleaseItemExclusive(System.Web.HttpContext, string, System.Web.SessionState.SessionStateStoreData, object, bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -348,6 +550,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.ISessionStateItemCollection.get_Item(int)",
             "Name": "get_Item",
             "KeyType": "",
@@ -357,6 +560,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.StateRuntime.StateRuntime()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -365,10 +579,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateItemCollection.Clear()",
             "Name": "Clear",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateItemCollection.SessionStateItemCollection()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -382,10 +602,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.ISessionStateItemCollection.set_Item(int, object)",
             "Name": "set_Item",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateItemCollection.Clear()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -399,10 +625,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.IHttpSessionState.Remove(string)",
             "Name": "Remove",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_Item(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -416,6 +648,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionState.set_Item(string, object)",
             "Name": "set_Item",
             "KeyType": "",
@@ -425,6 +658,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.IPartialSessionState.get_PartialSessionStateKeys()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -433,10 +677,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Count()",
             "Name": "get_Count",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.ISessionIDManager.InitializeRequest(System.Web.HttpContext, bool, bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -450,6 +700,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateStoreProviderBase.ReleaseItemExclusive(System.Web.HttpContext, string, object)",
             "Name": "ReleaseItemExclusive",
             "KeyType": "",
@@ -459,6 +710,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Item(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -467,6 +729,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.StateRuntime.ProcessRequest(System.IntPtr, int, string, int, int, int, int, int, System.IntPtr)",
             "Name": "ProcessRequest",
             "KeyType": "",
@@ -476,6 +739,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.HttpSessionStateContainer(string, System.Web.SessionState.ISessionStateItemCollection, System.Web.HttpStaticobjectsCollection, int, bool, System.Web.HttpCookieMode, System.Web.SessionState.SessionStateMode, bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -484,6 +758,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.SessionStateStoreProviderBase.EndRequest(System.Web.HttpContext)",
             "Name": "EndRequest",
             "KeyType": "",
@@ -493,6 +768,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.RemoveAt(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -501,576 +786,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionState.RemoveAt(int)",
-            "Name": "RemoveAt",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.SessionState.SessionStateModule.SessionStateModule()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.IHttpSessionState.get_Item(string)",
-            "Name": "get_Item",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionState.get_StaticObjects()",
-            "Name": "get_StaticObjects",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionState.CopyTo(System.Array, int)",
-            "Name": "CopyTo",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.ISessionIDManager.Initialize()",
-            "Name": "Initialize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionIDManager.GetSessionID(System.Web.HttpContext)",
-            "Name": "GetSessionID",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.RemoveAt(int)",
-            "Name": "RemoveAt",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionState.get_IsSynchronized()",
-            "Name": "get_IsSynchronized",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_IsNewSession()",
-            "Name": "get_IsNewSession",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.IHttpSessionState.get_SyncRoot()",
-            "Name": "get_SyncRoot",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.SetAndReleaseItemExclusive(System.Web.HttpContext, string, System.Web.SessionState.SessionStateStoreData, object, bool)",
-            "Name": "SetAndReleaseItemExclusive",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionState.set_Timeout(int)",
-            "Name": "set_Timeout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.IHttpSessionState.get_CodePage()",
-            "Name": "get_CodePage",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.GetEnumerator()",
-            "Name": "GetEnumerator",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.get_Keys()",
-            "Name": "System.Web.SessionState.IHttpSessionState.get_Keys",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionStateItemExpireCallback.SessionStateItemExpireCallback(object, System.IntPtr)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.ISessionIDManager.CreateSessionID(System.Web.HttpContext)",
-            "Name": "CreateSessionID",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionState.get_Contents()",
-            "Name": "get_Contents",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.ISessionStateModule.ReleaseSessionState(System.Web.HttpContext)",
-            "Name": "ReleaseSessionState",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.ISessionStateItemCollection.get_Keys()",
-            "Name": "get_Keys",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionIDManager.RemoveSessionID(System.Web.HttpContext)",
-            "Name": "RemoveSessionID",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.IHttpSessionState.get_IsReadOnly()",
-            "Name": "get_IsReadOnly",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_IsAbandoned()",
-            "Name": "get_IsAbandoned",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.StateRuntime.StateRuntime()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionState.get_Count()",
-            "Name": "get_Count",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionStateItemCollection.Serialize(System.IO.BinaryWriter)",
-            "Name": "Serialize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionIDManager.InitializeRequest(System.Web.HttpContext, bool, bool)",
-            "Name": "InitializeRequest",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_SyncRoot()",
-            "Name": "get_SyncRoot",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.set_Item(string, object)",
-            "Name": "System.Web.SessionState.IHttpSessionState.set_Item",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionStateUtility.RemoveHttpSessionStateFromContext(System.Web.HttpContext)",
-            "Name": "RemoveHttpSessionStateFromContext",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionStateStoreData.get_Timeout()",
-            "Name": "get_Timeout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.SessionStateItemCollection.Remove(string)",
-            "Name": "Remove",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.IHttpSessionState.Clear()",
-            "Name": "Clear",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.SessionState.HttpSessionStateContainer.set_Item(int, object)",
-            "Name": "set_Item",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1080,9 +804,198 @@
         {
             "Type": "Method",
             "Value": "System.Web.SessionState.IHttpSessionState.GetEnumerator()",
-            "Name": "GetEnumerator",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateModule.ReleaseSessionStateAsync(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework462",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.set_Timeout(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.Item[String].get_Item(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_Keys()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateUtility.GetHttpSessionStateFromContext(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.InitializeRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.CopyTo(System.Array, int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.Abandon()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionState.RemoveAt(int)",
+            "Name": "RemoveAt",
             "KeyType": "",
             "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_IsNewSession()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.IHttpSessionState.get_Item(string)",
+            "Name": "get_Item",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.SessionStateStoreProviderBase()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -1096,8 +1009,32 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.SessionState.ISessionStateItemCollection.Clear()",
-            "Name": "Clear",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionState.get_StaticObjects()",
+            "Name": "get_StaticObjects",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateUtility.RaiseSessionEnd(System.Web.SessionState.IHttpSessionState, object, System.EventArgs)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionState.CopyTo(System.Array, int)",
+            "Name": "CopyTo",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1105,6 +1042,783 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.get_Timeout()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.ISessionIDManager.Initialize()",
+            "Name": "Initialize",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.RemoveAll()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.Item[Int32].get_Item(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.CopyTo(System.Array, int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionIDManager.GetSessionID(System.Web.HttpContext)",
+            "Name": "GetSessionID",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.get_IsReadOnly()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.RemoveAt(int)",
+            "Name": "RemoveAt",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_IsReadOnly()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionState.get_IsSynchronized()",
+            "Name": "get_IsSynchronized",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.Abandon()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_IsNewSession()",
+            "Name": "get_IsNewSession",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.get_Item(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.IHttpSessionState.get_SyncRoot()",
+            "Name": "get_SyncRoot",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.ISessionIDManager.SaveSessionID(System.Web.HttpContext, string, bool, bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.SetAndReleaseItemExclusive(System.Web.HttpContext, string, System.Web.SessionState.SessionStateStoreData, object, bool)",
+            "Name": "SetAndReleaseItemExclusive",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.ISessionIDManager.CreateSessionID(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionState.set_Timeout(int)",
+            "Name": "set_Timeout",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.RemoveAll()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.IHttpSessionState.get_CodePage()",
+            "Name": "get_CodePage",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateUtility.RemoveHttpSessionStateFromContext(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.GetEnumerator()",
+            "Name": "GetEnumerator",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.ISessionIDManager.RemoveSessionID(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.get_Keys()",
+            "Name": "System.Web.SessionState.IHttpSessionState.get_Keys",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_CodePage()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionStateItemExpireCallback.SessionStateItemExpireCallback(object, System.IntPtr)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.get_Count()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.ISessionIDManager.CreateSessionID(System.Web.HttpContext)",
+            "Name": "CreateSessionID",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.StateRuntime.ProcessRequest(System.IntPtr, int, string, int, int, int, int, int, int, System.IntPtr)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionState.get_Contents()",
+            "Name": "get_Contents",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.ResetItemTimeout(System.Web.HttpContext, string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.ISessionStateModule.ReleaseSessionState(System.Web.HttpContext)",
+            "Name": "ReleaseSessionState",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_IsSynchronized()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.get_Keys()",
+            "Name": "get_Keys",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.get_IsSynchronized()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionIDManager.RemoveSessionID(System.Web.HttpContext)",
+            "Name": "RemoveSessionID",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.EndRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.IHttpSessionState.get_IsReadOnly()",
+            "Name": "get_IsReadOnly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.set_Dirty(bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_IsAbandoned()",
+            "Name": "get_IsAbandoned",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.GetItem(System.Web.HttpContext, string, bool, System.TimeSpan, object, System.Web.SessionState.SessionStateActions)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.StateRuntime.StateRuntime()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreData.get_Timeout()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionState.get_Count()",
+            "Name": "get_Count",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.get_CookieMode()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionStateItemCollection.Serialize(System.IO.BinaryWriter)",
+            "Name": "Serialize",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.get_IsNewSession()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.InitializeRequest(System.Web.HttpContext, bool, bool)",
+            "Name": "InitializeRequest",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Namespace",
+            "Value": "System.Web.SessionState",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_SyncRoot()",
+            "Name": "get_SyncRoot",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.ISessionStateModule.ReleaseSessionState(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework462",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.set_Item(string, object)",
+            "Name": "System.Web.SessionState.IHttpSessionState.set_Item",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_CookieMode()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionStateUtility.RemoveHttpSessionStateFromContext(System.Web.HttpContext)",
+            "Name": "RemoveHttpSessionStateFromContext",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.IHttpSessionState.get_Keys()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionStateStoreData.get_Timeout()",
+            "Name": "get_Timeout",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.get_Keys()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionStateItemCollection.Remove(string)",
+            "Name": "Remove",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionStateModule.add_Start(System.EventHandler)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_StaticObjects()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1114,9 +1828,84 @@
         {
             "Type": "Method",
             "Value": "System.Web.SessionState.SessionStateModule.add_End(System.EventHandler)",
-            "Name": "add_End",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr, int, string, int, int, int, int, int, System.IntPtr)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateUtility.AddHttpSessionStateToContext(System.Web.HttpContext, System.Web.SessionState.IHttpSessionState)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.Remove(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.IHttpSessionState.Clear()",
+            "Name": "Clear",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.SessionStateItemCollection.get_Item(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -1130,6 +1919,117 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.set_Item(int, object)",
+            "Name": "set_Item",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionStateStoreData.SessionStateStoreData(System.Web.SessionState.ISessionStateItemCollection, System.Web.HttpStaticobjectsCollection, int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.IHttpSessionState.GetEnumerator()",
+            "Name": "GetEnumerator",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.SessionStateUtility.get_SerializationSurrogateSelector()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.Clear()",
+            "Name": "Clear",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionState.Abandon()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.SessionState.SessionStateModule.add_End(System.EventHandler)",
+            "Name": "add_End",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.IsSynchronized.get_IsSynchronized()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.SessionState.HttpSessionStateContainer.Add(string, object)",
             "Name": "Add",
             "KeyType": "",
@@ -1139,6 +2039,1765 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.RemoveAt(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.set_LCID(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionIDManager.Validate(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateModule.ReleaseSessionStateAsync(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework462",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.Initialize()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.ReleaseItemExclusive(System.Web.HttpContext, string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.set_Item(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateModule.ReleaseSessionState(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework462",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.get_Mode()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_LCID()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_IsCookieless()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_IsAbandoned()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.set_Dirty(bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.set_Item(int, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.Count.get_Count()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.get_Item(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.Clear()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IStateRuntime.StopProcessing()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.SessionIDManager()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.RemoveItem(System.Web.HttpContext, string, object, System.Web.SessionState.SessionStateStoreData)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.GetEnumerator()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.get_Timeout()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.RemoveSessionID(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateModule.Dispose()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.Validate(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.Serialize(System.IO.BinaryWriter)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_SyncRoot()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.get_Dirty()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Timeout()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_CodePage()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.IsReadOnly.get_IsReadOnly()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.Remove(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.set_CodePage(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.get_CookieMode()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionIDManager.Initialize()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.set_CodePage(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.set_LCID(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.set_Item(int, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.set_Item(int, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.GetEnumerator()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.Encode(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.set_Item(int, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.get_Dirty()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.RemoveAt(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.get_IsCookieless()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_Item(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.RemoveAll()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemExpireCallback.SessionStateItemExpireCallback(object, System.IntPtr)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.Item[String].set_Item(string,object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.set_Item(int, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.Remove(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_IsCookieless()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_LCID()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.StateRuntime.ProcessRequest(System.IntPtr, int, string, int, int, int, int, int, System.IntPtr)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Item(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_Mode()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.Add(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateModule.remove_Start(System.EventHandler)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.InitializeRequest(System.Web.HttpContext, bool, bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Mode()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreData.get_Items()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.GetEnumerator()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.get_Keys()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_SessionID()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.Dispose()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.Deserialize(System.IO.BinaryReader)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreData.Timeout.set_Timeout(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemCollection.RemoveAt(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.Add(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.CreateUninitializedItem(System.Web.HttpContext, string, int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemExpireCallback.BeginInvoke(string, System.Web.SessionState.SessionStateStoreData, System.AsyncCallback, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_Contents()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreData.get_StaticObjects()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.set_Item(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.RemoveAt(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.get_StaticObjects()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.CreateSessionID(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateStoreProviderBase.SetItemExpireCallback(System.Web.SessionState.SessionStateItemExpireCallback)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemExpireCallback.Invoke(string, System.Web.SessionState.SessionStateStoreData)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.get_SessionID()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.set_Timeout(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.set_Timeout(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionIDManager.SaveSessionID(System.Web.HttpContext, string, bool, bool)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateItemExpireCallback.EndInvoke(System.IAsyncResult)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.get_SyncRoot()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Count()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.get_StaticObjects()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionIDManager.GetSessionID(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateUtility.GetSessionStaticObjects(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.System.Web.SessionState.IHttpSessionState.set_Item(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.set_CodePage(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.get_Item(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_SessionID()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_Keys()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionState.Clear()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateModule.remove_End(System.EventHandler)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.Clear()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.HttpSessionStateContainer.get_IsNewSession()",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.IHttpSessionState.set_Item(int, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.Remove(string)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.get_Item(int)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateUtility.IsSessionStateReadOnly(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework462",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.SessionStateUtility.IsSessionStateRequired(System.Web.HttpContext)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework462",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.SessionState.ISessionStateItemCollection.set_Item(string, object)",
+            "Reference": "System.Web.SessionState",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []

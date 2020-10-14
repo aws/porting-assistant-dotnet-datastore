@@ -1,6 +1,7 @@
 {
     "Name": "System.Activities.DurableInstancing",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Activities.DurableInstancing"
@@ -17,142 +18,26 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
+=======
+    "Packages": [
+        {
+            "System.Activities.DurableInstancing": {
+                "Type": "SDK",
+                "Name": "System.Activities.DurableInstancing"
+            }
+        }
+    ],
+    "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.get_ActivationParameters()",
-            "Name": "get_ActivationParameters",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceKeysToComplete()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivatableWorkflowsQueryResult()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand.QueryActivatableWorkflowsCommand()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_EnqueueRunCommands(bool)",
-            "Name": "set_EnqueueRunCommands",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LoadWorkflowByInstanceKeyCommand()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.LoadWorkflowCommand.get_AcceptUninitializedInstance()",
-            "Name": "get_AcceptUninitializedInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.HasActivatableWorkflowEvent.HasActivatableWorkflowEvent()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.get_InstanceOwnerMetadata()",
-            "Name": "get_InstanceOwnerMetadata",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -162,9 +47,32 @@
         {
             "Type": "Method",
             "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_InstanceCompletionAction()",
-            "Name": "get_InstanceCompletionAction",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.get_ActivationParameters()",
+            "Name": "get_ActivationParameters",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.set_CompleteInstance(bool)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -178,10 +86,530 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivatableWorkflowsQueryResult()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivatableWorkflowsQueryResult(System.Collections.Generic.IDictionary{System.Xml.Linq.XName, object})",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand.QueryActivatableWorkflowsCommand()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_UnlockInstance()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_EnqueueRunCommands(bool)",
+            "Name": "set_EnqueueRunCommands",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.get_InstanceOwnerMetadata()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LoadWorkflowByInstanceKeyCommand()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AcceptUninitializedInstance.set_AcceptUninitializedInstance(bool)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowCommand.get_AcceptUninitializedInstance()",
+            "Name": "get_AcceptUninitializedInstance",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_InstanceEncodingOption()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceKeysToAssociate()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_ConnectionString(string)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.HasActivatableWorkflowEvent.HasActivatableWorkflowEvent()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.get_ActivationParameters()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod.set_HostLockRenewalPeriod(System.TimeSpan)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivatableWorkflowsQueryResult()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceKeysToFree()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_InstanceLockedExceptionAction(System.Activities.DurableInstancing.InstanceLockedExceptionAction)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.HasActivatableWorkflowEvent.HasActivatableWorkflowEvent()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand.get_InstanceOwnerMetadata()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand.DeleteWorkflowOwnerCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.TryLoadRunnableWorkflowCommand.TryLoadRunnableWorkflowCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.set_UnlockInstance(bool)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand.CreateWorkflowOwnerWithIdentityCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowCommand.set_AcceptUninitializedInstance(bool)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivatableWorkflowsQueryResult(System.Collections.Generic.IEnumerable{System.Collections.Generic.IDictionary{System.Xml.Linq.XName, object}})",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.MaxConnectionRetries.get_MaxConnectionRetries()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+>>>>>>> master
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.get_InstanceOwnerMetadata()",
+            "Name": "get_InstanceOwnerMetadata",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.get_LookupInstanceKey()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_RunnableInstancesDetectionPeriod(System.TimeSpan)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_InstanceEncodingOption(System.Activities.DurableInstancing.InstanceEncodingOption)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.SqlWorkflowInstanceStore()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_EnqueueRunCommands(bool)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_CompleteInstance()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_InstanceCompletionAction()",
+            "Name": "get_InstanceCompletionAction",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_InstanceLockedExceptionAction()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AcceptUninitializedInstance.set_AcceptUninitializedInstance(bool)",
             "Name": "set_AcceptUninitializedInstance",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowCommand.LoadWorkflowCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -195,10 +623,32 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceKeysToComplete()",
             "Name": "get_InstanceKeysToComplete",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_HostLockRenewalPeriod()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_RunnableInstancesDetectionPeriod()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -229,10 +679,48 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_ConnectionString()",
             "Name": "get_ConnectionString",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.get_InstanceKeysToAssociate()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_ConnectionString()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote(string, System.Collections.Generic.IEnumerable{System.Xml.Linq.XName}, System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -246,6 +734,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.get_LookupInstanceKey()",
             "Name": "get_LookupInstanceKey",
             "KeyType": "",
@@ -255,6 +744,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.set_MaxConnectionRetries(int)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -263,10 +762,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.set_UnlockInstance(bool)",
             "Name": "set_UnlockInstance",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowCommand.get_AcceptUninitializedInstance()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -280,10 +785,32 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceKeysToAssociate()",
             "Name": "get_InstanceKeysToAssociate",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceMetadataChanges()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.CreateWorkflowOwnerCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -297,10 +824,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod.set_HostLockRenewalPeriod(System.TimeSpan)",
             "Name": "set_HostLockRenewalPeriod",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.SqlWorkflowInstanceStore(string)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -314,10 +847,32 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.LoadWorkflowCommand.set_AcceptUninitializedInstance(bool)",
             "Name": "set_AcceptUninitializedInstance",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LoadWorkflowByInstanceKeyCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.SaveWorkflowCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -331,10 +886,80 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_InstanceEncodingOption()",
             "Name": "get_InstanceEncodingOption",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_EnqueueRunCommands()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.set_LookupInstanceKey(System.Guid)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.set_AssociateInstanceKeyToInstanceId(System.Guid)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.HasRunnableWorkflowEvent.HasRunnableWorkflowEvent()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceData()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -348,10 +973,64 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.get_InstanceLockedExceptionAction()",
             "Name": "get_InstanceLockedExceptionAction",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand.QueryActivatableWorkflowsCommand()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.get_AcceptUninitializedInstance()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.get_AssociateInstanceKeyToInstanceId()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_InstanceKeyMetadataChanges()",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -365,10 +1044,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.DurableInstancing.SaveWorkflowCommand.get_CompleteInstance()",
             "Name": "get_CompleteInstance",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction.set_InstanceCompletionAction(System.Activities.DurableInstancing.InstanceCompletionAction)",
+            "Reference": "System.Activities.DurableInstancing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

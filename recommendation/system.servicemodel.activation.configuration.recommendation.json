@@ -1,6 +1,7 @@
 {
     "Name": "System.ServiceModel.Activation.Configuration",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.ServiceModel.Activation.Configuration"
@@ -12,11 +13,27 @@
             "Name": "get_PerformanceCountersEnabled",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.ServiceModel.Activation.Configuration": {
+                "Type": "SDK",
+                "Name": "System.ServiceModel.Activation.Configuration"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.set_MaxPendingConnections(int)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,15 +42,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.set_SecurityIdentifier(System.Security.Principal.SecurityIdentifier)",
-            "Name": "set_SecurityIdentifier",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.set_MaxPendingConnections(int)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -42,15 +59,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.NetTcpSection()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Activation.Configuration.DiagnosticSection.DiagnosticSection()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -59,32 +76,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.get_NetPipe()",
-            "Name": "get_NetPipe",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.GetSectionGroup(System.Configuration.Configuration)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.ServiceModel.Activation.Configuration",
-            "Name": "System.ServiceModel.Activation.Configuration",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -93,83 +93,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_MaxPendingConnections()",
-            "Name": "get_MaxPendingConnections",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.NetPipeSection()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_AllowAccounts()",
-            "Name": "get_AllowAccounts",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_MaxPendingAccepts()",
-            "Name": "get_MaxPendingAccepts",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_TeredoEnabled()",
-            "Name": "get_TeredoEnabled",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.set_ListenBacklog(int)",
-            "Name": "set_ListenBacklog",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -179,9 +111,265 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElement..ctor()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.set_MaxPendingAccepts(int)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.DiagnosticSection.get_PerformanceCountersEnabled()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.ServiceModelActivationSectionGroup()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.set_ListenBacklog(int)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_ListenBacklog()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.ServiceModel.Activation.Configuration",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_ReceiveTimeout()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_AllowAccounts()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_MaxPendingConnections()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.get_Diagnostics()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_TeredoEnabled()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_ReceiveTimeout()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.Dummy.Dummy()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_MaxPendingAccepts()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_MaxPendingAccepts()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -195,10 +383,310 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.set_SecurityIdentifier(System.Security.Principal.SecurityIdentifier)",
+            "Name": "set_SecurityIdentifier",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection.SecurityIdentifierElementCollection()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.set_MaxPendingAccepts(int)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.NetTcpSection()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.SecurityIdentifierElement(System.Security.Principal.SecurityIdentifier)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.get_SecurityIdentifier()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.ReceiveTimeout.set_ReceiveTimeout(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.get_NetPipe()",
+            "Name": "get_NetPipe",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.NetTcpSection()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "System.ServiceModel.Activation.Configuration",
+            "Name": "System.ServiceModel.Activation.Configuration",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_MaxPendingConnections()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_MaxPendingConnections()",
+            "Name": "get_MaxPendingConnections",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.DiagnosticSection.set_PerformanceCountersEnabled(bool)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_AllowAccounts()",
+            "Name": "get_AllowAccounts",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.TeredoEnabled.set_TeredoEnabled(bool)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.get_MaxPendingAccepts()",
+            "Name": "get_MaxPendingAccepts",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.NetPipeSection.set_ReceiveTimeout(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.get_TeredoEnabled()",
+            "Name": "get_TeredoEnabled",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.set_SecurityIdentifier(System.Security.Principal.SecurityIdentifier)",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework30",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.set_ListenBacklog(int)",
+            "Name": "set_ListenBacklog",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts.get_AllowAccounts()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Activation.Configuration.SecurityIdentifierElement..ctor()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.get_NetPipe()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Activation.Configuration.NetTcpSection.TeredoEnabled.set_TeredoEnabled(bool)",
             "Name": "set_TeredoEnabled",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup.get_NetTcp()",
+            "Reference": "System.ServiceModel.Activation.Configuration",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

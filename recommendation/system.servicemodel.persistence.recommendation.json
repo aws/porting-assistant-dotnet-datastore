@@ -1,6 +1,7 @@
 {
     "Name": "System.ServiceModel.Persistence",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.ServiceModel.Persistence"
@@ -12,147 +13,26 @@
             "Name": "OnAbort",
             "KeyType": "",
             "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
+=======
+    "Packages": [
+        {
+            "System.ServiceModel.Persistence": {
+                "Type": "SDK",
+                "Name": "System.ServiceModel.Persistence"
+            }
+        }
+    ],
+    "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginUpdate(object, System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "BeginUpdate",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Update(object, System.TimeSpan, bool)",
-            "Name": "Update",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginDelete(object, System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "BeginDelete",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.DefaultCloseTimeout.get_DefaultCloseTimeout()",
-            "Name": "get_DefaultCloseTimeout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginClose(System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "OnBeginClose",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.set_LockTimeout(System.TimeSpan)",
-            "Name": "set_LockTimeout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -162,14 +42,13 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Create(object, System.TimeSpan, bool)",
-            "Name": "Create",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -178,338 +57,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndLoadIfChanged(System.IAsyncResult, object)",
-            "Name": "EndLoadIfChanged",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUnlock(System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(object, System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "BeginUpdate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.Delete(object, System.TimeSpan)",
-            "Name": "Delete",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan, bool, System.AsyncCallback, object)",
-            "Name": "BeginLoad",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Guid, System.Exception)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginLoad(System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "BeginLoad",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Update(object, System.TimeSpan)",
-            "Name": "Update",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.ServiceModel.Persistence",
-            "Name": "System.ServiceModel.Persistence",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.CreateProvider(System.Guid)",
-            "Name": "CreateProvider",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndDelete(System.IAsyncResult)",
-            "Name": "EndDelete",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.get_DefaultOpenTimeout()",
-            "Name": "get_DefaultOpenTimeout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceLockException..ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginLoadIfChanged(System.TimeSpan, object, System.AsyncCallback, object)",
-            "Name": "BeginLoadIfChanged",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(object, System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "BeginCreate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.PersistenceProvider.PersistenceProvider(System.Guid)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan, bool)",
-            "Name": "Load",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndClose(System.IAsyncResult)",
-            "Name": "OnEndClose",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Create(object, System.TimeSpan)",
-            "Name": "Create",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, System.Exception)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -519,9 +74,57 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Persistence.PersistenceProviderFactory.CreateProvider(System.Guid)",
-            "Name": "CreateProvider",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException..ctor(System.Guid)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.get_ConnectionString()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.Create(object,System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -535,10 +138,112 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
-            "Name": "GetObjectData",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginUpdate(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "BeginUpdate",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceException..ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(string)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.get_LockTimeout()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.ServiceModel.Persistence",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoadIfChanged(System.TimeSpan, object, bool, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -552,10 +257,338 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Update(object, System.TimeSpan, bool)",
+            "Name": "Update",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged(System.TimeSpan, object, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, string)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.set_ConnectionString(string)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginDelete(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "BeginDelete",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoadIfChanged(System.TimeSpan, object, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.DefaultCloseTimeout.get_DefaultCloseTimeout()",
+            "Name": "get_DefaultCloseTimeout",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnClose(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginClose(System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "OnBeginClose",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginDelete(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.set_LockTimeout(System.TimeSpan)",
+            "Name": "set_LockTimeout",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Create(object, System.TimeSpan, bool)",
+            "Name": "Create",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SqlPersistenceProviderFactory(System.Collections.Specialized.NameValueCollection)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndLoadIfChanged(System.IAsyncResult, object)",
+            "Name": "EndLoadIfChanged",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.LockingPersistenceProvider(System.Guid)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "BeginUpdate",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan, bool)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.Delete(object, System.TimeSpan)",
+            "Name": "Delete",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProviderFactory.PersistenceProviderFactory()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan, bool, System.AsyncCallback, object)",
+            "Name": "BeginLoad",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginOpen(System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Guid, System.Exception)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.get_Id()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(object, System.TimeSpan, bool, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginLoad(System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "BeginLoad",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
             "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.set_SerializeAsText(bool)",
-            "Name": "set_SerializeAsText",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -569,10 +602,16 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, string, System.Exception)",
-            "Name": ".ctor",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Update(object, System.TimeSpan)",
+            "Name": "Update",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndLoad(System.IAsyncResult)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -585,16 +624,38 @@
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException()",
-            "Name": ".ctor",
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "System.ServiceModel.Persistence",
+            "Name": "System.ServiceModel.Persistence",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(string, System.Exception)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Guid, System.Exception)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -604,9 +665,153 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.get_SerializeAsText()",
-            "Name": "get_SerializeAsText",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceException.PersistenceException(string, System.Exception)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.get_InstanceId()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException..ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.Delete(object, System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginCreate(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndOpen(System.IAsyncResult)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, System.Exception)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -620,8 +825,101 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "BeginLoad",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.CreateProvider(System.Guid)",
+            "Name": "CreateProvider",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndDelete(System.IAsyncResult)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndDelete(System.IAsyncResult)",
+            "Name": "EndDelete",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnOpen(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.get_DefaultOpenTimeout()",
+            "Name": "get_DefaultOpenTimeout",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(string, System.Exception)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceLockException..ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndClose(System.IAsyncResult)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginLoadIfChanged(System.TimeSpan, object, System.AsyncCallback, object)",
+            "Name": "BeginLoadIfChanged",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -629,6 +927,403 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndUpdate(System.IAsyncResult)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(string)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginUpdate(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan, bool, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(object, System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "BeginCreate",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SqlPersistenceProviderFactory(string, bool)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.EndUnlock(System.IAsyncResult)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SqlPersistenceProviderFactory(string)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.set_LockTimeout(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.PersistenceProvider(System.Guid)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceException.PersistenceException(string)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan, bool)",
+            "Name": "Load",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.PersistenceProvider(System.Guid)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndClose(System.IAsyncResult)",
+            "Name": "OnEndClose",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Create(object, System.TimeSpan)",
+            "Name": "Create",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginClose(System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, System.Exception)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Create(object, System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.PersistenceProviderFactory.CreateProvider(System.Guid)",
+            "Name": "CreateProvider",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Update(object, System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Unlock(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "Name": "GetObjectData",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Guid, string)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.set_SerializeAsText(bool)",
+            "Name": "set_SerializeAsText",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(object, System.TimeSpan, bool, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan,object,object@)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, string, System.Exception)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan, object, bool, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndLoadIfChanged(System.IAsyncResult, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -638,9 +1333,169 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SqlPersistenceProviderFactory(string, bool, System.TimeSpan)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.CreateProvider(System.Guid)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.Load(System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceException.PersistenceException()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndCreate(System.IAsyncResult)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.DefaultCloseTimeout.get_DefaultCloseTimeout()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginLoadIfChanged(System.TimeSpan, object, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.InstanceNotFoundException(System.Guid, string, System.Exception)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, string)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.BeginLoad(System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -654,10 +1509,131 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException(System.Guid, string, System.Exception)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.Update(object, System.TimeSpan, bool)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.InstanceLockException.InstanceLockException()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.InstanceNotFoundException.get_InstanceId()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.get_SerializeAsText()",
+            "Name": "get_SerializeAsText",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnAbort()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "BeginLoad",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.get_DefaultOpenTimeout()",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SqlPersistenceProviderFactory(string, bool, System.TimeSpan)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan, System.AsyncCallback, object)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Persistence.PersistenceProvider.EndLoad(System.IAsyncResult)",
             "Name": "EndLoad",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Persistence.PersistenceProvider.Update(object, System.TimeSpan)",
+            "Reference": "System.ServiceModel.Persistence",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

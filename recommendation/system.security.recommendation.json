@@ -1,6 +1,7 @@
 {
     "Name": "System.Security",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Security"
@@ -16,23 +17,37 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
+=======
+    "Packages": [
         {
-            "Type": "Type",
-            "Value": "System.Security.CodeAccessPermission",
-            "Name": "System.Security.CodeAccessPermission",
-            "KeyType": "",
-            "RecommendedActions": [
+            "System.Security": {
+                "Type": "SDK",
+                "Name": "System.Security"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Security.UnverifiableCodeAttribute.UnverifiableCodeAttribute()",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -42,14 +57,23 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.SecurityElement.get_Tag()",
-            "Name": "get_Tag",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Security.SuppressUnmanagedCodeSecurityAttribute.SuppressUnmanagedCodeSecurityAttribute()",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -59,14 +83,125 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.CodeAccessPermission.RevertAssert()",
-            "Name": "RevertAssert",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Security.CodeAccessPermission.FromXml(System.Security.SecurityElement)",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.SearchForTextOfTag(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.set_Text(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.SecurityElement(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.FromString(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -77,13 +212,46 @@
         {
             "Type": "Method",
             "Value": "System.Security.CodeAccessPermission.CodeAccessPermission()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.get_Tag()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -93,14 +261,47 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.CodeAccessPermission.Demand()",
-            "Name": "Demand",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Security.CodeAccessPermission.Union(System.Security.IPermission)",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.AddAttribute(string, string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -110,14 +311,23 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.CodeAccessPermission.Copy()",
-            "Name": "Copy",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Security.SecurityElement.IsValidText(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -127,14 +337,23 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.SecurityElement.IsValidAttributeName(string)",
-            "Name": "IsValidAttributeName",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Security.SecurityElement.get_Attributes()",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -144,14 +363,47 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.CodeAccessPermission.RevertPermitOnly()",
-            "Name": "RevertPermitOnly",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Security.CodeAccessPermission.RevertDeny()",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.SecurityElement(string, string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -162,115 +414,22 @@
         {
             "Type": "Method",
             "Value": "System.Security.SecurityRulesAttribute.get_RuleSet()",
-            "Name": "get_RuleSet",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.SecurityElement.get_Text()",
-            "Name": "get_Text",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.CodeAccessPermission.System.Security.IStackWalk.Demand()",
-            "Name": "System.Security.IStackWalk.Demand",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.SecurityElement.set_Tag(string)",
-            "Name": "set_Tag",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.SecurityElement.Attribute(string)",
-            "Name": "Attribute",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.SecurityElement.IsValidAttributeValue(string)",
-            "Name": "IsValidAttributeValue",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.SecurityElement.ToString()",
-            "Name": "ToString",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono40",
+                        "net50",
+                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -281,15 +440,12 @@
         {
             "Type": "Method",
             "Value": "System.Security.CodeAccessPermission.System.Security.IStackWalk.Assert()",
-            "Name": "System.Security.IStackWalk.Assert",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
+                    "preferred": "yes",
+                    "Versions": [],
                     "Description": "Remove usage.",
                     "Actions": []
                 }
@@ -297,14 +453,24 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.SecurityElement.Copy()",
-            "Name": "Copy",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Security.SecurityElement.IsValidAttributeName(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -314,10 +480,214 @@
         },
         {
             "Type": "Type",
-            "Value": "System.Security.SecurityRulesAttribute",
-            "Name": "System.Security.SecurityRulesAttribute",
+            "Value": "System.Security.CodeAccessPermission",
+<<<<<<< HEAD
+            "Name": "System.Security.CodeAccessPermission",
             "KeyType": "",
             "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityRulesAttribute.get_SkipVerificationInFullTrust()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono40",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.get_Tag()",
+            "Name": "get_Tag",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Security.CodeAccessPermission.RevertAll()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.CodeAccessPermission.Equals(object)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Security.SecurityElement",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.get_Children()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.CodeAccessPermission.System.Security.IPermission.Demand()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.CodeAccessPermission.PermitOnly()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.Attribute(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -330,11 +700,760 @@
             ]
         },
         {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.CodeAccessPermission.RevertAssert()",
+            "Name": "RevertAssert",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Security.SecurityElement.get_Text()",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.CodeAccessPermission.CodeAccessPermission()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Security.SecurityElement.SearchForChildByTag(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.CodeAccessPermission.Demand()",
+            "Name": "Demand",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Value": "System.Security.CodeAccessPermission.System.Security.IStackWalk.Deny()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityRulesAttribute.set_SkipVerificationInFullTrust(bool)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono40",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Method",
+            "Value": "System.Security.CodeAccessPermission.Copy()",
+            "Name": "Copy",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Type": "Type",
+            "Value": "System.Security.UnverifiableCodeAttribute",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.IsValidAttributeName(string)",
+            "Name": "IsValidAttributeName",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Security.CodeAccessPermission.ToString()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+>>>>>>> master
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.CodeAccessPermission.RevertPermitOnly()",
+            "Name": "RevertPermitOnly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Security.CodeAccessPermission.RevertAssert()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.CodeAccessPermission.Demand()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+>>>>>>> master
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityRulesAttribute.get_RuleSet()",
+            "Name": "get_RuleSet",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Security.SecurityElement.IsValidTag(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.get_Text()",
+            "Name": "get_Text",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.Equal(System.Security.SecurityElement)",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.CodeAccessPermission.System.Security.IStackWalk.Demand()",
+            "Name": "System.Security.IStackWalk.Demand",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Security.CodeAccessPermission.ToXml()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+>>>>>>> master
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.set_Tag(string)",
+            "Name": "set_Tag",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+=======
+            "Value": "System.Security.CodeAccessPermission.System.Security.IStackWalk.PermitOnly()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [],
+>>>>>>> master
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.Attribute(string)",
+            "Name": "Attribute",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Value": "System.Security.SecurityElement.IsValidAttributeValue(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Security",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.AddChild(System.Security.SecurityElement)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.IsValidAttributeValue(string)",
+            "Name": "IsValidAttributeValue",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Security.CodeAccessPermission.System.Security.IStackWalk.Demand()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.set_Children(System.Collections.ArrayList)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.Escape(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.ToString()",
+            "Name": "ToString",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Value": "System.Security.CodeAccessPermission.RevertPermitOnly()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.Copy()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.CodeAccessPermission.System.Security.IStackWalk.Assert()",
+            "Name": "System.Security.IStackWalk.Assert",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+>>>>>>> master
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Security.SecurityElement.Copy()",
+            "Name": "Copy",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+=======
+            "Value": "System.Security.SecurityElement.ToString()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.set_Attributes(System.Collections.Hashtable)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.SecurityRulesAttribute.SecurityRulesAttribute(System.Security.SecurityRuleSet)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono40",
+                        "net50",
+                        "netplatformextensions50",
+>>>>>>> master
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Type",
+            "Value": "System.Security.SecurityRulesAttribute",
+            "Name": "System.Security.SecurityRulesAttribute",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Security.SecurityElement.set_Tag(string)",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Security.SuppressUnmanagedCodeSecurityAttribute",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.Security.SecurityElement.SecurityElement(string, string)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Type",
+            "Value": "System.Security.SecurityRulesAttribute",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -348,6 +1467,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Security.SecurityElement.SearchForChildByTag(string)",
             "Name": "SearchForChildByTag",
             "KeyType": "",
@@ -357,6 +1477,23 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Security.CodeAccessPermission.GetHashCode()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
                     ],
                     "Description": "Remove usage.",
                     "Actions": []
@@ -364,6 +1501,32 @@
             ]
         },
         {
+            "Type": "Method",
+            "Value": "System.Security.CodeAccessPermission.Assert()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+>>>>>>> master
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
             "Type": "Type",
             "Value": "System.Security.SecurityElement",
             "Name": "System.Security.SecurityElement",
@@ -374,6 +1537,25 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Type": "Method",
+            "Value": "System.Security.CodeAccessPermission.Deny()",
+            "Reference": "System.Security",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandardplatformextensions20",
+                        "netcoreapp2.0",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "netcoreapp3.1",
+                        "net50",
+                        "netplatformextensions50"
+>>>>>>> master
                     ],
                     "Description": "Remove usage.",
                     "Actions": []
@@ -382,10 +1564,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Security.CodeAccessPermission.GetHashCode()",
             "Name": "GetHashCode",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Security.CodeAccessPermission.Copy()",
+            "Reference": "System.Security",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

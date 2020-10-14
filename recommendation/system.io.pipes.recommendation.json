@@ -1,6 +1,7 @@
 {
     "Name": "System.IO.Pipes",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.IO.Pipes"
@@ -12,6 +13,22 @@
             "Name": "System.IO.Pipes",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.IO.Pipes": {
+                "Type": "SDK",
+                "Name": "System.IO.Pipes"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.IO.Pipes.NamedPipeServerStream.EndWaitForConnection(System.IAsyncResult)",
+            "Reference": "System.IO.Pipes",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -24,11 +41,40 @@
             ]
         },
         {
+            "Type": "Namespace",
+            "Value": "System.IO.Pipes",
+            "Reference": "System.IO.Pipes",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use NamedPipeServerStream.WaitForConnectionAsync().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
             "Type": "Method",
             "Value": "System.IO.Pipes.NamedPipeServerStream.BeginWaitForConnection(System.AsyncCallback,object)",
+<<<<<<< HEAD
             "Name": "BeginWaitForConnection",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Reference": "System.IO.Pipes",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

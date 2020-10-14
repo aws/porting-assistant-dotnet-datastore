@@ -1,6 +1,7 @@
 {
     "Name": "System.Runtime.Remoting.Proxies",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Runtime.Remoting.Proxies"
@@ -12,11 +13,29 @@
             "Name": "SetCOMIUnknown",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.Runtime.Remoting.Proxies": {
+                "Type": "SDK",
+                "Name": "System.Runtime.Remoting.Proxies"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.SetCOMIUnknown(System.IntPtr)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,32 +44,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance(System.Type)",
-            "Name": "CreateInstance",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetProxiedType()",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.RealProxy.CreateObjRef(System.Type)",
-            "Name": "CreateObjRef",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -60,9 +64,28 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetStubData(System.Runtime.Remoting.Proxies.RealProxy)",
-            "Name": "GetStubData",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.RealProxy(System.Type)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -75,11 +98,87 @@
             ]
         },
         {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance(System.Type)",
+            "Name": "CreateInstance",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.RealProxy()",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.CreateObjRef(System.Type)",
+            "Name": "CreateObjRef",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context, System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetStubData(System.Runtime.Remoting.Proxies.RealProxy)",
+            "Name": "GetStubData",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetTransparentProxy()",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.CreateProxy(System.Runtime.Remoting.ObjRef, System.Type, object, System.Runtime.Remoting.Contexts.Context)",
             "Name": "CreateProxy",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Namespace",
+            "Value": "System.Runtime.Remoting.Proxies",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -93,10 +192,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(System.Guid)",
             "Name": "SupportsInterface",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -109,16 +214,86 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.Runtime.Remoting.Proxies",
             "Name": "System.Runtime.Remoting.Proxies",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.CreateProxy(System.Runtime.Remoting.ObjRef, System.Type, object, System.Runtime.Remoting.Contexts.Context)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.CreateObjRef(System.Type)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetCOMIUnknown(bool)",
+            "Name": "GetCOMIUnknown",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.DetachServer()",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.RealProxy(System.Type, System.IntPtr, object)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -128,9 +303,180 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetCOMIUnknown(bool)",
-            "Name": "GetCOMIUnknown",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.ProxyAttribute()",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.AttachServer(System.MarshalByRefobject)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.SetStubData(System.Runtime.Remoting.Proxies.RealProxy, object)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.Invoke(System.Runtime.Remoting.Messaging.IMessage)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(System.Guid)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance(System.Type)",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetUnwrappedServer()",
+            "Reference": "System.Runtime.Remoting.Proxies",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

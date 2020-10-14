@@ -1,6 +1,7 @@
 {
     "Name": "System.Runtime.Remoting.MetadataServices",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Runtime.Remoting.MetadataServices"
@@ -12,11 +13,27 @@
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.Runtime.Remoting.MetadataServices": {
+                "Type": "SDK",
+                "Name": "System.Runtime.Remoting.MetadataServices"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.SdlChannelSinkProvider()",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,15 +42,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.get_NextChannelSink()",
-            "Name": "get_NextChannelSink",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceStreamToAssemblyFile(System.Collections.ArrayList, string, string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -42,66 +59,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.get_Properties()",
-            "Name": "get_Properties",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream(System.Runtime.Remoting.MetadataServices.ServiceType[], System.Runtime.Remoting.MetadataServices.SdlType, System.IO.Stream)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.MetadataServices.ServiceType..ctor(System.Type,string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Runtime.Remoting.MetadataServices",
-            "Name": "System.Runtime.Remoting.MetadataServices",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToFile(string,string)",
-            "Name": "RetrieveSchemaFromUrlToFile",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -111,9 +77,9 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.MetadataServices.ServiceType.ServiceType(System.Type)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -127,10 +93,50 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)",
-            "Name": "CreateSink",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.get_NextChannelSink()",
+            "Name": "get_NextChannelSink",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.SdlChannelSink(System.Runtime.Remoting.Channels.IChannelReceiver, System.Runtime.Remoting.Channels.IServerChannelSink)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Type[], System.Runtime.Remoting.MetadataServices.SdlType, string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(bool, string, System.IO.Stream, System.Collections.ArrayList, string, string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -144,15 +150,21 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Runtime.Remoting.MetadataServices.ServiceType[], System.Runtime.Remoting.MetadataServices.SdlType, string)",
-            "Name": "ConvertTypesToSchemaToFile",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.get_Properties()",
+            "Name": "get_Properties",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.ServiceType..ctor(System.Type,string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -161,15 +173,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.SdlChannelSinkProvider()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(bool, string, System.IO.Stream, System.Collections.ArrayList, string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -179,9 +191,9 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.MetadataServices.ServiceType.get_ObjectType()",
-            "Name": "get_ObjectType",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -195,10 +207,242 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.ServiceType..ctor(System.Type,string)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.set_Next(System.Runtime.Remoting.Channels.IServerChannelSinkProvider)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "System.Runtime.Remoting.MetadataServices",
+            "Name": "System.Runtime.Remoting.MetadataServices",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.get_Next()",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToFile(string,string)",
+            "Name": "RetrieveSchemaFromUrlToFile",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.ProcessMessage(System.Runtime.Remoting.Channels.IServerChannelSinkStack, System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Channels.ITransportHeaders, System.IO.Stream, System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Channels.ITransportHeaders, System.IO.Stream)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.ServiceType.ServiceType(System.Type)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)",
+            "Name": "CreateSink",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.get_Properties()",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Runtime.Remoting.MetadataServices.ServiceType[], System.Runtime.Remoting.MetadataServices.SdlType, string)",
+            "Name": "ConvertTypesToSchemaToFile",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.ServiceType.get_Url()",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.SdlChannelSinkProvider()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.SdlChannelSinkProvider(System.Collections.IDictionary, System.Collections.ICollection)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.GetResponseStream(System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack, object, System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Channels.ITransportHeaders)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.ServiceType.get_ObjectType()",
+            "Name": "get_ObjectType",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Namespace",
+            "Value": "System.Runtime.Remoting.MetadataServices",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(bool,string,System.IO.Stream,System.Collections.ArrayList)",
             "Name": "ConvertSchemaStreamToCodeSourceStream",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.AsyncProcessResponse(System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack, object, System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Channels.ITransportHeaders, System.IO.Stream)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -212,6 +456,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.MetadataServices.SUDSParserException.SUDSParserException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
             "Name": ".ctor",
             "KeyType": "",
@@ -221,6 +466,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToFile(string,string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -229,6 +484,59 @@
         },
         {
             "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToStream(string, System.IO.Stream)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.SaveStreamToFile(System.IO.Stream, string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceFileToAssemblyFile(string, string, string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.ProcessMessage(System.Runtime.Remoting.Channels.IServerChannelSinkStack, System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Channels.ITransportHeaders, System.IO.Stream, System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Channels.ITransportHeaders, System.IO.Stream)",
             "Name": "ProcessMessage",
             "KeyType": "",
@@ -238,6 +546,119 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Runtime.Remoting.MetadataServices.ServiceType[], System.Runtime.Remoting.MetadataServices.SdlType, string)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.SUDSGeneratorException.SUDSGeneratorException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.SdlChannelSink.get_NextChannelSink()",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream(System.Type[], System.Runtime.Remoting.MetadataServices.SdlType, System.IO.Stream)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(bool,string,System.IO.Stream,System.Collections.ArrayList)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.MetaData.MetaData()",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.MetadataServices.SUDSParserException.SUDSParserException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.Runtime.Remoting.MetadataServices",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []

@@ -1,6 +1,7 @@
 {
     "Name": "System.Web.Routing",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Web.Routing"
@@ -12,130 +13,27 @@
             "Name": "get_RouteHandler",
             "KeyType": "",
             "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
+=======
+    "Packages": [
+        {
+            "System.Web.Routing": {
+                "Type": "SDK",
+                "Name": "System.Web.Routing"
+            }
+        }
+    ],
+    "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Web.Routing.RouteValueDictionary.Clear()",
-            "Name": "Clear",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Routing.UrlRoutingHandler.UrlRoutingHandler()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Routing.IRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)",
-            "Name": "GetHttpHandler",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Routing.RouteBase.set_RouteExistingFiles(bool)",
-            "Name": "set_RouteExistingFiles",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Routing.StopRoutingHandler.StopRoutingHandler()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Routing.Route.get_Url()",
-            "Name": "get_Url",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Routing.Route.set_DataTokens(System.Web.Routing.RouteValueDictionary)",
-            "Name": "set_DataTokens",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Routing.RouteBase.RouteBase()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -145,14 +43,14 @@
         {
             "Type": "Method",
             "Value": "System.Web.Routing.RouteData.RouteData(System.Web.Routing.RouteBase, System.Web.Routing.IRouteHandler)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -161,15 +59,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Routing.RouteCollection.SetItem(int, System.Web.Routing.RouteBase)",
-            "Name": "SetItem",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Routing.VirtualPathData.get_Route()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -178,15 +76,1064 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Routing.RouteData.get_Route()",
-            "Name": "get_Route",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Routing.RequestContext.RequestContext(System.Web.HttpContextBase, System.Web.Routing.RouteData)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.ContainsKey(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.GetRouteData(System.Web.HttpContextBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.Add(string, System.Web.Routing.RouteBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteData.RouteData()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.UrlRoutingModule.get_RouteCollection()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.VirtualPathData.get_DataTokens()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteBase.GetVirtualPath(System.Web.Routing.RequestContext, System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.get_DataTokens()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.HttpMethodConstraint.System.Web.Routing.IRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteBase.get_RouteExistingFiles()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext, System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RequestContext.RouteData.get_RouteData()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string,object>>.Remove(System.Collections.Generic.KeyValuePair{string, object})",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(System.Collections.Generic.KeyValuePair{string, object}[], int)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string,object>>.Contains(System.Collections.Generic.KeyValuePair{string, object})",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string,object>>.get_IsReadOnly()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteTable.get_Routes()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Values()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.GetWriteLock()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.UrlRoutingHandler.get_IsReusable()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.set_LowercaseUrls(bool)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono45"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.PageRouteHandler.PageRouteHandler(string, bool)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.set_Item(string, object)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Keys()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.MapPageRoute(string, string, string, bool, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.UrlRoutingHandler.set_RouteCollection(System.Web.Routing.RouteCollection)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string,object>>.CopyTo(System.Collections.Generic.KeyValuePair{string,object}[],int)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.HttpMethodConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.get_Url()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove(System.Collections.Generic.KeyValuePair{string, object})",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.Clear()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.get_Item(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.set_RouteExistingFiles(bool)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.MapPageRoute(string, string, string, bool)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteData.GetRequiredString(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.LowercaseUrls.get_LowercaseUrls()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono45"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.VirtualPathData.VirtualPathData(System.Web.Routing.RouteBase, string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.get_RouteExistingFiles()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Web.Routing",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteBase.set_RouteExistingFiles(bool)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteTable.RouteTable()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.UrlRoutingHandler.ProcessRequest(System.Web.HttpContextBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.Route(string, System.Web.Routing.IRouteHandler)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.IEnumerable.GetEnumerator()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RequestContext.set_HttpContext(System.Web.HttpContextBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.set_Defaults(System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.Route(string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary, System.Web.Routing.IRouteHandler)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.RouteValueDictionary(object)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary<string,object>.get_Keys()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.get_Item(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.VirtualPathData.set_Route(System.Web.Routing.RouteBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.GetEnumerator()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.set_DataTokens(System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteBase.GetRouteData(System.Web.HttpContextBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.RouteCollection(System.Web.Hosting.VirtualPathProvider)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.get_Count()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.Values.get_Values()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteData.set_Route(System.Web.Routing.RouteBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.UrlRoutingModule.System.Web.IHttpModule.Dispose()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.IRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.PageRouteHandler.GetSubstitutedVirtualPath(System.Web.Routing.RequestContext)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.set_RouteHandler(System.Web.Routing.IRouteHandler)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -196,9 +1143,485 @@
         {
             "Type": "Method",
             "Value": "System.Web.Routing.UrlRoutingModule.Init(System.Web.HttpApplication)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.PageRouteHandler.PageRouteHandler(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.Route(string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.IRouteHandler)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.UrlRoutingHandler.System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.ContainsValue(object)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteData.get_Values()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.Route(string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary, System.Web.Routing.IRouteHandler)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.RouteValueDictionary()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteData.RouteHandler.get_RouteHandler()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.Add(string, object)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.VirtualPathData.get_VirtualPath()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.set_Constraints(System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteValueDictionary.Clear()",
+            "Name": "Clear",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add(System.Collections.Generic.KeyValuePair{string, object})",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.IRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)",
+            "Name": "GetHttpHandler",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.PageRouteHandler.get_VirtualPath()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteBase.set_RouteExistingFiles(bool)",
+            "Name": "set_RouteExistingFiles",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.Route.ProcessConstraint(System.Web.HttpContextBase, object, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.StopRoutingHandler.StopRoutingHandler()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.RouteValueDictionary(System.Collections.Generic.IDictionary{string, object})",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.Route.get_Url()",
+            "Name": "get_Url",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteCollection.ClearItems()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.Route.set_DataTokens(System.Web.Routing.RouteValueDictionary)",
+            "Name": "set_DataTokens",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RequestContext.RequestContext()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteBase.RouteBase()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteCollection.RemoveItem(int)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteData.RouteData(System.Web.Routing.RouteBase, System.Web.Routing.IRouteHandler)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.Route.get_RouteHandler()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteCollection.SetItem(int, System.Web.Routing.RouteBase)",
+            "Name": "SetItem",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains(System.Collections.Generic.KeyValuePair{string, object})",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteData.get_Route()",
+            "Name": "get_Route",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.HttpMethodConstraint.get_AllowedMethods()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.UrlRoutingModule.Init(System.Web.HttpApplication)",
             "Name": "Init",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.UrlRoutingHandler.System.Web.IHttpHandler.get_IsReusable()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -213,9 +1636,31 @@
         {
             "Type": "Method",
             "Value": "System.Web.Routing.HttpMethodConstraint.HttpMethodConstraint(string[])",
+<<<<<<< HEAD
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.Route.set_Url(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -229,10 +1674,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteCollection.GetReadLock()",
             "Name": "GetReadLock",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.get_Keys()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -246,6 +1697,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteValueDictionary.ContainsKey(string)",
             "Name": "ContainsKey",
             "KeyType": "",
@@ -255,6 +1707,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string,object>>.GetEnumerator()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -263,10 +1725,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RequestContext.set_RouteData(System.Web.Routing.RouteData)",
             "Name": "set_RouteData",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.UrlRoutingHandler.ProcessRequest(System.Web.HttpContext)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -280,6 +1748,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteValueDictionary.TryGetValue(string, object)",
             "Name": "TryGetValue",
             "KeyType": "",
@@ -289,6 +1758,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteCollection.set_AppendTrailingSlash(bool)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono45"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -297,6 +1777,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteTable.get_Routes()",
             "Name": "get_Routes",
             "KeyType": "",
@@ -306,6 +1787,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RequestContext.get_HttpContext()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -314,10 +1806,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RequestContext.get_HttpContext()",
             "Name": "get_HttpContext",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.UrlRoutingModule.PostMapRequestHandler(System.Web.HttpContextBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -331,10 +1829,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.UrlRoutingHandler.ProcessRequest(System.Web.HttpContext)",
             "Name": "ProcessRequest",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext, string, System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -348,10 +1852,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.HttpMethodConstraint.get_AllowedMethods()",
             "Name": "get_AllowedMethods",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteCollection.InsertItem(int, System.Web.Routing.RouteBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -365,6 +1875,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RequestContext.RouteData.get_RouteData()",
             "Name": "get_RouteData",
             "KeyType": "",
@@ -374,6 +1885,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteCollection.Ignore(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -382,10 +1904,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.PageRouteHandler.get_CheckPhysicalUrlAccess()",
             "Name": "get_CheckPhysicalUrlAccess",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.Route.GetVirtualPath(System.Web.Routing.RequestContext, System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -399,10 +1927,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.Route.get_Constraints()",
             "Name": "get_Constraints",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.UrlRoutingHandler.get_RouteCollection()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -416,10 +1950,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.StopRoutingHandler.GetHttpHandler(System.Web.Routing.RequestContext)",
             "Name": "GetHttpHandler",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteData.get_DataTokens()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -433,10 +1973,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.Route.get_Defaults()",
             "Name": "get_Defaults",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.VirtualPathData.set_VirtualPath(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -450,6 +1996,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.UrlRoutingModule.Dispose()",
             "Name": "Dispose",
             "KeyType": "",
@@ -459,6 +2006,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteCollection.MapPageRoute(string, string, string, bool, System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -467,6 +2025,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteCollection.MapPageRoute(string, string, string, bool)",
             "Name": "MapPageRoute",
             "KeyType": "",
@@ -476,6 +2035,50 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.StopRoutingHandler.StopRoutingHandler()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.Ignore(string, object)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.StopRoutingHandler.GetHttpHandler(System.Web.Routing.RequestContext)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -485,14 +2088,14 @@
         {
             "Type": "Method",
             "Value": "System.Web.Routing.Route.GetRouteData(System.Web.HttpContextBase)",
-            "Name": "GetRouteData",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -501,15 +2104,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Routing.RouteValueDictionary.get_Item(string)",
-            "Name": "get_Item",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string,object>>.Add(System.Collections.Generic.KeyValuePair{string, object})",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -518,32 +2120,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Routing.RouteData.get_DataTokens()",
-            "Name": "get_DataTokens",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Web.Routing.RouteValueDictionary.TryGetValue(string, object)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Routing.RouteValueDictionary.Add(string, object)",
-            "Name": "Add",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -553,9 +2138,33 @@
         {
             "Type": "Method",
             "Value": "System.Web.Routing.UrlRoutingHandler.VerifyAndProcessRequest(System.Web.IHttpHandler, System.Web.HttpContextBase)",
-            "Name": "VerifyAndProcessRequest",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.Route.GetRouteData(System.Web.HttpContextBase)",
+            "Name": "GetRouteData",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.UrlRoutingModule.System.Web.IHttpModule.Init(System.Web.HttpApplication)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -569,6 +2178,105 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteValueDictionary.get_Item(string)",
+            "Name": "get_Item",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteData.get_Route()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteData.get_DataTokens()",
+            "Name": "get_DataTokens",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.StopRoutingHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.RouteValueDictionary.Add(string, object)",
+            "Name": "Add",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.UrlRoutingModule.Dispose()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Web.Routing.UrlRoutingHandler.VerifyAndProcessRequest(System.Web.IHttpHandler, System.Web.HttpContextBase)",
+            "Name": "VerifyAndProcessRequest",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(System.Web.HttpContextBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Keys()",
             "Name": "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Keys",
             "KeyType": "",
@@ -578,6 +2286,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_IsReadOnly()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -586,6 +2305,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.VirtualPathData.VirtualPathData(System.Web.Routing.RouteBase, string)",
             "Name": ".ctor",
             "KeyType": "",
@@ -595,6 +2315,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteData.set_RouteHandler(System.Web.Routing.IRouteHandler)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -603,6 +2334,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.PageRouteHandler.GetSubstitutedVirtualPath(System.Web.Routing.RequestContext)",
             "Name": "GetSubstitutedVirtualPath",
             "KeyType": "",
@@ -612,6 +2344,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.IRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -620,10 +2363,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.Route.ProcessConstraint(System.Web.HttpContextBase, object, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)",
             "Name": "ProcessConstraint",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.PageRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -637,6 +2386,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(System.Collections.Generic.KeyValuePair{string, object}[], int)",
             "Name": "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo",
             "KeyType": "",
@@ -646,6 +2396,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteCollection.get_AppendTrailingSlash()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45",
+                        "mono45"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -654,6 +2415,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.UrlRoutingModule.UrlRoutingModule()",
             "Name": ".ctor",
             "KeyType": "",
@@ -663,6 +2425,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.GetEnumerator()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -671,6 +2443,42 @@
         },
         {
             "Type": "Method",
+            "Value": "System.Web.Routing.RequestContext.set_RouteData(System.Web.Routing.RouteData)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteCollection.MapPageRoute(string, string, string, bool, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.UrlRoutingHandler.System.Web.IHttpHandler.get_IsReusable()",
             "Name": "System.Web.IHttpHandler.get_IsReusable",
             "KeyType": "",
@@ -680,6 +2488,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.RouteCollection.MapPageRoute(string,string,string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -688,10 +2507,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(System.Web.HttpContextBase)",
             "Name": "PostResolveRequestCache",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteCollection.RouteCollection()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -705,10 +2530,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.UrlRoutingModule.System.Web.IHttpModule.Dispose()",
             "Name": "System.Web.IHttpModule.Dispose",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteValueDictionary.Remove(string)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -722,10 +2553,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_IsReadOnly()",
             "Name": "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_IsReadOnly",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteBase.RouteBase()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -738,6 +2575,7 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.Web.Routing",
             "Name": "System.Web.Routing",
@@ -748,6 +2586,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Type": "Method",
+            "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary<string,object>.get_Values()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -756,6 +2605,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.Route.get_DataTokens()",
             "Name": "get_DataTokens",
             "KeyType": "",
@@ -765,6 +2615,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.Route.get_Constraints()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -773,6 +2634,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteCollection.set_LowercaseUrls(bool)",
             "Name": "set_LowercaseUrls",
             "KeyType": "",
@@ -782,6 +2644,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.UrlRoutingModule.UrlRoutingModule()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -790,10 +2663,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteCollection.Ignore(string, object)",
             "Name": "Ignore",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteCollection.GetReadLock()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -807,10 +2686,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteCollection.set_RouteExistingFiles(bool)",
             "Name": "set_RouteExistingFiles",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.RouteCollection.SetItem(int, System.Web.Routing.RouteBase)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -824,6 +2709,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Values()",
             "Name": "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Values",
             "KeyType": "",
@@ -833,6 +2719,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.UrlRoutingModule.set_RouteCollection(System.Web.Routing.RouteCollection)",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -841,6 +2738,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.RouteData.GetRequiredString(string)",
             "Name": "GetRequiredString",
             "KeyType": "",
@@ -850,6 +2748,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Web.Routing.PageRouteHandler.get_CheckPhysicalUrlAccess()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -858,10 +2767,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Web.Routing.Route.Route(string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.IRouteHandler)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Web.Routing.Route.get_Defaults()",
+            "Reference": "System.Web.Routing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

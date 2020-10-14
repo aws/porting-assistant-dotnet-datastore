@@ -1,6 +1,7 @@
 {
     "Name": "System.Runtime.Remoting.Metadata",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Runtime.Remoting.Metadata"
@@ -12,11 +13,29 @@
             "Name": "System.Runtime.Remoting.Metadata",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.Runtime.Remoting.Metadata": {
+                "Type": "SDK",
+                "Name": "System.Runtime.Remoting.Metadata"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_SoapAction(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,49 +44,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_SoapOptions(System.Runtime.Remoting.Metadata.SoapOption)",
-            "Name": "set_SoapOptions",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.set_XmlNamespace(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.SoapAttribute()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_XmlTypeName(string)",
-            "Name": "set_XmlTypeName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -77,14 +64,16 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_XmlTypeName()",
-            "Name": "get_XmlTypeName",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -94,9 +83,142 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_XmlElementName(string)",
-            "Name": "set_XmlElementName",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_XmlElementName()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_XmlTypeNamespace()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_SoapAction()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_UseAttribute(bool)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_XmlNamespace()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.get_Embedded()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapFieldAttribute.get_Order()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -110,15 +232,271 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_UseAttribute()",
-            "Name": "get_UseAttribute",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_SoapOptions(System.Runtime.Remoting.Metadata.SoapOption)",
+            "Name": "set_SoapOptions",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_ResponseXmlNamespace()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.get_UseAttribute()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.SoapAttribute()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_ResponseXmlElementName(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_ResponseXmlElementName()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_XmlFieldOrder()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapFieldAttribute.get_XmlElementName()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_XmlNamespace()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapFieldAttribute.IsInteropXmlElement()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_XmlTypeName(string)",
+            "Name": "set_XmlTypeName",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_ReturnXmlElementName()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_XmlTypeName()",
+            "Name": "get_XmlTypeName",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.SoapTypeAttribute()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_XmlElementName(string)",
+            "Name": "set_XmlElementName",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.SoapMethodAttribute()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_UseAttribute()",
+            "Name": "get_UseAttribute",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_XmlNamespace(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_UseAttribute(bool)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -128,9 +506,9 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.set_Embedded(bool)",
-            "Name": "set_Embedded",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -144,10 +522,115 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.set_Embedded(bool)",
+            "Name": "set_Embedded",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_SoapOptions()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_XmlNamespace(string)",
             "Name": "set_XmlNamespace",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_ReturnXmlElementName(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.set_UseAttribute(bool)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapFieldAttribute.set_Order(int)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_ResponseXmlNamespace(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.SoapAttribute()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -177,11 +660,56 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Metadata.SoapFieldAttribute.get_Order()",
             "Name": "get_Order",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Namespace",
+            "Value": "System.Runtime.Remoting.Metadata",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_XmlNamespace(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_SoapOptions(System.Runtime.Remoting.Metadata.SoapOption)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -195,10 +723,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.SoapTypeAttribute()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlTypeNamespace.set_XmlTypeNamespace(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -212,10 +746,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.get_UseAttribute()",
             "Name": "get_UseAttribute",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapFieldAttribute.set_XmlElementName(string)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -229,10 +769,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_XmlNamespace()",
             "Name": "get_XmlNamespace",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapParameterAttribute.SoapParameterAttribute()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -246,10 +792,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapParameterAttribute.SoapParameterAttribute()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.get_UseAttribute()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -263,10 +815,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_ResponseXmlNamespace(string)",
             "Name": "set_ResponseXmlNamespace",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapAttribute.get_XmlNamespace()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -280,10 +838,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_XmlNamespace(string)",
             "Name": "set_XmlNamespace",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.get_UseAttribute()",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -314,10 +878,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Metadata.SoapMethodAttribute.set_ReturnXmlElementName(string)",
             "Name": "set_ReturnXmlElementName",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Runtime.Remoting.Metadata.SoapTypeAttribute.set_XmlFieldOrder(System.Runtime.Remoting.Metadata.XmlFieldOrderOption)",
+            "Reference": "System.Runtime.Remoting.Metadata",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

@@ -1,11 +1,39 @@
 {
     "Name": "System.Activities.Presentation.Annotations",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Activities.Presentation.Annotations"
     },
     "Recommendations": [
+=======
+    "Packages": [
+        {
+            "System.Activities.Presentation.Annotations": {
+                "Type": "SDK",
+                "Name": "System.Activities.Presentation.Annotations"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Namespace",
+            "Value": "System.Activities.Presentation.Annotations",
+            "Reference": "System.Activities.Presentation.Annotations",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+>>>>>>> master
         {
             "Type": "Method",
             "Value": "System.Activities.Presentation.Annotations.Annotation.GetAnnotationText(object)",

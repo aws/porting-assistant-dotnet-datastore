@@ -1,6 +1,7 @@
 {
     "Name": "System.ServiceModel.Web",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.ServiceModel.Web"
@@ -17,6 +18,29 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+    "Packages": [
+        {
+            "System.ServiceModel.Web": {
+                "Type": "SDK",
+                "Name": "System.ServiceModel.Web"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_ETag()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,15 +49,120 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.WebGetAttribute.UriTemplate.set_UriTemplate(string)",
-            "Name": "set_UriTemplate",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_ContentLength(long)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebServiceHost..ctor()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_Accept()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_IfModifiedSince(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.ContentType.set_ContentType(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.UserAgent.set_UserAgent(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -43,14 +172,14 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(Binding)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -59,15 +188,109 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.set_UriTemplateMatch(System.UriTemplateMatch)",
-            "Name": "set_UriTemplateMatch",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_IfMatch()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.set_UriTemplate(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(System.Guid)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebFaultException<T>.WebFaultException<T>(T, HttpStatusCode)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.UriTemplate.set_UriTemplate(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_SuppressEntityBody(bool)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -77,14 +300,17 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Web.WebInvokeAttribute.set_RequestFormat(System.ServiceModel.Web.WebMessageFormat)",
-            "Name": "set_RequestFormat",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -93,15 +319,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(long)",
-            "Name": "CheckConditionalUpdate",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -110,15 +336,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_ContentType()",
-            "Name": "get_ContentType",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.WebOperationContext.GetUriTemplate(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -127,15 +353,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_BindingWriteEncoding()",
-            "Name": "get_BindingWriteEncoding",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.WebFaultException<T>.get_StatusCode()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -144,15 +370,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)",
-            "Name": "AddBindingParameters",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.Action{System.IO.TextWriter}, string, System.Text.Encoding)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -161,15 +387,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_IsRequestFormatSetExplicitly()",
-            "Name": "get_IsRequestFormatSetExplicitly",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -178,15 +404,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.WebInvokeAttribute.WebInvokeAttribute()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(ServiceEndpoint)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -195,15 +421,18 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_Headers()",
-            "Name": "get_Headers",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_Headers()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -212,15 +441,16 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)",
-            "Name": "Detach",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.WebOperationContext.Current.get_Current()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -229,15 +459,165 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.get_UrlParameterName()",
-            "Name": "get_UrlParameterName",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_ContentType(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_Method()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription, System.ServiceModel.Description.ServiceEndpoint, System.ServiceModel.Dispatcher.DispatchRuntime)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_Accept()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_IfUnmodifiedSince()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_ContentLength()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsNotFound(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_BodyStyle()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.Location.set_Location(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -247,9 +627,1376 @@
         {
             "Type": "Method",
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.IfNoneMatch.get_IfNoneMatch()",
-            "Name": "get_IfNoneMatch",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription, System.ServiceModel.Description.ServiceEndpoint, System.ServiceModel.Dispatcher.ClientRuntime)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.set_BodyStyle(System.ServiceModel.Web.WebMessageBodyStyle)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_RequestFormat()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.get_IncomingRequest()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.IOperationContractAttributeProvider.GetOperationContractAttribute()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(string, Uri)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.set_BodyStyle(System.ServiceModel.Web.WebMessageBodyStyle)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebServiceHost.OnOpening()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateJsonResponse<T>(T)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_Headers()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat.get_ResponseFormat()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_ContentType()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_LastModified(System.DateTime)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.get_UrlParameterName()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_StatusDescription(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System.ServiceModel.Administration.IWmiInstance)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_IsResponseFormatSetExplicitly()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.ServiceModel.Channels.StreamBodyWriter, string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_IfModifiedSince()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.AspNetCacheProfileAttribute(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebFaultException.WebFaultException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.get_IsRequestFormatSetExplicitly()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.get_RequestFormat()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_ContentType()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_SuppressEntityBody()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_SuppressEntityBody(bool)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.IOperationContractAttributeProvider.GetOperationContractAttribute()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.set_Method(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(Uri)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationItem)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_ContentLength()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.get_IsBodyStyleSetExplicitly()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.get_OutgoingRequest()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.get_ResponseFormat()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.DispatchOperation)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateXmlResponse<T>(``0,System.Runtime.Serialization.XmlObjectSerializer)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.IO.Stream, string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(long)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.get_CacheProfileName()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(long)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateXmlResponse<T>(T, XmlSerializer)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_Headers()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.Method.get_Method()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.IfNoneMatch.set_IfNoneMatch(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_IfUnmodifiedSince()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_LastModified()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(int)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(long)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateJsonResponse<T>(T, DataContractJsonSerializer)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebFaultException<T>.WebFaultException<T>(T, HttpStatusCode, IEnumerable<Type>)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.WebGetAttribute()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Channels.BindingParameterCollection)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateXmlResponse(System.Xml.Linq.XElement)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(Type)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.DispatchOperation)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.get_IncomingResponse()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.Action{System.IO.Stream}, string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(Binding, Uri)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_ContentLength(long)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_StatusCode()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_BindingWriteEncoding()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat.set_ResponseFormat(System.ServiceModel.Web.WebMessageFormat)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebGetAttribute.get_UriTemplate()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsNotFound()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.WebGetAttribute.UriTemplate.set_UriTemplate(string)",
+            "Name": "set_UriTemplate",
             "KeyType": "",
             "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_ContentLength()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(Binding)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_ContentType()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -263,10 +2010,414 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.set_UriTemplateMatch(System.UriTemplateMatch)",
+            "Name": "set_UriTemplateMatch",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.DateTime)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_Location()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebServiceHost..ctor(System.Type,System.Uri[])",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.SuppressEntityBody.get_SuppressEntityBody()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.set_RequestFormat(System.ServiceModel.Web.WebMessageFormat)",
+            "Name": "set_RequestFormat",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.JavascriptCallbackBehaviorAttribute()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(long)",
+            "Name": "CheckConditionalUpdate",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_IfUnmodifiedSince(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_ContentType()",
+            "Name": "get_ContentType",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.Action{System.IO.TextWriter}, string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_BindingWriteEncoding()",
+            "Name": "get_BindingWriteEncoding",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_IsRequestFormatSetExplicitly()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)",
+            "Name": "AddBindingParameters",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebGetAttribute.get_IsResponseFormatSetExplicitly()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_IsRequestFormatSetExplicitly()",
+            "Name": "get_IsRequestFormatSetExplicitly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_ETag(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.WebInvokeAttribute()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.OnOpening()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_Headers()",
+<<<<<<< HEAD
+            "Name": "get_Headers",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)",
+            "Name": "Detach",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_StatusCode()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.get_UrlParameterName()",
+            "Name": "get_UrlParameterName",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_UserAgent()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.IfNoneMatch.get_IfNoneMatch()",
+            "Name": "get_IfNoneMatch",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_ContentLength()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebFaultException.get_StatusCode()",
             "Name": "get_StatusCode",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_Accept(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -280,10 +2431,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebFaultException<T>.GetObjectData(SerializationInfo, StreamingContext)",
             "Name": "GetObjectData",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebFaultException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -297,6 +2454,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Channels.BindingParameterCollection)",
             "Name": "System.ServiceModel.Description.IOperationBehavior.AddBindingParameters",
             "KeyType": "",
@@ -323,6 +2481,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_Format(System.Nullable{System.ServiceModel.Web.WebMessageFormat})",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -331,10 +2500,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription, System.ServiceModel.Description.ServiceEndpoint, System.ServiceModel.Dispatcher.ClientRuntime)",
             "Name": "ApplyClientBehavior",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Channels.BindingParameterCollection)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -348,6 +2523,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.get_CacheProfileName()",
             "Name": "get_CacheProfileName",
             "KeyType": "",
@@ -357,6 +2533,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebFaultException.WebFaultException(System.Net.HttpStatusCode)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -365,6 +2552,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_ContentType()",
             "Name": "get_ContentType",
             "KeyType": "",
@@ -374,6 +2562,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_IfNoneMatch()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -382,6 +2584,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_IfMatch(string)",
             "Name": "set_IfMatch",
             "KeyType": "",
@@ -391,6 +2594,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationFeed)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -399,6 +2613,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_UserAgent()",
             "Name": "get_UserAgent",
             "KeyType": "",
@@ -408,6 +2623,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_Method(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -416,6 +2645,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.get_IsResponseFormatSetExplicitly()",
             "Name": "get_IsResponseFormatSetExplicitly",
             "KeyType": "",
@@ -425,6 +2655,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_IfModifiedSince()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -433,6 +2674,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_ETag(string)",
             "Name": "set_ETag",
             "KeyType": "",
@@ -442,6 +2684,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -450,10 +2703,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>(string, Uri)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebServiceHost.WebServiceHost(object, System.Uri[])",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -467,10 +2726,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsNotFound()",
             "Name": "SetStatusAsNotFound",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.Guid)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -484,10 +2749,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_RequestFormat()",
             "Name": "get_RequestFormat",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_StatusDescription()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -501,10 +2772,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.DispatchOperation)",
             "Name": "System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_StatusCode(System.Net.HttpStatusCode)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -518,10 +2795,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_UriTemplate()",
             "Name": "get_UriTemplate",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(int)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -534,6 +2817,7 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(long)",
             "Name": "SetETag",
@@ -544,6 +2828,21 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Type": "Namespace",
+            "Value": "System.ServiceModel.Web",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -552,6 +2851,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_StatusCode()",
             "Name": "get_StatusCode",
             "KeyType": "",
@@ -561,6 +2861,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.UriTemplateMatch.get_UriTemplateMatch()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -569,6 +2880,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationItem)",
             "Name": "CreateAtom10Response",
             "KeyType": "",
@@ -578,6 +2890,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -585,11 +2908,18 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.ServiceModel.Web",
             "Name": "System.ServiceModel.Web",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateXmlResponse<T>(T)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -603,6 +2933,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.WebGetAttribute()",
             "Name": ".ctor",
             "KeyType": "",
@@ -612,6 +2943,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateTextResponse(string, string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -620,6 +2962,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System.ServiceModel.Administration.IWmiInstance)",
             "Name": "System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance",
             "KeyType": "",
@@ -629,6 +2972,19 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_Location()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -637,6 +2993,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_ContentType()",
             "Name": "get_ContentType",
             "KeyType": "",
@@ -646,6 +3003,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.WebInvokeAttribute()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -654,6 +3025,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.get_IsBodyStyleSetExplicitly()",
             "Name": "get_IsBodyStyleSetExplicitly",
             "KeyType": "",
@@ -663,6 +3035,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_IfMatch()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -688,6 +3071,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.JavascriptCallbackBehaviorAttribute()",
             "Name": ".ctor",
             "KeyType": "",
@@ -697,6 +3081,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.set_UriTemplateMatch(System.UriTemplateMatch)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -705,6 +3100,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.set_ResponseFormat(System.ServiceModel.Web.WebMessageFormat)",
             "Name": "set_ResponseFormat",
             "KeyType": "",
@@ -714,6 +3110,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.Validate(System.ServiceModel.Description.OperationDescription)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -722,6 +3129,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.Action{System.IO.Stream}, string)",
             "Name": "CreateStreamResponse",
             "KeyType": "",
@@ -731,6 +3139,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.ClientOperation)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -739,6 +3161,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_Accept()",
             "Name": "get_Accept",
             "KeyType": "",
@@ -748,6 +3171,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_Format()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -756,10 +3190,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebServiceHost.OnOpening()",
             "Name": "OnOpening",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.get_OutgoingResponse()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -773,6 +3213,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.Action{System.IO.TextWriter}, string, System.Text.Encoding)",
             "Name": "CreateTextResponse",
             "KeyType": "",
@@ -782,6 +3223,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebGetAttribute.RequestFormat.set_RequestFormat(System.ServiceModel.Web.WebMessageFormat)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -790,6 +3245,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_ContentLength()",
             "Name": "get_ContentLength",
             "KeyType": "",
@@ -799,6 +3255,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_Method()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -807,6 +3277,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.IOperationContractAttributeProvider.GetOperationContractAttribute()",
             "Name": "System.ServiceModel.IOperationContractAttributeProvider.GetOperationContractAttribute",
             "KeyType": "",
@@ -816,6 +3287,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebFaultException<T>.GetObjectData(SerializationInfo, StreamingContext)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -824,6 +3306,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.set_StatusCode(System.Net.HttpStatusCode)",
             "Name": "set_StatusCode",
             "KeyType": "",
@@ -833,6 +3316,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.ServiceDocument)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono40"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -841,6 +3335,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebServiceHost..ctor(System.Type,System.Uri[])",
             "Name": ".ctor",
             "KeyType": "",
@@ -850,6 +3345,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebGetAttribute.BodyStyle.get_BodyStyle()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -858,10 +3367,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(int)",
             "Name": "CheckConditionalUpdate",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_UriTemplate()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -875,6 +3390,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebFaultException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
             "Name": "GetObjectData",
             "KeyType": "",
@@ -884,6 +3400,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebFaultException.get_StatusCode()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -892,10 +3419,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.get_ResponseFormat()",
             "Name": "get_ResponseFormat",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.Validate(System.ServiceModel.Description.ContractDescription, System.ServiceModel.Description.ServiceEndpoint)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -909,6 +3442,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_ContentLength(long)",
             "Name": "set_ContentLength",
             "KeyType": "",
@@ -918,6 +3452,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateTextResponse(string, string, System.Text.Encoding)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -926,6 +3471,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.get_IsRequestFormatSetExplicitly()",
             "Name": "get_IsRequestFormatSetExplicitly",
             "KeyType": "",
@@ -935,6 +3481,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.DispatchOperation)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -943,10 +3503,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebOperationContext.get_IncomingRequest()",
             "Name": "get_IncomingRequest",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsCreated(System.Uri)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -960,10 +3526,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebInvokeAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)",
             "Name": "System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.GetAcceptHeaderElements()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -977,6 +3549,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_IfModifiedSince(string)",
             "Name": "set_IfModifiedSince",
             "KeyType": "",
@@ -986,6 +3559,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebGetAttribute.set_ResponseFormat(System.ServiceModel.Web.WebMessageFormat)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -994,6 +3581,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.ServiceModel.Channels.StreamBodyWriter, string)",
             "Name": "CreateStreamResponse",
             "KeyType": "",
@@ -1003,6 +3591,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_ETag()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1011,6 +3610,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.ClientOperation)",
             "Name": "System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior",
             "KeyType": "",
@@ -1020,6 +3620,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System.ServiceModel.Administration.IWmiInstance)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1028,6 +3638,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.AspNetCacheProfileAttribute(string)",
             "Name": ".ctor",
             "KeyType": "",
@@ -1037,6 +3648,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.get_StatusDescription()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1045,6 +3667,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(System.Guid)",
             "Name": "CheckConditionalUpdate",
             "KeyType": "",
@@ -1054,6 +3677,19 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebResponseContext.get_ContentType()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1062,10 +3698,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebResponseContext.Location.set_Location(string)",
             "Name": "set_Location",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.set_UrlParameterName(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -1079,6 +3721,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.get_IfModifiedSince()",
             "Name": "get_IfModifiedSince",
             "KeyType": "",
@@ -1088,6 +3731,20 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_IfMatch(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "sl4",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1096,6 +3753,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebGetAttribute.System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.DispatchOperation)",
             "Name": "System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior",
             "KeyType": "",
@@ -1105,6 +3763,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(int)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1113,6 +3782,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationFeed)",
             "Name": "CreateAtom10Response",
             "KeyType": "",
@@ -1122,6 +3792,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.AspNetCacheProfileAttribute.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription, System.ServiceModel.Dispatcher.ClientOperation)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1130,6 +3811,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebChannelFactory<TChannel>.WebChannelFactory<TChannel>()",
             "Name": ".ctor",
             "KeyType": "",
@@ -1139,6 +3821,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateTextResponse(string)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1147,10 +3840,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.set_IfUnmodifiedSince(string)",
             "Name": "set_IfUnmodifiedSince",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(System.Guid)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -1164,6 +3863,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.Validate(System.ServiceModel.Description.ContractDescription, System.ServiceModel.Description.ServiceEndpoint)",
             "Name": "Validate",
             "KeyType": "",
@@ -1173,6 +3873,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext.CreateXmlResponse(System.Xml.Linq.XDocument)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40",
+                        "mono50"
+>>>>>>> master
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -1181,10 +3892,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_Accept()",
             "Name": "get_Accept",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebOperationContext..ctor(System.ServiceModel.OperationContext)",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -1198,10 +3915,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.Guid)",
             "Name": "CheckConditionalRetrieve",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.OutgoingWebRequestContext.get_UserAgent()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -1215,10 +3938,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.ServiceModel.Web.WebOperationContext.CreateXmlResponse(System.Xml.Linq.XElement)",
             "Name": "CreateXmlResponse",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.ServiceModel.Web.WebInvokeAttribute.get_IsBodyStyleSetExplicitly()",
+            "Reference": "System.ServiceModel.Web",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

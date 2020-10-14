@@ -1,6 +1,7 @@
 {
     "Name": "System.Diagnostics.Eventing",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Diagnostics.Eventing"
@@ -12,6 +13,56 @@
             "Name": "SetActivityId",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.Diagnostics.Eventing": {
+                "Type": "SDK",
+                "Name": "System.Diagnostics.Eventing"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor, object[])",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Diagnostics.Eventing.EventDescriptor",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.get_Keywords()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -25,32 +76,21 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Diagnostics.Eventing.EventDescriptor.EventDescriptor(int, byte, byte, byte, byte, int, long)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.Eventing.EventProvider.Dispose()",
-            "Name": "Dispose",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
                     ],
                     "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
                     "Actions": []
@@ -60,9 +100,9 @@
         {
             "Type": "Method",
             "Value": "System.Diagnostics.Eventing.EventDescriptor.get_Channel()",
-            "Name": "get_Channel",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -76,10 +116,102 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Diagnostics.Eventing.EventProvider.Dispose()",
+            "Name": "Dispose",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.EventId.get_EventId()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Diagnostics.Eventing.EventProvider",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Diagnostics.Eventing",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+>>>>>>> master
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.get_Channel()",
+            "Name": "get_Channel",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor, System.Guid, int, System.IntPtr)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError()",
             "Name": "GetLastWriteEventError",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventProvider.Finalize()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -110,10 +242,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Diagnostics.Eventing.EventProvider.Finalize()",
             "Name": "Finalize",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.get_Version()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -127,10 +265,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor, System.Guid, int, System.IntPtr)",
             "Name": "WriteTransferEvent",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventProvider.Dispose()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -144,10 +288,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Diagnostics.Eventing.EventDescriptor.EventId.get_EventId()",
             "Name": "get_EventId",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor, int, System.IntPtr)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -161,10 +311,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor, object[])",
             "Name": "WriteEvent",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventProvider.IsEnabled()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -177,16 +333,23 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.Diagnostics.Eventing",
             "Name": "System.Diagnostics.Eventing",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventProvider.EventProvider(System.Guid)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
                     ],
                     "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
                     "Actions": []
@@ -194,16 +357,33 @@
             ]
         },
         {
-            "Type": "Type",
-            "Value": "System.Diagnostics.Eventing.EventProvider",
-            "Name": "System.Diagnostics.Eventing.EventProvider",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.EventDescriptor(int, byte, byte, byte, byte, int, long)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventProvider.IsEnabled(byte, long)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
                     ],
                     "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
                     "Actions": []
@@ -213,31 +393,14 @@
         {
             "Type": "Method",
             "Value": "System.Diagnostics.Eventing.EventProvider.Close()",
-            "Name": "Close",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.Eventing.EventProvider.EventProvider(System.Guid)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
                     ],
                     "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
                     "Actions": []
@@ -247,9 +410,170 @@
         {
             "Type": "Method",
             "Value": "System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor, System.Guid, object[])",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventProvider.SetActivityId(System.Guid@)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventProvider.Dispose(bool)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventProvider.WriteMessageEvent(string, byte, long)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Type",
+            "Value": "System.Diagnostics.Eventing.EventProvider",
+            "Name": "System.Diagnostics.Eventing.EventProvider",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.get_Task()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Diagnostics.Eventing.EventProvider.Close()",
+            "Name": "Close",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.get_Level()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Diagnostics.Eventing.EventProvider.EventProvider(System.Guid)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventDescriptor.get_Opcode()",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Eventing.EventProvider.WriteMessageEvent(string)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Diagnostics.Tracing.EventSource instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor, System.Guid, object[])",
             "Name": "WriteTransferEvent",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor, string)",
+            "Reference": "System.Diagnostics.Eventing",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

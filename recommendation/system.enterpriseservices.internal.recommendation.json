@@ -1,6 +1,7 @@
 {
     "Name": "System.EnterpriseServices.Internal",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.EnterpriseServices.Internal"
@@ -12,11 +13,27 @@
             "Name": "ProcessClientTlbEx",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.EnterpriseServices.Internal": {
+                "Type": "SDK",
+                "Name": "System.EnterpriseServices.Internal"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.ProcessClientTlb(string,string,string,string,string,string,string,string@,string@,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,15 +42,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(string, string, string, string)",
-            "Name": "GetServerPhysicalPath",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.UnRegisterAssembly(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -42,15 +59,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.SoapServerTlb.DeleteServerTlb(string, string, string, string, string, string, string, string, string, string)",
-            "Name": "DeleteServerTlb",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.Publish.ParseUrl(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -59,15 +76,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.IComSoapMetadata.Generate(string, string)",
-            "Name": "Generate",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -76,32 +93,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromAssembly(string, string, string)",
-            "Name": "CreateFromAssembly",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.SoapServerTlb.AddServerTlb(string, string, string, string, string, string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.Publish.GetTypeNameFromProgId(string, string)",
-            "Name": "GetTypeNameFromProgId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -111,14 +111,14 @@
         {
             "Type": "Method",
             "Value": "System.EnterpriseServices.Internal.GenerateMetadata.GenerateSigned(string, string, bool, string)",
-            "Name": "GenerateSigned",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -127,32 +127,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(string, string, string, string)",
-            "Name": "Delete",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.ISoapClientImport.ProcessClientTlbEx(string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.Publish.GetAssemblyNameForCache(string, string)",
-            "Name": "GetAssemblyNameForCache",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -162,14 +145,14 @@
         {
             "Type": "Method",
             "Value": "System.EnterpriseServices.Internal.ServerWebConfig.ServerWebConfig()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -178,15 +161,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.SoapUtility.Present()",
-            "Name": "Present",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.AssemblyLocator.AssemblyLocator()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -195,15 +178,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.IISVirtualRoot.Create(string, string, string, string)",
-            "Name": "Create",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromAssembly(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -212,15 +195,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.ServerWebConfig.Create(string, string, string)",
-            "Name": "Create",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromWsdl(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -229,15 +212,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(string, string)",
-            "Name": "GetAssemblyNameForCache",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.SoapServerVRoot.GetVirtualRootStatus(string, string, string, string, string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -246,15 +229,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.Publish.ProcessClientTlb(string,string,string,string,string,string,string,string@,string@,string@)",
-            "Name": "ProcessClientTlb",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.GenerateMetadata.GenerateMetaData(string, string, byte[], System.Reflection.StrongNameKeyPair)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -263,15 +246,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.ComManagedImportUtil.ComManagedImportUtil()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -280,15 +263,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.SoapUtility.SoapUtility()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.IComManagedImportUtil.InstallAssembly(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -297,15 +280,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.ISoapUtility.Present()",
-            "Name": "Present",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.SoapServerTlb.DeleteServerTlb(string, string, string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -314,32 +297,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(string, string, string, string, string, string, string, string, string, string, string, string, string)",
-            "Name": "AddServerTlb",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.EnterpriseServices.Internal.Publish.Publish()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.ComSoapPublishError.ComSoapPublishError()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -349,9 +315,434 @@
         {
             "Type": "Method",
             "Value": "System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(string, string, bool, string)",
-            "Name": "GenerateSigned",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.GetClientPhysicalPath(bool)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.DeleteVirtualRoot(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromVroot(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IServerWebConfig.AddElement(string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(string, string, string, string, string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.CreateMailBox(string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.SoapServerVRoot.CreateVirtualRootEx(string, string, string, string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromAssembly(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ClientRemotingConfig.ClientRemotingConfig()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromVroot(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.SoapUtility.GetServerBinPath(string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.GetTypeNameFromProgId(string,string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ISoapServerVRoot.DeleteVirtualRootEx(string,string,string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.CreateVirtualRoot(string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.ClrObjectFactory()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ISoapServerTlb.DeleteServerTlb(string, string, string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.GenerateMetadata.GenerateMetadata()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.ProcessClientTlb(string,string,string,string,string,string,string,string@,string@,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ComSoapPublishError.Report(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.UnRegisterAssembly(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.EnterpriseServices.Internal",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(string,string,string,string,string,string,string,string,string@,string@,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComManagedImportUtil.GetComponentInfo(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -365,10 +756,16 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EnterpriseServices.Internal.SoapClientImport.ProcessClientTlbEx(string, string, string, string, string, string)",
-            "Name": "ProcessClientTlbEx",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(string, string, string, string)",
+            "Name": "GetServerPhysicalPath",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -381,6 +778,822 @@
             ]
         },
         {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.SoapServerTlb.DeleteServerTlb(string, string, string, string, string, string, string, string, string, string)",
+            "Name": "DeleteServerTlb",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.SoapServerTlb.SoapServerTlb()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.IComSoapMetadata.Generate(string, string)",
+            "Name": "Generate",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.SoapServerVRoot.SoapServerVRoot()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromAssembly(string, string, string)",
+            "Name": "CreateFromAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.Publish.ProcessServerTlb(string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.Publish.GetTypeNameFromProgId(string, string)",
+            "Name": "GetTypeNameFromProgId",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.ServerWebConfig.Create(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ISoapUtility.Present()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IISVirtualRoot.Create(string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IISVirtualRoot.Delete(string,string,string,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.ProcessServerTlb(string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.GacInstall(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.GenerateMetadata.GenerateSigned(string, string, bool, string)",
+            "Name": "GenerateSigned",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.SoapClientImport.ProcessClientTlbEx(string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(string, string, string, string)",
+            "Name": "Delete",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromMailbox(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.Publish.GetAssemblyNameForCache(string, string)",
+            "Name": "GetAssemblyNameForCache",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.SoapClientImport.SoapClientImport()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapIISVRoot.Create(string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.DeleteMailBox(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.SoapServerVRoot.DeleteVirtualRootEx(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.GenerateMetadata.SearchPath(string, string, string, int, string, int[])",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.CreateMailBox(string,string,string@,string@,string@,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ServerWebConfig.ServerWebConfig()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.GacInstall(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.SoapUtility.Present()",
+            "Name": "Present",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.ComManagedImportUtil.GetComponentInfo(string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.IISVirtualRoot.Create(string, string, string, string)",
+            "Name": "Create",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.AppDomainHelper.Finalize()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ServerWebConfig.Create(string, string, string)",
+            "Name": "Create",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.Publish.GetAssemblyNameForCache(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(string, string)",
+            "Name": "GetAssemblyNameForCache",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.ServerWebConfig.AddElement(string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.Publish.ProcessClientTlb(string,string,string,string,string,string,string,string@,string@,string@)",
+            "Name": "ProcessClientTlb",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.IComSoapMetadata.Generate(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ComManagedImportUtil.ComManagedImportUtil()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.ClientRemotingConfig.Write(string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.SoapUtility.SoapUtility()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromWsdl(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ISoapUtility.Present()",
+            "Name": "Present",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.SoapUtility.GetServerPhysicalPath(string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(string, string, string, string, string, string, string, string, string, string, string, string, string)",
+            "Name": "AddServerTlb",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.GenerateMetadata.Generate(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.ComSoapPublishError.ComSoapPublishError()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.Publish.RegisterAssembly(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IISVirtualRoot..ctor()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.Publish.GacRemove(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.AppDomainHelper.AppDomainHelper()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(string, string, bool, string)",
+            "Name": "GenerateSigned",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.SoapUtility.SoapUtility()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.EnterpriseServices.Internal.SoapClientImport.ProcessClientTlbEx(string, string, string, string, string, string)",
+            "Name": "ProcessClientTlbEx",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.ComManagedImportUtil.ComManagedImportUtil()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(string,string,string@,string@,string@,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(string, string, string, string, string, string, string, string, string, string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.ComSoapPublishError.ComSoapPublishError()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.GacRemove(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.EnterpriseServices.Internal",
             "Name": "System.EnterpriseServices.Internal",
@@ -391,6 +1604,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromMailbox(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "mono20"
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -399,10 +1623,34 @@
         },
         {
             "Type": "Method",
+            "Value": "System.EnterpriseServices.Internal.SoapUtility.Present()",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+>>>>>>> master
+                    ],
+                    "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly(string, string, string)",
             "Name": "InstallAssembly",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.DeleteMailBox(string,string,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -416,10 +1664,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(string, string, string, string, string, string, string, string, string, string, string, string)",
             "Name": "GetVirtualRootStatus",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.IComSoapPublisher.RegisterAssembly(string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -433,10 +1687,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromWsdl(string, string)",
             "Name": "CreateFromWsdl",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.Publish.GetTypeNameFromProgId(string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -450,6 +1710,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.EnterpriseServices.Internal.ISoapServerTlb.DeleteServerTlb(string, string, string, string, string, string, string, string, string, string)",
             "Name": "DeleteServerTlb",
             "KeyType": "",
@@ -459,6 +1720,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.EnterpriseServices.Internal.ISoapUtility.GetServerBinPath(string, string, string, string)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework11",
+                        "mono20"
+>>>>>>> master
                     ],
                     "Description": "Enterprise Services won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -467,10 +1739,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.EnterpriseServices.Internal.Publish.CreateMailBox(string,string,string@,string@,string@,string@)",
             "Name": "CreateMailBox",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.EnterpriseServices.Internal.IServerWebConfig.Create(string,string,string@)",
+            "Reference": "System.EnterpriseServices.Internal",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

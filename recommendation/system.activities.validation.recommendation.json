@@ -1,6 +1,7 @@
 {
     "Name": "System.Activities.Validation",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Activities.Validation"
@@ -12,11 +13,26 @@
             "Name": "get_Body",
             "KeyType": "",
             "RecommendedActions": [
+=======
+    "Packages": [
+        {
+            "System.Activities.Validation": {
+                "Type": "SDK",
+                "Name": "System.Activities.Validation"
+            }
+        }
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AddValidationError.get_Message()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -25,15 +41,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Validation.ValidationResults.get_Warnings()",
-            "Name": "get_Warnings",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Activities.Validation.ValidationError.ValidationError(string, bool)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -42,66 +57,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Validation.AssertValidation.get_Assertion()",
-            "Name": "get_Assertion",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.Activities.Validation.AssertValidation.set_IsWarning(System.Activities.InArgument{bool})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Validation.AssertValidation.get_Message()",
-            "Name": "get_Message",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Validation.GetParentChain.set_ValidationContext(System.Activities.InArgument{System.Activities.Validation.ValidationContext})",
-            "Name": "set_ValidationContext",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Validation.GetWorkflowTree.GetWorkflowTree()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -111,9 +74,9 @@
         {
             "Type": "Method",
             "Value": "System.Activities.Validation.AddValidationError.IsWarning.set_IsWarning(System.Activities.InArgument{bool})",
-            "Name": "set_IsWarning",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -127,15 +90,256 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Validation.ValidationError.get_Id()",
-            "Name": "get_Id",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.ValidationResults.get_Warnings()",
+            "Name": "get_Warnings",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.Constraint<T>.Constraint<T>()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.AssertValidation.get_Assertion()",
+            "Name": "get_Assertion",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ActivityValidationServices.Resolve(System.Activities.Activity,string)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.Constraint.AddValidationError(System.Activities.NativeActivityContext,System.Activities.Validation.ValidationError)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.AssertValidation.get_Message()",
+            "Name": "get_Message",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ValidationSettings.set_SingleLevel(bool)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.GetParentChain.set_ValidationContext(System.Activities.InArgument{System.Activities.Validation.ValidationContext})",
+            "Name": "set_ValidationContext",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.GetChildSubtree.set_ValidationContext(System.Activities.InArgument{System.Activities.Validation.ValidationContext})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AssertValidation.set_Message(System.Activities.InArgument{string})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AssertValidation.get_Message()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.GetChildSubtree.get_ValidationContext()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationResults.get_Errors()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.Constraint.CacheMetadata(System.Activities.NativeActivityMetadata)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.GetWorkflowTree.GetWorkflowTree()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.AssertValidation.get_Assertion()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationSettings.set_CancellationToken(System.Threading.CancellationToken)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationError..ctor(string)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.GetWorkflowTree.get_ValidationContext()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -145,14 +349,251 @@
         {
             "Type": "Method",
             "Value": "System.Activities.Validation.ValidationError.get_Source()",
-            "Name": "get_Source",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AssertValidation.get_IsWarning()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AssertValidation.PropertyName.get_PropertyName()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.GetParentChain.get_ValidationContext()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationResults.get_Warnings()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.GetParentChain.GetParentChain()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.AddValidationError.IsWarning.set_IsWarning(System.Activities.InArgument{bool})",
+            "Name": "set_IsWarning",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ActivityValidationServices.Validate(System.Activities.Activity)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.ValidationError.get_Id()",
+            "Name": "get_Id",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.GetParentChain.set_ValidationContext(System.Activities.InArgument{System.Activities.Validation.ValidationContext})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.Constraint<T>.get_Body()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationSettings.get_Environment()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationSettings.get_CancellationToken()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.GetWorkflowTree.GetWorkflowTree()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationResults.ValidationResults(System.Collections.Generic.IList{System.Activities.Validation.ValidationError})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AssertValidation..ctor()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.GetChildSubtree.GetChildSubtree()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -162,9 +603,41 @@
         {
             "Type": "Method",
             "Value": "System.Activities.Validation.ValidationError.get_IsWarning()",
-            "Name": "get_IsWarning",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AddValidationError.AddValidationError()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationError.get_Message()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -178,6 +651,122 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.ValidationError.get_Source()",
+            "Name": "get_Source",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.Constraint.Execute(System.Activities.NativeActivityContext)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationError.get_Id()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationSettings.ValidationSettings()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationSettings.get_SkipValidatingRootConfiguration()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.AddValidationError.set_Message(System.Activities.InArgument{string})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.Activities.Validation.ValidationError.get_IsWarning()",
+            "Name": "get_IsWarning",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ActivityValidationServices.Validate(System.Activities.Activity, System.Activities.Validation.ValidationSettings)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationError.get_PropertyName()",
             "Name": "get_PropertyName",
             "KeyType": "",
@@ -187,6 +776,31 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.ValidationError.ValidationError(string, bool, string, object)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Activities.Validation",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -195,10 +809,49 @@
         },
         {
             "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationError.ToString()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationSettings.Environment.set_Environment(System.Activities.LocationReferenceEnvironment)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+>>>>>>> master
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationSettings.set_SingleLevel(bool)",
             "Name": "set_SingleLevel",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.AddValidationError.get_PropertyName()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -213,9 +866,14 @@
         {
             "Type": "Method",
             "Value": "System.Activities.Validation.AssertValidation.set_PropertyName(System.Activities.InArgument{string})",
+<<<<<<< HEAD
             "Name": "set_PropertyName",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -230,9 +888,14 @@
         {
             "Type": "Method",
             "Value": "System.Activities.Validation.AssertValidation.set_Assertion(System.Activities.InArgument{bool})",
+<<<<<<< HEAD
             "Name": "set_Assertion",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -246,6 +909,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationSettings.ValidationSettings()",
             "Name": ".ctor",
             "KeyType": "",
@@ -255,6 +919,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.GetWorkflowTree.set_ValidationContext(System.Activities.InArgument{System.Activities.Validation.ValidationContext})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -263,6 +937,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationSettings.get_AdditionalConstraints()",
             "Name": "get_AdditionalConstraints",
             "KeyType": "",
@@ -272,6 +947,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.ValidationError.get_PropertyName()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -280,10 +965,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.GetChildSubtree.set_ValidationContext(System.Activities.InArgument{System.Activities.Validation.ValidationContext})",
             "Name": "set_ValidationContext",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.AddValidationError.get_IsWarning()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -296,6 +987,7 @@
             ]
         },
         {
+<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.Activities.Validation",
             "Name": "System.Activities.Validation",
@@ -306,6 +998,17 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Type": "Method",
+            "Value": "System.Activities.Validation.ValidationSettings.get_SingleLevel()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -314,6 +1017,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.AddValidationError.set_PropertyName(System.Activities.InArgument{string})",
             "Name": "set_PropertyName",
             "KeyType": "",
@@ -323,6 +1027,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.Constraint.OnExecute(System.Activities.NativeActivityContext, object, System.Activities.Validation.ValidationContext)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -331,10 +1045,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationSettings.Environment.set_Environment(System.Activities.LocationReferenceEnvironment)",
             "Name": "set_Environment",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints.set_OnlyUseAdditionalConstraints(bool)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -348,10 +1068,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationError..ctor(string)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.Constraint<T>.set_Body(ActivityAction<T, ValidationContext>)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -365,10 +1091,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationSettings.set_SkipValidatingRootConfiguration(bool)",
             "Name": "set_SkipValidatingRootConfiguration",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ValidationError.ValidationError(string, bool, string)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -382,6 +1114,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ActivityValidationServices.Validate(System.Activities.Activity, System.Activities.Validation.ValidationSettings)",
             "Name": "Validate",
             "KeyType": "",
@@ -391,6 +1124,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.ValidationSettings.get_AdditionalConstraints()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework40"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -399,10 +1142,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.Constraint<T>.set_Body(ActivityAction<T, ValidationContext>)",
             "Name": "set_Body",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.AddValidationError.set_PropertyName(System.Activities.InArgument{string})",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -416,10 +1165,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.ValidationError.ToString()",
             "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ValidationSettings.set_PrepareForRuntime(bool)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -433,6 +1188,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.AssertValidation.set_Message(System.Activities.InArgument{string})",
             "Name": "set_Message",
             "KeyType": "",
@@ -442,6 +1198,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.ValidationSettings.get_PrepareForRuntime()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -450,10 +1216,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.Constraint<T>.Constraint<T>()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ValidationError.get_SourceDetail()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -467,6 +1239,7 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.GetChildSubtree.get_ValidationContext()",
             "Name": "get_ValidationContext",
             "KeyType": "",
@@ -476,6 +1249,16 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.Activities.Validation.ValidationSettings.set_SkipValidatingRootConfiguration(bool)",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework45"
+>>>>>>> master
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -484,10 +1267,16 @@
         },
         {
             "Type": "Method",
+<<<<<<< HEAD
             "Value": "System.Activities.Validation.GetChildSubtree.GetChildSubtree()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints.get_OnlyUseAdditionalConstraints()",
+            "Reference": "System.Activities.Validation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",

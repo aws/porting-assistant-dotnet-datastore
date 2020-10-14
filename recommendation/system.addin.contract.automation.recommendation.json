@@ -1,6 +1,7 @@
 {
     "Name": "System.AddIn.Contract.Automation",
     "Version": "1.0.0",
+<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.AddIn.Contract.Automation"
@@ -12,79 +13,26 @@
             "Name": "GetValue",
             "KeyType": "",
             "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
+=======
+    "Packages": [
+        {
+            "System.AddIn.Contract.Automation": {
+                "Type": "SDK",
+                "Name": "System.AddIn.Contract.Automation"
+            }
+        }
+    ],
+    "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType()",
-            "Name": "GetRemoteType",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethod(string, System.Reflection.BindingFlags, System.AddIn.Contract.Collections.IArrayContract{System.AddIn.Contract.Automation.IRemoteTypeContract})",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.GetGetMethod()",
-            "Name": "GetGetMethod",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AddIn.Contract.Automation.IRemoteObjectContract.RemoteCast(string)",
-            "Name": "RemoteCast",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetFields(System.Reflection.BindingFlags)",
-            "Name": "GetFields",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -94,14 +42,141 @@
         {
             "Type": "Method",
             "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData()",
-            "Name": "GetTypeData",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperties(System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.SetValue(System.AddIn.Contract.Automation.IRemoteobjectContract, System.AddIn.Contract.RemoteArgument, System.Reflection.BindingFlags, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract, int)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvent(string, System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetMembers(System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetFields(System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteMethodInfoContract.Invoke(System.AddIn.Contract.Automation.IRemoteobjectContract, System.Reflection.BindingFlags, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract, int)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethods(System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetField(string, System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -111,9 +186,41 @@
         {
             "Type": "Namespace",
             "Value": "System.AddIn.Contract.Automation",
-            "Name": "System.AddIn.Contract.Automation",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetCanonicalName()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteMethodInfoContract.GetMethodData()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -127,8 +234,55 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetFieldData()",
-            "Name": "GetFieldData",
+<<<<<<< HEAD
+            "Value": "System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType()",
+            "Name": "GetRemoteType",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.AddIn.Contract.Automation.IRemoteDelegateContract.InvokeDelegate(System.AddIn.Contract.Collections.IRemoteArgumentArrayContract)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.GetGetMethod()",
+            "Name": "GetGetMethod",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.AddIn.Contract.Automation.IRemoteObjectContract.RemoteCast(string)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.AddIn.Contract.Automation.IRemoteObjectContract.RemoteCast(string)",
+            "Name": "RemoteCast",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -136,6 +290,252 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
+=======
+            "Value": "System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetFieldData()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetMemberData()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.GetSetMethod()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetValue(System.AddIn.Contract.Automation.IRemoteobjectContract)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+>>>>>>> master
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetFields(System.Reflection.BindingFlags)",
+            "Name": "GetFields",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetRemoveMethod()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetInterfaces()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData()",
+            "Name": "GetTypeData",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetInterface(string)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "Type": "Namespace",
+            "Value": "System.AddIn.Contract.Automation",
+            "Name": "System.AddIn.Contract.Automation",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.GetValue(System.AddIn.Contract.Automation.IRemoteobjectContract, System.Reflection.BindingFlags, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract, int)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetFieldData()",
+            "Name": "GetFieldData",
+            "KeyType": "",
+            "RecommendedActions": [
+=======
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.InvokeMember(string, System.Reflection.BindingFlags, System.AddIn.Contract.Automation.IRemoteobjectContract, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract, bool[], int)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetMember(string, System.Reflection.MemberTypes, System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvents(System.Reflection.BindingFlags)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetAddMethod()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.GetGetMethod()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
                     ],
                     "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -145,9 +545,48 @@
         {
             "Type": "Method",
             "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.GetPropertyData()",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+<<<<<<< HEAD
+            "Value": "System.AddIn.Contract.Automation.IRemotePropertyInfoContract.GetPropertyData()",
             "Name": "GetPropertyData",
             "KeyType": "",
             "RecommendedActions": [
+=======
+            "Value": "System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperty(string, System.Reflection.BindingFlags, System.AddIn.Contract.Automation.IRemoteTypeContract, System.AddIn.Contract.Collections.IArrayContract{System.AddIn.Contract.Automation.IRemoteTypeContract})",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35"
+                    ],
+                    "Description": "Managed Addin Framework (MAF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AddIn.Contract.Automation.IRemoteFieldInfoContract.SetValue(System.AddIn.Contract.Automation.IRemoteobjectContract, System.AddIn.Contract.RemoteArgument, int)",
+            "Reference": "System.AddIn.Contract.Automation",
+            "Recommendation": [
+>>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
