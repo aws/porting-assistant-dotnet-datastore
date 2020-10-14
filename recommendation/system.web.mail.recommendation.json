@@ -8,101 +8,11 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Web.Mail.MailAttachment.get_Encoding()",
+            "Value": "System.Web.Mail.RelatedBodyPart.set_Path(string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Mail.MailMessage.get_BodyFormat()",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "referred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Mail.MailMessage.set_Cc(string)",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "referred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Mail.SmtpMail.Send(string, string, string, string)",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "referred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Mail.SmtpMail.get_SmtpServer()",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "referred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Mail.MailAttachment.MailAttachment(string, System.Web.Mail.MailEncoding)",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "referred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Mail.MailMessage.set_UrlContentLocation(string)",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -117,7 +27,7 @@
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -128,11 +38,11 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Mail.MailMessage.UrlContentBase.get_UrlContentBase()",
+            "Value": "System.Web.Mail.MailMessage.get_To()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -143,11 +53,41 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Mail.MailMessage.set_Body(string)",
+            "Value": "System.Web.Mail.SmtpMail.get_SmtpServer()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailAttachment.get_Filename()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.SmtpMail.set_SmtpServer(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -162,7 +102,7 @@
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -172,12 +112,72 @@
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "System.Web.Mail",
+            "Type": "Method",
+            "Value": "System.Web.Mail.SmtpMail.Send(System.Web.Mail.MailMessage)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_Headers()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.SmtpMail.Send(string, string, string, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_Body(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_From()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -192,7 +192,7 @@
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -203,11 +203,11 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Mail.MailMessage.set_From(string)",
+            "Value": "System.Web.Mail.MailMessage.MailMessage()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -218,11 +218,11 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Mail.RelatedBodyPart.set_Path(string)",
+            "Value": "System.Web.Mail.MailMessage.set_Cc(string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -233,11 +233,266 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Mail.MailMessage.set_Subject(string)",
+            "Value": "System.Web.Mail.MailAttachment.get_Encoding()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_UrlContentBase(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.UrlContentBase.get_UrlContentBase()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_BodyEncoding()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.RelatedBodyPart.get_Name()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_To(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_BodyEncoding(System.Text.Encoding)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.RelatedBodyPart.set_Name(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_UrlContentLocation(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.RelatedBodyPart.Path.get_Path()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailAttachment.MailAttachment(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_BodyFormat()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Web.Mail",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailAttachment.MailAttachment(string, System.Web.Mail.MailEncoding)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_Priority(System.Web.Mail.MailPriority)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.RelatedBodyPart.RelatedBodyPart(string, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_BodyFormat(System.Web.Mail.MailFormat)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_Subject()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -252,7 +507,97 @@
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_From(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.set_Subject(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_Cc()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_Priority()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.UrlContentLocation.get_UrlContentLocation()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Mail.MailMessage.get_Fields()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],

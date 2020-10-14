@@ -8,11 +8,11 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
+            "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -23,15 +23,15 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
+            "Value": "Microsoft.Win32.RegistryKey.Close()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
+                    "Description": "Use Dispose() instead.",
                     "Actions": []
                 }
             ]
@@ -42,11 +42,26 @@
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove: CAS is not supported.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
                     "Actions": []
                 }
             ]

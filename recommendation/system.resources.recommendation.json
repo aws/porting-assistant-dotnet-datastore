@@ -7,12 +7,12 @@
     },
     "Recommendations": [
         {
-            "Type": "Method",
-            "Value": "System.Resources.ResourceManager.GetObject(string)",
+            "Type": "Namespace",
+            "Value": "System.Resources",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
@@ -22,12 +22,27 @@
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "System.Resources",
+            "Type": "Method",
+            "Value": "System.Resources.ResourceManager.GetObject(string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "referred": "yes",
+                    "Preferred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Can now only get strings.  Use manifest resources for other types of objects.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Resources.ResourceManager.GetObject(string, System.Globalization.CultureInfo)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
                     "Versions": [
                         "netcoreapp3.1"
                     ],
