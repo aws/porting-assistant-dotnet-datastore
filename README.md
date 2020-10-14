@@ -42,8 +42,9 @@ This repository contains the location of data store in S3. The data store contai
 | Description | Description of the package. <br/>Example: `"Details": { "This package is used to analyse C# code": [ "4.0.0", "4.4.0" ] }  |
 
 ## Security
+* [Adding Recommendations](https://github.com/aws/porting-assistant-dotnet-datastore/blob/master/RECOMMENDATIONS.md)
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+* See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
 ## License
 
