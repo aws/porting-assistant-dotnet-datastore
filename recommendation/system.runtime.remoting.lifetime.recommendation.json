@@ -1,7 +1,6 @@
 {
     "Name": "System.Runtime.Remoting.Lifetime",
     "Version": "1.0.0",
-<<<<<<< HEAD
     "Packages": {
         "Type": "SDK",
         "Name": "System.Runtime.Remoting.Lifetime"
@@ -13,79 +12,6 @@
             "Name": "Close",
             "KeyType": "",
             "RecommendedActions": [
-=======
-    "Packages": [
-        {
-            "System.Runtime.Remoting.Lifetime": {
-                "Type": "SDK",
-                "Name": "System.Runtime.Remoting.Lifetime"
-            }
-        }
-    ],
-    "Recommendations": [
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.set_InitialLeaseTime(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.set_SponsorshipTimeout(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.set_RenewOnCallTime(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.get_CurrentState()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -99,23 +25,15 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.get_SponsorshipTimeout()",
             "Name": "get_SponsorshipTimeout",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.InitializeLifetimeService()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -124,67 +42,10 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.Unregister(System.MarshalByRefobject)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.Register(System.Runtime.Remoting.Lifetime.ISponsor)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ISponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.set_LeaseTime(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
+            "Value": "System.Runtime.Remoting.Lifetime.ILease.get_RenewOnCallTime()",
+            "Name": "get_RenewOnCallTime",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -197,79 +58,11 @@
             ]
         },
         {
-            "Type": "Method",
-<<<<<<< HEAD
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.get_RenewOnCallTime()",
-            "Name": "get_RenewOnCallTime",
-            "KeyType": "",
-            "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.RenewalTime.set_RenewalTime(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.Unregister(System.Runtime.Remoting.Lifetime.ISponsor)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.get_RenewOnCallTime()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-<<<<<<< HEAD
             "Type": "Namespace",
             "Value": "System.Runtime.Remoting.Lifetime",
             "Name": "System.Runtime.Remoting.Lifetime",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.set_LeaseManagerPollTime(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -283,16 +76,10 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.set_RenewOnCallTime(System.TimeSpan)",
             "Name": "set_RenewOnCallTime",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.get_SponsorshipTimeout()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -306,16 +93,10 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.ILease.get_CurrentLeaseTime()",
             "Name": "get_CurrentLeaseTime",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.set_RenewOnCallTime(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -329,54 +110,10 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.set_SponsorshipTimeout(System.TimeSpan)",
             "Name": "set_SponsorshipTimeout",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.InitialLeaseTime.get_InitialLeaseTime()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.ClientSponsor()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.Close()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -390,16 +127,10 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.ISponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)",
             "Name": "Renewal",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.ClientSponsor(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -413,7 +144,6 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.LifetimeServices()",
             "Name": ".ctor",
             "KeyType": "",
@@ -423,18 +153,6 @@
                     "Preferred": "yes",
                     "TargetFrameworks": [
                         "netcoreapp3.1"
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.get_RenewalTime()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
                     ],
                     "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -443,55 +161,10 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.SponsorshipTimeout.get_SponsorshipTimeout()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.Register(System.Runtime.Remoting.Lifetime.ISponsor, System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
->>>>>>> master
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.ILease.get_CurrentState()",
             "Name": "get_CurrentState",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.get_RenewOnCallTime()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -505,16 +178,10 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.ILease.Unregister(System.Runtime.Remoting.Lifetime.ISponsor)",
             "Name": "Unregister",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.Register(System.MarshalByRefobject)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -528,35 +195,10 @@
         },
         {
             "Type": "Method",
-<<<<<<< HEAD
             "Value": "System.Runtime.Remoting.Lifetime.ILease.Register(System.Runtime.Remoting.Lifetime.ISponsor)",
             "Name": "Register",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.get_LeaseTime()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.LifetimeServices()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -571,14 +213,9 @@
         {
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)",
-<<<<<<< HEAD
             "Name": "Renewal",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -591,94 +228,11 @@
             ]
         },
         {
-<<<<<<< HEAD
             "Type": "Method",
             "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.set_LeaseTime(System.TimeSpan)",
             "Name": "set_LeaseTime",
             "KeyType": "",
             "RecommendedActions": [
-=======
-            "Type": "Namespace",
-            "Value": "System.Runtime.Remoting.Lifetime",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.Renew(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ILease.get_CurrentLeaseTime()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.LifetimeServices.set_SponsorshipTimeout(System.TimeSpan)",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Lifetime.ClientSponsor.Finalize()",
-            "Reference": "System.Runtime.Remoting.Lifetime",
-            "Recommendation": [
->>>>>>> master
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
