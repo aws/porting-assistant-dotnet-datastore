@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.System.Xml.IXmlNamespaceResolver.LookupPrefix(string)",
-            "Name": "System.Xml.IXmlNamespaceResolver.LookupPrefix",
+            "Value": "System.Xml.XmlTextReader.get_BaseURI()",
+            "Name": "get_BaseURI",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlReader.ReadElementString()",
-            "Name": "ReadElementString",
+            "Value": "System.Xml.XmlConvert.ToString(ushort)",
+            "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -35,14 +35,14 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use XmlReader.ReadElementContentAsString().",
+                    "Description": "Cast to char or other supported type first.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.Stream)",
+            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.Xml.XmlNameTable)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -59,8 +59,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_XmlLang()",
-            "Name": "get_XmlLang",
+            "Value": "System.Xml.XmlTextReader.ResetState()",
+            "Name": "ResetState",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,8 +76,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.Skip()",
-            "Name": "Skip",
+            "Value": "System.Xml.XmlTextReader.get_LinePosition()",
+            "Name": "get_LinePosition",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -93,8 +93,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_NameTable()",
-            "Name": "get_NameTable",
+            "Value": "System.Xml.XmlTextReader.set_WhitespaceHandling(System.Xml.WhitespaceHandling)",
+            "Name": "set_WhitespaceHandling",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -110,8 +110,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.MoveToFirstAttribute()",
-            "Name": "MoveToFirstAttribute",
+            "Value": "System.Xml.XmlTextReader.ReadBinHex(byte[], int, int)",
+            "Name": "ReadBinHex",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -127,8 +127,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_AttributeCount()",
-            "Name": "get_AttributeCount",
+            "Value": "System.Xml.XmlTextReader.Namespaces.set_Namespaces(bool)",
+            "Name": "set_Namespaces",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -144,8 +144,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.TextReader, System.Xml.XmlNameTable)",
-            "Name": ".ctor",
+            "Value": "System.Xml.XmlWriter.Create(string, System.Xml.XmlWriterSettings)",
+            "Name": "Create",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -154,167 +154,14 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Description": "Use XmlWriter.Create(System.IO.Stream, System.xml.XmlWriterSettings).",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.CanResolveEntity.get_CanResolveEntity()",
-            "Name": "get_CanResolveEntity",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.Stream, System.Xml.XmlNameTable)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.LookupNamespace(string)",
-            "Name": "LookupNamespace",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_Item(int)",
-            "Name": "get_Item",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_Item(string, string)",
-            "Name": "get_Item",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.XmlTextReader()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.TextReader)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.GetRemainder()",
-            "Name": "GetRemainder",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlReader.ReadString()",
-            "Name": "ReadString",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.ReadElementContentAsString().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlNode.SelectSingleNode(string)",
+            "Value": "System.Xml.XmlNode.SelectSingleNode(string, System.Xml.XmlNamespaceManager)",
             "Name": "SelectSingleNode",
             "KeyType": "",
             "RecommendedActions": [
@@ -331,8 +178,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.GetNamespacesInScope(System.Xml.XmlNamespaceScope)",
-            "Name": "GetNamespacesInScope",
+            "Value": "System.Xml.XmlTextReader.get_IsDefault()",
+            "Name": "get_IsDefault",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -348,8 +195,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlReaderSettings.get_Schemas()",
-            "Name": "get_Schemas",
+            "Value": "System.Xml.XmlWriter.Create(string)",
+            "Name": "Create",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -358,32 +205,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Description": "Use XmlWriter.Create(System.IO.Stream).",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlReader.ReadElementString(string)",
-            "Name": "ReadElementString",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.ReadElementContentAsString().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_Namespaces()",
-            "Name": "get_Namespaces",
+            "Value": "System.Xml.XmlTextReader.get_LocalName()",
+            "Name": "get_LocalName",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -399,25 +229,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream, System.Text.Encoding, System.Xml.XmlDictionaryReaderQuotas, System.Xml.OnXmlDictionaryReaderClose)",
-            "Name": "CreateTextReader",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas), and poll whether null to detect if it has been disposed. (Close() is deprecated.).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_Settings()",
-            "Name": "get_Settings",
+            "Value": "System.Xml.XmlTextReader.System.Xml.IXmlLineInfo.HasLineInfo()",
+            "Name": "System.Xml.IXmlLineInfo.HasLineInfo",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -433,213 +246,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_EOF()",
-            "Name": "get_EOF",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.MoveToElement()",
-            "Name": "MoveToElement",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.QuoteChar.get_QuoteChar()",
-            "Name": "get_QuoteChar",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_NamespaceURI()",
-            "Name": "get_NamespaceURI",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_WhitespaceHandling()",
-            "Name": "get_WhitespaceHandling",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Xml",
-            "Name": "System.Xml",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.ReadElementContentAsString().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.XmlTextReader(string, System.IO.TextReader, System.Xml.XmlNameTable)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.MoveToNextAttribute()",
-            "Name": "MoveToNextAttribute",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.set_XmlResolver(System.Xml.XmlResolver)",
-            "Name": "set_XmlResolver",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.set_EntityHandling(System.Xml.EntityHandling)",
-            "Name": "set_EntityHandling",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_CanReadValueChunk()",
-            "Name": "get_CanReadValueChunk",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use XmlReader.Create(System.IO.Stream).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.HasLineInfo()",
-            "Name": "HasLineInfo",
+            "Value": "System.Xml.XmlTextReader.GetAttribute(string)",
+            "Name": "GetAttribute",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -672,8 +280,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.ProhibitDtd.get_ProhibitDtd()",
-            "Name": "get_ProhibitDtd",
+            "Value": "System.Xml.XmlTextReader.ReadOuterXml()",
+            "Name": "ReadOuterXml",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -689,25 +297,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlReaderSettings.set_ValidationType(System.Xml.ValidationType)",
-            "Name": "set_ValidationType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_HasValue()",
-            "Name": "get_HasValue",
+            "Value": "System.Xml.XmlTextReader.MoveToAttribute(string)",
+            "Name": "MoveToAttribute",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -723,8 +314,25 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_CanReadBinaryContent()",
-            "Name": "get_CanReadBinaryContent",
+            "Value": "System.Xml.XmlTextReader.get_NodeType()",
+            "Name": "get_NodeType",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Xml",
+            "Name": "System.Xml",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -740,8 +348,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.GetAttribute(int)",
-            "Name": "GetAttribute",
+            "Value": "System.Xml.XmlTextReader.get_Prefix()",
+            "Name": "get_Prefix",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -757,8 +365,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.XmlTextReader(System.IO.Stream, System.Xml.XmlNodeType, System.Xml.XmlParserContext)",
-            "Name": ".ctor",
+            "Value": "System.Xml.XmlTextReader.get_Item(string)",
+            "Name": "get_Item",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -774,8 +382,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlTextReader.get_Value()",
-            "Name": "get_Value",
+            "Value": "System.Xml.XmlTextReader.ReadString()",
+            "Name": "ReadString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -791,8 +399,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Xml.XmlWriter.Close()",
-            "Name": "Close",
+            "Value": "System.Xml.XmlTextReader.System.Xml.IXmlNamespaceResolver.LookupNamespace(string)",
+            "Name": "System.Xml.IXmlNamespaceResolver.LookupNamespace",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -801,7 +409,24 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Dispose() instead.",
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Xml.XmlTextReader.ReadContentAsBinHex(byte[], int, int)",
+            "Name": "ReadContentAsBinHex",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use XmlReader.Create(System.IO.Stream).",
                     "Actions": []
                 }
             ]

@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.ClientRolePrincipal.ClientRolePrincipal(System.Security.Principal.IIdentity)",
-            "Name": ".ctor",
+            "Value": "System.Web.ClientServices.ClientFormsIdentity.get_Provider()",
+            "Name": "get_Provider",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.ClientFormsIdentity.get_AuthenticationCookies()",
-            "Name": "get_AuthenticationCookies",
+            "Value": "System.Web.ClientServices.ClientFormsIdentity.Dispose()",
+            "Name": "Dispose",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -42,8 +42,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.ClientRolePrincipal.get_Identity()",
-            "Name": "get_Identity",
+            "Value": "System.Web.ClientServices.ClientRolePrincipal.IsInRole(string)",
+            "Name": "IsInRole",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,42 +76,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.ClientFormsIdentity.ClientFormsIdentity(string, string, System.Web.Security.MembershipProvider, string, bool, System.Net.CookieContainer)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.ConnectivityStatus.get_IsOffline()",
-            "Name": "get_IsOffline",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.ClientFormsIdentity.get_IsAuthenticated()",
-            "Name": "get_IsAuthenticated",
+            "Value": "System.Web.ClientServices.ClientFormsIdentity.RevalidateUser()",
+            "Name": "RevalidateUser",
             "KeyType": "",
             "RecommendedActions": [
                 {

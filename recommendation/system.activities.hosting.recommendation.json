@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstanceExtensionManager.Add<T>(Func<T>)",
-            "Name": "Add<T>",
+            "Value": "System.Activities.Hosting.WorkflowInstanceProxy.get_WorkflowDefinition()",
+            "Name": "get_WorkflowDefinition",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.OnBeginAssociateKeys(System.Collections.Generic.ICollection{System.Runtime.DurableInstancing.InstanceKey}, System.AsyncCallback, object)",
-            "Name": "OnBeginAssociateKeys",
+            "Value": "System.Activities.Hosting.WorkflowInstance.RegisterExtensionManager(System.Activities.Hosting.WorkflowInstanceExtensionManager)",
+            "Name": "RegisterExtensionManager",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -42,8 +42,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run()",
-            "Name": "Run",
+            "Value": "System.Activities.Hosting.SymbolResolver.Remove(System.Collections.Generic.KeyValuePair{string,object})",
+            "Name": "Remove",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -59,8 +59,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.SymbolResolver.get_Keys()",
-            "Name": "get_Keys",
+            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState()",
+            "Name": "GetCompletionState",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,8 +76,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.RequestPause()",
-            "Name": "RequestPause",
+            "Value": "System.Activities.Hosting.WorkflowInstance.HostEnvironment.get_HostEnvironment()",
+            "Name": "get_HostEnvironment",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -93,8 +93,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetMappedVariables()",
-            "Name": "GetMappedVariables",
+            "Value": "System.Activities.Hosting.SymbolResolver.Add(string, object)",
+            "Name": "Add",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -110,8 +110,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.LocationInfo.get_Name()",
-            "Name": "get_Name",
+            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Inequality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl, System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)",
+            "Name": "op_Inequality",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -127,8 +127,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Equals(object)",
-            "Name": "Equals",
+            "Value": "System.Activities.Hosting.WorkflowInstance.OnNotifyUnhandledException(System.Exception, System.Activities.Activity, string)",
+            "Name": "OnNotifyUnhandledException",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -144,8 +144,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.FlushTrackingRecords(System.TimeSpan)",
-            "Name": "FlushTrackingRecords",
+            "Value": "System.Activities.Hosting.WorkflowInstance.EndFlushTrackingRecords(System.IAsyncResult)",
+            "Name": "EndFlushTrackingRecords",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -161,8 +161,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.OnEndPersist(System.IAsyncResult)",
-            "Name": "OnEndPersist",
+            "Value": "System.Activities.Hosting.WorkflowInstanceProxy.BeginResumeBookmark(System.Activities.Bookmark, object, System.AsyncCallback, object)",
+            "Name": "BeginResumeBookmark",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -178,8 +178,59 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.get_State()",
-            "Name": "get_State",
+            "Value": "System.Activities.Hosting.WorkflowInstance.OnEndAssociateKeys(System.IAsyncResult)",
+            "Name": "OnEndAssociateKeys",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.get_HasPendingTrackingRecords()",
+            "Name": "get_HasPendingTrackingRecords",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstance(System.Activities.Activity, System.Activities.WorkflowIdentity)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activities.Hosting.BookmarkScopeInfo.get_IsInitialized()",
+            "Name": "get_IsInitialized",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -212,8 +263,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.SymbolResolver.GetEnumerator()",
-            "Name": "GetEnumerator",
+            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.EndFlushTrackingRecords(System.IAsyncResult)",
+            "Name": "EndFlushTrackingRecords",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -229,194 +280,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstance(System.Activities.Activity)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark(System.IAsyncResult)",
-            "Name": "EndResumeBookmark",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort(System.Exception)",
-            "Name": "Abort",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.set_SynchronizationContext(System.Threading.SynchronizationContext)",
-            "Name": "set_SynchronizationContext",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.Initialize(object, System.Activities.DynamicUpdate.DynamicUpdateMap)",
-            "Name": "Initialize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.OnRequestAbort(System.Exception)",
-            "Name": "OnRequestAbort",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.PauseWhenPersistable()",
-            "Name": "PauseWhenPersistable",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetBookmarks()",
-            "Name": "GetBookmarks",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.GetActivitiesBlockingUpdate(object, System.Activities.DynamicUpdate.DynamicUpdateMap)",
-            "Name": "GetActivitiesBlockingUpdate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetHashCode()",
-            "Name": "GetHashCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.LocationInfo.get_Value()",
-            "Name": "get_Value",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstanceExtensionManager.Add(object)",
+            "Value": "System.Activities.Hosting.SymbolResolver.Add(string, System.Type)",
             "Name": "Add",
             "KeyType": "",
             "RecommendedActions": [
@@ -433,8 +297,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.SymbolResolver.ContainsKey(string)",
-            "Name": "ContainsKey",
+            "Value": "System.Activities.Hosting.SymbolResolver.SymbolResolver()",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -450,127 +314,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activities.Hosting.BookmarkInfo.get_OwnerDisplayName()",
-            "Name": "get_OwnerDisplayName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.set_HostEnvironment(System.Activities.LocationReferenceEnvironment)",
-            "Name": "set_HostEnvironment",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.get_SupportsInstanceKeys()",
-            "Name": "get_SupportsInstanceKeys",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleBookmarkResumption(System.Activities.Bookmark, object)",
-            "Name": "ScheduleBookmarkResumption",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.OnBeginPersist(System.AsyncCallback, object)",
-            "Name": "OnBeginPersist",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.BookmarkInfo.get_ScopeInfo()",
-            "Name": "get_ScopeInfo",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.OnBeginResumeBookmark(System.Activities.Bookmark, object, System.TimeSpan, System.AsyncCallback, object)",
-            "Name": "OnBeginResumeBookmark",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activities.Hosting.WorkflowInstance.get_SynchronizationContext()",
-            "Name": "get_SynchronizationContext",
+            "Value": "System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.get_TrackingEnabled()",
+            "Name": "get_TrackingEnabled",
             "KeyType": "",
             "RecommendedActions": [
                 {

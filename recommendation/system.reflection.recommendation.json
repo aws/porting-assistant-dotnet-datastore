@@ -7,111 +7,9 @@
     },
     "Recommendations": [
         {
-            "Type": "Attribute",
-            "Value": "System.Reflection.MemberInfo.get_MemberType()",
-            "Name": "get_MemberType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use typeof(), \"is FieldInfo\", \"is PropertyInfo\" to reason about the Member's type. Example: if (membertype == membertypes.Field) --> if (member is FieldInfo).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
             "Type": "Method",
-            "Value": "System.Reflection.Binder.ChangeType(object, System.Type, System.Globalization.CultureInfo)",
-            "Name": "ChangeType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use an overload that does not take a Binder.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Reflection.ParameterModifier",
-            "Name": "System.Reflection.ParameterModifier",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use an overload that does not take a Binder.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.MemberInfo.get_MemberType()",
-            "Name": "get_MemberType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use typeof(), \"is FieldInfo\", \"is PropertyInfo\" to reason about the Member's type. Example: if (membertype == membertypes.Field) --> if (member is FieldInfo).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.Binder.CanChangeType(object, System.Type, System.Globalization.CultureInfo)",
-            "Name": "CanChangeType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use an overload that does not take a Binder.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.MemberInfo.op_Equality(System.Reflection.MemberInfo, System.Reflection.MemberInfo)",
-            "Name": "op_Equality",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "False positive: This will not be an error at compilation time.  No action required.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.Assembly.LoadFrom(string,byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)",
-            "Name": "LoadFrom",
+            "Value": "System.Reflection.Assembly.Load(byte[], byte[])",
+            "Name": "Load",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -127,8 +25,25 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Reflection.ParameterModifier.ParameterModifier(int)",
-            "Name": ".ctor",
+            "Value": "System.Reflection.PropertyInfo.GetGetMethod(bool)",
+            "Name": "GetGetMethod",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use PropertyInfo.GetMethod property.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Reflection.Binder.ReorderArgumentArray(object[], object)",
+            "Name": "ReorderArgumentArray",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -144,8 +59,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Reflection.PropertyInfo.GetSetMethod()",
-            "Name": "GetSetMethod",
+            "Value": "System.Reflection.Assembly.GetTypes()",
+            "Name": "GetTypes",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -154,15 +69,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use PropertyInfo.SetMethod property.",
+                    "Description": "Use Assembly.DefinedTypes.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Reflection.Assembly.get_IsFullyTrusted()",
-            "Name": "get_IsFullyTrusted",
+            "Value": "System.Reflection.MethodInfo.GetBaseDefinition()",
+            "Name": "GetBaseDefinition",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -171,7 +86,58 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove usage: As CAS is not supported in newer frameworks, this property no longer has meaning.",
+                    "Description": "Use extension method in System.Reflection.TypeExtensions namespace, add using statement for System.Reflection and contract reference.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Reflection.AssemblyName.ReferenceMatchesDefinition(System.Reflection.AssemblyName, System.Reflection.AssemblyName)",
+            "Name": "ReferenceMatchesDefinition",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use the AssemblyName.Name property to compare the simple names in Ref and Def.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Reflection.Binder.SelectProperty(System.Reflection.BindingFlags, System.Reflection.PropertyInfo[], System.Type, System.Type[], System.Reflection.ParameterModifier[])",
+            "Name": "SelectProperty",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use an overload that does not take a Binder.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Reflection",
+            "Name": "System.Reflection",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use extension method in System.Reflection.TypeExtensions namespace, add using statement for System.Reflection and contract reference.",
                     "Actions": []
                 }
             ]
@@ -195,92 +161,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Reflection.Binder.BindToField(System.Reflection.BindingFlags, System.Reflection.FieldInfo[], object, System.Globalization.CultureInfo)",
-            "Name": "BindToField",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use an overload that does not take a Binder.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.FieldInfo.op_Inequality(System.Reflection.FieldInfo, System.Reflection.FieldInfo)",
-            "Name": "op_Inequality",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "False positive: This will not be an error at compilation time.  No action required.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Reflection.Assembly.get_IsFullyTrusted()",
-            "Name": "get_IsFullyTrusted",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage: As CAS is not supported in newer frameworks, this property no longer has meaning.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.MemberInfo.op_Inequality(System.Reflection.MemberInfo,System.Reflection.MemberInfo)",
-            "Name": "op_Inequality",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "False positive: This will not be an error at compilation time.  No action required.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.Assembly.GetType(string, bool)",
-            "Name": "GetType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Assembly.GetType(string), throw if you receive null return value.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Reflection.Assembly.Load(byte[])",
+            "Value": "System.Reflection.Assembly.Load(string, System.Security.Policy.Evidence)",
             "Name": "Load",
             "KeyType": "",
             "RecommendedActions": [
@@ -296,9 +177,9 @@
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "System.Reflection",
-            "Name": "System.Reflection",
+            "Type": "Method",
+            "Value": "System.Reflection.PropertyInfo.GetGetMethod()",
+            "Name": "GetGetMethod",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -307,16 +188,7 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use AssemblyLoadContext. Evidence is not supported in .NET Core.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "False positive: This will not be an error at compilation time.  No action required.",
+                    "Description": "Use PropertyInfo.GetMethod property.",
                     "Actions": []
                 }
             ]

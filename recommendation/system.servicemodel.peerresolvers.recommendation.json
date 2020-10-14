@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.IPeerResolverContract.GetServiceSettings()",
-            "Name": "GetServiceSettings",
+            "Value": "System.ServiceModel.PeerResolvers.RegisterInfo.get_NodeAddress()",
+            "Name": "get_NodeAddress",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,7 +25,92 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.UnregisterInfo.get_RegistrationId()",
+            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.Close()",
+            "Name": "Close",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.PeerResolvers.RegisterInfo.RegisterInfo()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.PeerResolvers.RefreshResponseInfo.RefreshResponseInfo(System.TimeSpan, System.ServiceModel.PeerResolvers.RefreshResult)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.get_IsBindingSpecified()",
+            "Name": "get_IsBindingSpecified",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.PeerResolvers.PeerResolverSettings.get_ReferralPolicy()",
+            "Name": "get_ReferralPolicy",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.PeerResolvers.UpdateInfo.get_RegistrationId()",
             "Name": "get_RegistrationId",
             "KeyType": "",
             "RecommendedActions": [
@@ -42,7 +127,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RefreshResponseInfo.RefreshResponseInfo()",
+            "Value": "System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.ServiceSettingsResponseInfo(bool)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -59,75 +144,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.PeerResolverSettings.set_Mode(System.ServiceModel.PeerResolvers.PeerResolverMode)",
-            "Name": "set_Mode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RefreshResponseInfo.set_Result(System.ServiceModel.PeerResolvers.RefreshResult)",
-            "Name": "set_Result",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RegisterInfo.RegisterInfo(System.Guid, string, System.ServiceModel.PeerNodeAddress)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RegisterInfo.get_MeshId()",
-            "Name": "get_MeshId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.HasBody()",
+            "Value": "System.ServiceModel.PeerResolvers.RegisterResponseInfo.HasBody()",
             "Name": "HasBody",
             "KeyType": "",
             "RecommendedActions": [
@@ -144,399 +161,42 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.PeerCustomResolverSettings()",
+            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.Update(System.ServiceModel.PeerResolvers.UpdateInfo)",
+            "Name": "Update",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open()",
+            "Name": "Open",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegisterResponseInfo(System.Guid, System.TimeSpan)",
             "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.UpdateInfo.get_MeshId()",
-            "Name": "get_MeshId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.UnregisterInfo.HasBody()",
-            "Name": "HasBody",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.IPeerResolverContract.Resolve(System.ServiceModel.PeerResolvers.ResolveInfo)",
-            "Name": "Resolve",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.ResolveInfo.get_ClientId()",
-            "Name": "get_ClientId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RefreshInfo.get_RegistrationId()",
-            "Name": "get_RegistrationId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RefreshResponseInfo.get_RegistrationLifetime()",
-            "Name": "get_RegistrationLifetime",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.IPeerResolverContract.Refresh(System.ServiceModel.PeerResolvers.RefreshInfo)",
-            "Name": "Refresh",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.CustomPeerResolverService()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.ResolveResponseInfo.HasBody()",
-            "Name": "HasBody",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.set_RefreshInterval(System.TimeSpan)",
-            "Name": "set_RefreshInterval",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.set_Address(System.ServiceModel.EndpointAddress)",
-            "Name": "set_Address",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Resolver.get_Resolver()",
-            "Name": "get_Resolver",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RefreshInfo.get_MeshId()",
-            "Name": "get_MeshId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.UpdateInfo.get_ClientId()",
-            "Name": "get_ClientId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.ResolveInfo.HasBody()",
-            "Name": "HasBody",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RefreshInfo..ctor()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.set_Resolver(System.ServiceModel.PeerResolver)",
-            "Name": "set_Resolver",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.set_ControlShape(bool)",
-            "Name": "set_ControlShape",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.PeerResolverSettings.set_ReferralPolicy(System.ServiceModel.PeerResolvers.PeerReferralPolicy)",
-            "Name": "set_ReferralPolicy",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegisterResponseInfo()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.IPeerResolverContract.Unregister(System.ServiceModel.PeerResolvers.UnregisterInfo)",
-            "Name": "Unregister",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.UpdateInfo.UpdateInfo(System.Guid, System.Guid, string, System.ServiceModel.PeerNodeAddress)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.UnregisterInfo.get_MeshId()",
-            "Name": "get_MeshId",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -569,109 +229,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System.Guid, string, System.ServiceModel.PeerNodeAddress)",
-            "Name": "Register",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.get_CleanupInterval()",
-            "Name": "get_CleanupInterval",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RefreshInfo.HasBody()",
-            "Name": "HasBody",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.PeerResolverSettings.get_Custom()",
-            "Name": "get_Custom",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.IPeerResolverContract.Register(System.ServiceModel.PeerResolvers.RegisterInfo)",
-            "Name": "Register",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.set_CleanupInterval(System.TimeSpan)",
-            "Name": "set_CleanupInterval",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.ResolveResponseInfo.ResolveResponseInfo(System.ServiceModel.PeerNodeAddress[])",
+            "Value": "System.ServiceModel.PeerResolvers.PeerResolverSettings.PeerResolverSettings()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -688,76 +246,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.ResolveInfo.get_MaxAddresses()",
-            "Name": "get_MaxAddresses",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.get_ControlShape()",
-            "Name": "get_ControlShape",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.ResolveInfo.ResolveInfo(System.Guid, string, int)",
+            "Value": "System.ServiceModel.PeerResolvers.UpdateInfo.UpdateInfo()",
             "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.RegisterResponseInfo.get_RegistrationId()",
-            "Name": "get_RegistrationId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System.ServiceModel.PeerResolvers.RegisterInfo)",
-            "Name": "Register",
             "KeyType": "",
             "RecommendedActions": [
                 {

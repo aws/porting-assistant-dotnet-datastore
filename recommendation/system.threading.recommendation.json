@@ -8,137 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.Abort(object)",
-            "Name": "Abort",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadPool.SetMaxThreads(int, int)",
-            "Name": "SetMaxThreads",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Timer.Timer(System.Threading.TimerCallback, object, long, long)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Mutex.Mutex(bool, string, bool, System.Security.AccessControl.MutexSecurity)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use an overload without MutexSecurity.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Timer.Change(long, long)",
-            "Name": "Change",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a 32-bit interval.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Threading",
-            "Name": "System.Threading",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Task.Delay, or one of the other Timer .ctor overloads (passing Timeout.Infinite as needed).",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AcquireWriterLock(System.TimeSpan)",
-            "Name": "AcquireWriterLock",
+            "Value": "System.Threading.ReaderWriterLock.ReleaseWriterLock()",
+            "Name": "ReleaseWriterLock",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -154,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.DowngradeFromWriterLock(System.Threading.LockCookie)",
-            "Name": "DowngradeFromWriterLock",
+            "Value": "System.Threading.ReaderWriterLock.AcquireReaderLock(int)",
+            "Name": "AcquireReaderLock",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -171,76 +42,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.MemoryBarrier()",
-            "Name": "MemoryBarrier",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.Interlocked.MemoryBarrier instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Timer..ctor(System.Threading.TimerCallback)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Task.Delay, or one of the other Timer .ctor overloads (passing Timeout.Infinite as needed).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Threading.Thread.set_CurrentCulture(System.Globalization.CultureInfo)",
-            "Name": "set_CurrentCulture",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.get_Priority()",
-            "Name": "get_Priority",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Threading.ReaderWriterLock",
-            "Name": "System.Threading.ReaderWriterLock",
+            "Value": "System.Threading.ReaderWriterLock.ReleaseReaderLock()",
+            "Name": "ReleaseReaderLock",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -256,8 +59,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.set_CurrentCulture(System.Globalization.CultureInfo)",
-            "Name": "set_CurrentCulture",
+            "Value": "System.Threading.EventWaitHandle.OpenExisting(string, System.Security.AccessControl.EventWaitHandleRights)",
+            "Name": "OpenExisting",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -266,150 +69,14 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
+                    "Description": "Use EventWaitHandle.OpenExisting(string).",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.Priority.set_Priority(System.Threading.ThreadPriority)",
-            "Name": "set_Priority",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadAbortException.get_ExceptionState()",
-            "Name": "get_ExceptionState",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Threading.ThreadAbortException",
-            "Name": "System.Threading.ThreadAbortException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.GetApartmentState()",
-            "Name": "GetApartmentState",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadPool.GetMaxThreads(int, int)",
-            "Name": "GetMaxThreads",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.CurrentUICulture.set_CurrentUICulture(System.Globalization.CultureInfo)",
-            "Name": "set_CurrentUICulture",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.get_WriterSeqNum()",
-            "Name": "get_WriterSeqNum",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AnyWritersSince(int)",
-            "Name": "AnyWritersSince",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.UpgradeToWriterLock(int)",
+            "Value": "System.Threading.ReaderWriterLock.UpgradeToWriterLock(System.TimeSpan)",
             "Name": "UpgradeToWriterLock",
             "KeyType": "",
             "RecommendedActions": [
@@ -426,8 +93,127 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AcquireWriterLock(int)",
-            "Name": "AcquireWriterLock",
+            "Value": "System.Threading.Thread.ResetAbort()",
+            "Name": "ResetAbort",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.Abort()",
+            "Name": "Abort",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.ReleaseLock()",
+            "Name": "ReleaseLock",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.WaitHandle.Close()",
+            "Name": "Close",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ThreadPool.GetMinThreads(int, int)",
+            "Name": "GetMinThreads",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Timer.Dispose(System.Threading.WaitHandle)",
+            "Name": "Dispose",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "If you need to synchronize destruction of the timer with execution of the callback, do this yourself via Monitor or other synchronization mechanism.  If not, simply use Dispose().  Code sample: http://aka.ms/porttocore_timer_dispose",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Threading",
+            "Name": "System.Threading",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "If you need to synchronize destruction of the timer with execution of the callback, do this yourself via Monitor or other synchronization mechanism.  If not, simply use Dispose().  Code sample: http://aka.ms/porttocore_timer_dispose",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Threading.ReaderWriterLock",
+            "Name": "System.Threading.ReaderWriterLock",
             "KeyType": "",
             "RecommendedActions": [
                 {

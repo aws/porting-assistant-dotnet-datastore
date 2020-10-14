@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.get_SteppingOption()",
-            "Name": "get_SteppingOption",
+            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.AssemblyLoaded(System.Guid, string, bool)",
+            "Name": "AssemblyLoaded",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,8 +25,25 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoked()",
-            "Name": "NotifyHandlerInvoked",
+            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.InstanceCreated(System.Guid,System.Guid,System.Guid)",
+            "Name": "InstanceCreated",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.UpdateHandlerMethodsForActivity(System.Guid, System.Guid, string, System.Collections.Generic.List{System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor})",
+            "Name": "UpdateHandlerMethodsForActivity",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -59,8 +76,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.DebugEngineCallback.BeginInvoke(System.AsyncCallback, object)",
-            "Name": "BeginInvoke",
+            "Value": "System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame.CreateEvaluationFrame(System.Workflow.Runtime.DebugEngine.IInstanceTable, System.Workflow.Runtime.DebugEngine.DebugEngineCallback)",
+            "Name": "CreateEvaluationFrame",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,8 +93,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.HandlerInvoked(System.Guid, System.Guid, int, string)",
-            "Name": "HandlerInvoked",
+            "Value": "System.Workflow.Runtime.DebugEngine.IInstanceTable.GetActivity(string, string)",
+            "Name": "GetActivity",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -93,8 +110,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.ScheduleTypeLoaded(System.Guid, System.Guid, string, string, string, bool, string, string, string)",
-            "Name": "ScheduleTypeLoaded",
+            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.ActivityStatusChanged(System.Guid, System.Guid, System.Guid, string, string, System.Workflow.ComponentModel.ActivityExecutionStatus, int)",
+            "Name": "ActivityStatusChanged",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -110,41 +127,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoking(System.Delegate)",
-            "Name": "NotifyHandlerInvoking",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.SetInitialActivityStatus(System.Guid, System.Guid, System.Guid, string, string, System.Workflow.ComponentModel.ActivityExecutionStatus, int)",
-            "Name": "SetInitialActivityStatus",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.WorkflowDebuggerSteppingAttribute(System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption)",
+            "Value": "System.Workflow.Runtime.DebugEngine.DebugEngineCallback.DebugEngineCallback(object, System.IntPtr)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [

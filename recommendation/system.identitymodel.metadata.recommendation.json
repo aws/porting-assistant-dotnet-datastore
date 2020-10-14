@@ -8,7 +8,41 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.IndexedProtocolEndpointDictionary()",
+            "Value": "System.IdentityModel.Metadata.SingleSignOnDescriptor.get_ArtifactResolutionServices()",
+            "Name": "get_ArtifactResolutionServices",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.EncryptionMethod.set_Algorithm(System.Uri)",
+            "Name": "set_Algorithm",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.EntityId.EntityId()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -25,75 +59,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteLocalizedUri(System.Xml.XmlWriter, System.IdentityModel.Metadata.LocalizedUri, System.Xml.XmlQualifiedName)",
-            "Name": "WriteLocalizedUri",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.DisplayClaim.set_DisplayValue(string)",
-            "Name": "set_DisplayValue",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.IndexedProtocolEndpoint.set_Index(int)",
-            "Name": "set_Index",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteIndexedProtocolEndpoint(System.Xml.XmlWriter, System.IdentityModel.Metadata.IndexedProtocolEndpoint, System.Xml.XmlQualifiedName)",
-            "Name": "WriteIndexedProtocolEndpoint",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.ServiceProviderSingleSignOnDescriptor(System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary)",
+            "Value": "System.IdentityModel.Metadata.EntitiesDescriptor.EntitiesDescriptor(System.Collections.objectModel.Collection{System.IdentityModel.Metadata.EntityDescriptor})",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -110,7 +76,24 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializationException.MetadataSerializationException(string, System.Exception)",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadServiceProviderSingleSignOnDescriptor(System.Xml.XmlReader)",
+            "Name": "ReadServiceProviderSingleSignOnDescriptor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.EntityDescriptor.EntityDescriptor(System.IdentityModel.Metadata.EntityId)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -127,7 +110,143 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.SingleSignOnDescriptor.SingleSignOnDescriptor()",
+            "Value": "System.IdentityModel.Metadata.WebServiceDescriptor.set_ServiceDescription(string)",
+            "Name": "set_ServiceDescription",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.EntityDescriptor.set_FederationId(string)",
+            "Name": "set_FederationId",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteContactPerson(System.Xml.XmlWriter, System.IdentityModel.Metadata.ContactPerson)",
+            "Name": "WriteContactPerson",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteMetadataCore(System.Xml.XmlWriter, System.IdentityModel.Metadata.MetadataBase)",
+            "Name": "WriteMetadataCore",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadRoleDescriptorElement(System.Xml.XmlReader, System.IdentityModel.Metadata.RoleDescriptor)",
+            "Name": "ReadRoleDescriptorElement",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.EntityId.get_Id()",
+            "Name": "get_Id",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteLocalizedName(System.Xml.XmlWriter, System.IdentityModel.Metadata.LocalizedName, System.Xml.XmlQualifiedName)",
+            "Name": "WriteLocalizedName",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteOrganization(System.Xml.XmlWriter, System.IdentityModel.Metadata.Organization)",
+            "Name": "WriteOrganization",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.LocalizedName.LocalizedName(string, System.Globalization.CultureInfo)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -144,7 +263,24 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializationException.MetadataSerializationException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Value": "System.IdentityModel.Metadata.IndexedProtocolEndpoint.get_Index()",
+            "Name": "get_Index",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.EntityDescriptor.EntityDescriptor()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -161,58 +297,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadOrganization(System.Xml.XmlReader)",
-            "Name": "ReadOrganization",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.IO.Stream)",
-            "Name": "ReadMetadata",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.CreateOrganizationInstance()",
-            "Name": "CreateOrganizationInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.DisplayClaim.DisplayClaim(string, string, string)",
+            "Value": "System.IdentityModel.Metadata.EncryptionMethod.EncryptionMethod(System.Uri)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -229,8 +314,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataBase.set_SigningCredentials(System.IdentityModel.Tokens.SigningCredentials)",
-            "Name": "set_SigningCredentials",
+            "Value": "System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.get_WantAuthenticationRequestsSigned()",
+            "Name": "get_WantAuthenticationRequestsSigned",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -246,109 +331,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.EntityId.set_Id(string)",
-            "Name": "set_Id",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ProtocolEndpoint.set_ResponseLocation(System.Uri)",
-            "Name": "set_ResponseLocation",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.CreateIdentityProviderSingleSignOnDescriptorInstance()",
-            "Name": "CreateIdentityProviderSingleSignOnDescriptorInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteCustomElements<T>(XmlWriter, T)",
-            "Name": "WriteCustomElements<T>",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.EntityDescriptor.set_Organization(System.IdentityModel.Metadata.Organization)",
-            "Name": "set_Organization",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.get_RevocationMode()",
-            "Name": "get_RevocationMode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.KeyDescriptor.KeyDescriptor(System.IdentityModel.Tokens.SecurityKeyIdentifier)",
+            "Value": "System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.IdentityProviderSingleSignOnDescriptor()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -365,8 +348,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.Organization.Organization()",
-            "Name": ".ctor",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.get_TrustedIssuers()",
+            "Name": "get_TrustedIssuers",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -382,8 +365,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.RoleDescriptor.RoleDescriptor()",
-            "Name": ".ctor",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ValidateIssuer(System.Security.Cryptography.X509Certificates.X509Certificate2)",
+            "Name": "ValidateIssuer",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -399,8 +382,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ContactPerson.set_Type(System.IdentityModel.Metadata.ContactType)",
-            "Name": "set_Type",
+            "Value": "System.IdentityModel.Metadata.RoleDescriptor.get_Organization()",
+            "Name": "get_Organization",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -416,8 +399,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadEntitiesDescriptor(System.Xml.XmlReader, System.IdentityModel.Selectors.SecurityTokenResolver)",
-            "Name": "ReadEntitiesDescriptor",
+            "Value": "System.IdentityModel.Metadata.SingleSignOnDescriptor.get_NameIdentifierFormats()",
+            "Name": "get_NameIdentifierFormats",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -433,8 +416,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteSingleSignOnDescriptorAttributes(System.Xml.XmlWriter, System.IdentityModel.Metadata.floatSignOnDescriptor)",
-            "Name": "WriteSingleSignOnDescriptorAttributes",
+            "Value": "System.IdentityModel.Metadata.EntityDescriptor.set_EntityId(System.IdentityModel.Metadata.EntityId)",
+            "Name": "set_EntityId",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -450,8 +433,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadCustomRoleDescriptor(string, System.Xml.XmlReader, System.IdentityModel.Metadata.EntityDescriptor)",
-            "Name": "ReadCustomRoleDescriptor",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.CreateSecurityTokenServiceDescriptorInstance()",
+            "Name": "CreateSecurityTokenServiceDescriptorInstance",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -467,8 +450,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.RoleDescriptor.set_ErrorUrl(System.Uri)",
-            "Name": "set_ErrorUrl",
+            "Value": "System.IdentityModel.Metadata.KeyDescriptor.set_KeyInfo(System.IdentityModel.Tokens.SecurityKeyIdentifier)",
+            "Name": "set_KeyInfo",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -484,8 +467,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.WebServiceDescriptor.get_TargetScopes()",
-            "Name": "get_TargetScopes",
+            "Value": "System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesRequested.get_ClaimTypesRequested()",
+            "Name": "get_ClaimTypesRequested",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -501,195 +484,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.WebServiceDescriptor.get_ClaimTypesOffered()",
-            "Name": "get_ClaimTypesOffered",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.DisplayClaim.set_Optional(bool)",
-            "Name": "set_Optional",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ContactPerson.get_EmailAddresses()",
-            "Name": "get_EmailAddresses",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ApplicationServiceDescriptor.ApplicationServiceDescriptor()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadSecurityTokenServiceDescriptor(System.Xml.XmlReader)",
-            "Name": "ReadSecurityTokenServiceDescriptor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteEntityDescriptor(System.Xml.XmlWriter, System.IdentityModel.Metadata.EntityDescriptor)",
-            "Name": "WriteEntityDescriptor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.KeyDescriptor.KeyDescriptor()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.LocalizedUri.LocalizedUri()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.LocalizedName.get_Name()",
-            "Name": "get_Name",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ProtocolEndpoint.set_Binding(System.Uri)",
-            "Name": "set_Binding",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteSecurityTokenServiceDescriptor(System.Xml.XmlWriter, System.IdentityModel.Metadata.SecurityTokenServiceDescriptor)",
-            "Name": "WriteSecurityTokenServiceDescriptor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ContactPerson.set_GivenName(string)",
-            "Name": "set_GivenName",
+            "Value": "System.IdentityModel.Metadata.LocalizedUri.get_Uri()",
+            "Name": "get_Uri",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -722,8 +518,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.WebServiceDescriptor.get_ServiceDescription()",
-            "Name": "get_ServiceDescription",
+            "Value": "System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.set_AuthenticationRequestsSigned(bool)",
+            "Name": "set_AuthenticationRequestsSigned",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -739,8 +535,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteIdentityProviderSingleSignOnDescriptor(System.Xml.XmlWriter, System.IdentityModel.Metadata.IdentityProviderfloatSignOnDescriptor)",
-            "Name": "WriteIdentityProviderSingleSignOnDescriptor",
+            "Value": "System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.get_AuthenticationRequestsSigned()",
+            "Name": "get_AuthenticationRequestsSigned",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -756,143 +552,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.DisplayClaim.get_WriteOptionalAttribute()",
-            "Name": "get_WriteOptionalAttribute",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.get_SecurityTokenSerializer()",
-            "Name": "get_SecurityTokenSerializer",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.CreateApplicationServiceInstance()",
-            "Name": "CreateApplicationServiceInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.LocalizedEntry.set_Language(System.Globalization.CultureInfo)",
-            "Name": "set_Language",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.set_WantAssertionsSigned(bool)",
-            "Name": "set_WantAssertionsSigned",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.DisplayClaim.set_Description(string)",
-            "Name": "set_Description",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadSingleSignOnDescriptorElement(System.Xml.XmlReader, System.IdentityModel.Metadata.floatSignOnDescriptor)",
-            "Name": "ReadSingleSignOnDescriptorElement",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.RoleDescriptor.get_ValidUntil()",
-            "Name": "get_ValidUntil",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.EntitiesDescriptor.EntitiesDescriptor(System.Collections.objectModel.Collection{System.IdentityModel.Metadata.EntitiesDescriptor})",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializationException.MetadataSerializationException(string)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -909,415 +569,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadWebServiceDescriptorElement(System.Xml.XmlReader, System.IdentityModel.Metadata.WebServiceDescriptor)",
-            "Name": "ReadWebServiceDescriptorElement",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ContactPerson.get_Type()",
-            "Name": "get_Type",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.get_CertificateValidator()",
-            "Name": "get_CertificateValidator",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.LocalizedEntryCollection<T>.GetKeyForItem(T)",
-            "Name": "GetKeyForItem",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.RoleDescriptor.get_Contacts()",
-            "Name": "get_Contacts",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.set_TrustedStoreLocation(System.Security.Cryptography.X509Certificates.StoreLocation)",
-            "Name": "set_TrustedStoreLocation",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadKeyDescriptor(System.Xml.XmlReader)",
-            "Name": "ReadKeyDescriptor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.LocalizedEntry.LocalizedEntry(System.Globalization.CultureInfo)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.RoleDescriptor.set_ValidUntil(System.DateTime)",
-            "Name": "set_ValidUntil",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.CreateEntitiesDescriptorInstance()",
-            "Name": "CreateEntitiesDescriptorInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.WebServiceDescriptor.set_ServiceDisplayName(string)",
-            "Name": "set_ServiceDisplayName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadCustomAttributes<T>(XmlReader, T)",
-            "Name": "ReadCustomAttributes<T>",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.DisplayClaim.get_DisplayValue()",
-            "Name": "get_DisplayValue",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities.get_ChildEntities()",
-            "Name": "get_ChildEntities",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadAttribute(System.Xml.XmlReader)",
-            "Name": "ReadAttribute",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteKeyDescriptor(System.Xml.XmlWriter, System.IdentityModel.Metadata.KeyDescriptor)",
-            "Name": "WriteKeyDescriptor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ProtocolEndpoint.get_Binding()",
-            "Name": "get_Binding",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.GetMetadataSigningCertificate(System.IdentityModel.Tokens.SecurityKeyIdentifier)",
-            "Name": "GetMetadataSigningCertificate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.EntityDescriptor.get_FederationId()",
-            "Name": "get_FederationId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteRoleDescriptorElements(System.Xml.XmlWriter, System.IdentityModel.Metadata.RoleDescriptor)",
-            "Name": "WriteRoleDescriptorElements",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices.get_AssertionConsumerServices()",
-            "Name": "get_AssertionConsumerServices",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.DisplayClaim.DisplayClaim(string, string, string, string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.ApplicationServiceDescriptor.get_PassiveRequestorEndpoints()",
-            "Name": "get_PassiveRequestorEndpoints",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadRoleDescriptorAttributes(System.Xml.XmlReader,System.IdentityModel.Metadata.RoleDescriptor)",
-            "Name": "ReadRoleDescriptorAttributes",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteMetadata(System.Xml.XmlWriter, System.IdentityModel.Metadata.MetadataBase)",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteMetadata(System.IO.Stream, System.IdentityModel.Metadata.MetadataBase)",
             "Name": "WriteMetadata",
             "KeyType": "",
             "RecommendedActions": [
@@ -1334,8 +586,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.WriteCustomAttributes<T>(XmlWriter, T)",
-            "Name": "WriteCustomAttributes<T>",
+            "Value": "System.IdentityModel.Metadata.ContactPerson.get_Surname()",
+            "Name": "get_Surname",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1351,7 +603,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.RoleDescriptor.RoleDescriptor(System.Collections.objectModel.Collection{System.Uri})",
+            "Value": "System.IdentityModel.Metadata.IndexedProtocolEndpoint.IndexedProtocolEndpoint(int, System.Uri, System.Uri)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -1368,8 +620,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.SecurityTokenServiceEndpoints.get_SecurityTokenServiceEndpoints()",
-            "Name": "get_SecurityTokenServiceEndpoints",
+            "Value": "System.IdentityModel.Metadata.DisplayClaim.set_WriteOptionalAttribute(bool)",
+            "Name": "set_WriteOptionalAttribute",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1385,8 +637,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.RoleDescriptor.set_Organization(System.IdentityModel.Metadata.Organization)",
-            "Name": "set_Organization",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.CreateEntityDescriptorInstance()",
+            "Name": "CreateEntityDescriptorInstance",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1402,8 +654,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.Organization.Names.get_Names()",
-            "Name": "get_Names",
+            "Value": "System.IdentityModel.Metadata.EncryptionMethod.get_Algorithm()",
+            "Name": "get_Algorithm",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1419,8 +671,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.set_WantAuthenticationRequestsSigned(bool)",
-            "Name": "set_WantAuthenticationRequestsSigned",
+            "Value": "System.IdentityModel.Metadata.EntitiesDescriptor.get_ChildEntityGroups()",
+            "Name": "get_ChildEntityGroups",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1436,8 +688,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.CreateKeyDescriptorInstance()",
-            "Name": "CreateKeyDescriptorInstance",
+            "Value": "System.IdentityModel.Metadata.KeyDescriptor.set_Use(System.IdentityModel.Metadata.KeyType)",
+            "Name": "set_Use",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1453,8 +705,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.Xml.XmlReader, System.IdentityModel.Selectors.SecurityTokenResolver)",
-            "Name": "ReadMetadata",
+            "Value": "System.IdentityModel.Metadata.ContactPerson.Surname.set_Surname(string)",
+            "Name": "set_Surname",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1470,8 +722,59 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Metadata.KeyDescriptor.get_EncryptionMethods()",
-            "Name": "get_EncryptionMethods",
+            "Value": "System.IdentityModel.Metadata.MetadataSerializer.ReadIndexedProtocolEndpoint(System.Xml.XmlReader)",
+            "Name": "ReadIndexedProtocolEndpoint",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.ProtocolEndpoint.get_Location()",
+            "Name": "get_Location",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.ContactPerson..ctor()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.get_Default()",
+            "Name": "get_Default",
             "KeyType": "",
             "RecommendedActions": [
                 {

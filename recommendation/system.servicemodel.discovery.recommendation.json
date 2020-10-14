@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.ResolveAsync(System.ServiceModel.Discovery.ResolveCriteria, object)",
-            "Name": "ResolveAsync",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.Close()",
+            "Name": "System.ServiceModel.ICommunicationObject.Close",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.get_TimeToLive()",
-            "Name": "get_TimeToLive",
+            "Value": "System.ServiceModel.Discovery.AnnouncementEndpoint.AnnouncementEndpoint(System.ServiceModel.Channels.Binding, System.ServiceModel.EndpointAddress)",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -42,8 +42,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_MaxReceivedMessageSize(long)",
-            "Name": "set_MaxReceivedMessageSize",
+            "Value": "System.ServiceModel.Discovery.ServiceDiscoveryBehavior.System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription, System.ServiceModel.ServiceHostBase)",
+            "Name": "System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -59,8 +59,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryMetadata.get_Extensions()",
-            "Name": "get_Extensions",
+            "Value": "System.ServiceModel.Discovery.AnnouncementEventArgs.get_EndpointDiscoveryMetadata()",
+            "Name": "get_EndpointDiscoveryMetadata",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,8 +76,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.get_SequenceId()",
-            "Name": "get_SequenceId",
+            "Value": "System.ServiceModel.Discovery.UdpAnnouncementEndpoint.UdpAnnouncementEndpoint()",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -93,8 +93,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.get_ChannelFactory()",
-            "Name": "get_ChannelFactory",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "System.ServiceModel.ICommunicationObject.BeginClose",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -110,8 +110,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.remove_Opened(System.EventHandler)",
-            "Name": "System.ServiceModel.ICommunicationObject.remove_Opened",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.Close()",
+            "Name": "System.ServiceModel.ICommunicationObject.Close",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -127,8 +127,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.get_State()",
-            "Name": "System.ServiceModel.ICommunicationObject.get_State",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.add_Faulted(System.EventHandler)",
+            "Name": "System.ServiceModel.ICommunicationObject.add_Faulted",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -144,365 +144,348 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.add_Opened(System.EventHandler)",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.add_Faulted(System.EventHandler)",
+            "Name": "System.ServiceModel.ICommunicationObject.add_Faulted",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.add_Opening(System.EventHandler)",
+            "Name": "System.ServiceModel.ICommunicationObject.add_Opening",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.UdpDiscoveryEndpoint.set_MulticastAddress(System.Uri)",
+            "Name": "set_MulticastAddress",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_SocketReceiveBufferSize(int)",
+            "Name": "set_SocketReceiveBufferSize",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryVersion.get_MessageVersion()",
+            "Name": "get_MessageVersion",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.FindResponse.get_Endpoints()",
+            "Name": "get_Endpoints",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryServiceExtension.System.ServiceModel.IExtension<System.ServiceModel.ServiceHostBase>.Detach(System.ServiceModel.ServiceHostBase)",
+            "Name": "System.ServiceModel.IExtension<System.ServiceModel.ServiceHostBase>.Detach",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement(System.IAsyncResult)",
+            "Name": "OnEndOnlineAnnouncement",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.DiscoveryClient(System.ServiceModel.Discovery.DiscoveryEndpoint)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "System.ServiceModel.ICommunicationObject.BeginClose",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.Equals(object)",
+            "Name": "Equals",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.CancelAsync(object)",
+            "Name": "CancelAsync",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClientBindingElement.get_FindCriteria()",
+            "Name": "get_FindCriteria",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_MaxBufferPoolSize(long)",
+            "Name": "set_MaxBufferPoolSize",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.Equals(System.ServiceModel.Discovery.DiscoveryMessageSequence)",
+            "Name": "Equals",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.FindRequestContext.FindRequestContext(System.ServiceModel.Discovery.FindCriteria)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.AnnouncementEndpoint.get_MaxAnnouncementDelay()",
+            "Name": "get_MaxAnnouncementDelay",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.FindAsync(System.ServiceModel.Discovery.FindCriteria, object)",
+            "Name": "FindAsync",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.FindCriteria.set_Duration(System.TimeSpan)",
+            "Name": "set_Duration",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.FindProgressChanged.add_FindProgressChanged(System.EventHandler{System.ServiceModel.Discovery.FindProgressChangedEventArgs})",
+            "Name": "add_FindProgressChanged",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.add_Opened(System.EventHandler)",
             "Name": "System.ServiceModel.ICommunicationObject.add_Opened",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind(System.ServiceModel.Discovery.FindRequestContext, System.AsyncCallback, object)",
-            "Name": "OnBeginFind",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementService.add_OnlineAnnouncementReceived(System.EventHandler{System.ServiceModel.Discovery.AnnouncementEventArgs})",
-            "Name": "add_OnlineAnnouncementReceived",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryMetadata.set_Version(int)",
-            "Name": "set_Version",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
-            "Name": "AnnounceOnlineAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.CompareTo(System.ServiceModel.Discovery.DiscoveryMessageSequence)",
-            "Name": "CompareTo",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryService.DiscoveryService(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator, int)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.remove_Faulted(System.EventHandler)",
-            "Name": "System.ServiceModel.ICommunicationObject.remove_Faulted",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_TimeToLive(int)",
-            "Name": "set_TimeToLive",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpAnnouncementEndpoint.UdpAnnouncementEndpoint(System.ServiceModel.Discovery.DiscoveryVersion, string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.add_Closing(System.EventHandler)",
-            "Name": "System.ServiceModel.ICommunicationObject.add_Closing",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.ServiceDiscoveryBehavior.System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription, System.ServiceModel.ServiceHostBase, System.Collections.objectModel.Collection{System.ServiceModel.Description.ServiceEndpoint}, System.ServiceModel.Channels.BindingParameterCollection)",
-            "Name": "System.ServiceModel.Description.IServiceBehavior.AddBindingParameters",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindCriteria.get_Scopes()",
-            "Name": "get_Scopes",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.ResolveCompletedEventArgs.Result.get_Result()",
-            "Name": "get_Result",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.remove_AnnounceOfflineCompleted(System.EventHandler{System.ComponentModel.AsyncCompletedEventArgs})",
-            "Name": "remove_AnnounceOfflineCompleted",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
-            "Name": "AddMatchingEndpoint",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementService..ctor()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryServiceExtension.get_PublishedEndpoints()",
-            "Name": "get_PublishedEndpoints",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindCriteria.set_MaxResults(int)",
-            "Name": "set_MaxResults",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator.Next()",
-            "Name": "Next",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.add_FindCompleted(System.EventHandler{System.ServiceModel.Discovery.FindCompletedEventArgs})",
-            "Name": "add_FindCompleted",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.Close()",
-            "Name": "Close",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -535,1078 +518,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_MaxPendingMessageCount(int)",
-            "Name": "set_MaxPendingMessageCount",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_MulticastInterfaceId(string)",
-            "Name": "set_MulticastInterfaceId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.remove_FindProgressChanged(System.EventHandler{System.ServiceModel.Discovery.FindProgressChangedEventArgs})",
-            "Name": "remove_FindProgressChanged",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpDiscoveryEndpoint.UdpDiscoveryEndpoint(string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpAnnouncementEndpoint.UdpAnnouncementEndpoint(System.Uri)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOfflineTaskAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
-            "Name": "AnnounceOfflineTaskAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.remove_Closed(System.EventHandler)",
-            "Name": "System.ServiceModel.ICommunicationObject.remove_Closed",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOfflineAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata, object)",
-            "Name": "AnnounceOfflineAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryOperationContextExtension.get_DiscoveryVersion()",
-            "Name": "get_DiscoveryVersion",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindCriteria.CreateMetadataExchangeEndpointCriteria(System.Collections.Generic.IEnumerable{System.Xml.XmlQualifiedName})",
-            "Name": "CreateMetadataExchangeEndpointCriteria",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.ResolveAsync(System.ServiceModel.Discovery.ResolveCriteria)",
-            "Name": "ResolveAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.get_Endpoint()",
-            "Name": "get_Endpoint",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryClientBindingElement(System.ServiceModel.Discovery.DiscoveryEndpointProvider, System.ServiceModel.Discovery.FindCriteria)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnouncementClient(System.ServiceModel.Discovery.AnnouncementEndpoint)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindRequestContext.get_Criteria()",
-            "Name": "get_Criteria",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryMetadata.get_Scopes()",
-            "Name": "get_Scopes",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryServiceExtension.DiscoveryServiceExtension()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.remove_Faulted(System.EventHandler)",
-            "Name": "System.ServiceModel.ICommunicationObject.remove_Faulted",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineTaskAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
-            "Name": "AnnounceOnlineTaskAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.Open()",
-            "Name": "System.ServiceModel.ICommunicationObject.Open",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementService.OnEndOfflineAnnouncement(System.IAsyncResult)",
-            "Name": "OnEndOfflineAnnouncement",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpDiscoveryEndpoint.UdpDiscoveryEndpoint()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindCriteria.ContractTypeNames.get_ContractTypeNames()",
-            "Name": "get_ContractTypeNames",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.get_MaxBufferPoolSize()",
-            "Name": "get_MaxBufferPoolSize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve(System.IAsyncResult)",
-            "Name": "OnEndResolve",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.add_ProxyAvailable(System.EventHandler{System.ServiceModel.Discovery.AnnouncementEventArgs})",
-            "Name": "add_ProxyAvailable",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementService.remove_OfflineAnnouncementReceived(System.EventHandler{System.ServiceModel.Discovery.AnnouncementEventArgs})",
-            "Name": "remove_OfflineAnnouncementReceived",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnouncementClient()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.ResolveCriteria.ResolveCriteria(System.ServiceModel.EndpointAddress)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryService..ctor()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.get_MessageNumber()",
-            "Name": "get_MessageNumber",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.BeginAnnounceOffline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata, System.AsyncCallback, object)",
-            "Name": "BeginAnnounceOffline",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryServiceExtension.System.ServiceModel.IExtension<System.ServiceModel.ServiceHostBase>.Attach(System.ServiceModel.ServiceHostBase)",
-            "Name": "System.ServiceModel.IExtension<System.ServiceModel.ServiceHostBase>.Attach",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryBehavior.get_Scopes()",
-            "Name": "get_Scopes",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindResponse.GetMessageSequence(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
-            "Name": "GetMessageSequence",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindCriteria.FindCriteria(System.Type)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DynamicEndpoint.get_DiscoveryEndpointProvider()",
-            "Name": "get_DiscoveryEndpointProvider",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindCriteria.get_ScopeMatchBy()",
-            "Name": "get_ScopeMatchBy",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementService.OnBeginOfflineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence, System.ServiceModel.Discovery.EndpointDiscoveryMetadata, System.AsyncCallback, object)",
-            "Name": "OnBeginOfflineAnnouncement",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpAnnouncementEndpoint.UdpAnnouncementEndpoint(System.ServiceModel.Discovery.DiscoveryVersion)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.Abort()",
-            "Name": "System.ServiceModel.ICommunicationObject.Abort",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.ResolveCriteria..ctor()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.get_InnerChannel()",
-            "Name": "get_InnerChannel",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.Close()",
-            "Name": "Close",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.ResolveResponse.get_EndpointDiscoveryMetadata()",
-            "Name": "get_EndpointDiscoveryMetadata",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind(System.IAsyncResult)",
-            "Name": "OnEndFind",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.Open()",
-            "Name": "Open",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_MaxMulticastRetransmitCount(int)",
-            "Name": "set_MaxMulticastRetransmitCount",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)",
-            "Name": "System.ServiceModel.ICommunicationObject.Open",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.InstanceId.get_InstanceId()",
-            "Name": "get_InstanceId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.Open()",
-            "Name": "Open",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryProxy.EndShouldRedirectResolve(System.IAsyncResult, System.Collections.objectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata})",
-            "Name": "EndShouldRedirectResolve",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)",
-            "Name": "System.ServiceModel.ICommunicationObject.EndOpen",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryOperationContextExtension.System.ServiceModel.IExtension<System.ServiceModel.OperationContext>.Attach(System.ServiceModel.OperationContext)",
-            "Name": "System.ServiceModel.IExtension<System.ServiceModel.OperationContext>.Attach",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpDiscoveryEndpoint.get_TransportSettings()",
-            "Name": "get_TransportSettings",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindCriteria.FindCriteria()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementEndpoint.get_DiscoveryVersion()",
-            "Name": "get_DiscoveryVersion",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpDiscoveryEndpoint.UdpDiscoveryEndpoint(System.Uri)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)",
-            "Name": "System.ServiceModel.ICommunicationObject.Close",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.Open()",
-            "Name": "System.ServiceModel.ICommunicationObject.Open",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence, System.ServiceModel.Discovery.EndpointDiscoveryMetadata, System.AsyncCallback, object)",
-            "Name": "OnBeginOnlineAnnouncement",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.get_MessageSequenceGenerator()",
-            "Name": "get_MessageSequenceGenerator",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.get_MaxPendingMessageCount()",
-            "Name": "get_MaxPendingMessageCount",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.ResolveCriteria.set_Address(System.ServiceModel.EndpointAddress)",
+            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryMetadata.set_Address(System.ServiceModel.EndpointAddress)",
             "Name": "set_Address",
             "KeyType": "",
             "RecommendedActions": [
@@ -1623,8 +535,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Extensions.get_Extensions()",
-            "Name": "get_Extensions",
+            "Value": "System.ServiceModel.Discovery.AnnouncementEndpoint.set_MaxAnnouncementDelay(System.TimeSpan)",
+            "Name": "set_MaxAnnouncementDelay",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1640,8 +552,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryEndpoint.get_DiscoveryVersion()",
-            "Name": "get_DiscoveryVersion",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.get_ClientCredentials()",
+            "Name": "get_ClientCredentials",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1657,8 +569,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.get_SocketReceiveBufferSize()",
-            "Name": "get_SocketReceiveBufferSize",
+            "Value": "System.ServiceModel.Discovery.DiscoveryService.OnEndResolve(System.IAsyncResult)",
+            "Name": "OnEndResolve",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1674,8 +586,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementService.add_OfflineAnnouncementReceived(System.EventHandler{System.ServiceModel.Discovery.AnnouncementEventArgs})",
-            "Name": "add_OfflineAnnouncementReceived",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan, System.AsyncCallback, object)",
+            "Name": "System.ServiceModel.ICommunicationObject.BeginOpen",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1691,8 +603,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryVersion.get_Name()",
-            "Name": "get_Name",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOffline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
+            "Name": "AnnounceOffline",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1708,7 +620,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryBehavior.get_ContractTypeNames()",
+            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryMetadata.get_ContractTypeNames()",
             "Name": "get_ContractTypeNames",
             "KeyType": "",
             "RecommendedActions": [
@@ -1725,8 +637,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata, object)",
-            "Name": "AnnounceOnlineAsync",
+            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.ToString()",
+            "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1742,8 +654,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback, object)",
-            "Name": "System.ServiceModel.ICommunicationObject.BeginClose",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback, object)",
+            "Name": "System.ServiceModel.ICommunicationObject.BeginOpen",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1759,7 +671,24 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementService.AnnouncementService(int)",
+            "Value": "System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence, System.ServiceModel.Discovery.EndpointDiscoveryMetadata, System.AsyncCallback, object)",
+            "Name": "OnBeginOfflineAnnouncement",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryMetadata..ctor()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -1776,8 +705,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryBehavior.System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint, System.ServiceModel.Dispatcher.ClientRuntime)",
-            "Name": "System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryClientBindingElement()",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1793,8 +722,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryOperationContextExtension.get_MaxResponseDelay()",
-            "Name": "get_MaxResponseDelay",
+            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator.DiscoveryMessageSequenceGenerator(long, System.Uri)",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1810,8 +739,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.ServiceDiscoveryBehavior.get_AnnouncementEndpoints()",
-            "Name": "get_AnnouncementEndpoints",
+            "Value": "System.ServiceModel.Discovery.UdpDiscoveryEndpoint.UdpDiscoveryEndpoint(System.ServiceModel.Discovery.DiscoveryVersion, System.Uri)",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1827,8 +756,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.FindRequestContext.OnAddMatchingEndpoint(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
-            "Name": "OnAddMatchingEndpoint",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.remove_Closing(System.EventHandler)",
+            "Name": "System.ServiceModel.ICommunicationObject.remove_Closing",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1844,8 +773,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryVersion.get_Namespace()",
-            "Name": "get_Namespace",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.EndAnnounceOnline(System.IAsyncResult)",
+            "Name": "EndAnnounceOnline",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1861,8 +790,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.FindTaskAsync(System.ServiceModel.Discovery.FindCriteria, System.Threading.CancellationToken)",
-            "Name": "FindTaskAsync",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.get_Endpoint()",
+            "Name": "get_Endpoint",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1878,8 +807,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryService.OnBeginResolve(System.ServiceModel.Discovery.ResolveCriteria, System.AsyncCallback, object)",
-            "Name": "OnBeginResolve",
+            "Value": "System.ServiceModel.Discovery.EndpointDiscoveryMetadata.get_Version()",
+            "Name": "get_Version",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1895,8 +824,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.get_MulticastInterfaceId()",
-            "Name": "get_MulticastInterfaceId",
+            "Value": "System.ServiceModel.Discovery.UdpAnnouncementEndpoint.get_MulticastAddress()",
+            "Name": "get_MulticastAddress",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1912,8 +841,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClientBindingElement.CanBuildChannelFactory<TChannel>(BindingContext)",
-            "Name": "CanBuildChannelFactory<TChannel>",
+            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator.DiscoveryMessageSequenceGenerator()",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1929,8 +858,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)",
-            "Name": "AnnounceOnline",
+            "Value": "System.ServiceModel.Discovery.DiscoveryClientBindingElement.BuildChannelListener<TChannel>(System.ServiceModel.Channels.BindingContext)",
+            "Name": "BuildChannelListener<TChannel>",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1946,8 +875,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)",
-            "Name": "System.ServiceModel.ICommunicationObject.EndOpen",
+            "Value": "System.ServiceModel.Discovery.DynamicEndpoint.set_FindCriteria(System.ServiceModel.Discovery.FindCriteria)",
+            "Name": "set_FindCriteria",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1963,8 +892,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryMessageSequence.CanCompareTo(System.ServiceModel.Discovery.DiscoveryMessageSequence)",
-            "Name": "CanCompareTo",
+            "Value": "System.ServiceModel.Discovery.UdpTransportSettings.set_MaxUnicastRetransmitCount(int)",
+            "Name": "set_MaxUnicastRetransmitCount",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1980,8 +909,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.AnnouncementClient.remove_AnnounceOnlineCompleted(System.EventHandler{System.ComponentModel.AsyncCompletedEventArgs})",
-            "Name": "remove_AnnounceOnlineCompleted",
+            "Value": "System.ServiceModel.Discovery.DiscoveryVersion.get_WSDiscoveryCD1()",
+            "Name": "get_WSDiscoveryCD1",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1997,8 +926,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.remove_Opened(System.EventHandler)",
-            "Name": "System.ServiceModel.ICommunicationObject.remove_Opened",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineCompleted.add_AnnounceOnlineCompleted(System.EventHandler{System.ComponentModel.AsyncCompletedEventArgs})",
+            "Name": "add_AnnounceOnlineCompleted",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2014,8 +943,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Discovery.DiscoveryClientBindingElement.BuildChannelFactory<TChannel>(BindingContext)",
-            "Name": "BuildChannelFactory<TChannel>",
+            "Value": "System.ServiceModel.Discovery.AnnouncementClient.set_MessageSequenceGenerator(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator)",
+            "Name": "set_MessageSequenceGenerator",
             "KeyType": "",
             "RecommendedActions": [
                 {

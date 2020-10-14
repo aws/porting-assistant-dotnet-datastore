@@ -8,41 +8,7 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.StopListening(object)",
-            "Name": "StopListening",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.IpcServerChannel(System.Collections.IDictionary, System.Runtime.Remoting.Channels.IServerChannelSinkProvider)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.get_IsSecured()",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.get_IsSecured()",
             "Name": "get_IsSecured",
             "KeyType": "",
             "RecommendedActions": [
@@ -59,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink(string,object,string@)",
-            "Name": "CreateMessageSink",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.get_ChannelData()",
+            "Name": "get_ChannelData",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,58 +42,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.StartListening(object)",
-            "Name": "StartListening",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.GetUrlsForUri(string)",
-            "Name": "GetUrlsForUri",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.set_IsSecured(bool)",
-            "Name": "set_IsSecured",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.IpcChannel(System.Collections.IDictionary, System.Runtime.Remoting.Channels.IClientChannelSinkProvider, System.Runtime.Remoting.Channels.IServerChannelSinkProvider)",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.IpcChannel(string)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -144,7 +59,41 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.IpcChannel()",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.IpcServerChannel(string, string)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.get_ChannelPriority()",
+            "Name": "get_ChannelPriority",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.IpcClientChannel(System.Collections.IDictionary, System.Runtime.Remoting.Channels.IClientChannelSinkProvider)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -178,76 +127,25 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.get_ChannelPriority()",
-            "Name": "get_ChannelPriority",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.Parse(string, string)",
-            "Name": "Parse",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcChannel.StartListening(object)",
-            "Name": "StartListening",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.get_ChannelName()",
-            "Name": "get_ChannelName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.IpcServerChannel(string, string, System.Runtime.Remoting.Channels.IServerChannelSinkProvider)",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.IpcServerChannel(string)",
             "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.GetUrlsForUri(string)",
+            "Name": "GetUrlsForUri",
             "KeyType": "",
             "RecommendedActions": [
                 {

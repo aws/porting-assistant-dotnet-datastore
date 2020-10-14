@@ -8,8 +8,25 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
-            "Name": "SetAccessControl",
+            "Value": "Microsoft.Win32.RegistryKey.OpenSubKey(string, Microsoft.Win32.RegistryKeyPermissionCheck, System.Security.AccessControl.RegistryRights)",
+            "Name": "OpenSubKey",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove: CAS is not supported.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
+            "Name": "GetAccessControl",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,8 +42,8 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
-            "Name": "GetAccessControl",
+            "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
+            "Name": "SetAccessControl",
             "KeyType": "",
             "RecommendedActions": [
                 {

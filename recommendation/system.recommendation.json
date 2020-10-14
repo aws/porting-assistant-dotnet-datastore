@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Environment.get_MachineName()",
-            "Name": "get_MachineName",
+            "Value": "System.Type.get_IsExplicitLayout()",
+            "Name": "get_IsExplicitLayout",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -18,99 +18,14 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove, or use Environment.GetEnvironmentVariable(\"COMPUTERNAME\").",
+                    "Description": ".GetTypeInfo().IsExplicitLayout.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Type.GetConstructors(System.Reflection.BindingFlags)",
-            "Name": "GetConstructors",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Equivalent available: Add using for System.Reflection, and reference System.Reflection.TypeExtensions.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Delegate.CreateDelegate(System.Type, System.Type, string, bool)",
-            "Name": "CreateDelegate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use MethodInfo.CreateDelegate.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Environment.get_CurrentDirectory()",
-            "Name": "get_CurrentDirectory",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Directory.GetCurrentDirectory().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetConstructor(System.Reflection.BindingFlags, System.Reflection.Binder, System.Type[], System.Reflection.ParameterModifier[])",
-            "Name": "GetConstructor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetConstructor(Type[]) to search for public constructors by parameter type or filter the results of GetConstructors(BindingFlags) using LINQ for other queries.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_ShadowCopyFiles(string)",
-            "Name": "set_ShadowCopyFiles",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainUnloadedException.AppDomainUnloadedException(string, System.Exception)",
+            "Value": "System.MissingMethodException.MissingMethodException(string)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -120,32 +35,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.StringComparer.get_InvariantCulture()",
-            "Name": "get_InvariantCulture",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "It is almost always incorrect to using InvariantCulture for string equality, see http://msdn.microsoft.com/en-us/library/dd465121(v=vs.110).aspx. The most common replacement is StringComparer.Ordinal, otherwise, if you need InvariantCulture, use CultureInfo.InvariantCulture.ComparerInfo.GetStringComparer(CompareOptions).",
+                    "Description": "Use MissingMemberException instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Type.get_IsSealed()",
-            "Name": "get_IsSealed",
+            "Value": "System.String.Compare(string, string, bool, System.Globalization.CultureInfo)",
+            "Name": "Compare",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -154,83 +52,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().IsSealed.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_DisallowCodeDownload(bool)",
-            "Name": "set_DisallowCodeDownload",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsSealed()",
-            "Name": "get_IsSealed",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsSealed.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Attribute.IsDefined(System.Reflection.Assembly, System.Type)",
-            "Name": "IsDefined",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Reflection.CustomAttributeExtensions.IsDefined() in System.Reflection.Extensions.",
+                    "Description": "Use String.Compare(string,string,string,StringComparison) instead.   Alternativaly, use CultureInfo.CompareInfo.Compare().",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Type",
-            "Value": "System.EntryPointNotFoundException",
-            "Name": "System.EntryPointNotFoundException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Avoid usage.  Catch general Exception and check HResult if needed.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_SandboxInterop(bool)",
-            "Name": "set_SandboxInterop",
+            "Value": "System.ICloneable",
+            "Name": "System.ICloneable",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -246,8 +76,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Exception.GetType()",
-            "Name": "GetType",
+            "Value": "System.Type.GetMethod(string, System.Type[], System.Reflection.ParameterModifier[])",
+            "Name": "GetMethod",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -256,14 +86,31 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "False positive (Object.GetType() is sufficient).",
+                    "Description": "Use GetMethod(string, Type[]) to search for public methods by name and parameter type or filter the results of GetMethods(BindingFlags) using LINQ for other queries.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess)",
+            "Value": "System.AppDomainSetup.get_AppDomainManagerAssembly()",
+            "Name": "get_AppDomainManagerAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, string, System.Security.PermissionSet, System.Security.PermissionSet, System.Security.PermissionSet)",
             "Name": "DefineDynamicAssembly",
             "KeyType": "",
             "RecommendedActions": [
@@ -280,313 +127,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IConvertible.ToByte(System.IFormatProvider)",
-            "Name": "ToByte",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsGenericType()",
-            "Name": "get_IsGenericType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsGenericType.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Environment.set_CurrentDirectory(string)",
-            "Name": "set_CurrentDirectory",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Directory.GetCurrentDirectory().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.get_SandboxInterop()",
-            "Name": "get_SandboxInterop",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.UriFormatException..ctor(string,System.Exception)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use FormatException instead.  If you need to differentiate, can check ex.GetType().ToString() == \"System.UriFormatException\".",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IConvertible.ToUInt16(System.IFormatProvider)",
-            "Name": "ToUInt16",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.StringComparer.InvariantCultureIgnoreCase.get_InvariantCultureIgnoreCase()",
-            "Name": "get_InvariantCultureIgnoreCase",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "It is almost always incorrect to using InvariantCulture for string equality, see http://msdn.microsoft.com/en-us/library/dd465121(v=vs.110).aspx. The most common replacement is StringComparer.OrdinalIgnoreCase, otherwise, if you need InvariantCulture, use CultureInfo.InvariantCulture.ComparerInfo.GetStringComparer(CompareOptions).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsMarshalByRef()",
-            "Name": "get_IsMarshalByRef",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsMarshalByRef.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type, bool)",
-            "Name": "IsDefined",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Reflection.CustomAttributeExtensions.IsDefined() in System.Reflection.Extensions.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.IsSubclassOf(System.Type)",
-            "Name": "IsSubclassOf",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsSubclassOf.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.get_DisallowBindingRedirects()",
-            "Name": "get_DisallowBindingRedirects",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Exception.add_SerializeObjectState(System.EventHandler{System.Runtime.Serialization.SafeSerializationEventArgs})",
-            "Name": "add_SerializeObjectState",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_DynamicBase(string)",
-            "Name": "set_DynamicBase",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.MissingMethodException",
-            "Name": "System.MissingMethodException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use MissingMemberException instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsAutoLayout()",
-            "Name": "get_IsAutoLayout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsAutoLayout.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ConsoleCancelEventArgs.get_Cancel()",
-            "Name": "get_Cancel",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ResolveEventArgs.ResolveEventArgs(string, System.Reflection.Assembly)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyLoadContext.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Boolean.ToString(System.IFormatProvider)",
-            "Name": "ToString",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Call ToString() without arguments.  (Does not do anything).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.CreateInstance(System.AppDomain, string, string, bool, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo, object[])",
+            "Value": "System.Activator.CreateInstance(System.Type, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo, object[])",
             "Name": "CreateInstance",
             "KeyType": "",
             "RecommendedActions": [
@@ -598,73 +139,13 @@
                     ],
                     "Description": "No no no",
                     "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Change to use overload which does not contain CultureInfo parameter.  Set CurrentCulture / CurrentUICulture to impact behavior if needed.",
-                    "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.ApplicationException.ApplicationException()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other exception types.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetEnumUnderlyingType()",
-            "Name": "GetEnumUnderlyingType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Enum.GetUnderlyingType(System.Type)",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ResolveEventHandler",
-            "Name": "System.ResolveEventHandler",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyLoadContext.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.get_ActivationArguments()",
-            "Name": "get_ActivationArguments",
+            "Value": "System.ICloneable.Clone()",
+            "Name": "Clone",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -679,9 +160,9 @@
             ]
         },
         {
-            "Type": "Type",
-            "Value": "System.UnhandledExceptionEventArgs",
-            "Name": "System.UnhandledExceptionEventArgs",
+            "Type": "Method",
+            "Value": "System.Environment.get_OSVersion()",
+            "Name": "get_OSVersion",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -690,15 +171,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Avoid usage of the UnhandledException Event, handle exceptions directly at scope of method being called.",
+                    "Description": "Use System.Runtime.InteropServices.OSDescription instead",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Type.get_ContainsGenericParameters()",
-            "Name": "get_ContainsGenericParameters",
+            "Value": "System.Environment.SetEnvironmentVariable(string, string)",
+            "Name": "SetEnvironmentVariable",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -707,24 +188,7 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().ContainsGenericParameters.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.OperatingSystem",
-            "Name": "System.OperatingSystem",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.  Couple behavior to feature availability, not OS version or Platform.",
+                    "Description": "PInvoke to Win32 SetEnvironmentVariable if needed.",
                     "Actions": []
                 }
             ]
@@ -748,8 +212,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AppDomainSetup.get_LicenseFile()",
-            "Name": "get_LicenseFile",
+            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, System.Security.Policy.Evidence)",
+            "Name": "DefineDynamicAssembly",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -758,251 +222,17 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.get_AppDomainInitializer()",
-            "Name": "get_AppDomainInitializer",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.GetConfigurationBytes()",
-            "Name": "GetConfigurationBytes",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.get_AppDomainManagerType()",
-            "Name": "get_AppDomainManagerType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_ContainsGenericParameters()",
-            "Name": "get_ContainsGenericParameters",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().ContainsGenericParameters.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ResolveEventArgs.get_RequestingAssembly()",
-            "Name": "get_RequestingAssembly",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyLoadContext.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Environment.Is64BitProcess.get_Is64BitProcess()",
-            "Name": "get_Is64BitProcess",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Runtime.InteropServices.ProcessArchitecture instead",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_ApplicationBase(string)",
-            "Name": "set_ApplicationBase",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainUnloadedException.AppDomainUnloadedException()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
+                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Type",
-            "Value": "System.IConvertible",
-            "Name": "System.IConvertible",
+            "Value": "System.UnhandledExceptionEventArgs",
+            "Name": "System.UnhandledExceptionEventArgs",
             "KeyType": "",
             "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System",
-            "Name": "System",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use FormatException instead.  If you need to differentiate, can check ex.GetType().ToString() == \"System.UriFormatException\".",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsClass.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsSerializable.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use object with finalizer stored in static variable, or use app-model specific unload notifications (e.g. Application.Suspending event for modern apps).",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Encoding.GetString(char*, int).",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Runtime.InteropServices.ProcessArchitecture instead",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "It is almost always incorrect to using InvariantCulture for string equality, see http://msdn.microsoft.com/en-us/library/dd465121(v=vs.110).aspx. The most common replacement is StringComparer.OrdinalIgnoreCase, otherwise, if you need InvariantCulture, use CultureInfo.InvariantCulture.ComparerInfo.GetStringComparer(CompareOptions).",
-                    "Actions": []
-                },
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
@@ -1016,8 +246,42 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AccessViolationException.AccessViolationException(string, System.Exception)",
-            "Name": ".ctor",
+            "Value": "System.UnhandledExceptionEventHandler.Invoke(object, System.UnhandledExceptionEventArgs)",
+            "Name": "Invoke",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Avoid usage of the UnhandledException Event, handle exceptions directly at scope of method being called.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Environment.get_Is64BitOperatingSystem()",
+            "Name": "get_Is64BitOperatingSystem",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Runtime.InteropServices.OSArchitecture instead",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AppDomainSetup.set_ApplicationTrust(System.Security.Policy.ApplicationTrust)",
+            "Name": "set_ApplicationTrust",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1033,8 +297,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": "GetObjectData",
+            "Value": "System.AppDomainSetup.DisallowApplicationBaseProbing.get_DisallowApplicationBaseProbing()",
+            "Name": "get_DisallowApplicationBaseProbing",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1050,296 +314,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AppDomainSetup.set_AppDomainManagerAssembly(string)",
-            "Name": "set_AppDomainManagerAssembly",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.String.ToString(System.IFormatProvider)",
-            "Name": "ToString",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IConvertible.ToSByte(System.IFormatProvider)",
-            "Name": "ToSByte",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_DisallowApplicationBaseProbing(bool)",
-            "Name": "set_DisallowApplicationBaseProbing",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.GetObject(System.Type, string)",
-            "Name": "GetObject",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Array.ConvertAll<TInput, TOutput>(TInput[], Converter<TInput, TOutput>)",
-            "Name": "ConvertAll<TInput, TOutput>",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use foreach statement with custom conversion code to handle conversion.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.get_PartialTrustVisibleAssemblies()",
-            "Name": "get_PartialTrustVisibleAssemblies",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ApplicationException",
-            "Name": "System.ApplicationException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other exception types.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.MarshalByRefObject.GetLifetimeService()",
-            "Name": "GetLifetimeService",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Char.GetUnicodeCategory(char)",
-            "Name": "GetUnicodeCategory",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CharUnicodeInfo.GetUnicodeCategory(Char).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.EntryPointNotFoundException.EntryPointNotFoundException()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Avoid usage.  Catch general Exception and check HResult if needed.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.DuplicateWaitObjectException.DuplicateWaitObjectException(string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Avoid usage.  Catch general Exception and check HResult if needed.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.UriFormatException",
-            "Name": "System.UriFormatException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use FormatException instead.  If you need to differentiate, can check ex.GetType().ToString() == \"System.UriFormatException\".",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.SerializableAttribute.SerializableAttribute()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.get_IsNestedPublic()",
-            "Name": "get_IsNestedPublic",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsNestedPublic.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ConsoleCancelEventHandler",
-            "Name": "System.ConsoleCancelEventHandler",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.InvalidOperationException.InvalidOperationException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.MissingMethodException.MissingMethodException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Value": "System.MissingMethodException.MissingMethodException(string, System.Exception)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -1356,8 +331,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Type.get_IsInterface()",
-            "Name": "get_IsInterface",
+            "Value": "System.IConvertible.GetTypeCode()",
+            "Name": "GetTypeCode",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1366,15 +341,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().IsInterface.",
+                    "Description": "Remove usage.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Attribute",
-            "Value": "System.Type.get_Name()",
-            "Name": "get_Name",
+            "Value": "System.Type.get_IsPublic()",
+            "Name": "get_IsPublic",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1383,321 +358,117 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().Name",
+                    "Description": ".GetTypeInfo().IsPublic.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.DateTime.ToShortTimeString()",
+            "Name": "ToShortTimeString",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Call DateTime.ToString(CultureInfo.CurrentCulture.DateTimeFormat.ShortTimePattern).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Type.get_IsNestedAssembly()",
+            "Name": "get_IsNestedAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".GetTypeInfo().IsNestedAssembly.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Console.get_ForegroundColor()",
+            "Name": "get_ForegroundColor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Guid.ToString(string, System.IFormatProvider)",
+            "Name": "ToString",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Call ToString() without arguments.  (Does not do anything).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, string, System.Security.Policy.Evidence, System.Security.PermissionSet, System.Security.PermissionSet, System.Security.PermissionSet, bool)",
+            "Name": "DefineDynamicAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Environment.get_Is64BitOperatingSystem()",
+            "Name": "get_Is64BitOperatingSystem",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Runtime.InteropServices.OSArchitecture instead",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Type",
-            "Value": "System.SerializableAttribute",
-            "Name": "System.SerializableAttribute",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsVisible()",
-            "Name": "get_IsVisible",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsVisible.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.CreateInstanceFrom(string, string, object[])",
-            "Name": "CreateInstanceFrom",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.CreateInstance(string, string)",
-            "Name": "CreateInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, string, bool, System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder})",
-            "Name": "DefineDynamicAssembly",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetInterface(string, bool)",
-            "Name": "GetInterface",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Enumerate across TypeInfo.ImplementedInterfaces.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ConsoleCancelEventHandler.BeginInvoke(object,System.ConsoleCancelEventArgs,System.AsyncCallback,object)",
-            "Name": "BeginInvoke",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ConsoleCancelEventArgs.set_Cancel(bool)",
-            "Name": "set_Cancel",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder}, System.Security.SecurityContextSource)",
-            "Name": "DefineDynamicAssembly",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, string, System.Security.Policy.Evidence)",
-            "Name": "DefineDynamicAssembly",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.get_IsMarshalByRef()",
-            "Name": "get_IsMarshalByRef",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsMarshalByRef.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ResolveEventHandler.ResolveEventHandler(object, System.IntPtr)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyLoadContext.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.CreateInstanceFrom(string, string)",
-            "Name": "CreateInstanceFrom",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.get_IsGenericTypeDefinition()",
-            "Name": "get_IsGenericTypeDefinition",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsGenericTypeDefinition.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_AppDomainManagerType(string)",
-            "Name": "set_AppDomainManagerType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ApplicationException.ApplicationException(string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other exception types.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.CreateInstance(System.Type, object[])",
-            "Name": "CreateInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.get_ShadowCopyFiles()",
-            "Name": "get_ShadowCopyFiles",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.OperatingSystem.Clone()",
-            "Name": "Clone",
+            "Value": "System.OperatingSystem",
+            "Name": "System.OperatingSystem",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1707,125 +478,6 @@
                         "netcoreapp3.1"
                     ],
                     "Description": "Do not use.  Couple behavior to feature availability, not OS version or Platform.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AccessViolationException.AccessViolationException(string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.StringComparer.get_InvariantCulture()",
-            "Name": "get_InvariantCulture",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "It is almost always incorrect to using InvariantCulture for string equality, see http://msdn.microsoft.com/en-us/library/dd465121(v=vs.110).aspx. The most common replacement is StringComparer.Ordinal, otherwise, if you need InvariantCulture, use CultureInfo.InvariantCulture.ComparerInfo.GetStringComparer(CompareOptions).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_AppDomainInitializer(System.AppDomainInitializer)",
-            "Name": "set_AppDomainInitializer",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsNestedFamANDAssem()",
-            "Name": "get_IsNestedFamANDAssem",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsNestedFamANDAssem.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsNestedFamORAssem()",
-            "Name": "get_IsNestedFamORAssem",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsNestedFamORAssem.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.AppDomainSetup()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetMethod(string, System.Reflection.BindingFlags, System.Reflection.Binder, System.Type[], System.Reflection.ParameterModifier[])",
-            "Name": "GetMethod",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetMethod(string, Type[]) to search for public methods by name and parameter type or filter the results of GetMethods(BindingFlags) using LINQ for other queries.",
                     "Actions": []
                 }
             ]
@@ -1849,7 +501,41 @@
         },
         {
             "Type": "Method",
-            "Value": "System.EntryPointNotFoundException.EntryPointNotFoundException(string, System.Exception)",
+            "Value": "System.String.ToLower(System.Globalization.CultureInfo)",
+            "Name": "ToLower",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use CultureInfo.TextInfo.ToLower(String) instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Type.GetGenericParameterConstraints()",
+            "Name": "GetGenericParameterConstraints",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".GetTypeInfo().GetGenericParameterConstraints().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.DuplicateWaitObjectException.DuplicateWaitObjectException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -1866,25 +552,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activator.System.Runtime.InteropServices._Activator.GetIDsOfNames(System.Guid, System.IntPtr, uint, uint, System.IntPtr)",
-            "Name": "System.Runtime.InteropServices._Activator.GetIDsOfNames",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_LoaderOptimization(System.LoaderOptimization)",
-            "Name": "set_LoaderOptimization",
+            "Value": "System.AppDomainSetup.get_AppDomainInitializerArguments()",
+            "Name": "get_AppDomainInitializerArguments",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1900,8 +569,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Type.get_Attributes()",
-            "Name": "get_Attributes",
+            "Value": "System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type)",
+            "Name": "IsDefined",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1910,66 +579,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().Attributes.",
+                    "Description": "Use System.Reflection.CustomAttributeExtensions.IsDefined() in System.Reflection.Extensions.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Type.get_IsGenericType()",
-            "Name": "get_IsGenericType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsGenericType.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.get_IsAutoLayout()",
-            "Name": "get_IsAutoLayout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsAutoLayout.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomain.IsFinalizingForUnload()",
-            "Name": "IsFinalizingForUnload",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use object with finalizer stored in static variable, or use app-model specific unload notifications (e.g. Application.Suspending event for modern apps).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.AppDomainSetup",
-            "Name": "System.AppDomainSetup",
+            "Value": "System.MarshalByRefObject.InitializeLifetimeService()",
+            "Name": "InitializeLifetimeService",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1985,8 +603,8 @@
         },
         {
             "Type": "Attribute",
-            "Value": "System.Type.get_IsGenericTypeDefinition()",
-            "Name": "get_IsGenericTypeDefinition",
+            "Value": "System.Type.get_IsUnicodeClass()",
+            "Name": "get_IsUnicodeClass",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -1995,41 +613,7 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().IsGenericTypeDefinition.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ConsoleCancelEventHandler.ConsoleCancelEventHandler(object, System.IntPtr)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IConvertible.ToDecimal(System.IFormatProvider)",
-            "Name": "ToDecimal",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
+                    "Description": ".GetTypeInfo().IsUnicodeClass.",
                     "Actions": []
                 }
             ]
@@ -2053,8 +637,25 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Converter<TInput, TOutput>.BeginInvoke(TInput, AsyncCallback, object)",
-            "Name": "BeginInvoke",
+            "Value": "System.Type.get_IsUnicodeClass()",
+            "Name": "get_IsUnicodeClass",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".GetTypeInfo().IsUnicodeClass.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AppDomainSetup.set_LicenseFile(string)",
+            "Name": "set_LicenseFile",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2070,8 +671,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Type.IsClass.get_IsClass()",
-            "Name": "get_IsClass",
+            "Value": "System.Attribute.IsDefined(System.Reflection.Module, System.Type)",
+            "Name": "IsDefined",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2080,15 +681,66 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().IsClass.",
+                    "Description": "Use System.Reflection.CustomAttributeExtensions.IsDefined() in System.Reflection.Extensions.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.IConvertible.ToBoolean(System.IFormatProvider)",
-            "Name": "ToBoolean",
+            "Value": "System.Activator.CreateInstanceFrom(System.AppDomain, string, string, bool, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo, object[])",
+            "Name": "CreateInstanceFrom",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "No no no",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.IConvertible",
+            "Name": "System.IConvertible",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Type.get_IsExplicitLayout()",
+            "Name": "get_IsExplicitLayout",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".GetTypeInfo().IsExplicitLayout.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IConvertible.ToString(System.IFormatProvider)",
+            "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2104,8 +756,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Type.get_IsNestedFamANDAssem()",
-            "Name": "get_IsNestedFamANDAssem",
+            "Value": "System.Type.get_IsPublic()",
+            "Name": "get_IsPublic",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2114,15 +766,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().IsNestedFamANDAssem.",
+                    "Description": ".GetTypeInfo().IsPublic.",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.UriFormatException.UriFormatException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": ".ctor",
+            "Type": "Type",
+            "Value": "System.UnhandledExceptionEventHandler",
+            "Name": "System.UnhandledExceptionEventHandler",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2131,49 +783,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use FormatException instead.  If you need to differentiate, can check ex.GetType().ToString() == \"System.UriFormatException\".",
+                    "Description": "Avoid usage of the UnhandledException Event, handle exceptions directly at scope of method being called.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Type.get_IsNestedPrivate()",
-            "Name": "get_IsNestedPrivate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsNestedPrivate.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Delegate.CreateDelegate(System.Type, object, string)",
-            "Name": "CreateDelegate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use MethodInfo.CreateDelegate.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IConvertible.ToUInt32(System.IFormatProvider)",
-            "Name": "ToUInt32",
+            "Value": "System.AppDomainSetup.set_CachePath(string)",
+            "Name": "set_CachePath",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2189,8 +807,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{string})",
-            "Name": "SetCompatibilitySwitches",
+            "Value": "System.AppDomainSetup.SetNativeFunction(string, int, System.IntPtr)",
+            "Name": "SetNativeFunction",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2206,8 +824,178 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AppDomainSetup.get_ApplicationName()",
-            "Name": "get_ApplicationName",
+            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, System.Security.Policy.Evidence, System.Security.PermissionSet, System.Security.PermissionSet, System.Security.PermissionSet)",
+            "Name": "DefineDynamicAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.OperatingSystem.ToString()",
+            "Name": "ToString",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Do not use.  Couple behavior to feature availability, not OS version or Platform.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Type.get_IsNestedAssembly()",
+            "Name": "get_IsNestedAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".GetTypeInfo().IsNestedAssembly.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.AppDomainSetup",
+            "Name": "System.AppDomainSetup",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Environment.get_OSVersion()",
+            "Name": "get_OSVersion",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Runtime.InteropServices.OSDescription instead",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Activator.CreateInstance(System.Type)",
+            "Name": "CreateInstance",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "No no no",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, string, System.Security.Policy.Evidence, System.Security.PermissionSet, System.Security.PermissionSet, System.Security.PermissionSet, bool, System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder})",
+            "Name": "DefineDynamicAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.MissingMethodException.get_Message()",
+            "Name": "get_Message",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use MissingMemberException instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Converter<TInput, TOutput>.EndInvoke(IAsyncResult)",
+            "Name": "EndInvoke",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.AppDomain.get_BaseDirectory()",
+            "Name": "get_BaseDirectory",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.AppContext.BaseDirectory.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AppDomainSetup.set_ActivationArguments(System.Runtime.Hosting.ActivationArguments)",
+            "Name": "set_ActivationArguments",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2223,8 +1011,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AppDomain.add_DomainUnload(System.EventHandler)",
-            "Name": "add_DomainUnload",
+            "Value": "System.Activator.GetObject(System.Type, string, object)",
+            "Name": "GetObject",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2233,15 +1021,49 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use object with finalizer stored in static variable, or use app-model specific unload notifications (e.g. Application.Suspending event for modern apps).",
+                    "Description": "No no no",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Event",
-            "Value": "System.Exception.add_SerializeObjectState(System.EventHandler{System.Runtime.Serialization.SafeSerializationEventArgs})",
-            "Name": "add_SerializeObjectState",
+            "Type": "Method",
+            "Value": "System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime, System.TimeZoneInfo)",
+            "Name": "ConvertTimeToUtc",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.TimeZoneInfo.ConvertTime, with System.TimeZoneInfo.Utc in the appropriate parameter position.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.MissingMethodException",
+            "Name": "System.MissingMethodException",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use MissingMemberException instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System",
+            "Name": "System",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2257,8 +1079,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IConvertible.ToSingle(System.IFormatProvider)",
-            "Name": "ToSingle",
+            "Value": "System.Activator.CreateInstance(System.ActivationContext)",
+            "Name": "CreateInstance",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2267,15 +1089,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove usage.",
+                    "Description": "No no no",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.Type.get_IsVisible()",
-            "Name": "get_IsVisible",
+            "Type": "Type",
+            "Value": "System.DuplicateWaitObjectException",
+            "Name": "System.DuplicateWaitObjectException",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2284,15 +1106,15 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": ".GetTypeInfo().IsVisible.",
+                    "Description": "Avoid usage.  Catch general Exception and check HResult if needed.",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.IConvertible.ToDouble(System.IFormatProvider)",
-            "Name": "ToDouble",
+            "Type": "Type",
+            "Value": "System.NonSerializedAttribute",
+            "Name": "System.NonSerializedAttribute",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -2325,41 +1147,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.AppDomainSetup.set_TargetFrameworkName(string)",
-            "Name": "set_TargetFrameworkName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetProperty(string, System.Type, System.Type[], System.Reflection.ParameterModifier[])",
-            "Name": "GetProperty",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetProperty(string, Type, Type[]) to search for public properties by name, return type, and parameter types or filter the results of GetMethods(BindingFlags) using LINQ for other queries.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.DuplicateWaitObjectException.DuplicateWaitObjectException(string, System.Exception)",
+            "Value": "System.NonSerializedAttribute.NonSerializedAttribute()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -2369,23 +1157,6 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Avoid usage.  Catch general Exception and check HResult if needed.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.AccessViolationException",
-            "Name": "System.AccessViolationException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
                     "Description": "Remove usage.",
                     "Actions": []
                 }
@@ -2393,160 +1164,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activator.CreateInstance(System.ActivationContext, string[])",
-            "Name": "CreateInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.UnhandledExceptionEventArgs.get_IsTerminating()",
-            "Name": "get_IsTerminating",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Avoid usage of the UnhandledException Event, handle exceptions directly at scope of method being called.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.get_Name()",
-            "Name": "get_Name",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().Name",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ResolveEventHandler.EndInvoke(System.IAsyncResult)",
-            "Name": "EndInvoke",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyLoadContext.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName, System.Reflection.Emit.AssemblyBuilderAccess, string)",
-            "Name": "DefineDynamicAssembly",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyBuilder.DefineDynamicAssembly",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.CreateInstance(System.Type, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo)",
-            "Name": "CreateInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ResolveEventHandler.Invoke(object, System.ResolveEventArgs)",
-            "Name": "Invoke",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use AssemblyLoadContext.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.get_IsNestedFamORAssem()",
-            "Name": "get_IsNestedFamORAssem",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsNestedFamORAssem.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_Attributes()",
-            "Name": "get_Attributes",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().Attributes.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Attribute.IsDefined(System.Reflection.Module, System.Type, bool)",
+            "Value": "System.Attribute.IsDefined(System.Reflection.MemberInfo, System.Type, bool)",
             "Name": "IsDefined",
             "KeyType": "",
             "RecommendedActions": [
@@ -2563,450 +1181,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ConsoleCancelEventArgs.get_SpecialKey()",
-            "Name": "get_SpecialKey",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.DuplicateWaitObjectException",
-            "Name": "System.DuplicateWaitObjectException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Avoid usage.  Catch general Exception and check HResult if needed.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.OperatingSystem.get_ServicePack()",
-            "Name": "get_ServicePack",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.  Couple behavior to feature availability, not OS version or Platform.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsNestedPublic()",
-            "Name": "get_IsNestedPublic",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsNestedPublic.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.AppDomainUnloadedException",
-            "Name": "System.AppDomainUnloadedException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Exception.Exception(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Value": "System.UnhandledExceptionEventArgs.UnhandledExceptionEventArgs(object, bool)",
             "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetTypeCode(System.Type)",
-            "Name": "GetTypeCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Type or RuntimeTypeHandle instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Environment.get_MachineName()",
-            "Name": "get_MachineName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove, or use Environment.GetEnvironmentVariable(\"COMPUTERNAME\").",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Environment.Exit(int)",
-            "Name": "Exit",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Environment.FailFast(string, Exception).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.get_Module()",
-            "Name": "get_Module",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Reflection.AssemblyExtensions.GetModules(),  iterate over returned collection.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_DisallowBindingRedirects(bool)",
-            "Name": "set_DisallowBindingRedirects",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.set_ConfigurationFile(string)",
-            "Name": "set_ConfigurationFile",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.AppDomainSetup.AppDomainSetup(System.Runtime.Hosting.ActivationArguments)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetConstructor(System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])",
-            "Name": "GetConstructor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetConstructor(Type[]) to search for public constructors by parameter type or filter the results of GetConstructors(BindingFlags) using LINQ for other queries.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Delegate.CreateDelegate(System.Type, object, System.Reflection.MethodInfo)",
-            "Name": "CreateDelegate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use MethodInfo.CreateDelegate.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsNestedPrivate()",
-            "Name": "get_IsNestedPrivate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsNestedPrivate.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.String..ctor(sbyte*,int,int,System.Text.Encoding)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Encoding.GetString(char*, int).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Type.get_IsInterface()",
-            "Name": "get_IsInterface",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsInterface.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Activator.System.Runtime.InteropServices._Activator.Invoke(uint, System.Guid, uint, short, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)",
-            "Name": "System.Runtime.InteropServices._Activator.Invoke",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No no no",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetInterface(string)",
-            "Name": "GetInterface",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use typeof(TypeYoureInterestedIn).GetTypeInfo().GetInterface(System.String).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Delegate.CreateDelegate(System.Type, System.Type, string, bool, bool)",
-            "Name": "CreateDelegate",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use MethodInfo.CreateDelegate.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.GetProperty(string, System.Reflection.BindingFlags, System.Reflection.Binder, System.Type, System.Type[], System.Reflection.ParameterModifier[])",
-            "Name": "GetProperty",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetProperty(string, Type, Type[]) to search for public properties by name, return type, and parameter types or filter the results of GetMethods(BindingFlags) using LINQ for other queries.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IConvertible.ToInt64(System.IFormatProvider)",
-            "Name": "ToInt64",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ConsoleCancelEventArgs",
-            "Name": "System.ConsoleCancelEventArgs",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "PInvoke to SetConsoleCtrlHandler().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Environment.get_CurrentDirectory()",
-            "Name": "get_CurrentDirectory",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Directory.GetCurrentDirectory().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Type.IsSerializable.get_IsSerializable()",
-            "Name": "get_IsSerializable",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".GetTypeInfo().IsSerializable.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.UnhandledExceptionEventHandler.EndInvoke(System.IAsyncResult)",
-            "Name": "EndInvoke",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -3021,9 +1197,9 @@
             ]
         },
         {
-            "Type": "Attribute",
-            "Value": "System.Environment.set_CurrentDirectory(string)",
-            "Name": "set_CurrentDirectory",
+            "Type": "Method",
+            "Value": "System.Type.InvokeMember(string, System.Reflection.BindingFlags, System.Reflection.Binder, object, object[], System.Globalization.CultureInfo)",
+            "Name": "InvokeMember",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -3032,15 +1208,66 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Directory.GetCurrentDirectory().",
+                    "Description": "Find member and use appropriate invocation method based off BindingFlags values used in original call (varies by type of member).",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.IConvertible.ToType(System.Type,System.IFormatProvider)",
-            "Name": "ToType",
+            "Value": "System.Delegate.CreateDelegate(System.Type, object, string, bool, bool)",
+            "Name": "CreateDelegate",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use MethodInfo.CreateDelegate.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Type.get_IsLayoutSequential()",
+            "Name": "get_IsLayoutSequential",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".GetTypeInfo().IsLayoutSequential.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ResolveEventArgs.get_Name()",
+            "Name": "get_Name",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use AssemblyLoadContext.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.MarshalByRefObject.MarshalByRefObject()",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -3056,8 +1283,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Activator.CreateInstanceFrom(string, string, bool, System.Reflection.BindingFlags, System.Reflection.Binder, object[], System.Globalization.CultureInfo, object[])",
-            "Name": "CreateInstanceFrom",
+            "Value": "System.Type.get_IsLayoutSequential()",
+            "Name": "get_IsLayoutSequential",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -3066,7 +1293,58 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "No no no",
+                    "Description": ".GetTypeInfo().IsLayoutSequential.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.AppDomain.get_BaseDirectory()",
+            "Name": "get_BaseDirectory",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.AppContext.BaseDirectory.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Delegate.Clone()",
+            "Name": "Clone",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.StringComparer.Create(System.Globalization.CultureInfo, bool)",
+            "Name": "Create",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.InvariantCulture.CompareInfo.GetStringComparer(CompareOptions.IgnoreCase) from the System.Globalization.Extensions package.",
                     "Actions": []
                 }
             ]

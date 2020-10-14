@@ -7,26 +7,9 @@
     },
     "Recommendations": [
         {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.CreatePermission()",
-            "Name": "CreatePermission",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
             "Type": "Type",
-            "Value": "System.Security.Permissions.HostProtectionAttribute",
-            "Name": "System.Security.Permissions.HostProtectionAttribute",
+            "Value": "System.Security.Permissions.DataProtectionPermission",
+            "Name": "System.Security.Permissions.DataProtectionPermission",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -42,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.set_SelfAffectingThreading(bool)",
-            "Name": "set_SelfAffectingThreading",
+            "Value": "System.Security.Permissions.DataProtectionPermission.Copy()",
+            "Name": "Copy",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -59,8 +42,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.PermissionSetAttribute.CreatePermission()",
-            "Name": "CreatePermission",
+            "Value": "System.Security.Permissions.DataProtectionPermission.Union(System.Security.IPermission)",
+            "Name": "Union",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,8 +59,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_SkipVerification()",
-            "Name": "get_SkipVerification",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_ControlPolicy(bool)",
+            "Name": "set_ControlPolicy",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -93,8 +76,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_Infrastructure()",
-            "Name": "get_Infrastructure",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_ControlPolicy()",
+            "Name": "get_ControlPolicy",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -110,8 +93,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.get_SecurityInfrastructure()",
-            "Name": "get_SecurityInfrastructure",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_ControlThread(bool)",
+            "Name": "set_ControlThread",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -127,8 +110,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted()",
-            "Name": "IsUnrestricted",
+            "Value": "System.Security.Permissions.SecurityAttribute.set_Action(System.Security.Permissions.SecurityAction)",
+            "Name": "set_Action",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -144,42 +127,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.RemotingConfiguration.set_RemotingConfiguration(bool)",
-            "Name": "set_RemotingConfiguration",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.DataProtectionPermission.Intersect(System.Security.IPermission)",
-            "Name": "Intersect",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_Flags(System.Security.Permissions.SecurityPermissionFlag)",
-            "Name": "set_Flags",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_Assertion()",
+            "Name": "get_Assertion",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -212,8 +161,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_ControlAppDomain()",
-            "Name": "get_ControlAppDomain",
+            "Value": "System.Security.Permissions.PermissionSetAttribute.get_Name()",
+            "Name": "get_Name",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -229,8 +178,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.PermissionSetAttribute.get_XML()",
-            "Name": "get_XML",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_ControlDomainPolicy()",
+            "Name": "get_ControlDomainPolicy",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -246,8 +195,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.DataProtectionPermission.set_Flags(System.Security.Permissions.DataProtectionPermissionFlags)",
-            "Name": "set_Flags",
+            "Value": "System.Security.Permissions.HostProtectionAttribute.get_MayLeakOnAbort()",
+            "Name": "get_MayLeakOnAbort",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -263,161 +212,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.get_ExternalProcessMgmt()",
-            "Name": "get_ExternalProcessMgmt",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.get_Resources()",
-            "Name": "get_Resources",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_Execution(bool)",
-            "Name": "set_Execution",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_ControlEvidence(bool)",
-            "Name": "set_ControlEvidence",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.PermissionSetAttribute.get_UnicodeEncoded()",
-            "Name": "get_UnicodeEncoded",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_BindingRedirects(bool)",
-            "Name": "set_BindingRedirects",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.PermissionSetAttribute.set_XML(string)",
-            "Name": "set_XML",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.PermissionSetAttribute.get_Hex()",
-            "Name": "get_Hex",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.PermissionSetAttribute.PermissionSetAttribute(System.Security.Permissions.SecurityAction)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.PermissionSetAttribute.set_File(string)",
-            "Name": "set_File",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.ControlAppDomain.set_ControlAppDomain(bool)",
+            "Name": "set_ControlAppDomain",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -433,93 +229,8 @@
         },
         {
             "Type": "Type",
-            "Value": "System.Security.Permissions.SecurityAttribute",
-            "Name": "System.Security.Permissions.SecurityAttribute",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.set_ExternalProcessMgmt(bool)",
-            "Name": "set_ExternalProcessMgmt",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Security.Permissions.DataProtectionPermission",
-            "Name": "System.Security.Permissions.DataProtectionPermission",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Security.Permissions.PermissionSetAttribute",
-            "Name": "System.Security.Permissions.PermissionSetAttribute",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Security.Permissions.IUnrestrictedPermission",
-            "Name": "System.Security.Permissions.IUnrestrictedPermission",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.set_MayLeakOnAbort(bool)",
-            "Name": "set_MayLeakOnAbort",
+            "Value": "System.Security.Permissions.HostProtectionAttribute",
+            "Name": "System.Security.Permissions.HostProtectionAttribute",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -552,7 +263,160 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.DataProtectionPermission.DataProtectionPermission(System.Security.Permissions.DataProtectionPermissionFlags)",
+            "Value": "System.Security.Permissions.DataProtectionPermission.get_Flags()",
+            "Name": "get_Flags",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_SkipVerification(bool)",
+            "Name": "set_SkipVerification",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_SerializationFormatter(bool)",
+            "Name": "set_SerializationFormatter",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.SecurityAttribute.get_Unrestricted()",
+            "Name": "get_Unrestricted",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.HostProtectionAttribute.get_SelfAffectingProcessMgmt()",
+            "Name": "get_SelfAffectingProcessMgmt",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Security.Permissions.PermissionSetAttribute",
+            "Name": "System.Security.Permissions.PermissionSetAttribute",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.HostProtectionAttribute.set_SelfAffectingProcessMgmt(bool)",
+            "Name": "set_SelfAffectingProcessMgmt",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_RemotingConfiguration()",
+            "Name": "get_RemotingConfiguration",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.HostProtectionAttribute.get_ExternalThreading()",
+            "Name": "get_ExternalThreading",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Permissions.HostProtectionAttribute.HostProtectionAttribute()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -569,8 +433,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityAttribute.get_Action()",
-            "Name": "get_Action",
+            "Value": "System.Security.Permissions.HostProtectionAttribute.get_SelfAffectingThreading()",
+            "Name": "get_SelfAffectingThreading",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -586,8 +450,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_UnmanagedCode()",
-            "Name": "get_UnmanagedCode",
+            "Value": "System.Security.Permissions.HostProtectionAttribute.set_Resources(System.Security.Permissions.HostProtectionResource)",
+            "Name": "set_Resources",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -603,8 +467,25 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.get_UI()",
-            "Name": "get_UI",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.set_Assertion(bool)",
+            "Name": "set_Assertion",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Security.Permissions.SecurityAttribute",
+            "Name": "System.Security.Permissions.SecurityAttribute",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -620,8 +501,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Permissions.HostProtectionAttribute.set_UI(bool)",
-            "Name": "set_UI",
+            "Value": "System.Security.Permissions.SecurityPermissionAttribute.get_ControlEvidence()",
+            "Name": "get_ControlEvidence",
             "KeyType": "",
             "RecommendedActions": [
                 {

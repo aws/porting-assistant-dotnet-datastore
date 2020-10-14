@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.RealProxy.SetCOMIUnknown(System.IntPtr)",
-            "Name": "SetCOMIUnknown",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.AttachServer(System.MarshalByRefobject)",
+            "Name": "AttachServer",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -25,76 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance(System.Type)",
-            "Name": "CreateInstance",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.RealProxy.CreateObjRef(System.Type)",
-            "Name": "CreateObjRef",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetStubData(System.Runtime.Remoting.Proxies.RealProxy)",
-            "Name": "GetStubData",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.CreateProxy(System.Runtime.Remoting.ObjRef, System.Type, object, System.Runtime.Remoting.Contexts.Context)",
-            "Name": "CreateProxy",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(System.Guid)",
-            "Name": "SupportsInterface",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Name": "GetObjectData",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -127,8 +59,42 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.Remoting.Proxies.RealProxy.GetCOMIUnknown(bool)",
-            "Name": "GetCOMIUnknown",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject(System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Name": "InitializeServerObject",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.ProxyAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context, System.Runtime.Remoting.Activation.IConstructionCallMessage)",
+            "Name": "IsContextOK",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": ".NET Remoting won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.Remoting.Proxies.RealProxy.SetStubData(System.Runtime.Remoting.Proxies.RealProxy, object)",
+            "Name": "SetStubData",
             "KeyType": "",
             "RecommendedActions": [
                 {

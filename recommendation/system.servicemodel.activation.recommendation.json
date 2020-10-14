@@ -8,7 +8,24 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.WebScriptServiceHostFactory.CreateServiceHost(System.Type, System.Uri[])",
+            "Value": "System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.IServiceHostFactory.CreateServiceHost(string, System.Uri[])",
             "Name": "CreateServiceHost",
             "KeyType": "",
             "RecommendedActions": [
@@ -25,8 +42,59 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.VirtualPathExtension.get_SiteName()",
-            "Name": "get_SiteName",
+            "Value": "System.ServiceModel.Activation.VirtualPathExtension.get_VirtualPath()",
+            "Name": "get_VirtualPath",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription, System.ServiceModel.ServiceHostBase)",
+            "Name": "System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.ServiceHostFactory.ServiceHostFactory()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activation.VirtualPathExtension.Detach(System.ServiceModel.ServiceHostBase)",
+            "Name": "Detach",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -59,24 +127,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.ServiceBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)",
-            "Name": "GenerateCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.ServiceBuildProvider.ServiceBuildProvider()",
+            "Value": "System.ServiceModel.Activation.WorkflowServiceHostFactory.WorkflowServiceHostFactory()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -93,58 +144,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.VirtualPathExtension.Attach(System.ServiceModel.ServiceHostBase)",
-            "Name": "Attach",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.HostedTransportConfiguration.GetBaseAddresses(string)",
-            "Name": "GetBaseAddresses",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.ServiceBuildProvider.get_VirtualPathDependencies()",
-            "Name": "get_VirtualPathDependencies",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(string, System.Uri[])",
+            "Value": "System.ServiceModel.Activation.WorkflowServiceHostFactory.CreateServiceHost(string,System.Uri[])",
             "Name": "CreateServiceHost",
             "KeyType": "",
             "RecommendedActions": [
@@ -161,109 +161,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activation.ServiceHostFactoryBase.CreateServiceHost(string, System.Uri[])",
-            "Name": "CreateServiceHost",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.WebServiceHostFactory.WebServiceHostFactory()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.get_RequirementsMode()",
-            "Name": "get_RequirementsMode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.ServiceBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)",
-            "Name": "GetResultFlags",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.set_RequirementsMode(System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode)",
-            "Name": "set_RequirementsMode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.WebServiceHostFactory.CreateServiceHost(System.Type, System.Uri[])",
-            "Name": "CreateServiceHost",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activation.ServiceActivationBuildProviderAttribute.ServiceActivationBuildProviderAttribute()",
+            "Value": "System.ServiceModel.Activation.WebScriptServiceHostFactory.WebScriptServiceHostFactory()",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [

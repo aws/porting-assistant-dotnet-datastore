@@ -8,24 +8,7 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.PostalCode.get_PostalCode()",
-            "Name": "get_PostalCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.DefaultClaimSet.DefaultClaimSet(System.IdentityModel.Claims.ClaimSet, System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})",
+            "Value": "System.IdentityModel.Claims.X509CertificateClaimSet.X509CertificateClaimSet(System.Security.Cryptography.X509Certificates.X509Certificate2)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -42,8 +25,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.get_Resource()",
-            "Name": "get_Resource",
+            "Value": "System.IdentityModel.Claims.ClaimSet.get_System()",
+            "Name": "get_System",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -59,8 +42,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_AuthorizationDecision()",
-            "Name": "get_AuthorizationDecision",
+            "Value": "System.IdentityModel.Claims.X509CertificateClaimSet.Dispose()",
+            "Name": "Dispose",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -76,7 +59,41 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.WindowsClaimSet.WindowsClaimSet(System.Security.Principal.WindowsIdentity, bool)",
+            "Value": "System.IdentityModel.Claims.Claim.CreateThumbprintClaim(byte[])",
+            "Name": "CreateThumbprintClaim",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Claims.ClaimTypes.get_Webpage()",
+            "Name": "get_Webpage",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Claims.Claim.Claim(string, object, string)",
             "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
@@ -93,8 +110,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.DefaultClaimSet.get_Issuer()",
-            "Name": "get_Issuer",
+            "Value": "System.IdentityModel.Claims.ClaimTypes.PPID.get_PPID()",
+            "Name": "get_PPID",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -110,8 +127,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.WindowsClaimSet.WindowsClaimSet(System.Security.Principal.WindowsIdentity, string, bool, System.DateTime)",
-            "Name": ".ctor",
+            "Value": "System.IdentityModel.Claims.DefaultClaimSet.ContainsClaim(System.IdentityModel.Claims.Claim)",
+            "Name": "ContainsClaim",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -127,466 +144,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimSet.GetEnumerator()",
-            "Name": "GetEnumerator",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimSet.get_Count()",
-            "Name": "get_Count",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_X500DistinguishedName()",
-            "Name": "get_X500DistinguishedName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.WindowsClaimSet.GetEnumerator()",
-            "Name": "GetEnumerator",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.DefaultClaimSet.get_Count()",
-            "Name": "get_Count",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_Rsa()",
-            "Name": "get_Rsa",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimSet.get_Item(int)",
-            "Name": "get_Item",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.WindowsClaimSet.WindowsClaimSet(System.Security.Principal.WindowsIdentity, bool, System.DateTime)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.WindowsClaimSet.get_Issuer()",
-            "Name": "get_Issuer",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.get_Right()",
-            "Name": "get_Right",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_DateOfBirth()",
-            "Name": "get_DateOfBirth",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.CreateUriClaim(System.Uri)",
-            "Name": "CreateUriClaim",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_StateOrProvince()",
-            "Name": "get_StateOrProvince",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.DefaultClaimSet.DefaultClaimSet(System.IdentityModel.Claims.ClaimSet, System.IdentityModel.Claims.Claim[])",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_Gender()",
-            "Name": "get_Gender",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.X509CertificateClaimSet.get_Item(int)",
-            "Name": "get_Item",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.X509CertificateClaimSet.get_Issuer()",
-            "Name": "get_Issuer",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimSet.get_Issuer()",
-            "Name": "get_Issuer",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.get_ClaimType()",
-            "Name": "get_ClaimType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.DefaultClaimSet.DefaultClaimSet(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.GetHashCode()",
-            "Name": "GetHashCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_Spn()",
-            "Name": "get_Spn",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.Dns.get_Dns()",
-            "Name": "get_Dns",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.WindowsClaimSet.get_WindowsIdentity()",
-            "Name": "get_WindowsIdentity",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.Equals(object)",
-            "Name": "Equals",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.CreateWindowsSidClaim(System.Security.Principal.SecurityIdentifier)",
-            "Name": "CreateWindowsSidClaim",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.CreateUpnClaim(string)",
-            "Name": "CreateUpnClaim",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.DefaultClaimSet.FindClaims(string,string)",
+            "Value": "System.IdentityModel.Claims.WindowsClaimSet.FindClaims(string, string)",
             "Name": "FindClaims",
             "KeyType": "",
             "RecommendedActions": [
@@ -603,7 +161,24 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.X509CertificateClaimSet.get_Count()",
+            "Value": "System.IdentityModel.Claims.ClaimTypes.get_OtherPhone()",
+            "Name": "get_OtherPhone",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Claims.WindowsClaimSet.get_Count()",
             "Name": "get_Count",
             "KeyType": "",
             "RecommendedActions": [
@@ -620,8 +195,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_Country()",
-            "Name": "get_Country",
+            "Value": "System.IdentityModel.Claims.WindowsClaimSet.Item[Int32].get_Item(int)",
+            "Name": "get_Item",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -637,8 +212,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_Authentication()",
-            "Name": "get_Authentication",
+            "Value": "System.IdentityModel.Claims.ClaimSet.ClaimSet()",
+            "Name": ".ctor",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -654,8 +229,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.StreetAddress.get_StreetAddress()",
-            "Name": "get_StreetAddress",
+            "Value": "System.IdentityModel.Claims.X509CertificateClaimSet.ToString()",
+            "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -671,8 +246,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.NameIdentifier.get_NameIdentifier()",
-            "Name": "get_NameIdentifier",
+            "Value": "System.IdentityModel.Claims.WindowsClaimSet.ToString()",
+            "Name": "ToString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -688,8 +263,25 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimSet.ContainsClaim(System.IdentityModel.Claims.Claim)",
-            "Name": "ContainsClaim",
+            "Value": "System.IdentityModel.Claims.Claim.CreateDnsClaim(string)",
+            "Name": "CreateDnsClaim",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IdentityModel.Claims.DefaultClaimSet.get_Item(int)",
+            "Name": "get_Item",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -707,142 +299,6 @@
             "Type": "Namespace",
             "Value": "System.IdentityModel.Claims",
             "Name": "System.IdentityModel.Claims",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.CreateDenyOnlyWindowsSidClaim(System.Security.Principal.SecurityIdentifier)",
-            "Name": "CreateDenyOnlyWindowsSidClaim",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.DefaultClaimSet.Initialize(System.IdentityModel.Claims.ClaimSet, System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})",
-            "Name": "Initialize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_HomePhone()",
-            "Name": "get_HomePhone",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimSet.get_Windows()",
-            "Name": "get_Windows",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.CreateNameClaim(string)",
-            "Name": "CreateNameClaim",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimTypes.get_Locality()",
-            "Name": "get_Locality",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.Claim.get_DefaultComparer()",
-            "Name": "get_DefaultComparer",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Identity Foundation (WIF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IdentityModel.Claims.ClaimSet.FindClaims(string, string)",
-            "Name": "FindClaims",
             "KeyType": "",
             "RecommendedActions": [
                 {

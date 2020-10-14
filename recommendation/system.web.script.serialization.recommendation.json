@@ -7,66 +7,6 @@
     },
     "Recommendations": [
         {
-            "Type": "Method",
-            "Value": "System.Web.Script.Serialization.ScriptIgnoreAttribute.set_ApplyToOverrides(bool)",
-            "Name": "set_ApplyToOverrides",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.JavaScriptSerializer()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use JSON.NET instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptConverter.Serialize(object, System.Web.Script.Serialization.JavaScriptSerializer)",
-            "Name": "Serialize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
             "Type": "Namespace",
             "Value": "System.Web.Script.Serialization",
             "Name": "System.Web.Script.Serialization",
@@ -80,65 +20,13 @@
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use JSON.NET instead.",
-                    "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType(object, System.Type)",
-            "Name": "ConvertToType",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use JSON.NET instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit.set_RecursionLimit(int)",
-            "Name": "set_RecursionLimit",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use JSON.NET instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.JavaScriptSerializer(System.Web.Script.Serialization.JavaScriptTypeResolver)",
-            "Name": ".ctor",
+            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.set_MaxJsonLength(int)",
+            "Name": "set_MaxJsonLength",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -180,8 +68,42 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(string, System.Type)",
-            "Name": "Deserialize",
+            "Value": "System.Web.Script.Serialization.ScriptIgnoreAttribute.get_ApplyToOverrides()",
+            "Name": "get_ApplyToOverrides",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Script.Serialization.JavaScriptTypeResolver.JavaScriptTypeResolver()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.Deserialize<T>(string)",
+            "Name": "Deserialize<T>",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -206,51 +128,8 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Script.Serialization.SimpleTypeResolver.ResolveTypeId(System.Type)",
+            "Value": "System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveTypeId(System.Type)",
             "Name": "ResolveTypeId",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType<T>(object)",
-            "Name": "ConvertToType<T>",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use JSON.NET instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveType(string)",
-            "Name": "ResolveType",
             "KeyType": "",
             "RecommendedActions": [
                 {

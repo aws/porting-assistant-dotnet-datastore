@@ -8,8 +8,8 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Text.EncoderReplacementFallback.CreateFallbackBuffer()",
-            "Name": "CreateFallbackBuffer",
+            "Value": "System.Text.EncoderReplacementFallback.get_DefaultString()",
+            "Name": "get_DefaultString",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -24,9 +24,9 @@
             ]
         },
         {
-            "Type": "Type",
-            "Value": "System.Text.EncoderExceptionFallback",
-            "Name": "System.Text.EncoderExceptionFallback",
+            "Type": "Method",
+            "Value": "System.Text.Encoding.get_Default()",
+            "Name": "get_Default",
             "KeyType": "",
             "RecommendedActions": [
                 {
@@ -35,7 +35,109 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use EncoderFallback.ExceptionFallback.",
+                    "Description": "Use Encoding.GetEncoding(0).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Text",
+            "Name": "System.Text",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Text.DecoderExceptionFallback.GetHashCode()",
+            "Name": "GetHashCode",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Text.DecoderExceptionFallback.get_MaxCharCount()",
+            "Name": "get_MaxCharCount",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Text.Encoding.get_Default()",
+            "Name": "get_Default",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Encoding.GetEncoding(0).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Text.DecoderExceptionFallback.Equals(object)",
+            "Name": "Equals",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Text.DecoderExceptionFallback",
+            "Name": "System.Text.DecoderExceptionFallback",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
                     "Actions": []
                 }
             ]
@@ -53,91 +155,6 @@
                         "netcoreapp3.1"
                     ],
                     "Description": "Use EncoderFallback.ReplacementFallback.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Text.EncoderReplacementFallback.GetHashCode()",
-            "Name": "GetHashCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use EncoderFallback.ReplacementFallback.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Text.EncoderReplacementFallback.Equals(object)",
-            "Name": "Equals",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use EncoderFallback.ReplacementFallback.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Text.EncoderFallbackException",
-            "Name": "System.Text.EncoderFallbackException",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Text.EncoderFallbackException.get_CharUnknown()",
-            "Name": "get_CharUnknown",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Text.EncoderExceptionFallback.GetHashCode()",
-            "Name": "GetHashCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use EncoderFallback.ExceptionFallback.",
                     "Actions": []
                 }
             ]
