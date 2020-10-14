@@ -1,59 +1,38 @@
 {
     "Name": "Microsoft.Activities.Build.Expressions",
     "Version": "1.0.0",
-    "Packages": [
-        {
-            "Microsoft.Activities.Build.Expressions": {
-                "Type": "SDK",
-                "Name": "Microsoft.Activities.Build.Expressions"
-            }
-        }
-    ],
+    "Packages": {
+        "Type": "SDK",
+        "Name": "Microsoft.Activities.Build.Expressions"
+    },
     "Recommendations": [
-        {
-            "Type": "Namespace",
-            "Value": "Microsoft.Activities.Build.Expressions",
-            "Reference": "Microsoft.Activities.Build.Expressions",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework45",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.Activities.Build.Expressions.ExpressionsBuildExtension..ctor()",
-            "Reference": "Microsoft.Activities.Build.Expressions",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework45",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
         {
             "Type": "Method",
             "Value": "Microsoft.Activities.Build.Expressions.ExpressionsBuildExtension.Execute(Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext)",
-            "Reference": "Microsoft.Activities.Build.Expressions",
+            "Name": "Execute",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework45",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "Microsoft.Activities.Build.Expressions",
+            "Name": "Microsoft.Activities.Build.Expressions",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Windows Workflow Foundation (WF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",

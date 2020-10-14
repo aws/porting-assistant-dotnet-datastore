@@ -1,34 +1,72 @@
 {
     "Name": "System.Security.Cryptography.X509Certificates",
     "Version": "1.0.0",
-    "Packages": [
-        {
-            "System.Security.Cryptography.X509Certificates": {
-                "Type": "SDK",
-                "Name": "System.Security.Cryptography.X509Certificates"
-            }
-        }
-    ],
+    "Packages": {
+        "Type": "SDK",
+        "Name": "System.Security.Cryptography.X509Certificates"
+    },
     "Recommendations": [
         {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Store.X509Store(System.Security.Cryptography.X509Certificates.StoreLocation)",
-            "Reference": "System.Security.Cryptography.X509Certificates",
+            "Type": "Attribute",
+            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
+            "Name": "get_PrivateKey",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
+            "Name": "get_PrivateKey",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Security.Cryptography.X509Certificates",
+            "Name": "System.Security.Cryptography.X509Certificates",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.X509Certificates.X509Store.X509Store(System.Security.Cryptography.X509Certificates.StoreLocation)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use X509Store.#ctor(StoreName,StoreLocation) overload of this constructor and pass StoreName.My.",
@@ -37,131 +75,18 @@
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "System.Security.Cryptography.X509Certificates",
-            "Reference": "System.Security.Cryptography.X509Certificates",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
-            "Reference": "System.Security.Cryptography.X509Certificates",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
-            "Reference": "System.Security.Cryptography.X509Certificates",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
             "Type": "Method",
             "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey.set_PrivateKey(System.Security.Cryptography.AsymmetricAlgorithm)",
-            "Reference": "System.Security.Cryptography.X509Certificates",
+            "Name": "set_PrivateKey",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Store.Close()",
-            "Reference": "System.Security.Cryptography.X509Certificates",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
                     "Actions": []
                 }
             ]

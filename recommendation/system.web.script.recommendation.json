@@ -1,26 +1,38 @@
 {
     "Name": "System.Web.Script",
     "Version": "1.0.0",
-    "Packages": [
-        {
-            "System.Web.Script": {
-                "Type": "SDK",
-                "Name": "System.Web.Script"
-            }
-        }
-    ],
+    "Packages": {
+        "Type": "SDK",
+        "Name": "System.Web.Script"
+    },
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Web.Script.AjaxFrameworkAssemblyAttribute.GetDefaultAjaxFrameworkAssembly(System.Reflection.Assembly)",
-            "Reference": "System.Web.Script",
+            "Value": "System.Web.Script.AjaxFrameworkAssemblyAttribute.AjaxFrameworkAssemblyAttribute()",
+            "Name": ".ctor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "mono50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Script.AjaxFrameworkAssemblyAttribute.GetDefaultAjaxFrameworkAssembly(System.Reflection.Assembly)",
+            "Name": "GetDefaultAjaxFrameworkAssembly",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -31,32 +43,13 @@
         {
             "Type": "Namespace",
             "Value": "System.Web.Script",
-            "Reference": "System.Web.Script",
+            "Name": "System.Web.Script",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "mono50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Script.AjaxFrameworkAssemblyAttribute.AjaxFrameworkAssemblyAttribute()",
-            "Reference": "System.Web.Script",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "mono50",
                         "netcoreapp3.1"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",

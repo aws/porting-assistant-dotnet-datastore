@@ -1,34 +1,21 @@
 {
     "Name": "System.Globalization",
     "Version": "1.0.0",
-    "Packages": [
-        {
-            "System.Globalization": {
-                "Type": "SDK",
-                "Name": "System.Globalization"
-            }
-        }
-    ],
+    "Packages": {
+        "Type": "SDK",
+        "Name": "System.Globalization"
+    },
     "Recommendations": [
         {
             "Type": "Method",
             "Value": "System.Globalization.CultureInfo.GetCultureInfo(string)",
-            "Reference": "System.Globalization",
+            "Name": "GetCultureInfo",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Globalization.CultureInfo.#ctor(String).",

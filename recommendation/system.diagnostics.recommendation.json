@@ -1,65 +1,38 @@
 {
     "Name": "System.Diagnostics",
     "Version": "1.0.0",
-    "Packages": [
-        {
-            "System.Diagnostics": {
-                "Type": "SDK",
-                "Name": "System.Diagnostics"
-            }
-        }
-    ],
+    "Packages": {
+        "Type": "SDK",
+        "Name": "System.Diagnostics"
+    },
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.StackFrame(int)",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.FileVersionInfo.LegalCopyright.get_LegalCopyright()",
+            "Name": "get_LegalCopyright",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Consider removing dependency on this API.",
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(System.Exception, bool)",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.StackTrace.GetFrame(int)",
+            "Name": "GetFrame",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -70,24 +43,13 @@
         {
             "Type": "Method",
             "Value": "System.Diagnostics.StackFrame.StackFrame(string, int)",
-            "Reference": "System.Diagnostics",
+            "Name": ".ctor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider removing dependency on this API.",
@@ -96,102 +58,18 @@
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_FileBuildPart()",
-            "Reference": "System.Diagnostics",
+            "Type": "Attribute",
+            "Value": "System.Diagnostics.ProcessStartInfo.get_EnvironmentVariables()",
+            "Name": "get_EnvironmentVariables",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ConsoleTraceListener.ConsoleTraceListener(bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "mono20",
-                        "netcoreapp3.0",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "UseErrorStream ? new TextWriterTraceListener(Console.Error) : new TextWriterTraceListener(Console.Out).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_ProductName()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.StackFrame(int, bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
+                    "Description": "Use System.Diagnostics.ProcessStartInfo.Environment instead.",
                     "Actions": []
                 }
             ]
@@ -199,1453 +77,13 @@
         {
             "Type": "Type",
             "Value": "System.Diagnostics.FileVersionInfo",
-            "Reference": "System.Diagnostics",
+            "Name": "System.Diagnostics.FileVersionInfo",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.EventLog.WriteEvent(System.Diagnostics.EventInstance, object[])",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "netstandardplatformextensions20",
-                        "netcoreapp2.0",
-                        "mono20",
-                        "netcoreapp3.1",
-                        "net50",
-                        "netplatformextensions50"
-                    ],
-                    "Description": "Use EventSource type instead which now supports channels, enabling logging ETW events to the event log.  Currently there is no other workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_ProductBuildPart()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.TextWriterTraceListener.TextWriterTraceListener(string)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Stream overload of .ctor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.GetFrames()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.Language.get_Language()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Diagnostics",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp1.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp2.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ProcessStartInfo.set_UseShellExecute(bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp1.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp2.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp1.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp2.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove ShellExecute usage (Can PInvoke if needed).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ProcessStartInfo.UseShellExecute.get_UseShellExecute()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp1.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp2.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace..ctor(System.Diagnostics.StackFrame)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.StackFrame(string, int, int)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_FilePrivatePart()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame..ctor(bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.GetFrame(int)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_FileVersion()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.GetVersionInfo(string)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ProcessStartInfo.get_EnvironmentVariables()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Diagnostics.ProcessStartInfo.Environment instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.ToString()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_ProductMinorPart()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ConsoleTraceListener.ConsoleTraceListener()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "mono20",
-                        "netcoreapp3.0",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "UseErrorStream ? new TextWriterTraceListener(Console.Error) : new TextWriterTraceListener(Console.Out).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(System.Exception, int)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_IsPatched()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Diagnostics.ProcessStartInfo.set_UseShellExecute(bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp1.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp2.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_FileMinorPart()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_FileName()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_LegalTrademarks()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.GetFileLineNumber()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Diagnostics.ProcessStartInfo.get_EnvironmentVariables()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Diagnostics.ProcessStartInfo.Environment instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_CompanyName()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.Process.Close()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_Comments()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_InternalName()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ProcessStartInfo.get_WindowStyle()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.LegalCopyright.get_LegalCopyright()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ConsoleTraceListener.Close()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "mono45",
-                        "netcoreapp3.0",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "UseErrorStream ? new TextWriterTraceListener(Console.Error) : new TextWriterTraceListener(Console.Out).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Diagnostics.ConsoleTraceListener",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "mono45",
-                        "netcoreapp3.0",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "UseErrorStream ? new TextWriterTraceListener(Console.Error) : new TextWriterTraceListener(Console.Out).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_IsPreRelease()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.ToString()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_FileMajorPart()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.StackFrame()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Diagnostics.StackTrace",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_OriginalFilename()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.GetILOffset()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Diagnostics.StackFrame",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(int)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.GetFileName()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Diagnostics.ProcessStartInfo.get_WindowStyle()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_ProductPrivatePart()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.FileDescription.get_FileDescription()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(System.Exception)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.EventLog.set_Source(string)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandardplatformextensions20",
-                        "netcoreapp2.0",
-                        "mono20",
-                        "netcoreapp3.1",
-                        "net50",
-                        "netplatformextensions50"
-                    ],
-                    "Description": "Use EventSource type instead which now supports channels, enabling logging ETW events to the event log.  Currently there is no other workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(System.Exception, int, bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -1656,25 +94,13 @@
         {
             "Type": "Method",
             "Value": "System.Diagnostics.StackFrame.GetMethod()",
-            "Reference": "System.Diagnostics",
+            "Name": "GetMethod",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider removing dependency on this API.",
@@ -1683,48 +109,15 @@
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.Diagnostics.EventLog.EventLog()",
-            "Reference": "System.Diagnostics",
+            "Type": "Type",
+            "Value": "System.Diagnostics.StackTrace",
+            "Name": "System.Diagnostics.StackTrace",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandardplatformextensions20",
-                        "netcoreapp2.0",
-                        "mono20",
-                        "netcoreapp3.1",
-                        "net50",
-                        "netplatformextensions50"
-                    ],
-                    "Description": "Use EventSource type instead which now supports channels, enabling logging ETW events to the event log.  Currently there is no other workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -1734,49 +127,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.Process.get_Handle()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.FileVersionInfo.get_FileVersion()",
+            "Name": "get_FileVersion",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Diagnostics.Process.SafeHandle.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_SpecialBuild()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -1786,204 +144,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.GetNativeOffset()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.StackFrame.StackFrame(int)",
+            "Name": ".ctor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Diagnostics.ProcessStartInfo.set_WindowStyle(System.Diagnostics.ProcessWindowStyle)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_IsPrivateBuild()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.ProcessStartInfo.set_WindowStyle(System.Diagnostics.ProcessWindowStyle)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Do not use.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove ShellExecute usage (Can PInvoke if needed).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(System.Threading.Thread, bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackFrame.GetFileColumnNumber()",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider removing dependency on this API.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.StackTrace(int, bool)",
-            "Reference": "System.Diagnostics",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
                     "Actions": []
                 }
             ]
@@ -1991,19 +162,14 @@
         {
             "Type": "Method",
             "Value": "System.Diagnostics.EventLog.set_Log(string)",
-            "Reference": "System.Diagnostics",
+            "Name": "set_Log",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandardplatformextensions20",
-                        "netcoreapp2.0",
-                        "mono20",
-                        "netcoreapp3.1",
-                        "net50",
-                        "netplatformextensions50"
+                        "netcoreapp3.1"
                     ],
                     "Description": "Use EventSource type instead which now supports channels, enabling logging ETW events to the event log.  Currently there is no other workaround, but we are working on it. Please check back.",
                     "Actions": []
@@ -2012,23 +178,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.IsSpecialBuild.get_IsSpecialBuild()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.StackTrace.StackTrace(int, bool)",
+            "Name": ".ctor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -2038,23 +195,31 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_PrivateBuild()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.StackFrame.GetFileLineNumber()",
+            "Name": "GetFileLineNumber",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Consider removing dependency on this API.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.get_SpecialBuild()",
+            "Name": "get_SpecialBuild",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -2064,23 +229,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_ProductVersion()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.StackTrace.StackTrace()",
+            "Name": ".ctor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -2090,25 +246,31 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.StackTrace.get_FrameCount()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.EventLog.WriteEvent(System.Diagnostics.EventInstance, object[])",
+            "Name": "WriteEvent",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use EventSource type instead which now supports channels, enabling logging ETW events to the event log.  Currently there is no other workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.GetVersionInfo(string)",
+            "Name": "GetVersionInfo",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -2118,23 +280,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_IsDebug()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.FileVersionInfo.get_IsPrivateBuild()",
+            "Name": "get_IsPrivateBuild",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -2144,23 +297,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Diagnostics.FileVersionInfo.get_ProductMajorPart()",
-            "Reference": "System.Diagnostics",
+            "Value": "System.Diagnostics.FileVersionInfo.get_FileMinorPart()",
+            "Name": "get_FileMinorPart",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -2171,25 +315,226 @@
         {
             "Type": "Method",
             "Value": "System.Diagnostics.StackTrace.ToString()",
-            "Reference": "System.Diagnostics",
+            "Name": "ToString",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.0",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.Language.get_Language()",
+            "Name": "get_Language",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.get_LegalTrademarks()",
+            "Name": "get_LegalTrademarks",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.get_CompanyName()",
+            "Name": "get_CompanyName",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.TextWriterTraceListener.TextWriterTraceListener(string)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Stream overload of .ctor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.get_OriginalFilename()",
+            "Name": "get_OriginalFilename",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.Process.get_Handle()",
+            "Name": "get_Handle",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Diagnostics.Process.SafeHandle.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Diagnostics.StackFrame",
+            "Name": "System.Diagnostics.StackFrame",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Consider removing dependency on this API.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.get_ProductMajorPart()",
+            "Name": "get_ProductMajorPart",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.FileVersionInfo.get_IsPreRelease()",
+            "Name": "get_IsPreRelease",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.ProcessStartInfo.UseShellExecute.get_UseShellExecute()",
+            "Name": "get_UseShellExecute",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Do not use.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Diagnostics.ProcessStartInfo.get_EnvironmentVariables()",
+            "Name": "get_EnvironmentVariables",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Diagnostics.ProcessStartInfo.Environment instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Diagnostics",
+            "Name": "System.Diagnostics",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Do not use.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",

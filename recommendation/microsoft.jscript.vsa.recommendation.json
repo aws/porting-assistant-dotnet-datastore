@@ -1,110 +1,21 @@
 {
     "Name": "Microsoft.JScript.Vsa",
     "Version": "1.0.0",
-    "Packages": [
-        {
-            "Microsoft.JScript.Vsa": {
-                "Type": "SDK",
-                "Name": "Microsoft.JScript.Vsa"
-            }
-        }
-    ],
+    "Packages": {
+        "Type": "SDK",
+        "Name": "Microsoft.JScript.Vsa"
+    },
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.IsValidIdentifier(string)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.SaveCompiledState(byte[], byte[])",
+            "Name": "SaveCompiledState",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetItemAtIndex(int)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.GetCompiledState(byte[], byte[])",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Version()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItem.SetOption(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.LoadCompiledState()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -115,7 +26,8 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.VsaEngine.GetSpecificOption(string)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "GetSpecificOption",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
@@ -130,14 +42,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItems.get_Item(string)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.ResInfo.ResInfo(string, string, bool, bool)",
+            "Name": ".ctor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -147,14 +59,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaCodeItem.get_SourceText()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetItemCount()",
+            "Name": "GetItemCount",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -164,14 +76,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.InitVsaEngine(string, Microsoft.JScript.Vsa.IJSVsaSite)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_RootMoniker(string)",
+            "Name": "set_RootMoniker",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -181,14 +93,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.SaveCompiledState(byte[], byte[])",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_Number()",
+            "Name": "get_Number",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -198,14 +110,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.SaveSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_LCID(int)",
+            "Name": "set_LCID",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -215,14 +127,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItems.CreateItem(string, Microsoft.JScript.Vsa.JSVsaItemType, Microsoft.JScript.Vsa.JSVsaItemFlag)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.CompileEmpty()",
+            "Name": "CompileEmpty",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -232,14 +144,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_GenerateDebugInfo(bool)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaCodeItem.AddEventSource(string, string)",
+            "Name": "AddEventSource",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -249,337 +161,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.VsaEngine(bool)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Items()",
+            "Name": "get_Items",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_Name(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Name()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaReferenceItem.get_AssemblyName()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_IsRunning()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Assembly()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.CreateEngine()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.InitVsaEngine(string, Microsoft.Vsa.IVsaSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException.JSVsaException()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItems.Remove(int)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItems.Remove(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.InitNew()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaSite.Notify(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItem.GetOption(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.SourceItem.get_SourceItem()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_Description()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_RootNamespace()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaStartup.Startup()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Language()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.SetOption(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -590,92 +179,8 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.VsaEngine.GetItem(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaStartup.SetSite(Microsoft.JScript.Vsa.IJSVsaSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.GetCustomOption(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.DisconnectEvents()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.Run()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.Compile()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "GetItem",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
@@ -690,14 +195,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.Restart()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.JSVsaException.ToString()",
+            "Name": "ToString",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework11",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -707,14 +212,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.ScriptObjectStackTop()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.OnCompilerError(Microsoft.JScript.Vsa.IJSVsaError)",
+            "Name": "OnCompilerError",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework11",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -724,14 +229,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_Severity()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.Compile()",
+            "Name": "Compile",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -741,14 +246,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaCodeItem.AppendSourceText(string)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.RevokeCache()",
+            "Name": "RevokeCache",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -758,127 +263,9 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Version()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.DoCompile()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaCodeItem.set_SourceText(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.Close()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaSite.GetEventSourceInstance(string, string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.GetOption(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetOriginalArrayConstructor()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.ConectEvents()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.GetOption(string)",
+            "Name": "GetOption",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
@@ -894,778 +281,13 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.Reset()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "Reset",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItem.get_IsDirty()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Close()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithType(bool, string[], System.RuntimeTypeHandle)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException..ctor(Microsoft.JScript.Vsa.JSVsaError,string,System.Exception)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_Site(Microsoft.JScript.Vsa.IJSVsaSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException..ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.GetEventSourceInstance(string, string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_GenerateDebugInfo()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_Site(Microsoft.JScript.Vsa.IJSVsaSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.RegisterEventSource(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_AppDomain(System._AppDomain)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaCodeItem.AddEventSource(string, string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItem.Name.set_Name(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.DoClose()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.IsValidNamespaceName(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaReferenceItem.AssemblyName.set_AssemblyName(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Evidence()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_LCID(int)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_IsRunning()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetOriginalRegExpConstructor()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.ValidateRootMoniker(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.DoLoadSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_IsCompiled()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_AppDomain()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers.get_ExposeMembers()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetItemCount()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_RootMoniker()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaGlobalItem.set_ExposeMembers(bool)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.IsValidIdentifier(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException.JSVsaException(Microsoft.JScript.Vsa.JSVsaError, string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Evidence()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Site()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.ConnectEvents()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.GetOption(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.Clone(System.AppDomain)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.PushScriptObject(Microsoft.JScript.Scriptobject)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaSite.GetGlobalInstance(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Run()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException.get_ErrorCode()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_LCID()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.GetGlobalInstance(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_IsCompiled()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_Number()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_RootNamespace()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.LoadSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -1676,200 +298,13 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.IJSVsaItems.get_Count()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "get_Count",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException.JSVsaException(Microsoft.JScript.Vsa.JSVsaError)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.InitNew()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Compile()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_IsDirty()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_LCID()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.CompileEmpty()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.DoSaveCompiledState(byte[], byte[])",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaPersistSite.LoadElement(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.BaseVsaSite()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "Microsoft.JScript.Vsa",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.OnCompilerError(Microsoft.JScript.Vsa.IJSVsaError)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -1880,30 +315,13 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.ResetCompiledState()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "ResetCompiledState",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.IsValidIdentifier(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -1914,381 +332,8 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_RootMoniker()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Items()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.StartColumn.get_StartColumn()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Items()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.Reset()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.get_DebugInfo()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_RootMoniker(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItem.get_Name()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_Line()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.SaveCompiledState(byte[], byte[])",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_Evidence(System.Security.Policy.Evidence)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.RunEmpty()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaSite.GetCompiledState(byte[], byte[])",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_GenerateDebugInfo()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.LoadSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_ApplicationBase()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_RootMoniker(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.get_LenientGlobalObject()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetAssembly()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_SourceMoniker()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_RootNamespace(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.SetOutputStream(Microsoft.JScript.IMessageReceiver)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.SetSpecificOption(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "get_RootMoniker",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
@@ -2304,387 +349,13 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.VsaEngine.GetMainScope()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "GetMainScope",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaStartup.BaseVsaStartup()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Evidence.set_Evidence(System.Security.Policy.Evidence)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaCodeItem.get_CodeDOM()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.RootNamespace.set_RootNamespace(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException.JSVsaException(string, System.Exception)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_LineText()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_GenerateDebugInfo(bool)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Assembly()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.CreateEngineWithType(System.RuntimeTypeHandle)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaSite.OnCompilerError(Microsoft.JScript.Vsa.IJSVsaError)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.SetCustomOption(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.Compile()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaCodeItem.RemoveEventSource(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.ResInfo.ResInfo(string, bool)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Name.set_Name(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.RevokeCache()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.ResInfo.ResInfo(string, string, bool, bool)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.Interrupt()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException..ctor(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.SaveSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_ApplicationBase(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -2695,58 +366,8 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(bool, string[], System.RuntimeTypeHandle, string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework20",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_LCID(int)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaItems.get_Item(int)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.SetOption(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
@@ -2761,14 +382,31 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.SetOption(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_IsRunning()",
+            "Name": "get_IsRunning",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "Microsoft.JScript.Vsa",
+            "Name": "Microsoft.JScript.Vsa",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -2778,235 +416,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Name()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_IsDirty()",
+            "Name": "get_IsDirty",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Site()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaPersistSite.SaveElement(string, string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.PopScriptObject()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetGlobalScope()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.VsaEngine()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.RevokeCache()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.Notify(string, object)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_EndColumn()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Preconditions(Microsoft.JScript.Vsa.BaseVsaEngine.Pre)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_IsDirty(bool)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.DoSaveSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.Run(System.AppDomain)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework11",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString.set_TypeString(string)",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3017,13 +434,13 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.VsaEngine.GetOriginalObjectConstructor()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "GetOriginalObjectConstructor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework11",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3033,14 +450,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaStartup.Shutdown()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Version()",
+            "Name": "get_Version",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3050,14 +467,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.JSVsaException.ToString()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.DoSaveSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
+            "Name": "DoSaveSourceState",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3067,14 +484,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScope(bool, string[])",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.DoLoadSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
+            "Name": "DoLoadSourceState",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework11",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3084,14 +501,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Error(Microsoft.JScript.Vsa.JSVsaError)",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.JSVsaException..ctor(string)",
+            "Name": ".ctor",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3101,14 +518,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.get_Assembly()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Language()",
+            "Name": "get_Language",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3118,31 +535,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Language()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithType(bool, string[], System.RuntimeTypeHandle)",
+            "Name": "CreateEngineAndGetGlobalScopeWithType",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.Reset()",
-            "Reference": "Microsoft.JScript.Vsa",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3153,13 +553,438 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.IJSVsaItem.get_ItemType()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "get_ItemType",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaSite.Notify(string, object)",
+            "Name": "Notify",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetOriginalRegExpConstructor()",
+            "Name": "GetOriginalRegExpConstructor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_Site(Microsoft.JScript.Vsa.IJSVsaSite)",
+            "Name": "set_Site",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.SaveSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)",
+            "Name": "SaveSourceState",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaError.SourceItem.get_SourceItem()",
+            "Name": "get_SourceItem",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.BaseVsaSite()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.InitVsaEngine(string, Microsoft.JScript.Vsa.IJSVsaSite)",
+            "Name": "InitVsaEngine",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString.set_TypeString(string)",
+            "Name": "set_TypeString",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaItem.GetOption(string)",
+            "Name": "GetOption",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.get_LenientGlobalObject()",
+            "Name": "get_LenientGlobalObject",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScope(bool, string[])",
+            "Name": "CreateEngineAndGetGlobalScope",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.VsaEngine()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.JSVsaException..ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_IsCompiled()",
+            "Name": "get_IsCompiled",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.SetOption(string, object)",
+            "Name": "SetOption",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Language()",
+            "Name": "get_Language",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Name()",
+            "Name": "get_Name",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_Site()",
+            "Name": "get_Site",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaSite.GetEventSourceInstance(string, string)",
+            "Name": "GetEventSourceInstance",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.IsValidNamespaceName(string)",
+            "Name": "IsValidNamespaceName",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.DisconnectEvents()",
+            "Name": "DisconnectEvents",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_RootNamespace()",
+            "Name": "get_RootNamespace",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaStartup.BaseVsaStartup()",
+            "Name": ".ctor",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaItem.SetOption(string, object)",
+            "Name": "SetOption",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaPersistSite.SaveElement(string, string)",
+            "Name": "SaveElement",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3170,13 +995,13 @@
         {
             "Type": "Method",
             "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.get_IsDirty()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Name": "get_IsDirty",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework40",
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -3186,14 +1011,269 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.JScript.Vsa.VsaEngine.GetModule()",
-            "Reference": "Microsoft.JScript.Vsa",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.SetSpecificOption(string, object)",
+            "Name": "SetSpecificOption",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netframework11",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_EndColumn()",
+            "Name": "get_EndColumn",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Site()",
+            "Name": "get_Site",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_LCID()",
+            "Name": "get_LCID",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.IsValidIdentifier(string)",
+            "Name": "IsValidIdentifier",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.VsaEngine.IsValidIdentifier(string)",
+            "Name": "IsValidIdentifier",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_Severity()",
+            "Name": "get_Severity",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaItems.Remove(int)",
+            "Name": "Remove",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.JSVsaException.get_ErrorCode()",
+            "Name": "get_ErrorCode",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaError.get_LineText()",
+            "Name": "get_LineText",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.set_IsDirty(bool)",
+            "Name": "set_IsDirty",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaEngine.get_Items()",
+            "Name": "get_Items",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaSite.get_DebugInfo()",
+            "Name": "get_DebugInfo",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaStartup.Shutdown()",
+            "Name": "Shutdown",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.BaseVsaStartup.SetSite(Microsoft.JScript.Vsa.IJSVsaSite)",
+            "Name": "SetSite",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.JScript.Vsa.IJSVsaEngine.set_Site(Microsoft.JScript.Vsa.IJSVsaSite)",
+            "Name": "set_Site",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "JScript won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
