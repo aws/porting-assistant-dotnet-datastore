@@ -1,6 +1,6 @@
 {
     "Name": "System.Resources",
-    "EncoreVersion": "1.0.0",
+    "Version": "1.0.0",
     "Packages": [
         {
             "System.Resources": {
@@ -9,7 +9,35 @@
             }
         }
     ],
-    "Recommendedations": [
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Resources.ResourceManager.GetObject(string)",
+            "Reference": "System.Resources",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Can now only get strings.  Use manifest resources for other types of objects.",
+                    "Actions": []
+                }
+            ]
+        },
         {
             "Type": "Method",
             "Value": "System.Resources.ResourceManager.GetObject(string, System.Globalization.CultureInfo)",
@@ -39,8 +67,8 @@
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.Resources.ResourceManager.GetObject(string)",
+            "Type": "Namespace",
+            "Value": "System.Resources",
             "Reference": "System.Resources",
             "Recommendation": [
                 {

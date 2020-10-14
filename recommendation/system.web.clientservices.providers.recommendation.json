@@ -1,6 +1,6 @@
 {
     "Name": "System.Web.ClientServices.Providers",
-    "EncoreVersion": "1.0.0",
+    "Version": "1.0.0",
     "Packages": [
         {
             "System.Web.ClientServices.Providers": {
@@ -9,10 +9,10 @@
             }
         }
     ],
-    "Recommendedations": [
+    "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUser(object, bool)",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.ClientSettingsProvider()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -29,7 +29,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_RequiresQuestionAndAnswer()",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUserNameByEmail(string)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -46,7 +46,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.set_Password(string)",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByEmail(string, int, int, int)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -63,7 +63,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.CreateUser(string, string, string, string, string, bool, object, System.Web.Security.MembershipCreateStatus)",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.GetUsersInRole(string)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -80,7 +80,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(string, string)",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.CreateUser(string, string, string, string, string, bool, object, System.Web.Security.MembershipCreateStatus)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -97,7 +97,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.add_UserValidated(System.EventHandler{System.Web.ClientServices.Providers.UserValidatedEventArgs})",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_PasswordAttemptWindow()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -114,7 +114,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ClientFormsAuthenticationMembershipProvider()",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(string, string)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -131,296 +131,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_RequiresUniqueEmail()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_ServiceUri()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono50"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.set_ApplicationName(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.get_ApplicationName()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UnlockUser(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.set_UserName(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.Initialize(string, System.Collections.Specialized.NameValueCollection)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_EnablePasswordRetrieval()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.set_ApplicationName(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.UserValidatedEventArgs.UserValidatedEventArgs(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.Initialize(string, System.Collections.Specialized.NameValueCollection)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByName(string, int, int, int)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_RequiresUniqueEmail()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(string, string, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.FindUsersInRole(string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Web.ClientServices.Providers",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_EnablePasswordReset()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -454,7 +165,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.ClientSettingsProvider()",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.set_ServiceUri(string)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -471,7 +182,551 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.set_ServiceUri(string)",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.ApplicationName.set_ApplicationName(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(object, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_EnablePasswordReset()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetNumberOfUsersOnline()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ResetPassword(string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ResetPassword(string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.add_UserValidated(System.EventHandler{System.Web.ClientServices.Providers.UserValidatedEventArgs})",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUser(object, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.DeleteUser(string, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.set_ApplicationName(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.GetPropertyMetadata(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.FindUsersByEmail(string,int,int,int@)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.ClientRoleProvider()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.get_ServiceUri()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUser(string, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.get_RememberMe()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.GetAllRoles()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.CreateUser(string, string, string, string, string, bool, object, System.Web.Security.MembershipCreateStatus)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetAllUsers(int, int, int)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_MaxInvalidPasswordAttempts()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.get_ApplicationName()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.get_ApplicationName()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUserNameByEmail(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.FindUsersByName(string,int,int,int@)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_EnablePasswordRetrieval()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePassword(string, string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_ServiceUri()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -480,6 +735,295 @@
                     "Versions": [
                         "netframework35",
                         "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ClientFormsAuthenticationMembershipProvider()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_PasswordStrengthRegularExpression()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_RequiresUniqueEmail()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.RoleExists(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(string, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.GetPropertyValues(System.Configuration.SettingsContext, System.Configuration.SettingsPropertyCollection)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer(string, string, string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ClientWindowsAuthenticationMembershipProvider()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.remove_SettingsSaved(System.EventHandler{System.Web.ClientServices.Providers.SettingsSavedEventArgs})",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Web.ClientServices.Providers",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.get_UserName()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.Initialize(string, System.Collections.Specialized.NameValueCollection)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetPassword(string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.RemoveUsersFromRoles(string[], string[])",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.UserValidatedEventArgs.UserValidatedEventArgs(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.Upgrade(System.Configuration.SettingsContext, System.Configuration.SettingsPropertyCollection)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.AddUsersToRoles(string[], string[])",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -522,653 +1066,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_MinRequiredPasswordLength()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.ClientFormsAuthenticationCredentials(string, string, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.DeleteUser(string, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_EnablePasswordReset()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.DeleteUser(string, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_EnablePasswordReset()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ChangePassword(string, string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer(string, string, string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordStrengthRegularExpression.get_PasswordStrengthRegularExpression()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.AddUsersToRoles(string[], string[])",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.GetAllRoles()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ResetPassword(string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.RemoveUsersFromRoles(string[], string[])",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.remove_UserValidated(System.EventHandler{System.Web.ClientServices.Providers.UserValidatedEventArgs})",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_PasswordFormat()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.ClientRoleProvider()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.set_ServiceUri(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.GetUsersInRole(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.GetPropertyMetadata(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetNumberOfUsersOnline()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordFormat.get_PasswordFormat()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUserNameByEmail(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUser(string, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(string, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ResetPassword(string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.RoleExists(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetAllUsers(int,int,int@)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.Upgrade(System.Configuration.SettingsContext, System.Configuration.SettingsPropertyCollection)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_EnablePasswordRetrieval()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.SettingsSavedEventArgs.get_FailedSettingsList()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.get_ApplicationName()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.SettingsSavedEventArgs.SettingsSavedEventArgs(System.Collections.Generic.IEnumerable{string})",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetPassword(string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_MaxInvalidPasswordAttempts()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_MinRequiredPasswordLength()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_ApplicationName()",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_PasswordAttemptWindow()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1202,7 +1100,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_PasswordAttemptWindow()",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Initialize(string,System.Collections.Specialized.NameValueCollection)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1219,7 +1117,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer(string, string, string, string)",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.DeleteUser(string, bool)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1236,7 +1134,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.set_ApplicationName(string)",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_RequiresUniqueEmail()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1253,7 +1151,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(string, string, string)",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_MinRequiredPasswordLength()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1270,7 +1168,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_MinRequiredNonAlphanumericCharacters()",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_RequiresQuestionAndAnswer()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1287,7 +1185,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.Reset(System.Configuration.SettingsContext)",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_PasswordFormat()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1304,143 +1202,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.get_UserName()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePassword(string, string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UnlockUser(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.UserValidatedEventArgs.get_UserName()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUserNameByEmail(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetPassword(string, string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(object, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByEmail(string, int, int, int)",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.get_ServiceUri()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1474,296 +1236,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.CreateUser(string, string, string, string, string, bool, object, System.Web.Security.MembershipCreateStatus)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetAllUsers(int, int, int)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.set_ServiceUri(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_PasswordAttemptWindow()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MaxInvalidPasswordAttempts.get_MaxInvalidPasswordAttempts()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.FindUsersByEmail(string, int, int, int)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_PasswordStrengthRegularExpression()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ClientWindowsAuthenticationMembershipProvider()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.set_RememberMe(bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.DeleteRole(string, bool)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.GetPropertyValues(System.Configuration.SettingsContext, System.Configuration.SettingsPropertyCollection)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_MinRequiredNonAlphanumericCharacters()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.FindUsersByName(string, int, int, int)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri.get_ServiceUri()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.CreateRole(string)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved.remove_SettingsSaved(System.EventHandler{System.Web.ClientServices.Providers.SettingsSavedEventArgs})",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetNumberOfUsersOnline()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache()",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.set_UserName(string)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1797,7 +1270,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.get_ServiceUri()",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.Initialize(string, System.Collections.Specialized.NameValueCollection)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1814,7 +1287,568 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.Reset(System.Configuration.SettingsContext)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.set_RememberMe(bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.remove_UserValidated(System.EventHandler{System.Web.ClientServices.Providers.UserValidatedEventArgs})",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.UserValidatedEventArgs.get_UserName()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.DeleteRole(string, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.set_ServiceUri(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono50"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_MinRequiredNonAlphanumericCharacters()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetNumberOfUsersOnline()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetAllUsers(int, int, int)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.FindUsersInRole(string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer(string, string, string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ChangePassword(string, string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(string, string, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.get_ApplicationName()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.set_Password(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_PasswordFormat()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.ClientFormsAuthenticationCredentials(string, string, bool)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.CreateRole(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(string, string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_EnablePasswordRetrieval()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_MinRequiredPasswordLength()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.MinRequiredNonAlphanumericCharacters.get_MinRequiredNonAlphanumericCharacters()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UnlockUser(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetPassword(string, string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByName(string, int, int, int)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_PasswordStrengthRegularExpression()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.set_ApplicationName(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.SettingsSavedEventArgs.SettingsSavedEventArgs(System.Collections.Generic.IEnumerable{string})",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.SettingsSavedEventArgs.get_FailedSettingsList()",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.set_ApplicationName(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientSettingsProvider.set_ServiceUri(string)",
+            "Reference": "System.Web.ClientServices.Providers",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework35",
+                        "mono20"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.get_MaxInvalidPasswordAttempts()",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {
@@ -1848,41 +1882,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.get_RememberMe()",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Initialize(string, System.Collections.Specialized.NameValueCollection)",
-            "Reference": "System.Web.ClientServices.Providers",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework35",
-                        "mono20"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.ClientServices.Providers.ClientRoleProvider.set_ApplicationName(string)",
+            "Value": "System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UnlockUser(string)",
             "Reference": "System.Web.ClientServices.Providers",
             "Recommendation": [
                 {

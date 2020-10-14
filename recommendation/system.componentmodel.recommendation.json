@@ -1,6 +1,6 @@
 {
     "Name": "System.ComponentModel",
-    "EncoreVersion": "1.0.0",
+    "Version": "1.0.0",
     "Packages": [
         {
             "System.ComponentModel": {
@@ -9,10 +9,37 @@
             }
         }
     ],
-    "Recommendedations": [
+    "Recommendations": [
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.ITypeDescriptorContext.OnComponentChanged()",
+            "Value": "System.ComponentModel.ITypeDescriptorContext.OnComponentChanging()",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -41,7 +68,34 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.Dispose()",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string)",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.BrowsableAttribute",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -61,90 +115,6 @@
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.ToString()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.ITypeDescriptorContext.get_Instance()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.ITypeDescriptorContext.get_PropertyDescriptor()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
                     "Actions": []
                 }
             ]
@@ -180,7 +150,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException..ctor(string,int,System.Type)",
+            "Value": "System.ComponentModel.BrowsableAttribute.GetHashCode()",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -188,26 +158,28 @@
                     "preferred": "yes",
                     "Versions": [
                         "netframework10",
-                        "sl2",
+                        "sl4",
                         "netstandard20",
                         "netcoreapp2.0",
-                        "netstandardplatformextensions20",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
                         "uwp10.1",
                         "xamarinandroid10",
                         "xamarinios10",
                         "mono20",
+                        "windowsphonesilverlight71",
                         "net50",
                         "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "System.ComponentModel",
+            "Type": "Method",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.get_Category()",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -217,7 +189,8 @@
                         "netframework10",
                         "netstandard20",
                         "netcoreapp2.0",
-                        "netstandardplatformextensions20",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
                         "uwp10.1",
                         "xamarinandroid10",
                         "xamarinios10",
@@ -228,32 +201,12 @@
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
                     "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
-                    "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.get_CanRaiseEvents()",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, System.Exception)",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -261,6 +214,7 @@
                     "preferred": "yes",
                     "Versions": [
                         "netframework20",
+                        "sl2",
                         "netstandard20",
                         "netcoreapp2.0",
                         "netstandardplatformextensions20",
@@ -272,14 +226,14 @@
                         "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.DesignMode.get_DesignMode()",
+            "Value": "System.ComponentModel.Component.set_Site(System.ComponentModel.ISite)",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -331,303 +285,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.remove_Disposed(System.EventHandler)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.ITypeDescriptorContext.OnComponentChanging()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.add_Disposed(System.EventHandler)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ComponentModel.Component",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.set_Site(System.ComponentModel.ISite)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.Equals(object)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl4",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight71",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, System.Exception)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.Container.get_Container()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.get_Category()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.Component()",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.IsDefaultAttribute()",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -679,34 +337,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.GetHashCode()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.IsDefaultAttribute()",
+            "Value": "System.ComponentModel.Component.Dispose(bool)",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -731,16 +362,15 @@
             ]
         },
         {
-            "Type": "Type",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException",
+            "Type": "Method",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
                     "Source": "Amazon",
                     "preferred": "yes",
                     "Versions": [
-                        "netframework10",
-                        "sl2",
+                        "netframework20",
                         "netstandard20",
                         "netcoreapp2.0",
                         "netstandardplatformextensions20",
@@ -759,7 +389,191 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.GetHashCode()",
+            "Value": "System.ComponentModel.Component.Finalize()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.Component()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.ToString()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.GetService(System.Type)",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.get_Container()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.Equals(object)",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.TypeDescriptor.GetConverter(System.Type)",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.BrowsableAttribute.BrowsableAttribute(bool)",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -777,6 +591,32 @@
                         "xamarinios10",
                         "mono20",
                         "windowsphonesilverlight71",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.get_CanRaiseEvents()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework20",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
                         "net50",
                         "netplatformextensions50",
                         "netcoreapp3.1"
@@ -814,8 +654,8 @@
             ]
         },
         {
-            "Type": "Type",
-            "Value": "System.ComponentModel.BrowsableAttribute",
+            "Type": "Method",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.GetHashCode()",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -823,7 +663,6 @@
                     "preferred": "yes",
                     "Versions": [
                         "netframework10",
-                        "sl4",
                         "netstandard20",
                         "netcoreapp2.0",
                         "netstandardplatformextensions16",
@@ -832,7 +671,137 @@
                         "xamarinandroid10",
                         "xamarinios10",
                         "mono20",
-                        "windowsphonesilverlight71",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.remove_Disposed(System.EventHandler)",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.Component",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.BrowsableAttribute.IsDefaultAttribute()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute..ctor()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.get_DesignMode()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
                         "net50",
                         "netplatformextensions50",
                         "netcoreapp3.1"
@@ -873,7 +842,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.BrowsableAttribute(bool)",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, int, System.Type)",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -881,7 +850,34 @@
                     "preferred": "yes",
                     "Versions": [
                         "netframework10",
-                        "sl4",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.ITypeDescriptorContext.OnComponentChanged()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
                         "netstandard20",
                         "netcoreapp2.0",
                         "netstandardplatformextensions16",
@@ -890,7 +886,62 @@
                         "xamarinandroid10",
                         "xamarinios10",
                         "mono20",
-                        "windowsphonesilverlight71",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor.get_PropertyDescriptor()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.get_Site()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
                         "net50",
                         "netplatformextensions50",
                         "netcoreapp3.1"
@@ -902,7 +953,61 @@
         },
         {
             "Type": "Method",
+            "Value": "System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, string)",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
             "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException()",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl2",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -957,8 +1062,8 @@
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.DesignerCategoryAttribute()",
+            "Type": "Namespace",
+            "Value": "System.ComponentModel",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -966,6 +1071,7 @@
                     "preferred": "yes",
                     "Versions": [
                         "netframework10",
+                        "sl2",
                         "netstandard20",
                         "netcoreapp2.0",
                         "netstandardplatformextensions16",
@@ -974,6 +1080,26 @@
                         "xamarinandroid10",
                         "xamarinios10",
                         "mono20",
+                        "windowsphonesilverlight70",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions20",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
                         "net50",
                         "netplatformextensions50",
                         "netcoreapp3.1"
@@ -985,7 +1111,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.GetService(System.Type)",
+            "Value": "System.ComponentModel.Component.Dispose()",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -1011,33 +1137,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.Dispose(bool)",
+            "Value": "System.ComponentModel.ITypeDescriptorContext.Instance.get_Instance()",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -1045,58 +1145,7 @@
                     "preferred": "yes",
                     "Versions": [
                         "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.IsDefaultAttribute()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.Equals(object)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
+                        "sl2",
                         "netstandard20",
                         "netcoreapp2.0",
                         "netstandardplatformextensions16",
@@ -1105,85 +1154,7 @@
                         "xamarinandroid10",
                         "xamarinios10",
                         "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.get_Site()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.Finalize()",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, string)",
-            "Reference": "System.ComponentModel",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
+                        "windowsphonesilverlight70",
                         "net50",
                         "netplatformextensions50",
                         "netcoreapp3.1"
@@ -1195,7 +1166,36 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.TypeDescriptor.GetConverter(System.Type)",
+            "Value": "System.ComponentModel.BrowsableAttribute.Equals(object)",
+            "Reference": "System.ComponentModel",
+            "Recommendation": [
+                {
+                    "Source": "Amazon",
+                    "preferred": "yes",
+                    "Versions": [
+                        "netframework10",
+                        "sl4",
+                        "netstandard20",
+                        "netcoreapp2.0",
+                        "netstandardplatformextensions16",
+                        "netcoreapp1.0",
+                        "uwp10.1",
+                        "xamarinandroid10",
+                        "xamarinios10",
+                        "mono20",
+                        "windowsphonesilverlight71",
+                        "net50",
+                        "netplatformextensions50",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.add_Disposed(System.EventHandler)",
             "Reference": "System.ComponentModel",
             "Recommendation": [
                 {
@@ -1205,8 +1205,7 @@
                         "netframework10",
                         "netstandard20",
                         "netcoreapp2.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp1.0",
+                        "netstandardplatformextensions20",
                         "uwp10.1",
                         "xamarinandroid10",
                         "xamarinios10",
@@ -1215,7 +1214,7 @@
                         "netplatformextensions50",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
                     "Actions": []
                 }
             ]
