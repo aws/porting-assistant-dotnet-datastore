@@ -8,902 +8,12 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Net.ServicePointManager.get_EncryptionPolicy()",
-            "Name": "get_EncryptionPolicy",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.UploadStringTaskAsync(string,string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_Credentials()",
-            "Name": "get_Credentials",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.UploadFileAsync(System.Uri, string, string)",
-            "Name": "UploadFileAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.add_UploadDataCompleted(System.Net.UploadDataCompletedEventHandler)",
-            "Name": "add_UploadDataCompleted",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePointManager.set_EnableDnsRoundRobin(bool)",
-            "Name": "set_EnableDnsRoundRobin",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.UserAgent.set_UserAgent(string)",
-            "Name": "set_UserAgent",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebProxy.WebProxy(string, bool)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Net.UploadStringCompletedEventHandler",
-            "Name": "System.Net.UploadStringCompletedEventHandler",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebProxy.Address.set_Address(System.Uri)",
-            "Name": "set_Address",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.HttpWebRequest(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.DownloadFile(string, string)",
-            "Name": "DownloadFile",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePointManager.set_CheckCertificateRevocationList(bool)",
-            "Name": "set_CheckCertificateRevocationList",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePoint.GetHashCode()",
-            "Name": "GetHashCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Net.ServicePointManager",
-            "Name": "System.Net.ServicePointManager",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Net.HttpWebRequest",
-            "Name": "System.Net.HttpWebRequest",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.OpenWriteAsync(System.Uri, string, object)",
-            "Name": "OpenWriteAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.set_IfModifiedSince(System.DateTime)",
-            "Name": "set_IfModifiedSince",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient.DefaultRequestHeaders.IfModifiedSince (applies to all requests made by that client) or System.Net.Http.HttpRequestMessage.Headers.IfModifiedSince (applies to specific request).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_RequestUri()",
-            "Name": "get_RequestUri",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebRequest.GetRequestStream()",
-            "Name": "GetRequestStream",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use an System.Net.Http.HttpContent object in the System.Net.Http.HttpRequestMessage when using the HttpClient APIs.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebProxy.get_BypassArrayList()",
-            "Name": "get_BypassArrayList",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.remove_UploadProgressChanged(System.Net.UploadProgressChangedEventHandler)",
-            "Name": "remove_UploadProgressChanged",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebResponse.get_IsFromCache()",
-            "Name": "get_IsFromCache",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebProxy.WebProxy(string)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_ContentLength()",
-            "Name": "get_ContentLength",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.GetRequestStreamAsync()",
-            "Name": "GetRequestStreamAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePointManager.get_DefaultConnectionLimit()",
-            "Name": "get_DefaultConnectionLimit",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "In ASP.NET 5 apps, use WinHttpHandler.MaxConnectionsPerServer instead. No replacement is available for Store apps.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.set_UseDefaultCredentials(bool)",
-            "Name": "set_UseDefaultCredentials",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.set_Expect(string)",
-            "Name": "set_Expect",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient.DefaultRequestHeaders.Expect (applies to all requests made by that client) or System.Net.Http.HttpRequestMessage.Headers.Expect (applies to specific request).",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Net",
-            "Name": "System.Net",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.DownloadFileTaskAsync(string, string)",
-            "Name": "DownloadFileTaskAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Net.UploadProgressChangedEventHandler",
-            "Name": "System.Net.UploadProgressChangedEventHandler",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_AllowAutoRedirect()",
-            "Name": "get_AllowAutoRedirect",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClientHandler.AllowAutoRedirect.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_AllowWriteStreamBuffering()",
-            "Name": "get_AllowWriteStreamBuffering",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Depends on the subclass of System.Net.Http.HttpContent used within the System.Net.Http.HttpRequestMessage object.  Both buffered and unbuffered are supported.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": "GetObjectData",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePointManager.get_UseNagleAlgorithm()",
-            "Name": "get_UseNagleAlgorithm",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.OpenWriteTaskAsync(string, string)",
-            "Name": "OpenWriteTaskAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Net.HttpWebResponse",
-            "Name": "System.Net.HttpWebResponse",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePointManager.get_MaxServicePoints()",
-            "Name": "get_MaxServicePoints",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.UploadStringCompletedEventHandler.UploadStringCompletedEventHandler(object, System.IntPtr)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebResponse.get_Cookies()",
-            "Name": "get_Cookies",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_UnsafeAuthenticatedConnectionSharing()",
-            "Name": "get_UnsafeAuthenticatedConnectionSharing",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebHeaderCollection.Remove(System.Net.HttpRequestHeader)",
-            "Name": "Remove",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpRequestHeaders.get_Item.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.GetWebResponse(System.Net.WebRequest)",
-            "Name": "GetWebResponse",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.GetHashCode()",
-            "Name": "GetHashCode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePointManager.get_DnsRefreshTimeout()",
-            "Name": "get_DnsRefreshTimeout",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Net.WebProxy",
-            "Name": "System.Net.WebProxy",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePoint.set_MaxIdleTime(int)",
-            "Name": "set_MaxIdleTime",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.add_UploadValuesCompleted(System.Net.UploadValuesCompletedEventHandler)",
-            "Name": "add_UploadValuesCompleted",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Net.WebClient",
-            "Name": "System.Net.WebClient",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -914,13 +24,11 @@
         {
             "Type": "Type",
             "Value": "System.Net.WebResponse",
-            "Name": "System.Net.WebResponse",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
@@ -930,23 +38,87 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_Pipelined()",
-            "Name": "get_Pipelined",
-            "KeyType": "",
+            "Value": "System.Net.ServicePoint.set_ConnectionLimit(int)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.GetResponse()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
                     "Actions": []
-                },
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadValuesAsync(System.Uri, System.Collections.Specialized.NameValueCollection)",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.UploadProgressChangedEventHandler",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_Method()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.set_ConnectionGroupName(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
@@ -956,14 +128,207 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.ServicePointManager.ServerCipherSuitesCallback.set_ServerCipherSuitesCallback(System.Net.CipherSuitesCallback)",
-            "Name": "set_ServerCipherSuitesCallback",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.UploadFile(string, string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.remove_DownloadDataCompleted(System.Net.DownloadDataCompletedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.CloseConnectionGroup(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.get_QueryString()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadValuesAsync(System.Uri,string,System.Collections.Specialized.NameValueCollection,object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.get_StatusDescription()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.set_UseDefaultCredentials(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_Accept()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.get_BaseAddress()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.SetTcpKeepAlive(bool, int, int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.GetResponseAsync()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.WebProxy",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebHeaderCollection.Item[HttpResponseHeader].get_Item(System.Net.HttpResponseHeader)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpResponseHeaders.get_Item.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.FindServicePoint(System.Uri)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
@@ -973,74 +338,27 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.set_DefaultMaximumResponseHeadersLength(int)",
-            "Name": "set_DefaultMaximumResponseHeadersLength",
-            "KeyType": "",
+            "Value": "System.Net.WebHeaderCollection.Set(System.Net.HttpRequestHeader, string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Description": "System.Net.Http.HttpClient, System.Net.Http.HttpRequestMessage and System.Net.Http.HttpResponseMessage.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_ReadWriteTimeout()",
-            "Name": "get_ReadWriteTimeout",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.set_Headers(System.Net.WebHeaderCollection)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.WinHttpHandler.ReceiveTimeout, .SendTimeout.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebProxy.get_Credentials()",
-            "Name": "get_Credentials",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.OpenReadTaskAsync(System.Uri)",
-            "Name": "OpenReadTaskAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1050,14 +368,27 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebResponse.Dispose()",
-            "Name": "Dispose",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.AddRange(string, int, int)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
@@ -1067,82 +398,42 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.CancelAsync()",
-            "Name": "CancelAsync",
-            "KeyType": "",
+            "Value": "System.Net.ServicePoint.set_UseNagleAlgorithm(bool)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.UploadString(string, string, string)",
-            "Name": "UploadString",
-            "KeyType": "",
+            "Value": "System.Net.WebRequest.ContentLength.set_ContentLength(long)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Description": "Use System.Net.Http.HttpContent.Headers.ContentLength.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.OnDownloadStringCompleted(System.Net.DownloadstringCompletedEventArgs)",
-            "Name": "OnDownloadStringCompleted",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.AddRange(long, long)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebProxy.IsBypassed(System.Uri)",
-            "Name": "IsBypassed",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Define a custom class that implements IWebProxy interface",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_Headers()",
-            "Name": "get_Headers",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
@@ -1151,15 +442,28 @@
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.OnUploadProgressChanged(System.Net.UploadProgressChangedEventArgs)",
-            "Name": "OnUploadProgressChanged",
-            "KeyType": "",
+            "Type": "Type",
+            "Value": "System.Net.HttpContinueDelegate",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OpenReadTaskAsync(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1169,14 +473,42 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.ServicePointManager.SetTcpKeepAlive(bool, int, int)",
-            "Name": "SetTcpKeepAlive",
-            "KeyType": "",
+            "Value": "System.Net.ServicePoint.get_CurrentConnections()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.set_BaseAddress(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.set_ReusePort(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
@@ -1186,31 +518,27 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": "GetObjectData",
-            "KeyType": "",
+            "Value": "System.Net.WebProxy.WebProxy()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Description": "Define a custom class that implements IWebProxy interface",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.set_PreAuthenticate(bool)",
-            "Name": "set_PreAuthenticate",
-            "KeyType": "",
+            "Type": "Type",
+            "Value": "System.Net.HttpWebRequest",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
@@ -1220,14 +548,27 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.UploadStringTaskAsync(string, string, string)",
-            "Name": "UploadStringTaskAsync",
-            "KeyType": "",
+            "Value": "System.Net.ServicePointManager.get_EnableDnsRoundRobin()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadDataAsync(System.Uri, string, byte[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1237,31 +578,51 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.ServicePoint.set_ConnectionLeaseTimeout(int)",
-            "Name": "set_ConnectionLeaseTimeout",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.get_ServicePoint()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebResponse.get_LastModified()",
-            "Name": "get_LastModified",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.get_Credentials()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebResponse.Close()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
@@ -1269,76 +630,68 @@
                 },
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Net.Http.HttpResponseMessage.Headers.Contains(\"Last-Modified\").",
+                    "Description": "Use HttpResponseMessage.Dispose.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.OpenRead(string)",
-            "Name": "OpenRead",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.get_DefaultMaximumResponseHeadersLength()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebHeaderCollection.set_Item(System.Net.HttpResponseHeader, string)",
-            "Name": "set_Item",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.set_CookieContainer(System.Net.CookieContainer)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.set_Encoding(System.Text.Encoding)",
-            "Name": "set_Encoding",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.get_ServerCertificateValidationCallback()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebProxy.WebProxy(System.Uri, bool, string[], System.Net.ICredentials)",
-            "Name": ".ctor",
-            "KeyType": "",
+            "Value": "System.Net.WebProxy.System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Define a custom class that implements IWebProxy interface",
@@ -1348,14 +701,87 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_SendChunked()",
-            "Name": "get_SendChunked",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.UploadFile(string,string,string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.set_Proxy(System.Net.IWebProxy)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy.WebProxy(System.Uri, bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.WebClient()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.get_SecurityProtocol()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_ClientCertificates(System.Security.Cryptography.X509Certificates.X509CertificateCollection)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
@@ -1363,8 +789,356 @@
                 },
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.WinHttpHandler.ClientCertificates.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadFileTaskAsync(System.Uri, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_Proxy()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadFileAsync(System.Uri, string, string, object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OpenWriteTaskAsync(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.UploadProgressChangedEventHandler.BeginInvoke(object, System.Net.UploadProgressChangedEventArgs, System.AsyncCallback, object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebResponse.System.IDisposable.Dispose()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.get_IsBusy()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Method(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.HttpWebResponse()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.UploadStringCompletedEventArgs.get_Result()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.HttpWebResponse",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Pipelined(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.WebClient",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.UploadStringCompletedEventArgs",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.add_WriteStreamClosed(System.Net.WriteStreamClosedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy.GetDefaultProxy()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OnUploadStringCompleted(System.Net.UploadstringCompletedEventArgs)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.get_ConnectionLimit()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.set_PreAuthenticate(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.WinHttpHandler.PreAuthenticate.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_AllowReadStreamBuffering()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.CharacterSet.get_CharacterSet()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_SendChunked(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Add \"chunked\" to System.Net.Http.HttpClient.DefaultRequestHeaders.TransferEncoding  (applies to all requests made by that client) or System.Net.Http.HttpRequestMessage.Headers.TransferEncoding(applies to specific request).",
@@ -1374,14 +1148,51 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.OnUploadValuesCompleted(System.Net.UploadValuesCompletedEventArgs)",
-            "Name": "OnUploadValuesCompleted",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.get_PreAuthenticate()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_TransferEncoding()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpRequestMessage.Headers.TransferEncoding.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.remove_WriteStreamClosed(System.Net.WriteStreamClosedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1391,14 +1202,27 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.UploadProgressChangedEventHandler.EndInvoke(System.IAsyncResult)",
-            "Name": "EndInvoke",
-            "KeyType": "",
+            "Value": "System.Net.WebResponse.get_ContentType()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.remove_OpenWriteCompleted(System.Net.OpenWriteCompletedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1408,14 +1232,204 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.ServicePointManager.set_SecurityProtocol(System.Net.SecurityProtocolType)",
-            "Name": "set_SecurityProtocol",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.UploadStringAsync(System.Uri, string, string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Connection(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpResponseMessage.Headers.Connection.Add(System.String).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.remove_DownloadProgressChanged(System.Net.DownloadProgressChangedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_UnsafeAuthenticatedConnectionSharing(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.GetResponse()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient.SendAsync (returns an HttpResponseMessage).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_AllowWriteStreamBuffering(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Depends on the subclass of System.Net.Http.HttpContent used within the System.Net.Http.HttpRequestMessage object.  Both buffered and unbuffered are supported.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.set_CachePolicy(System.Net.Cache.RequestCachePolicy)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy.WebProxy(string, bool, string[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebResponse.Dispose(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpContinueDelegate.HttpContinueDelegate(object, System.IntPtr)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OpenWriteAsync(System.Uri, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.MaxServicePointIdleTime.set_MaxServicePointIdleTime(int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
@@ -1425,83 +1439,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.ServicePoint.get_SupportsPipelining()",
-            "Name": "get_SupportsPipelining",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.UploadString(System.Uri, string, string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.set_MaximumAutomaticRedirections(int)",
-            "Name": "set_MaximumAutomaticRedirections",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClientHandler.MaxAutomaticRedirections.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_MaximumResponseHeadersLength()",
-            "Name": "get_MaximumResponseHeadersLength",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.WinHttpHandler.MaxResponseHeadersLength.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.UploadFileTaskAsync(System.Uri, string, string)",
-            "Name": "UploadFileTaskAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1511,40 +1454,834 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebResponse.get_ContentEncoding()",
-            "Name": "get_ContentEncoding",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.EndGetRequestStream(System.IAsyncResult, System.Net.TransportContext)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpContent.Headers.ContentEncoding.",
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.UploadStringTaskAsync(System.Uri, string)",
-            "Name": "UploadStringTaskAsync",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.add_UploadProgressChanged(System.Net.UploadProgressChangedEventHandler)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.get_Timeout()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient.Timeout. More granular timeouts are also available: System.Net.Http.WinHttpHandler.ConnectTimout, .ReceiveTimeout, .SendTimeout.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.get_ProtocolVersion()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadData(System.Uri, byte[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadString(System.Uri, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadFileAsync(System.Uri, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.set_AllowReadStreamBuffering(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.UploadStringCompletedEventHandler.Invoke(object, System.Net.UploadstringCompletedEventArgs)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadData(System.Uri, string, byte[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_HaveResponse()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.get_IsMutuallyAuthenticated()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebResponse.GetResponseStream()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadData(System.Uri)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.set_DefaultConnectionLimit(int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "In ASP.NET 5 apps, use WinHttpHandler.MaxConnectionsPerServer instead. No replacement is available for Store apps.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy.get_BypassProxyOnLocal()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadDataAsync(System.Uri, string, byte[], object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.get_ConnectionLeaseTimeout()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OnUploadFileCompleted(System.Net.UploadFileCompletedEventArgs)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_ConnectionGroupName(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.get_ServerCipherSuitesCallback()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.Connection.get_Connection()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.set_DnsRefreshTimeout(int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_AllowAutoRedirect(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClientHandler.AllowAutoRedirect.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.set_Credentials(System.Net.ICredentials)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Date(System.DateTime)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.set_CachePolicy(System.Net.Cache.RequestCachePolicy)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.get_BindIPEndPointDelegate()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.set_AuthenticationLevel(System.Net.Security.AuthenticationLevel)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.get_AuthenticationLevel()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported - Authentication level is always set to MutualAuthRequested.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.remove_DownloadStringCompleted(System.Net.DownloadstringCompletedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.add_DownloadProgressChanged(System.Net.DownloadProgressChangedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadStringTaskAsync(System.Uri)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_Expect()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported.  Expect: 100-Continue is turned off always.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OnWriteStreamClosed(System.Net.WriteStreamClosedEventArgs)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy.WebProxy(System.Uri, bool, string[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.get_CachePolicy()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OpenWrite(System.Uri,string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebRequest.get_PreAuthenticate()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.WinHttpHandler.PreAuthenticate.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.get_ContentLength()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.GetHashCode()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.get_Method()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.UploadStringCompletedEventHandler",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.set_ReceiveBufferSize(int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.add_UploadFileCompleted(System.Net.UploadFileCompletedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OpenWriteTaskAsync(System.Uri, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadData(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadStringCompleted.add_DownloadStringCompleted(System.Net.DownloadStringCompletedEventHandler)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OpenWrite(System.Uri)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.TransferEncoding.set_TransferEncoding(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.get_CheckCertificateRevocationList()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.get_AllowWriteStreamBuffering()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1555,13 +2292,11 @@
         {
             "Type": "Type",
             "Value": "System.Net.ServicePoint",
-            "Name": "System.Net.ServicePoint",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
@@ -1571,14 +2306,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.DownloadStringTaskAsync(string)",
-            "Name": "DownloadStringTaskAsync",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.set_AllowWriteStreamBuffering(bool)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1588,14 +2321,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebClient.DownloadDataAsync(System.Uri)",
-            "Name": "DownloadDataAsync",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.DownloadString(System.Uri)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1605,14 +2336,81 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.WebRequest.get_ContentLength()",
-            "Name": "get_ContentLength",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.UploadFileTaskAsync(string,string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Net",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpResponseHeaders.get_Item.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpContent.Headers.ContentLength.",
@@ -1622,65 +2420,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.AddRange(string, long)",
-            "Name": "AddRange",
-            "KeyType": "",
+            "Value": "System.Net.WebClient.OnDownloadDataCompleted(System.Net.DownloadDataCompletedEventArgs)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.ServicePoint.get_ConnectionName()",
-            "Name": "get_ConnectionName",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Net.ServicePointManager.get_DefaultConnectionLimit()",
-            "Name": "get_DefaultConnectionLimit",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "In ASP.NET 5 apps, use WinHttpHandler.MaxConnectionsPerServer instead. No replacement is available for Store apps.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Net.WebClient.DownloadFileAsync(System.Uri, string, object)",
-            "Name": "DownloadFileAsync",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not available in .NET Core - use HttpClient API instead.",
@@ -1690,14 +2435,132 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_Referer()",
-            "Name": "get_Referer",
-            "KeyType": "",
+            "Value": "System.Net.HttpWebRequest.set_Timeout(int)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadFile(System.Uri, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadValues(System.Uri, System.Collections.Specialized.NameValueCollection)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy.get_UseDefaultCredentials()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadValues(System.Uri, string, System.Collections.Specialized.NameValueCollection)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.get_ResponseUri()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.GetResponseStream()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.get_Address()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_MediaType(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
@@ -1705,28 +2568,404 @@
                 },
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Net.Http.HttpClient.DefaultRequestHeaders.Referrer (applies to all requests made by that client) or System.Net.Http.HttpRequestMessage.Headers.Referrer (applies to specific request).",
+                    "Description": "Use System.Net.Http.HttpContent.Headers.ContentType.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Net.HttpWebRequest.get_ContinueTimeout()",
-            "Name": "get_ContinueTimeout",
-            "KeyType": "",
+            "Value": "System.Net.ServicePointManager.set_ServerCertificateValidationCallback(System.Net.Security.RemoteCertificateValidationCallback)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadString(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadData(string, string, byte[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.OpenWriteAsync(System.Uri)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_ContinueTimeout(int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.DownloadDataAsync(System.Uri, object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.EndGetRequestStream(System.IAsyncResult)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePointManager.get_CertificatePolicy()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.get_Expect100Continue()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.get_UseDefaultCredentials()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.get_Proxy()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.ServicePoint.Expect100Continue.set_Expect100Continue(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.ServicePointManager",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.HttpClient or WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.Cookies.set_Cookies(System.Net.CookieCollection)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Credentials(System.Net.ICredentials)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Net.ServicePointManager.set_DefaultConnectionLimit(int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "In ASP.NET 5 apps, use WinHttpHandler.MaxConnectionsPerServer instead. No replacement is available for Store apps.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.get_ContentType()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Host(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Referer(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpRequestMessage.Headers.Referrer.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebProxy..ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Define a custom class that implements IWebProxy interface",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.set_Accept(string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebResponse.get_ContentType()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient, System.Net.Http.HttpClientHandler and System.Net.Http.WinHttpHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.HttpWebRequest.HttpWebRequest(System.Uri)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Net.Http.HttpClient / HttpClientHandler instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.WebClient.UploadFileTaskAsync(string, string, string)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not available in .NET Core - use HttpClient API instead.",
                     "Actions": []
                 }
             ]

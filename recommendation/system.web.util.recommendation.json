@@ -7,100 +7,13 @@
     },
     "Recommendations": [
         {
-            "Type": "Method",
-            "Value": "System.Web.Util.HttpEncoder.get_Current()",
-            "Name": "get_Current",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Util.WorkItemCallback.WorkItemCallback(object, System.IntPtr)",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Util.WorkItem.Post(System.Web.Util.WorkItemCallback)",
-            "Name": "Post",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Util.HttpEncoder.get_Default()",
-            "Name": "get_Default",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Web.Util.HttpEncoder.JavaScriptStringEncode(string)",
-            "Name": "JavaScriptStringEncode",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
             "Type": "Namespace",
             "Value": "System.Web.Util",
-            "Name": "System.Web.Util",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -110,14 +23,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Util.IWebObjectFactory.CreateInstance()",
-            "Name": "CreateInstance",
-            "KeyType": "",
+            "Value": "System.Web.Util.TransactedCallback.BeginInvoke(System.AsyncCallback, object)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -127,14 +38,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Util.TransactedCallback.Invoke()",
-            "Name": "Invoke",
-            "KeyType": "",
+            "Value": "System.Web.Util.IWebPropertyAccessor.GetProperty(object)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -144,14 +53,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Util.RequestValidator.set_Current(System.Web.Util.RequestValidator)",
-            "Name": "set_Current",
-            "KeyType": "",
+            "Value": "System.Web.Util.HttpEncoder.set_Current(System.Web.Util.HttpEncoder)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
@@ -161,14 +68,72 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback, System.EnterpriseServices.TransactionOption, bool)",
-            "Name": "InvokeTransacted",
-            "KeyType": "",
+            "Value": "System.Web.Util.RequestValidator.IsValidRequestString(System.Web.HttpContext, string, System.Web.Util.RequestValidationSource, string, int)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Util.IWebPropertyAccessor.SetProperty(object, object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Util.HttpEncoder.HtmlDecode(string, System.IO.TextWriter)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Util.WorkItemCallback.BeginInvoke(System.AsyncCallback, object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Web.Util.Transactions.Transactions()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "System.Web (AKA classic ASP.NET) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",

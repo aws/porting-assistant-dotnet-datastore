@@ -8,65 +8,12 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA256.HashFinal()",
-            "Name": "HashFinal",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.RijndaelManaged.GenerateIV()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Security.Cryptography.HMACSHA1",
-            "Name": "System.Security.Cryptography.HMACSHA1",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.RijndaelManaged.set_Padding(System.Security.Cryptography.PaddingMode)",
-            "Name": "set_Padding",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider replacing with System.Security.Cryptography.Aes.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.RijndaelManaged.CreateDecryptor(byte[], byte[])",
-            "Name": "CreateDecryptor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider replacing with System.Security.Cryptography.Aes.",
@@ -77,13 +24,11 @@
         {
             "Type": "Type",
             "Value": "System.Security.Cryptography.RijndaelManaged",
-            "Name": "System.Security.Cryptography.RijndaelManaged",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider replacing with System.Security.Cryptography.Aes.",
@@ -93,227 +38,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.SHA1Managed.HashCore(byte[], int, int)",
-            "Name": "HashCore",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.RijndaelManaged.get_Padding()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use SHA1.Create().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.SHA256Managed.HashFinal()",
-            "Name": "HashFinal",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use SHA256.Create().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA512.set_Key(byte[])",
-            "Name": "set_Key",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA1.HashFinal()",
-            "Name": "HashFinal",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.RijndaelManaged.RijndaelManaged()",
-            "Name": ".ctor",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Consider replacing with System.Security.Cryptography.Aes.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Security.Cryptography",
-            "Name": "System.Security.Cryptography",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use SHA256.Create().",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Security.Cryptography.HMACSHA256",
-            "Name": "System.Security.Cryptography.HMACSHA256",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA384.get_ProduceLegacyHmacValues()",
-            "Name": "get_ProduceLegacyHmacValues",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.SHA256Managed.Dispose(bool)",
-            "Name": "Dispose",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use SHA256.Create().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Security.Cryptography.HMACSHA512",
-            "Name": "System.Security.Cryptography.HMACSHA512",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA256.get_HashSize()",
-            "Name": "get_HashSize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA384.Dispose(bool)",
-            "Name": "Dispose",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.RijndaelManaged.get_BlockSize()",
-            "Name": "get_BlockSize",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider replacing with System.Security.Cryptography.Aes.",
@@ -323,14 +53,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA256.HMACSHA256(byte[])",
-            "Name": ".ctor",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.HMACSHA1.get_Key()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -340,14 +68,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA512.HashFinal()",
-            "Name": "HashFinal",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.HMACSHA1.HMACSHA1(byte[])",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -357,31 +83,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA512.HMACSHA512()",
-            "Name": ".ctor",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.HashAlgorithm.TransformBlock(byte[], int, int, byte[], int)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(byte[], int, int)",
-            "Name": "TransformFinalBlock",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Security.Cryptography.HashAlgorithm.ComputeHash() instead.",
@@ -391,14 +98,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.HMACSHA384.HashCore(byte[], int, int)",
-            "Name": "HashCore",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.HMACSHA256.set_Key(byte[])",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -408,14 +113,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.RijndaelManaged.get_Mode()",
-            "Name": "get_Mode",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.RijndaelManaged.set_Key(byte[])",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider replacing with System.Security.Cryptography.Aes.",
@@ -425,34 +128,150 @@
         },
         {
             "Type": "Type",
-            "Value": "System.Security.Cryptography.SHA256Managed",
-            "Name": "System.Security.Cryptography.SHA256Managed",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.HMACSHA256",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use SHA256.Create().",
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.SHA1Managed.Dispose(bool)",
-            "Name": "Dispose",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.HMACSHA1.HashCore(System.ReadOnlySpan{byte})",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use SHA1.Create().",
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.CryptoStream.Close()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use CryptoStream.Dispose().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.RijndaelManaged.CreateEncryptor(byte[], byte[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Consider replacing with System.Security.Cryptography.Aes.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.CryptoStream.Clear()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use CryptoStream.Dispose().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA1.HashCore(byte[], int, int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA256.Dispose(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.RijndaelManaged.CreateEncryptor()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Consider replacing with System.Security.Cryptography.Aes.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Security.Cryptography.HMACSHA512",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Security.Cryptography",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
                     "Actions": []
                 }
             ]
@@ -460,13 +279,11 @@
         {
             "Type": "Type",
             "Value": "System.Security.Cryptography.HMACSHA384",
-            "Name": "System.Security.Cryptography.HMACSHA384",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -476,14 +293,27 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.RijndaelManaged.set_KeySize(int)",
-            "Name": "set_KeySize",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.HMACSHA384.HashFinal()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.RijndaelManaged.set_BlockSize(int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Consider replacing with System.Security.Cryptography.Aes.",
@@ -492,18 +322,256 @@
             ]
         },
         {
-            "Type": "Type",
-            "Value": "System.Security.Cryptography.SHA1Managed",
-            "Name": "System.Security.Cryptography.SHA1Managed",
-            "KeyType": "",
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.RijndaelManaged.CreateDecryptor()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use SHA1.Create().",
+                    "Description": "Consider replacing with System.Security.Cryptography.Aes.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA384.HMACSHA384()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Security.Cryptography.HMACSHA1",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA512.get_Key()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA1.Dispose(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA512.get_ProduceLegacyHmacValues()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA512.Dispose(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA1.HMACSHA1(byte[], bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.RijndaelManaged.get_IV()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Consider replacing with System.Security.Cryptography.Aes.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA1.Initialize()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA256.HashCore(System.ReadOnlySpan{byte})",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA1.Finalize()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA256.TryHashFinal(System.Span{byte}, int)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA384.set_ProduceLegacyHmacValues(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA512.set_ProduceLegacyHmacValues(bool)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.RijndaelManaged.get_LegalKeySizes()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Consider replacing with System.Security.Cryptography.Aes.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.HMACSHA384.set_Key(byte[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
                     "Actions": []
                 }
             ]

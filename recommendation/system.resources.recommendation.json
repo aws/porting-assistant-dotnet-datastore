@@ -8,14 +8,27 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Resources.ResourceManager.GetObject(string, System.Globalization.CultureInfo)",
-            "Name": "GetObject",
-            "KeyType": "",
+            "Value": "System.Resources.ResourceManager.GetObject(string)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Can now only get strings.  Use manifest resources for other types of objects.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Resources",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Can now only get strings.  Use manifest resources for other types of objects.",

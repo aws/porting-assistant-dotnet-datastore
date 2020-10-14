@@ -7,15 +7,13 @@
     },
     "Recommendations": [
         {
-            "Type": "Method",
-            "Value": "System.Net.Security.LocalCertificateSelectionCallback.EndInvoke(System.IAsyncResult)",
-            "Name": "EndInvoke",
-            "KeyType": "",
+            "Type": "Type",
+            "Value": "System.Net.Security.LocalCertificateSelectionCallback",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not supported for HTTP - use new Handler and ignorable server certificate errors instead.",
@@ -25,31 +23,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.Security.SslStream.AuthenticateAsClient(string)",
-            "Name": "AuthenticateAsClient",
-            "KeyType": "",
+            "Value": "System.Net.Security.SslStream.AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use the async alternatives AuthenticateAsClientAsync and AuthenticateAsServerAsync.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Net.Security",
-            "Name": "System.Net.Security",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use the async alternatives AuthenticateAsClientAsync and AuthenticateAsServerAsync.",
@@ -59,14 +38,12 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Net.Security.SslStream.AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate, bool, System.Security.Authentication.SslProtocols, bool)",
-            "Name": "AuthenticateAsServer",
-            "KeyType": "",
+            "Value": "System.Net.Security.SslStream.AuthenticateAsClient(string, System.Security.Cryptography.X509Certificates.X509CertificateCollection, System.Security.Authentication.SslProtocols, bool)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use the async alternatives AuthenticateAsClientAsync and AuthenticateAsServerAsync.",
@@ -75,15 +52,88 @@
             ]
         },
         {
-            "Type": "Type",
-            "Value": "System.Net.Security.LocalCertificateSelectionCallback",
-            "Name": "System.Net.Security.LocalCertificateSelectionCallback",
-            "KeyType": "",
+            "Type": "Method",
+            "Value": "System.Net.Security.RemoteCertificateValidationCallback.RemoteCertificateValidationCallback(object, System.IntPtr)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported for HTTP - use new Handler and ignorable server certificate errors instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.Security.LocalCertificateSelectionCallback.BeginInvoke(object, string, System.Security.Cryptography.X509Certificates.X509CertificateCollection, System.Security.Cryptography.X509Certificates.X509Certificate, string[], System.AsyncCallback, object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported for HTTP - use new Handler and ignorable server certificate errors instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.Security.RemoteCertificateValidationCallback.EndInvoke(System.IAsyncResult)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported for HTTP - use new Handler and ignorable server certificate errors instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.Security.RemoteCertificateValidationCallback.BeginInvoke(object, System.Security.Cryptography.X509Certificates.X509Certificate, System.Security.Cryptography.X509Certificates.X509Chain, System.Net.Security.SslPolicyErrors, System.AsyncCallback, object)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported for HTTP - use new Handler and ignorable server certificate errors instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Net.Security.LocalCertificateSelectionCallback.Invoke(object, string, System.Security.Cryptography.X509Certificates.X509CertificateCollection, System.Security.Cryptography.X509Certificates.X509Certificate, string[])",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Not supported for HTTP - use new Handler and ignorable server certificate errors instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Net.Security.RemoteCertificateValidationCallback",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Not supported for HTTP - use new Handler and ignorable server certificate errors instead.",

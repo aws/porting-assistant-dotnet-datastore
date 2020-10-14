@@ -7,15 +7,28 @@
     },
     "Recommendations": [
         {
-            "Type": "Attribute",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
-            "Name": "get_PrivateKey",
-            "KeyType": "",
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.X509Certificates.X509Store.X509Store(System.Security.Cryptography.X509Certificates.StoreLocation)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use X509Store.#ctor(StoreName,StoreLocation) overload of this constructor and pass StoreName.My.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey.set_PrivateKey(System.Security.Cryptography.AsymmetricAlgorithm)",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
@@ -26,47 +39,11 @@
         {
             "Type": "Namespace",
             "Value": "System.Security.Cryptography.X509Certificates",
-            "Name": "System.Security.Cryptography.X509Certificates",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey.set_PrivateKey(System.Security.Cryptography.AsymmetricAlgorithm)",
-            "Name": "set_PrivateKey",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
-            "Name": "get_PrivateKey",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
@@ -77,13 +54,11 @@
         {
             "Type": "Method",
             "Value": "System.Security.Cryptography.X509Certificates.X509Store.Close()",
-            "Name": "Close",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Dispose() instead.",
@@ -93,17 +68,30 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Security.Cryptography.X509Certificates.X509Store.X509Store(System.Security.Cryptography.X509Certificates.StoreLocation)",
-            "Name": ".ctor",
-            "KeyType": "",
+            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use X509Store.#ctor(StoreName,StoreLocation) overload of this constructor and pass StoreName.My.",
+                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "referred": "yes",
+                    "Versions": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use GetRSAPrivateKey() or GetECDsaPrivateKey() extension methods instead.",
                     "Actions": []
                 }
             ]

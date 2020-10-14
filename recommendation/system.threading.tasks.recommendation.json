@@ -5,17 +5,16 @@
         "Type": "SDK",
         "Name": "System.Threading.Tasks"
     },
-    "Recommendations": [
+    "RecommendedActions": [
         {
             "Type": "Method",
             "Value": "System.Threading.Tasks.Task.Dispose()",
-            "Name": "Dispose",
-            "KeyType": "",
-            "RecommendedActions": [
+            "Reference": "System.Threading.Tasks",
+            "Recommendation": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Don't use IAsyncResult, use \"await\" instead, and don't dispose Tasks.",

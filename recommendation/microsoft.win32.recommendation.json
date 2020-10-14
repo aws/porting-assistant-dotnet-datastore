@@ -8,17 +8,15 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "Microsoft.Win32.RegistryKey.OpenSubKey(string, Microsoft.Win32.RegistryKeyPermissionCheck, System.Security.AccessControl.RegistryRights)",
-            "Name": "OpenSubKey",
-            "KeyType": "",
+            "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove: CAS is not supported.",
+                    "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
                     "Actions": []
                 }
             ]
@@ -26,13 +24,11 @@
         {
             "Type": "Method",
             "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
-            "Name": "GetAccessControl",
-            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
@@ -42,17 +38,15 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
-            "Name": "SetAccessControl",
-            "KeyType": "",
+            "Value": "Microsoft.Win32.RegistryKey.OpenSubKey(string, Microsoft.Win32.RegistryKeyPermissionCheck, System.Security.AccessControl.RegistryRights)",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                    "referred": "yes",
+                    "Versions": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
+                    "Description": "Remove: CAS is not supported.",
                     "Actions": []
                 }
             ]
