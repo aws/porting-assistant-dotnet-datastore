@@ -1,6 +1,6 @@
 {
     "Name": "System.ServiceModel.Activities.Tracking",
-    "EncoreVersion": "1.0.0",
+    "Version": "1.0.0",
     "Packages": [
         {
             "System.ServiceModel.Activities.Tracking": {
@@ -9,49 +9,18 @@
             }
         }
     ],
-    "Recommendedations": [
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.Clone()",
-            "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.ReceiveMessageRecord(string)",
-            "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
+    "Recommendations": [
         {
             "Type": "Namespace",
             "Value": "System.ServiceModel.Activities.Tracking",
             "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -60,14 +29,15 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.MessageId.get_MessageId()",
+            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.get_E2EActivityId()",
             "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -78,60 +48,13 @@
             "Type": "Method",
             "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.ReceiveMessageRecord(System.ServiceModel.Activities.Tracking.ReceiveMessageRecord)",
             "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activities.Tracking.SendMessageRecord.SendMessageRecord(System.ServiceModel.Activities.Tracking.SendMessageRecord)",
-            "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.E2EActivityId.get_E2EActivityId()",
-            "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
-                    ],
-                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ServiceModel.Activities.Tracking.SendMessageRecord.SendMessageRecord(string)",
-            "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -142,12 +65,13 @@
             "Type": "Method",
             "Value": "System.ServiceModel.Activities.Tracking.SendMessageRecord.get_E2EActivityId()",
             "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -158,12 +82,30 @@
             "Type": "Method",
             "Value": "System.ServiceModel.Activities.Tracking.SendMessageRecord.set_E2EActivityId(System.Guid)",
             "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.get_MessageId()",
+            "Reference": "System.ServiceModel.Activities.Tracking",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
@@ -174,12 +116,81 @@
             "Type": "Method",
             "Value": "System.ServiceModel.Activities.Tracking.SendMessageRecord.Clone()",
             "Reference": "System.ServiceModel.Activities.Tracking",
-            "Recommendation": [
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.ReceiveMessageRecord(string)",
+            "Reference": "System.ServiceModel.Activities.Tracking",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activities.Tracking.SendMessageRecord.SendMessageRecord(System.ServiceModel.Activities.Tracking.SendMessageRecord)",
+            "Reference": "System.ServiceModel.Activities.Tracking",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activities.Tracking.SendMessageRecord..ctor(string)",
+            "Reference": "System.ServiceModel.Activities.Tracking",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ServiceModel.Activities.Tracking.ReceiveMessageRecord.Clone()",
+            "Reference": "System.ServiceModel.Activities.Tracking",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netframework40",
+                        "netcoreapp3.1"
                     ],
                     "Description": "This part of Windows Communication Foundation (WCF) won't be ported to .NET Core. See https://aka.ms/unsupported-netfx-api.",
                     "Actions": []
