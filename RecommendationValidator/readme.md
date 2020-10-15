@@ -5,7 +5,7 @@ https://github.com/aws/porting-assistant-dotnet-datastore/tree/master/recommenda
 
 > Manifest file
 https://github.com/aws/porting-assistant-dotnet-datastore/blob/master/data/namespaces.recommendation.lookup.json
-	
+
 ## contribute to recommendation
 
 1. add or modify recommendation in the same file data structure in RecommedationPOJO.cs
@@ -21,22 +21,13 @@ https://github.com/aws/porting-assistant-dotnet-datastore/blob/master/data/names
 * C#
 
 ## run
+build the exe or run from sln
 
 ```shell
-runnable/RecommendationValidator.exe -f file-to-recommendation-path
+RecommendationValidator.exe -f file-to-recommendation-path
 ```
 for example
 
-success response
-
 ```shell
-runnable/RecommendationValidator.exe -f system.io.recommendation.json
+RecommendationValidator.exe -f system.io.recommendation.json
 ```
-
-error response
-
-```shell
-runnable/RecommendationValidator.exe -f foo.json
-
-```
-
