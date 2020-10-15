@@ -3,33 +3,21 @@
     "Version": "1.0.0",
     "Packages": [
         {
-            "System.Threading.Tasks": {
-                "Type": "SDK",
-                "Name": "System.Threading.Tasks"
-            }
+            "Type": "SDK",
+            "Name": "System.Threading.Tasks"
         }
     ],
     "Recommendations": [
         {
             "Type": "Method",
             "Value": "System.Threading.Tasks.Task.Dispose()",
-            "Reference": "System.Threading.Tasks",
-            "Recommendation": [
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40",
-                        "sl5",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono40",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Don't use IAsyncResult, use \"await\" instead, and don't dispose Tasks.",

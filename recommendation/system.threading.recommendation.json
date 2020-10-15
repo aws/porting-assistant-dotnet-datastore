@@ -3,82 +3,58 @@
     "Version": "1.0.0",
     "Packages": [
         {
-            "System.Threading": {
-                "Type": "SDK",
-                "Name": "System.Threading"
-            }
+            "Type": "SDK",
+            "Name": "System.Threading"
         }
     ],
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.Threading.EventWaitHandle.OpenExisting(string, System.Security.AccessControl.EventWaitHandleRights)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.ReaderWriterLock.AcquireReaderLock(System.TimeSpan)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
                     ],
-                    "Description": "Use EventWaitHandle.OpenExisting(string).",
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.WaitHandle.WaitOne(System.TimeSpan, bool)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.Thread.Interrupt()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Threading.WaitHandle.WaitOne(System.TimeSpan).",
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.get_CurrentUICulture()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.Timer..ctor(System.Threading.TimerCallback)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
+                    "Description": "Use Task.Delay, or one of the other Timer .ctor overloads (passing Timeout.Infinite as needed).",
                     "Actions": []
                 }
             ]
@@ -86,22 +62,13 @@
         {
             "Type": "Method",
             "Value": "System.Threading.Thread.Yield()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework40",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono40",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.SpinWait for spinning logic.",
@@ -111,101 +78,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.get_CurrentCulture()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.Thread.ResetAbort()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AcquireWriterLock(int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AcquireWriterLock(System.TimeSpan)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Threading.ThreadAbortException",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
@@ -215,25 +95,150 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.ThreadPool.GetMaxThreads(int, int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.Thread.set_CurrentCulture(System.Globalization.CultureInfo)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.ReleaseReaderLock()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.AnyWritersSince(int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.AcquireReaderLock(int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.ReleaseLock()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ThreadPool.SetMinThreads(int, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ThreadAbortException.get_ExceptionState()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.get_Priority()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.GetApartmentState()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
@@ -244,24 +249,13 @@
         {
             "Type": "Attribute",
             "Value": "System.Threading.Thread.get_CurrentUICulture()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
@@ -271,659 +265,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Timer.Dispose(System.Threading.WaitHandle)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.ReaderWriterLock.AcquireWriterLock(int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "If you need to synchronize destruction of the timer with execution of the callback, do this yourself via Monitor or other synchronization mechanism.  If not, simply use Dispose().  Code sample: http://aka.ms/porttocore_timer_dispose",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.WaitHandle.Close()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Threading.Thread.set_CurrentCulture(System.Globalization.CultureInfo)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.Thread(System.Threading.ParameterizedThreadStart, int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Task.Run(), or Task.Factory.StartNew(..., TaskCreationOptions.LongRunning) if long-running.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.UpgradeToWriterLock(int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.GetApartmentState()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadPool.SetMinThreads(int, int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework11",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.RestoreLock(System.Threading.LockCookie)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp1.0",
-                        "netstandardplatformextensions16",
-                        "netcoreapp2.0",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.ReleaseLock()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.Priority.set_Priority(System.Threading.ThreadPriority)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AcquireReaderLock(int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadAbortException.get_ExceptionState()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.DowngradeFromWriterLock(System.Threading.LockCookie)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadPool.GetMinThreads(int, int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework11",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.Threading.Thread.get_CurrentCulture()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.get_Priority()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AnyWritersSince(int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Mutex.Mutex(bool, string, bool, System.Security.AccessControl.MutexSecurity)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20"
-                    ],
-                    "Description": "Use an overload without MutexSecurity.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.Interrupt()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ThreadPool.SetMaxThreads(int, int)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.CurrentUICulture.set_CurrentUICulture(System.Globalization.CultureInfo)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.ResetAbort()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Timer.Change(long, long)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a 32-bit interval.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Threading.ReaderWriterLock",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.ReaderWriterLockSlim.",
@@ -934,22 +283,13 @@
         {
             "Type": "Method",
             "Value": "System.Threading.ReaderWriterLock.ReaderWriterLock()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.ReaderWriterLockSlim.",
@@ -959,23 +299,14 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.AcquireReaderLock(System.TimeSpan)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.ReaderWriterLock.get_IsReaderLockHeld()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.ReaderWriterLockSlim.",
@@ -985,26 +316,17 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.Abort(object)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.Timer.Change(long, long)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Description": "Use a 32-bit interval.",
                     "Actions": []
                 }
             ]
@@ -1012,22 +334,13 @@
         {
             "Type": "Method",
             "Value": "System.Threading.ReaderWriterLock.UpgradeToWriterLock(System.TimeSpan)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.ReaderWriterLockSlim.",
@@ -1038,22 +351,13 @@
         {
             "Type": "Method",
             "Value": "System.Threading.ReaderWriterLock.IsWriterLockHeld.get_IsWriterLockHeld()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.ReaderWriterLockSlim.",
@@ -1063,133 +367,48 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Timer.Timer(System.Threading.TimerCallback, object, long, long)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.ThreadPool.GetMinThreads(int, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32).",
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "System.Threading",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.get_WriterSeqNum()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "If you need to synchronize destruction of the timer with execution of the callback, do this yourself via Monitor or other synchronization mechanism.  If not, simply use Dispose().  Code sample: http://aka.ms/porttocore_timer_dispose",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.ReaderWriterLockSlim.",
                     "Actions": []
-                },
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.get_CurrentUICulture()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Task.Delay, or one of the other Timer .ctor overloads (passing Timeout.Infinite as needed).",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
@@ -1199,190 +418,34 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Timer..ctor(System.Threading.TimerCallback)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.Timer.Dispose(System.Threading.WaitHandle)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Task.Delay, or one of the other Timer .ctor overloads (passing Timeout.Infinite as needed).",
+                    "Description": "If you need to synchronize destruction of the timer with execution of the callback, do this yourself via Monitor or other synchronization mechanism.  If not, simply use Dispose().  Code sample: http://aka.ms/porttocore_timer_dispose",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.Thread.Abort()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.WaitHandle.WaitOne(System.TimeSpan, bool)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.MemoryBarrier()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework11",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.Interlocked.MemoryBarrier instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.ReleaseWriterLock()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.get_WriterSeqNum()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.Thread.set_CurrentCulture(System.Globalization.CultureInfo)",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.get_IsReaderLockHeld()",
-            "Reference": "System.Threading",
-            "Recommendation": [
-                {
-                    "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Description": "Use System.Threading.WaitHandle.WaitOne(System.TimeSpan).",
                     "Actions": []
                 }
             ]
@@ -1390,24 +453,13 @@
         {
             "Type": "Method",
             "Value": "System.Threading.WaitHandle.set_SafeWaitHandle(Microsoft.Win32.SafeHandles.SafeWaitHandle)",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework20",
-                        "sl2",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "windowsphonesilverlight70",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use WaitHandleExtensions.SetSafeWaitHandle extension method.",
@@ -1417,26 +469,444 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Threading.ReaderWriterLock.ReleaseReaderLock()",
-            "Reference": "System.Threading",
-            "Recommendation": [
+            "Value": "System.Threading.WaitHandle.Close()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
                 {
                     "Source": "Amazon",
-                    "preferred": "yes",
-                    "Versions": [
-                        "netframework10",
-                        "netstandard20",
-                        "netcoreapp2.0",
-                        "netstandardplatformextensions20",
-                        "uwp10.1",
-                        "xamarinandroid10",
-                        "xamarinios10",
-                        "mono20",
-                        "net50",
-                        "netplatformextensions50",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.Priority.set_Priority(System.Threading.ThreadPriority)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Timer.Timer(System.Threading.TimerCallback, object, long, long)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.ReleaseWriterLock()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.DowngradeFromWriterLock(System.Threading.LockCookie)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Threading.Thread.get_CurrentCulture()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.Thread(System.Threading.ParameterizedThreadStart, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Task.Run(), or Task.Factory.StartNew(..., TaskCreationOptions.LongRunning) if long-running.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.Threading.Thread.set_CurrentCulture(System.Globalization.CultureInfo)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ThreadPool.SetMaxThreads(int, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.get_CurrentCulture()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.CurrentCulture.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.EventWaitHandle.OpenExisting(string, System.Security.AccessControl.EventWaitHandleRights)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use EventWaitHandle.OpenExisting(string).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.Abort()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.AcquireWriterLock(System.TimeSpan)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.UpgradeToWriterLock(int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.Threading",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "If you need to synchronize destruction of the timer with execution of the callback, do this yourself via Monitor or other synchronization mechanism.  If not, simply use Dispose().  Code sample: http://aka.ms/porttocore_timer_dispose",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Task.Delay, or one of the other Timer .ctor overloads (passing Timeout.Infinite as needed).",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Threading.ThreadAbortException",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.Abort(object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.CurrentUICulture.set_CurrentUICulture(System.Globalization.CultureInfo)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.CurrentUICulture.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Thread.MemoryBarrier()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.Interlocked.MemoryBarrier instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Threading.ReaderWriterLock",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ReaderWriterLock.RestoreLock(System.Threading.LockCookie)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Threading.ReaderWriterLockSlim.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.Mutex.Mutex(bool, string, bool, System.Security.AccessControl.MutexSecurity)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use an overload without MutexSecurity.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Threading.ThreadPool.GetMaxThreads(int, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Portable code should not rely on COM apartment semantics, and so should avoid this type.",
                     "Actions": []
                 }
             ]
