@@ -1,34 +1,23 @@
 {
     "Name": "System.IO.Pipes",
     "Version": "1.0.0",
-    "Packages": {
-        "Type": "SDK",
-        "Name": "System.IO.Pipes"
-    },
-    "Recommendations": [
+    "Packages": [
         {
-            "Type": "Namespace",
-            "Value": "System.IO.Pipes",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use NamedPipeServerStream.WaitForConnectionAsync().",
-                    "Actions": []
-                }
-            ]
-        },
+            "Type": "SDK",
+            "Name": "System.IO.Pipes"
+        }
+    ],
+    "Recommendations": [
         {
             "Type": "Method",
             "Value": "System.IO.Pipes.NamedPipeServerStream.BeginWaitForConnection(System.AsyncCallback,object)",
+            "Name": "",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
-                    "Versions": [
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use NamedPipeServerStream.WaitForConnectionAsync().",
@@ -39,11 +28,30 @@
         {
             "Type": "Method",
             "Value": "System.IO.Pipes.NamedPipeServerStream.EndWaitForConnection(System.IAsyncResult)",
+            "Name": "",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
-                    "Versions": [
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use NamedPipeServerStream.WaitForConnectionAsync().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Namespace",
+            "Value": "System.IO.Pipes",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use NamedPipeServerStream.WaitForConnectionAsync().",

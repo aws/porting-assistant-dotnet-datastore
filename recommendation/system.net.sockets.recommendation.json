@@ -1,19 +1,23 @@
 {
     "Name": "System.Net.Sockets",
     "Version": "1.0.0",
-    "Packages": {
-        "Type": "SDK",
-        "Name": "System.Net.Sockets"
-    },
+    "Packages": [
+        {
+            "Type": "SDK",
+            "Name": "System.Net.Sockets"
+        }
+    ],
     "Recommendations": [
         {
             "Type": "Method",
             "Value": "System.Net.Sockets.Socket.Close()",
+            "Name": "",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
-                    "Versions": [
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Dispose() instead.",

@@ -1,19 +1,23 @@
 {
     "Name": "Microsoft.Win32",
     "Version": "1.0.0",
-    "Packages": {
-        "Type": "SDK",
-        "Name": "Microsoft.Win32"
-    },
+    "Packages": [
+        {
+            "Type": "SDK",
+            "Name": "Microsoft.Win32"
+        }
+    ],
     "Recommendations": [
         {
             "Type": "Method",
             "Value": "Microsoft.Win32.RegistryKey.GetAccessControl()",
+            "Name": "",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
-                    "Versions": [
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
@@ -23,27 +27,14 @@
         },
         {
             "Type": "Method",
-            "Value": "Microsoft.Win32.RegistryKey.Close()",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "Versions": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
             "Value": "Microsoft.Win32.RegistryKey.OpenSubKey(string, Microsoft.Win32.RegistryKeyPermissionCheck, System.Security.AccessControl.RegistryRights)",
+            "Name": "",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
-                    "Versions": [
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove: CAS is not supported.",
@@ -54,14 +45,33 @@
         {
             "Type": "Method",
             "Value": "Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)",
+            "Name": "",
+            "KeyType": "",
             "RecommendedActions": [
                 {
                     "Source": "Amazon",
                     "Preferred": "yes",
-                    "Versions": [
+                    "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Handle property to get ACLs or PInvoke to RegGetSecurity (http://msdn.microsoft.com/en-us/library/windows/desktop/ms724878(v=vs.85).aspx).",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "Microsoft.Win32.RegistryKey.Close()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
                     "Actions": []
                 }
             ]
