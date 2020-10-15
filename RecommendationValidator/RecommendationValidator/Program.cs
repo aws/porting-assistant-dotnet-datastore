@@ -62,7 +62,7 @@ namespace RecommendationValidator
 
     public class Options
     {
-        [Option('f', "file-path", Required = true, HelpText = "file path of recommendation.json")]
+        [Option('p', "path", Required = true, HelpText = "file path of recommendation.json")]
         public string FilePath { get; set; }
     }
 }
