@@ -20,5 +20,5 @@ jobs:
     - name: Install dependencies
       run: dotnet restore RecommendationValidator/RecommendationValidator.sln
     - name: Validate
-      run: find ./recommendation/*.json -exec dotnet run --project RecommendationValidator/RecommendationValidator/RecommendationValidator.csproj -f {} \+
+      run: find ./recommendation/*.json -exec dotnet run --project RecommendationValidator/RecommendationValidator/RecommendationValidator.csproj --path {} \+
       
