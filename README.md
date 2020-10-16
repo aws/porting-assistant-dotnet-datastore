@@ -47,6 +47,11 @@ This repository contains the location of data store in S3. The data store contai
 ## Security
 * See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
+## Thank you
+[Portability Analyzer](https://github.com/microsoft/dotnet-apiport) - Portability Analyzer analyzes assembly files to access API compatibility with various versions of .NET. Porting Assistant for .NET makes use of recommendations and data provided by Portability Analyzer.
+[THIRD-PARTY](./THIRD-PARTY.md) - We also leveraged many other dependencies listed in [THIRD-PARTY](./THIRD-PARTY.md).
+
+
 ## License
 
 This project is licensed under the Apache-2.0 License.
