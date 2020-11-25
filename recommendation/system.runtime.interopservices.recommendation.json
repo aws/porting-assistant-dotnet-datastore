@@ -9,8 +9,8 @@
     ],
     "Recommendations": [
         {
-            "Type": "Type",
-            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute",
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.ImportedFromTypeLibAttribute.get_Value()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -18,6 +18,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -35,9 +36,46 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.Marshal.ZeroFreeBSTR(System.IntPtr)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use SecureStringMarshal.ZeroCoTaskMemUnicode.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.Marshal.PtrToStringBSTR(System.IntPtr)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Marshal.PtrToStringUni.",
                     "Actions": []
                 }
             ]
@@ -52,6 +90,79 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.ExternalException.ExternalException(string, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Exception.HResult.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.get_MinorVersion()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.get_RevisionNumber()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -69,6 +180,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Security.SecureStringToCoTaskMemUnicode(SecureString s).",
@@ -78,7 +190,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.get_SystemConfigurationFile()",
+            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.ComCompatibleVersionAttribute(int, int, int, int)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -86,6 +198,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -95,7 +208,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid, System.Guid)",
+            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -103,6 +216,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -120,6 +234,25 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Exception.HResult.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Runtime.InteropServices.ExternalException",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Exception.HResult.",
@@ -129,7 +262,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ImportedFromTypeLibAttribute.get_Value()",
+            "Value": "System.Runtime.InteropServices.ExternalException.ExternalException()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -137,6 +270,61 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Exception.HResult.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.ImportedFromTypeLibAttribute.ImportedFromTypeLibAttribute(string)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Runtime.InteropServices.ImportedFromTypeLibAttribute",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.Runtime.InteropServices.RuntimeEnvironment",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -163,7 +351,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion()",
+            "Value": "System.Runtime.InteropServices.ExternalException.get_ErrorCode()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -171,16 +359,17 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove usage.",
+                    "Description": "Use System.Exception.HResult.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.Marshal.PtrToStringBSTR(System.IntPtr)",
+            "Value": "System.Runtime.InteropServices.ExternalException.ExternalException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -188,16 +377,17 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Marshal.PtrToStringUni.",
+                    "Description": "Use System.Exception.HResult.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.BuildNumber.get_BuildNumber()",
+            "Value": "System.Runtime.InteropServices.Marshal.SecureStringToBSTR(System.Security.Securestring)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -205,9 +395,10 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Remove usage.",
+                    "Description": "Use SecureStringMarshal.SecureStringToCoTaskMemUnicode.",
                     "Actions": []
                 }
             ]
@@ -222,6 +413,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Exception.HResult.",
@@ -231,7 +423,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ExternalException.ExternalException(string, int)",
+            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.get_SystemConfigurationFile()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -239,23 +431,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Exception.HResult.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.Runtime.InteropServices",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -265,7 +441,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ExternalException.get_ErrorCode()",
+            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.get_BuildNumber()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -273,9 +449,28 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use System.Exception.HResult.",
+                    "Description": "Remove usage.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache(System.Reflection.Assembly)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.",
                     "Actions": []
                 }
             ]
@@ -290,6 +485,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -299,7 +495,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ImportedFromTypeLibAttribute.ImportedFromTypeLibAttribute(string)",
+            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid, System.Guid)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -307,57 +503,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Runtime.InteropServices.ImportedFromTypeLibAttribute",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Runtime.InteropServices.ExternalException",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Exception.HResult.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.ComCompatibleVersionAttribute(int, int, int, int)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.",
@@ -375,145 +521,10 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use System.Exception.HResult.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ExternalException.ExternalException()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Exception.HResult.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache(System.Reflection.Assembly)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.Marshal.ZeroFreeBSTR(System.IntPtr)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use SecureStringMarshal.ZeroCoTaskMemUnicode.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ExternalException.ExternalException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use System.Exception.HResult.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.get_MinorVersion()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.Marshal.SecureStringToBSTR(System.Security.Securestring)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use SecureStringMarshal.SecureStringToCoTaskMemUnicode.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.Runtime.InteropServices.RuntimeEnvironment",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.Runtime.InteropServices.ComCompatibleVersionAttribute.get_RevisionNumber()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.",
                     "Actions": []
                 }
             ]

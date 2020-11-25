@@ -10,7 +10,7 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.IO.FileSystemInfo.LastWriteTimeUtc.set_LastWriteTimeUtc(System.DateTime)",
+            "Value": "System.IO.BufferedStream.WriteAsync(System.ReadOnlyMemory{byte}, System.Threading.CancellationToken)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -18,9 +18,10 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
                     "Actions": []
                 }
             ]
@@ -35,6 +36,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Dispose() instead.",
@@ -44,7 +46,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.set_Position(long)",
+            "Value": "System.IO.BufferedStream.WriteByte(byte)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -52,468 +54,10 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.IO.FileSystemInfo.get_LastAccessTimeUtc()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.Stream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Stream.WriteAsync.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamWriter.StreamWriter(string, bool)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamReader.StreamReader(string, bool)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.Stream.EndRead(System.IAsyncResult)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Stream.ReadAsync.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.BeginRead(byte[], int, int, System.AsyncCallback, object)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamWriter.StreamWriter(string, bool, System.Text.Encoding, int)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.EndRead(System.IAsyncResult)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.get_Position()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.Stream.Close()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.SetLength(long)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamReader.StreamReader(string)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.get_BufferSize()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.TextWriter.Close()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamWriter.StreamWriter(string)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StringWriter.Close()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.Stream.BeginRead(byte[], int, int, System.AsyncCallback, object)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Stream.ReadAsync.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.BufferedStream(System.IO.Stream, int)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.FileSystemInfo.set_LastAccessTimeUtc(System.DateTime)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.get_UnderlyingStream()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding, bool)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.get_CanSeek()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.get_Length()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.CopyToAsync(System.IO.Stream, int, System.Threading.CancellationToken)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.File.WriteAllLines(string, string[])",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.WriteAllLines(String, IEnumerable<System.String>) instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding, bool, int)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
                     "Actions": []
                 }
             ]
@@ -528,6 +72,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
@@ -537,7 +82,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.TextReader.Close()",
+            "Value": "System.IO.BufferedStream.ReadAsync(byte[], int, int, System.Threading.CancellationToken)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -545,40 +90,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Dispose() instead.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.TextWriter.Write(string, object, object, object)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.CanRead.get_CanRead()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -596,6 +108,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -605,7 +118,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.TextWriter.Write(string, object)",
+            "Value": "System.IO.BufferedStream.ReadByte()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -613,6 +126,43 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextWriter.Write(string, object, object, object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
@@ -622,7 +172,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.WriteAsync(byte[], int, int, System.Threading.CancellationToken)",
+            "Value": "System.IO.File.ReadAllLines(string)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -630,9 +180,10 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use File.ReadLines().",
                     "Actions": []
                 }
             ]
@@ -647,9 +198,92 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.Stream.EndWrite(System.IAsyncResult)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Stream.WriteAsync.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamWriter.StreamWriter(string)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileInfo.set_IsReadOnly(bool)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use fileInfo.Attributes = fileInfo.Attributes | FileAttributes.ReadOnly to set read-only and fileInfo.Attributes = fileInfo.Attributes & ~FileAttributes.ReadOnly to clear it.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileSystemInfo.set_LastAccessTimeUtc(System.DateTime)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
                     "Actions": []
                 }
             ]
@@ -664,6 +298,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -673,7 +308,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.FileInfo.get_IsReadOnly()",
+            "Value": "System.IO.BufferedStream.get_CanSeek()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -681,23 +316,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.ReadAsync(System.Memory{byte}, System.Threading.CancellationToken)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -707,7 +326,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.StringReader.Close()",
+            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding, bool, int)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -715,6 +334,25 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StringWriter.Close()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use Dispose() instead.",
@@ -732,6 +370,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -741,7 +380,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)",
+            "Value": "System.IO.BufferedStream.EndRead(System.IAsyncResult)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -749,6 +388,133 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.File.ReadAllLines(string, System.Text.Encoding)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.ReadLines().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.Stream.BeginRead(byte[], int, int, System.AsyncCallback, object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Stream.ReadAsync.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamWriter.StreamWriter(string, bool, System.Text.Encoding)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.MemoryStream.GetBuffer()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use an overload that supplies a buffer and maintain that buffer outside of memory stream.   If you need the internal buffer, create a copy via .ToArray().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamWriter.StreamWriter(string, bool, System.Text.Encoding, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamWriter.StreamWriter(string, bool)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.SetLength(long)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -758,7 +524,7 @@
         },
         {
             "Type": "Attribute",
-            "Value": "System.IO.FileInfo.set_IsReadOnly(bool)",
+            "Value": "System.IO.FileSystemInfo.set_LastWriteTimeUtc(System.DateTime)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -766,9 +532,172 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextWriter.Write(string, object, object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.ReadAsync(System.Memory{byte}, System.Threading.CancellationToken)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BinaryWriter.Close()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.StreamReader(string, bool)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.FileInfo.get_IsReadOnly()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.IO.FileSystemInfo.get_LastAccessTimeUtc()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextWriter.Close()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.Read(System.Span{byte})",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.EndWrite(System.IAsyncResult)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
                     "Actions": []
                 }
             ]
@@ -792,7 +721,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BinaryWriter.Close()",
+            "Value": "System.IO.Stream.EndRead(System.IAsyncResult)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -800,16 +729,17 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Dispose() instead.",
+                    "Description": "Use Stream.ReadAsync.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.IO.StreamReader.Close()",
+            "Value": "System.IO.BufferedStream.CopyToAsync(System.IO.Stream, int, System.Threading.CancellationToken)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -817,16 +747,35 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Dispose() instead.",
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.IO.FileSystemInfo.set_LastAccessTimeUtc(System.DateTime)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
+            "Value": "System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -834,6 +783,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -843,7 +793,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.WriteAsync(System.ReadOnlyMemory{byte}, System.Threading.CancellationToken)",
+            "Value": "System.IO.BufferedStream.get_CanRead()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -851,6 +801,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -860,7 +811,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.Flush()",
+            "Value": "System.IO.BufferedStream.WriteAsync(byte[], int, int, System.Threading.CancellationToken)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -868,6 +819,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -877,7 +829,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.EndWrite(System.IAsyncResult)",
+            "Value": "System.IO.BufferedStream.Read(byte[], int, int)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -885,26 +837,10 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.FileSystemInfo.get_LastWriteTimeUtc()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
                     "Actions": []
                 }
             ]
@@ -919,6 +855,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
@@ -928,7 +865,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.MemoryStream.GetBuffer()",
+            "Value": "System.IO.BinaryReader.Close()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -936,16 +873,17 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use an overload that supplies a buffer and maintain that buffer outside of memory stream.   If you need the internal buffer, create a copy via .ToArray().",
+                    "Description": "Use Dispose() instead.",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.BufferedStream(System.IO.Stream)",
+            "Value": "System.IO.Stream.BeginWrite(byte[], int, int, System.AsyncCallback, object)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -953,16 +891,17 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use Stream.WriteAsync.",
                     "Actions": []
                 }
             ]
         },
         {
-            "Type": "Namespace",
-            "Value": "System.IO",
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BeginRead(byte[], int, int, System.AsyncCallback, object)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -970,15 +909,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -988,7 +919,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.DisposeAsync()",
+            "Value": "System.IO.FileSystemInfo.get_LastAccessTimeUtc()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -996,9 +927,46 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding, bool)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StringReader.Close()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
                     "Actions": []
                 }
             ]
@@ -1022,134 +990,6 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.File.ReadAllLines(string)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.ReadLines().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Attribute",
-            "Value": "System.IO.FileSystemInfo.set_LastAccessTimeUtc(System.DateTime)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.WriteByte(byte)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.Read(System.Span{byte})",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.FileInfo.set_IsReadOnly(bool)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use fileInfo.Attributes = fileInfo.Attributes | FileAttributes.ReadOnly to set read-only and fileInfo.Attributes = fileInfo.Attributes & ~FileAttributes.ReadOnly to clear it.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.Stream.EndWrite(System.IAsyncResult)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use Stream.WriteAsync.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.IO.BufferedStream.Read(byte[], int, int)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
             "Value": "System.IO.BufferedStream.Write(System.ReadOnlySpan{byte})",
             "Name": "",
             "KeyType": "",
@@ -1158,6 +998,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -1167,7 +1008,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.FileSystemInfo.get_LastAccessTimeUtc()",
+            "Value": "System.IO.FileSystemInfo.set_LastWriteTimeUtc(System.DateTime)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -1175,16 +1016,17 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use File.GetLastAccessTime().ToUniversalTime().",
+                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BinaryReader.Close()",
+            "Value": "System.IO.FileSystemInfo.get_LastWriteTimeUtc()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -1192,16 +1034,17 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use Dispose() instead.",
+                    "Description": "Use File.GetLastWriteTime().ToUniversalTime().",
                     "Actions": []
                 }
             ]
         },
         {
             "Type": "Method",
-            "Value": "System.IO.StreamWriter.StreamWriter(string, bool, System.Text.Encoding)",
+            "Value": "System.IO.File.WriteAllLines(string, string[])",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -1209,9 +1052,46 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use File.Open to get a Stream then pass it to StreamWriter constructor.",
+                    "Description": "Use File.WriteAllLines(String, IEnumerable<System.String>) instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.set_Position(long)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BufferedStream(System.IO.Stream)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
                     "Actions": []
                 }
             ]
@@ -1226,6 +1106,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -1235,7 +1116,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.ReadAsync(byte[], int, int, System.Threading.CancellationToken)",
+            "Value": "System.IO.StreamReader.StreamReader(string)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -1243,6 +1124,43 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextReader.Close()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_Position()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -1252,7 +1170,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.BufferedStream.ReadByte()",
+            "Value": "System.IO.StreamReader.Close()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -1260,6 +1178,43 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Attribute",
+            "Value": "System.IO.FileInfo.set_IsReadOnly(bool)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.GetAttributes(), check (fileInfo.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.Flush()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
@@ -1269,7 +1224,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.TextWriter.Write(string, object, object)",
+            "Value": "System.IO.Stream.Close()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -1277,6 +1232,25 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use Dispose() instead.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.TextWriter.Write(string, object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "No change needed:  This code will compile and use the System.IO.TextWriter.Write(System.String,System.Object[]) overload.",
@@ -1286,7 +1260,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.IO.File.ReadAllLines(string, System.Text.Encoding)",
+            "Value": "System.IO.BufferedStream.get_UnderlyingStream()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -1294,9 +1268,100 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use File.ReadLines().",
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.DisposeAsync()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.StreamReader.StreamReader(string, System.Text.Encoding)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use File.OpenText, or use File.Open to get a Stream then pass it to StreamReader constructor.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_Length()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.get_BufferSize()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.IO.BufferedStream.BufferedStream(System.IO.Stream, int)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
                     "Actions": []
                 }
             ]

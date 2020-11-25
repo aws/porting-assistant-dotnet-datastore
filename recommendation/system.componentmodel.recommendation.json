@@ -10,7 +10,7 @@
     "Recommendations": [
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.Dispose()",
+            "Value": "System.ComponentModel.ITypeDescriptorContext.OnComponentChanging()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -18,6 +18,43 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.Finalize()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.BrowsableAttribute.IsDefaultAttribute()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -35,270 +72,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.ITypeDescriptorContext.Instance.get_Instance()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.TypeDescriptor.GetConverter(System.Type)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.ToString()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.get_CanRaiseEvents()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.get_Category()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, string)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, System.Exception)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.ITypeDescriptorContext.OnComponentChanging()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.IsDefaultAttribute()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.Equals(object)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Namespace",
-            "Value": "System.ComponentModel",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                },
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.get_Browsable()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, int, System.Type)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
@@ -316,23 +90,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ComponentModel.ITypeDescriptorContext",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -350,6 +108,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -359,7 +118,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.Dispose(bool)",
+            "Value": "System.ComponentModel.BrowsableAttribute.GetHashCode()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -367,6 +126,79 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.Equals(object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.Dispose()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.Component()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -384,6 +216,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -393,7 +226,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.remove_Disposed(System.EventHandler)",
+            "Value": "System.ComponentModel.Component.Dispose(bool)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -401,108 +234,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.set_Site(System.ComponentModel.ISite)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.get_DesignMode()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.get_Events()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.Equals(object)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor.get_PropertyDescriptor()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.BrowsableAttribute.GetHashCode()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -520,9 +252,118 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.GetService(System.Type)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.get_CanRaiseEvents()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.get_Category()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.remove_Disposed(System.EventHandler)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.DesignerCategoryAttribute(string)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
                     "Actions": []
                 }
             ]
@@ -537,6 +378,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -546,7 +388,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.add_Disposed(System.EventHandler)",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.DesignerCategoryAttribute()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -554,6 +396,25 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.BrowsableAttribute.Equals(object)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -571,6 +432,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -580,7 +442,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.get_Site()",
+            "Value": "System.ComponentModel.Component.get_Events()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -588,91 +450,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.Component.GetService(System.Type)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.GetHashCode()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute.DesignerCategoryAttribute(string)",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Method",
-            "Value": "System.ComponentModel.DesignerCategoryAttribute..ctor()",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
-                        "netcoreapp3.1"
-                    ],
-                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
-                    "Actions": []
-                }
-            ]
-        },
-        {
-            "Type": "Type",
-            "Value": "System.ComponentModel.Component",
-            "Name": "",
-            "KeyType": "",
-            "RecommendedActions": [
-                {
-                    "Source": "Amazon",
-                    "Preferred": "yes",
-                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -690,6 +468,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Currently there is no workaround, but we are working on it. Please check back.",
@@ -699,7 +478,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, int, System.Type)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -707,6 +486,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
@@ -716,7 +496,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.Component()",
+            "Value": "System.ComponentModel.Component.set_Site(System.ComponentModel.ISite)",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -724,6 +504,7 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -733,7 +514,7 @@
         },
         {
             "Type": "Method",
-            "Value": "System.ComponentModel.Component.Finalize()",
+            "Value": "System.ComponentModel.DesignerCategoryAttribute.GetHashCode()",
             "Name": "",
             "KeyType": "",
             "RecommendedActions": [
@@ -741,6 +522,25 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.get_DesignMode()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
@@ -758,6 +558,223 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.ToString()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.BrowsableAttribute.get_Browsable()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, string)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.ITypeDescriptorContext.get_Instance()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.get_Site()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.Component",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.TypeDescriptor.GetConverter(System.Type)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, System.Exception)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use a different Exception type such as System.ArgumentOutOfRangeException.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.ITypeDescriptorContext.get_PropertyDescriptor()",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Type",
+            "Value": "System.ComponentModel.ITypeDescriptorContext",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Currently there is no workaround, but we are working on it. Please check back.",
+                    "Actions": []
+                }
+            ]
+        },
+        {
+            "Type": "Method",
+            "Value": "System.ComponentModel.Component.add_Disposed(System.EventHandler)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
                         "netcoreapp3.1"
                     ],
                     "Description": "Remove usage.  This is a deprecated attribute from Windows Forms for design-time property window support.",
