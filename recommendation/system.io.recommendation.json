@@ -498,6 +498,15 @@
                     ],
                     "Description": "Use File.WriteAllLines(String, IEnumerable<System.String>) instead.",
                     "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "netcoreapp5.0"
+                    ],
+                    "Description": "test for 5.0 applied only",
+                    "Actions": []
                 }
             ]
         },
@@ -1032,7 +1041,16 @@
                     "TargetFrameworks": [
                         "netcoreapp3.1"
                     ],
-                    "Description": "Use File.ReadLines().",
+                    "Description": "Use File.ReadLines(). this is 3.1, not show in the 5.0",
+                    "Actions": []
+                },
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0"
+                    ],
+                    "Description": "this is 5.0, not show in the 3.1",
                     "Actions": []
                 }
             ]
@@ -1064,9 +1082,10 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "netcoreapp3.1"
+                        "netcoreapp3.1",
+                        "net5.0"
                     ],
-                    "Description": "Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
+                    "Description": "applied for 3.1 and 5.0 test, Use other Stream types.  Most stream implementations in .Net framework already buffer their content, which is preferable to wrapping in a buffered stream.",
                     "Actions": []
                 }
             ]
