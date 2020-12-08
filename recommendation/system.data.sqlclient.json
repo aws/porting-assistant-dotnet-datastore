@@ -1,0 +1,57 @@
+{
+  "Name": "System.Data.SqlClient",
+  "Version": "1.0.0",
+  "Source": "Github",
+  "Packages": [
+    {
+      "Name": "System.Data",
+      "Type": "SDK"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "System.Data.SqlClient",
+      "Value": "System.Data.SqlClient",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Add package Microsoft.Data.SqlClient. Replace System.Data.SqlClient namespace with Microsoft.Data.SqlClient",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.Data.SqlClient",
+              "Description": "Add reference to Microsoft.Data.SqlClient"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Data.SqlClient",
+              "Description": "Add Microsoft.Data.SqlClient namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Data.SqlClient",
+              "Description": "Remove System.Data.SqlClient namespace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

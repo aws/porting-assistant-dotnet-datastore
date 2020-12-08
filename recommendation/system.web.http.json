@@ -1,0 +1,145 @@
+{
+  "Name": "System.Web.Http",
+  "Version": "1.0.0",
+  "Source": "Github",
+  "Packages": [
+    {
+      "Name": "System.Web.Http",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Attribute",
+      "Name": "RoutePrefix",
+      "Value": "System.Web.Http.RoutePrefixAttribute.RoutePrefixAttribute(string)",
+      "KeyType": "Name",
+      "ContainingType": "RoutePrefixAttribute",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "RoutePrefix attribute is no longer supported",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "AttributeList",
+              "Value": "This attribute is no longer supported",
+              "Description": "RoutePrefix attribute is no longer supported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IHttpActionResult",
+      "Value": "System.Web.Http.IHttpActionResult",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace IHttpActionResult with IActionResult. Replace System.Web.Http namespace with Microsoft.AspNetCore.Mvc",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "IActionResult",
+              "Description": "Replace IHttpActionResult with IActionResult"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Http",
+              "Description": "Remove System.Web.Http namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "ApiController",
+      "Value": "System.Web.Http.ApiController",
+      "KeyType": "BaseClass",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Base class ApiController will be replaced with ControllerBase. Attribute ApiController will be added. \r\nReplace System.Web namespace with Microsoft.AspNetCore.Mvc",
+          "Actions": [
+            {
+              "Name": "RemoveBaseClass",
+              "Type": "Class",
+              "Value": "ApiController",
+              "Description": "Removes base class ApiController"
+            },
+            {
+              "Name": "AddBaseClass",
+              "Type": "Class",
+              "Value": "ControllerBase",
+              "Description": "Add base class ControllerBase"
+            },
+            {
+              "Name": "AddAttribute",
+              "Type": "Class",
+              "Value": "ApiController",
+              "Description": "Add attribute ApiController"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web",
+              "Description": "Remove System.Web namespace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

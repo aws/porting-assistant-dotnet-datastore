@@ -1,0 +1,273 @@
+{
+  "Name": "System.Web.Mvc",
+  "Version": "1.0.0",
+  "Source": "Github",
+  "Packages": [
+    {
+      "Name": "System.Web.Mvc",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "System.Web.Mvc",
+      "Value": "System.Web.Mvc",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Attribute",
+      "Name": "ChildActionOnly",
+      "Value": "System.Web.Mvc.ChildActionOnlyAttribute.ChildActionOnlyAttribute()",
+      "KeyType": "Name",
+      "ContainingType": "ChildActionOnlyAttribute",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "ChildActionOnly attribute is not available anymore. An alternative is using ViewComponents. Sample code will be added as an example",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "AttributeList",
+              "Value": "This attribute is not available anymore. An alternative is using ViewComponents:\nSample:\n\npublic class SampleViewComponent : ViewComponent\n    {\n        private readonly InjectedService _injectedService;\n\n        public SampleViewComponent (InjectedService injectedService)\n        {\n            _injectedService = injectedService;\n        }\n\n\n       public IViewComponentResult Invoke(int parameter)\n        {\n            var object = _injectedService.SampleFunction(parameter);\n        // No name is specified, returns the view SampleView (same name as component)\n            return View(object);\n        }\n    }\n\nThen use this to call the view component from any view:\n\n    @await Component.InvokeAsync(\"SampleView\", new { parameter = \"\"})\n\nhttps://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-3.1",
+              "Description": "ChildActionOnly attribute is not available anymore"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Attribute",
+      "Name": "AllowAnonymous",
+      "Value": "System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()",
+      "KeyType": "Name",
+      "ContainingType": "AllowAnonymousAttribute",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace System.Web.Mvc namespace with Microsoft.AspNetCore.Authorization",
+          "Actions": [
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authorization",
+              "Description": "Add Microsoft.AspNetCore.Authorization namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Attribute",
+      "Name": "Authorize",
+      "Value": "System.Web.Mvc.AuthorizeAttribute.AuthorizeAttribute()",
+      "KeyType": "Name",
+      "ContainingType": "AuthorizeAttribute",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace System.Web.Mvc namespace with Microsoft.AspNetCore.Authorization",
+          "Actions": [
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authorization",
+              "Description": "Add Microsoft.AspNetCore.Authorization namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "SelectList",
+      "Value": "System.Web.Mvc.SelectList",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.Rendering",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc.Rendering",
+              "Description": "Add Microsoft.AspNetCore.Mvc.Rendering namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "FormCollection",
+      "Value": "System.Web.Mvc.FormCollection",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace System.Web.Mvc namespace with Microsoft.AspNetCore.Http",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "ActionFilterAttribute",
+      "Value": "System.Web.Mvc.ActionFilterAttribute",
+      "KeyType": "BaseClass",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.Filters",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc.Filters",
+              "Description": "Add Microsoft.AspNetCore.Mvc.Filters namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
