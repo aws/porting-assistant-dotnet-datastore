@@ -1,0 +1,106 @@
+{
+  "Name": "System.Data.Entity",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "EntityFramework",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "System.Data.Entity",
+      "Value": "System.Data.Entity",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],          
+          "Description": "System.Data.Entity namespace will be replaced with Microsoft.EntityFrameworkCore. Also, package Microsoft.EntityFrameworkCore.SqlServer will be added to the csproj",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.EntityFrameworkCore.SqlServer",
+              "Description": "Add reference to Microsoft.EntityFrameworkCore.SqlServer"
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.EntityFrameworkCore",
+              "Description": "Add reference to Microsoft.EntityFrameworkCore"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.EntityFrameworkCore",
+              "Description": "Add Microsoft.EntityFrameworkCore namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Data.Entity",
+              "Description": "Remove System.Data.Entity namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "DbContext",
+      "Value": "System.Data.Entity.DbContext",
+      "KeyType": "BaseClass",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Add an override method to configure the connection string. Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore",
+          "Actions": [
+            {
+              "Name": "AddMethod",
+              "Type": "Class",
+              "Value": "protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { /* Use Configuration from static ConfigurationManager to access connection string in appsettings.json. Example below: optionsBuilder.UseSqlServer(ConfigurationManager.Configuration.GetConnectionString(\"CONNECTIONSTRINGNAME\")); */ base.OnConfiguring(optionsBuilder); }",
+              "Description": "Add a method to configure the connection string"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.EntityFrameworkCore",
+              "Description": "Add Microsoft.EntityFrameworkCore namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Data.Entity",
+              "Description": "Remove System.Data.Entity namespace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

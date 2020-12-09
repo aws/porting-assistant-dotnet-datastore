@@ -1,0 +1,133 @@
+{
+  "Name": "System.Web",
+  "Version": "1.0.0",
+  "Source": "Github",
+  "Packages": [
+    {
+      "Name": "System.Web",
+      "Type": "SDK"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Method",
+      "Name": "AppendHeader",
+      "Value": "System.Web.HttpResponse.AppendHeader(string, string)",
+      "KeyType": "Name",
+      "ContainingType": "HttpResponse",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace method AppendHeader with a new method to add to headers. In the replacement, \"this\" refers to the controller object",
+          "Actions": [
+            {
+              "Name": "ReplaceMethod",
+              "Type": "Method",
+              "Value": "this.Response.Headers.Add",
+              "Description": "Replace AppendHeader with a new method to add to headers"
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "In this context, this is a Controller object",
+              "Description": "Add a comment to explain what \"this\" refers to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "HtmlEncode",
+      "Value": "System.Web.HttpServerUtilityBase.HtmlEncode(string)",
+      "KeyType": "Name",
+      "ContainingType": "HttpServerUtilityBase",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode. Add namepsace System.Text.Encodings.Web",
+          "Actions": [
+            {
+              "Name": "ReplaceMethod",
+              "Type": "Method",
+              "Value": "HtmlEncoder.Default.Encode",
+              "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "System.Text.Encodings.Web",
+              "Description": "Add System.Text.Encodings.Web"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "HttpContextBase",
+      "Value": "System.Web.HttpContextBase",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM" ]
+            }
+          ],
+          "Description": "Replace HttpContextBase with HttpContext. Replace System.Web namespace with Microsoft.AspNetCore.Http",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "HttpContext",
+              "Description": "Replace HttpContextBase with HttpContext"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web",
+              "Description": "Remove System.Web namespace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
