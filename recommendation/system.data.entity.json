@@ -21,14 +21,14 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],          
-          "Description": "System.Data.Entity namespace will be replaced with Microsoft.EntityFrameworkCore. Also, package Microsoft.EntityFrameworkCore.SqlServer will be added to the csproj",
+          "Description": "Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore. Also, package Microsoft.EntityFrameworkCore will be added",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -46,13 +46,15 @@
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.EntityFrameworkCore",
-              "Description": "Add Microsoft.EntityFrameworkCore namespace"
+              "Description": "Add Microsoft.EntityFrameworkCore namespace",
+              "ActionValidation":{"Contains":"Microsoft.EntityFrameworkCore", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.Entity",
-              "Description": "Remove System.Data.Entity namespace"
+              "Description": "Remove System.Data.Entity namespace",
+              "ActionValidation":{"Contains":"", "NotContains":"System.Data.Entity"}
             }
           ]
         }
@@ -71,32 +73,35 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add an override method to configure the connection string. Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore",
+          "Description": "Add an OnConfiguring method to set the connection string. In addition, System.Data.Entity namespace will be replaced with Microsoft.EntityFrameworkCore",
           "Actions": [
             {
               "Name": "AddMethod",
               "Type": "Class",
               "Value": "protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { /* Use Configuration from static ConfigurationManager to access connection string in appsettings.json. Example below: optionsBuilder.UseSqlServer(ConfigurationManager.Configuration.GetConnectionString(\"CONNECTIONSTRINGNAME\")); */ base.OnConfiguring(optionsBuilder); }",
-              "Description": "Add a method to configure the connection string"
+              "Description": "Add a method to configure the connection string",
+              "ActionValidation":{"Contains":"OnConfiguring(DbContextOptionsBuilder", "NotContains":""}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.EntityFrameworkCore",
-              "Description": "Add Microsoft.EntityFrameworkCore namespace"
+              "Description": "Add Microsoft.EntityFrameworkCore namespace",
+              "ActionValidation":{"Contains":"Microsoft.EntityFrameworkCore", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.Entity",
-              "Description": "Remove System.Data.Entity namespace"
+              "Description": "Remove System.Data.Entity namespace",
+              "ActionValidation":{"Contains":"", "NotContains":"System.Data.Entity"}
             }
           ]
         }

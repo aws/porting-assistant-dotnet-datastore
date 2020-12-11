@@ -22,26 +22,28 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace System.Web.Http.OData namespace with Microsoft.AspNet.OData. Add package Microsoft.AspNetCore.OData",
+          "Description": "Replace System.Web.Http.OData namespace with Microsoft.AspNet.OData. In addition, package Microsoft.AspNetCore.OData will be added to the project file",
           "Actions": [
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web.Http.OData",
-              "Description": "Remove System.Web.Http.OData namespace"
+              "Description": "Remove System.Web.Http.OData namespace",
+              "ActionValidation":{"Contains":"", "NotContains":"System.Web.Http.OData"}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNet.OData",
-              "Description": "Add Microsoft.AspNet.OData namespace"
+              "Description": "Add Microsoft.AspNet.OData namespace",
+              "ActionValidation":{"Contains":"Microsoft.AspNet.OData", "NotContains":""}
             },
             {
               "Name": "AddPackage",

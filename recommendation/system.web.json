@@ -22,26 +22,28 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace method AppendHeader with a new method to add to headers. In the replacement, \"this\" refers to the controller object",
+          "Description": "Replace method AppendHeader with this.Response.Headers.Add. In the replacement, \"this\" refers to the controller object",
           "Actions": [
             {
               "Name": "ReplaceMethod",
               "Type": "Method",
               "Value": "this.Response.Headers.Add",
-              "Description": "Replace AppendHeader with a new method to add to headers"
+              "Description": "Replace AppendHeader with a new method to add to headers",
+              "ActionValidation":{"Contains":"this.Response.Headers.Add", "NotContains":""}
             },
             {
               "Name": "AddComment",
               "Type": "Method",
               "Value": "In this context, this is a Controller object",
-              "Description": "Add a comment to explain what \"this\" refers to"
+              "Description": "Add a comment to explain what \"this\" refers to",
+              "ActionValidation":{"Contains":"thisisaControllerobject", "NotContains":""}
             }
           ]
         }
@@ -60,26 +62,28 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode. Add namepsace System.Text.Encodings.Web",
+          "Description": "Replace HtmlEncode with a new method HtmlEncoder.Default.Encode in namepsace System.Text.Encodings.Web",
           "Actions": [
             {
               "Name": "ReplaceMethod",
               "Type": "Method",
               "Value": "HtmlEncoder.Default.Encode",
-              "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode"
+              "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode",
+              "ActionValidation":{"Contains":"HtmlEncoder.Default.Encode", "NotContains":""}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "System.Text.Encodings.Web",
-              "Description": "Add System.Text.Encodings.Web"
+              "Description": "Add System.Text.Encodings.Web",
+              "ActionValidation":{"Contains":"System.Text.Encodings.Web", "NotContains":""}
             }
           ]
         }
@@ -98,32 +102,35 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace HttpContextBase with HttpContext. Replace System.Web namespace with Microsoft.AspNetCore.Http",
+          "Description": "Replace HttpContextBase in namespace System.Web with HttpContext in namespace Microsoft.AspNetCore.Http",
           "Actions": [
             {
               "Name": "ReplaceIdentifier",
               "Type": "Identifier",
               "Value": "HttpContext",
-              "Description": "Replace HttpContextBase with HttpContext"
+              "Description": "Replace HttpContextBase with HttpContext",
+              "ActionValidation":{"Contains":"HttpContext", "NotContains":""}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Http",
-              "Description": "Add Microsoft.AspNetCore.Http namespace"
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation":{"Contains":"Microsoft.AspNetCore.Http", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web",
-              "Description": "Remove System.Web namespace"
+              "Description": "Remove System.Web namespace",
+              "ActionValidation":{"Contains":"", "NotContains":"System.Web"}
             }
           ]
         }

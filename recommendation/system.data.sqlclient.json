@@ -22,14 +22,14 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM" ]
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add package Microsoft.Data.SqlClient. Replace System.Data.SqlClient namespace with Microsoft.Data.SqlClient",
+          "Description": "Add the package Microsoft.Data.SqlClient to the project. In addition, System.Data.SqlClient namespace will be replaced with Microsoft.Data.SqlClient",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -41,13 +41,15 @@
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.Data.SqlClient",
-              "Description": "Add Microsoft.Data.SqlClient namespace"
+              "Description": "Add Microsoft.Data.SqlClient namespace",
+              "ActionValidation":{"Contains":"Microsoft.Data.SqlClient", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.SqlClient",
-              "Description": "Remove System.Data.SqlClient namespace"
+              "Description": "Remove System.Data.SqlClient namespace",
+              "ActionValidation":{"Contains":"", "NotContains":"System.Data.SqlClient"}
             }
           ]
         }
