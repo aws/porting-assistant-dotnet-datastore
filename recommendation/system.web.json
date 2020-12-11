@@ -29,7 +29,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Porting assistant will replace method AppendHeader with this.Response.Headers.Add. In the replacement, \"this\" refers to the controller object",
+          "Description": "Replace method AppendHeader with this.Response.Headers.Add. In the replacement, \"this\" refers to the controller object",
           "Actions": [
             {
               "Name": "ReplaceMethod",
@@ -69,7 +69,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Porting assistant will replace HtmlEncode with a new method: HtmlEncoder.Default.Encode. In addition, namepsace System.Text.Encodings.Web will be added",
+          "Description": "Replace HtmlEncode with a new method HtmlEncoder.Default.Encode in namepsace System.Text.Encodings.Web",
           "Actions": [
             {
               "Name": "ReplaceMethod",
@@ -109,7 +109,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Porting assistant will replace HttpContextBase with HttpContext. In addition, System.Web namespace will be replaced with Microsoft.AspNetCore.Http",
+          "Description": "Replace HttpContextBase in namespace System.Web with HttpContext in namespace Microsoft.AspNetCore.Http",
           "Actions": [
             {
               "Name": "ReplaceIdentifier",
