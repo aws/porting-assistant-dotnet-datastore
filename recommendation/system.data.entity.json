@@ -28,7 +28,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],          
-          "Description": "System.Data.Entity namespace will be replaced with Microsoft.EntityFrameworkCore. Also, package Microsoft.EntityFrameworkCore.SqlServer will be added to the csproj",
+          "Description": "Porting assistant will replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore. Also, package Microsoft.EntityFrameworkCore package will be added to the project file",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -46,13 +46,15 @@
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.EntityFrameworkCore",
-              "Description": "Add Microsoft.EntityFrameworkCore namespace"
+              "Description": "Add Microsoft.EntityFrameworkCore namespace",
+              "ActionValidation":{"Contains":"Microsoft.EntityFrameworkCore", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.Entity",
-              "Description": "Remove System.Data.Entity namespace"
+              "Description": "Remove System.Data.Entity namespace",
+              "ActionValidation":{"Contains":"", "NotContains":"System.Data.Entity"}
             }
           ]
         }
@@ -78,25 +80,28 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add an override method to configure the connection string. Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore",
+          "Description": "Porting assistant will add an OnConfiguring method to set the connection string. In addition, System.Data.Entity namespace will be replaced with Microsoft.EntityFrameworkCore",
           "Actions": [
             {
               "Name": "AddMethod",
               "Type": "Class",
               "Value": "protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { /* Use Configuration from static ConfigurationManager to access connection string in appsettings.json. Example below: optionsBuilder.UseSqlServer(ConfigurationManager.Configuration.GetConnectionString(\"CONNECTIONSTRINGNAME\")); */ base.OnConfiguring(optionsBuilder); }",
-              "Description": "Add a method to configure the connection string"
+              "Description": "Add a method to configure the connection string",
+              "ActionValidation":{"Contains":"OnConfiguring(DbContextOptionsBuilder", "NotContains":""}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.EntityFrameworkCore",
-              "Description": "Add Microsoft.EntityFrameworkCore namespace"
+              "Description": "Add Microsoft.EntityFrameworkCore namespace",
+              "ActionValidation":{"Contains":"Microsoft.EntityFrameworkCore", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.Entity",
-              "Description": "Remove System.Data.Entity namespace"
+              "Description": "Remove System.Data.Entity namespace",
+              "ActionValidation":{"Contains":"", "NotContains":"System.Data.Entity"}
             }
           ]
         }
