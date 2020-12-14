@@ -29,26 +29,26 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add the package Microsoft.Data.SqlClient to the project. In addition, System.Data.SqlClient namespace will be replaced with Microsoft.Data.SqlClient",
+          "Description": "Add the package Microsoft.Data.SqlClient to the project. In addition, System.Data.SqlClient namespace will be replaced with Microsoft.Data.SqlClient.",
           "Actions": [
             {
               "Name": "AddPackage",
               "Type": "Package",
               "Value": "Microsoft.Data.SqlClient",
-              "Description": "Add reference to Microsoft.Data.SqlClient"
+              "Description": "Add reference to Microsoft.Data.SqlClient."
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.Data.SqlClient",
-              "Description": "Add Microsoft.Data.SqlClient namespace",
+              "Description": "Add Microsoft.Data.SqlClient namespace.",
               "ActionValidation":{"Contains":"Microsoft.Data.SqlClient", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.SqlClient",
-              "Description": "Remove System.Data.SqlClient namespace",
+              "Description": "Remove System.Data.SqlClient namespace.",
               "ActionValidation":{"Contains":"", "NotContains":"System.Data.SqlClient"}
             }
           ]

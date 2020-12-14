@@ -29,7 +29,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment: RoutePrefix attribute is no longer supported",
+          "Description": "Add a comment: RoutePrefix attribute is no longer supported.",
           "Actions": [
             {
               "Name": "AddComment",
@@ -62,27 +62,27 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace IHttpActionResult in namespace System.Web.Http with IActionResult in namespace Microsoft.AspNetCore.Mvc",
+          "Description": "Replace IHttpActionResult in namespace System.Web.Http with IActionResult in namespace Microsoft.AspNetCore.Mvc.",
           "Actions": [
             {
               "Name": "ReplaceIdentifier",
               "Type": "Identifier",
               "Value": "IActionResult",
-              "Description": "Replace IHttpActionResult with IActionResult",
+              "Description": "Replace IHttpActionResult with IActionResult.",
               "ActionValidation":{"Contains":"IActionResult", "NotContains":"IHttpActionResult"}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Mvc",
-              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace.",
               "ActionValidation":{"Contains":"Microsoft.AspNetCore.Mvc", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web.Http",
-              "Description": "Remove System.Web.Http namespace",
+              "Description": "Remove System.Web.Http namespace.",
               "ActionValidation":{"Contains":"", "NotContains":"System.Web.Http"}
             }
           ]
@@ -115,35 +115,35 @@
               "Name": "RemoveBaseClass",
               "Type": "Class",
               "Value": "ApiController",
-              "Description": "Removes base class ApiController",
+              "Description": "Removes base class ApiController.",
               "ActionValidation":{"Contains":"", "NotContains":":ApiController"}
             },
             {
               "Name": "AddBaseClass",
               "Type": "Class",
               "Value": "ControllerBase",
-              "Description": "Add base class ControllerBase",
+              "Description": "Add base class ControllerBase.",
               "ActionValidation":{"Contains":"ControllerBase", "NotContains":""}
             },
             {
               "Name": "AddAttribute",
               "Type": "Class",
               "Value": "ApiController",
-              "Description": "Add attribute ApiController",
+              "Description": "Add attribute ApiController.",
               "ActionValidation":{"Contains":"[ApiController]", "NotContains":""}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Mvc",
-              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace.",
               "ActionValidation":{"Contains":"Microsoft.AspNetCore.Mvc", "NotContains":""}
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web",
-              "Description": "Remove System.Web namespace",
+              "Description": "Remove System.Web namespace.",
               "ActionValidation":{"Contains":"", "NotContains":"System.Web"}
             }
           ]
