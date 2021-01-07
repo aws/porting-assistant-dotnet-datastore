@@ -28,7 +28,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add reference to Microsoft.AspNetCore.Owin\r\nRemove Microsoft.Owin\r\nRemove Owin\r\n",
+          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin and Owin.",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -42,7 +42,7 @@
               "Value": "Microsoft.AspNetCore.Owin",
               "Description": "Add Microsoft.AspNetCore.Owin namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Owin",
+                "Contains": "usingMicrosoft.AspNetCore.Owin;",
                 "NotContains": ""
               }
             },
@@ -53,7 +53,7 @@
               "Description": "Remove Microsoft.Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin"
+                "NotContains": "usingMicrosoft.Owin;"
               }
             },
             {
@@ -63,7 +63,7 @@
               "Description": "Remove Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingOwin"
+                "NotContains": "usingOwin;"
               }
             }
           ]
@@ -90,7 +90,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace IOwinContext with HttpContext\r\nAdd Microsoft.AspNetCore.Http.HttpContext namespace\r\nRemove Microsoft.Owin.IOwinContext\r\n",
+          "Description": "Replace IOwinContext with HttpContext and add Microsoft.AspNetCore.Http.HttpContext namespace.",
           "Actions": [
             {
               "Name": "ReplaceIdentifier",
@@ -108,7 +108,7 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http",
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
                 "NotContains": ""
               }
             }
@@ -136,16 +136,16 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Removes base class of OwinMiddleware\r\n",
+          "Description": "Add a comment to explain how to remove the base class of OwinMiddleware.",
           "Actions": [
             {
-              "Name": "RemoveBaseClass",
+              "Name": "AddComment",
               "Type": "Class",
-              "Value": "OwinMiddleware",
-              "Description": "Removes base class OwinMiddleware",
+              "Value": "Please remove the base class here : OwinMiddleware",
+              "Description": "Add a comment to remove the base class OwinMiddleware",
               "ActionValidation": {
-                "Contains": "",
-                "NotContains": "OwinMiddleware"
+                "Contains": "Pleaseremovethebaseclasshere:OwinMiddleware",
+                "NotContains": ""
               }
             }
           ]
@@ -172,7 +172,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace OwinMiddleware with RequestDelegate\r\nAdd Microsoft.AspNetCore.Http.RequestDelegate namespace\r\nRemove Microsoft.Owin.OwinMiddleware\r\n",
+          "Description": "Replace OwinMiddleware with RequestDelegate and add Microsoft.AspNetCore.Http.RequestDelegate namespace.",
           "Actions": [
             {
               "Name": "ReplaceIdentifier",
@@ -190,7 +190,7 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http",
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
                 "NotContains": ""
               }
             }
@@ -218,7 +218,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add Microsoft.AspNetCore.StaticFiles package\r\nAdd Microsoft.Extensions.FileProviders.Physical package\r\nAdd Microsoft.Extensions.FileProviders namespace\r\nAdd Microsoft.AspNetCore.StaticFiles namespace\r\nRemove Microsoft.Owin.StaticFiles namespace\r\nRemove Microsoft.Owin.FileSystems namespace\r\n",
+          "Description": "Add Microsoft.AspNetCore.StaticFiles and Microsoft.Extensions.FileProviders.Physical packages. Add Microsoft.Extensions.FileProviders and Microsoft.AspNetCore.StaticFiles namespaces. Remove Microsoft.Owin.StaticFiles and Microsoft.Owin.FileSystems namespaces.",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -238,7 +238,7 @@
               "Value": "Microsoft.Extensions.FileProviders",
               "Description": "Add Microsoft.Extensions.FileProviders",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.FileProviders",
+                "Contains": "usingMicrosoft.Extensions.FileProviders;",
                 "NotContains": ""
               }
             },
@@ -248,7 +248,7 @@
               "Value": "Microsoft.AspNetCore.StaticFiles",
               "Description": "Add Microsoft.AspNetCore.StaticFiles",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.StaticFiles",
+                "Contains": "usingMicrosoft.AspNetCore.StaticFiles;",
                 "NotContains": ""
               }
             },
@@ -259,7 +259,7 @@
               "Description": "Remove Microsoft.Owin.StaticFiles namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.StaticFiles"
+                "NotContains": "usingMicrosoft.Owin.StaticFiles;"
               }
             },
             {
@@ -269,7 +269,7 @@
               "Description": "Remove Microsoft.Owin.FileSystems namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.FileSystems"
+                "NotContains": "usingMicrosoft.Owin.FileSystems;"
               }
             }
           ]
@@ -296,7 +296,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next\r\n",
+          "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
           "Actions": [
             {
               "Name": "AddComment",
@@ -304,7 +304,7 @@
               "Value": "Please replace Next with a globally declared RequestDelegate _next which is initialized in the constructor with the next element of the pipeline.",
               "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
               "ActionValidation": {
-                "Contains": "_next",
+                "Contains": "PleasereplaceNextwithagloballydeclaredRequestDelegate_next",
                 "NotContains": ""
               }
             }
@@ -332,7 +332,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next\r\n",
+          "Description": "Add a comment to explain how to replace the Get method with TryGetValue.",
           "Actions": [
             {
               "Name": "AddComment",
@@ -340,7 +340,7 @@
               "Value": "Please replace Get with TryGetValue.",
               "Description": "Add a comment to explain how to replace IOwinContext.Request.Headers.Get with TryGetValue instead.",
               "ActionValidation": {
-                "Contains": "TryGetValue",
+                "Contains": "PleasereplaceGetwithTryGetValue.",
                 "NotContains": ""
               }
             }

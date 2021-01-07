@@ -28,7 +28,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add reference to Microsoft.AspNetCore.Hosting\r\nAdd reference to Microsoft.AspNetCore.Server.Kestrel\r\nRemove Microsoft.Owin.Hosting\r\nRemove Owin\r\n",
+          "Description": "Add a reference to Microsoft.AspNetCore.Hosting, Microsoft.AspNetCore.Server.Kestrel and remove Microsoft.Owin.Hosting and Owin.",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -48,7 +48,7 @@
               "Value": "Microsoft.AspNetCore.Hosting",
               "Description": "Add Microsoft.AspNetCore.Hosting namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Hosting",
+                "Contains": "usingMicrosoft.AspNetCore.Hosting;",
                 "NotContains": ""
               }
             },
@@ -58,7 +58,7 @@
               "Value": "Microsoft.AspNetCore.Server.Kestrel",
               "Description": "Add Microsoft.AspNetCore.Server.Kestrel namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Server.Kestrel",
+                "Contains": "usingMicrosoft.AspNetCore.Server.Kestrel;",
                 "NotContains": ""
               }
             },
@@ -69,7 +69,7 @@
               "Description": "Remove Microsoft.Owin.Hosting namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.Hosting"
+                "NotContains": "usingMicrosoft.Owin.Hosting;"
               }
             },
             {
@@ -79,7 +79,7 @@
               "Description": "Remove Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingOwin"
+                "NotContains": "usingOwin;"
               }
             }
           ]
@@ -106,7 +106,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to explain how to replace WebApp.Start.\r\n",
+          "Description": "Add a comment to explain how to replace WebApp.Start.",
           "Actions": [
             {
               "Name": "AddComment",
@@ -114,7 +114,7 @@
               "Value": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start();",
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
-                "Contains": "WebHostBuilder",
+                "Contains": "ReplaceMicrosoft.Owin.Hosting.WebApp.StartwithWebHostBuilder",
                 "NotContains": ""
               }
             }

@@ -28,7 +28,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace IAppBuilder with IApplicationBuilder\r\nAdd Microsoft.AspNetCore.Builder namespace\r\nAdd Microsoft.AspNetCore.Diagnostics package\r\nRemove Owin namespace\r\n",
+          "Description": "Replace IAppBuilder with IApplicationBuilder and add the Microsoft.AspNetCore.Builder namespace and the Microsoft.AspNetCore.Diagnostics package and remove the Owin namespace.",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -52,7 +52,7 @@
               "Value": "Microsoft.AspNetCore.Builder",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Builder",
+                "Contains": "usingMicrosoft.AspNetCore.Builder;",
                 "NotContains": ""
               }
             },
@@ -63,7 +63,7 @@
               "Description": "Remove Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingOwin"
+                "NotContains": "usingOwin;"
               }
             }
           ]
@@ -90,15 +90,15 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with .UseOwin\r\n",
+          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with .UseOwin.",
           "Actions": [
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Replace with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
+              "Value": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
               "ActionValidation": {
-                "Contains": "UseOwin",
+                "Contains": "ReplaceOwin.IAppBuilder.Usewith.UseOwin",
                 "NotContains": ""
               }
             }
@@ -126,7 +126,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to help replace Owin.IAppBuilder.Use \r\nEither use .UseMiddleware<MiddlewareNameHere>\r\nOr use .UseOwin\r\n",
+          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with either .UseMiddleware<MiddlewareNameHere> or .UseOwin.",
           "Actions": [
             {
               "Name": "AddComment",
@@ -134,7 +134,7 @@
               "Value": "If this format is used \".Use<MiddlewareNameHere>\" replace with Microsoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere> otherwise replace with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to either UseMiddleWare or UseOwin.",
               "ActionValidation": {
-                "Contains": "UseMiddleware",
+                "Contains": "replacewithMicrosoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere>otherwisereplacewith.UseOwin",
                 "NotContains": ""
               }
             }
@@ -162,15 +162,15 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with .UseOwin\r\n",
+          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with .UseOwin.",
           "Actions": [
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Replace with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
+              "Value": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
               "ActionValidation": {
-                "Contains": "UseOwin",
+                "Contains": "ReplaceOwin.IAppBuilder.Usewith.UseOwin",
                 "NotContains": ""
               }
             }
@@ -198,7 +198,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace UseWebApi with UseEndpoints\r\nAdd a method to configure services\r\nAdd a method to explain how to setup UseEndpoints\r\nAdd Microsoft.AspNetCore.Builder\r\nAdd Microsoft.Extensions.DependencyInjection\r\nRemove System.Web.Http\r\n",
+          "Description": "Replace UseWebApi with UseEndpoints and add a comment to create a configure services method. Add Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection namespaces and remove System.Web.Http namespace.",
           "Actions": [
             {
               "Name": "ReplaceMethod",
@@ -216,17 +216,17 @@
               "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
-                "Contains": "ConfigureServices",
+                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddControllers();}",
                 "NotContains": ""
               }
             },
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } ); ",
+              "Value": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } );",
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
-                "Contains": "MapControllers",
+                "Contains": "IApplicationBuilder.UseEndpoints(endpoints=>{endpoints.MapControllers();});",
                 "NotContains": ""
               }
             },
@@ -236,7 +236,7 @@
               "Value": "Microsoft.AspNetCore.Builder",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Builder",
+                "Contains": "usingMicrosoft.AspNetCore.Builder;",
                 "NotContains": ""
               }
             },
@@ -246,7 +246,7 @@
               "Value": "Microsoft.Extensions.DependencyInjection",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.DependencyInjection",
+                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
                 "NotContains": ""
               }
             },
@@ -257,7 +257,7 @@
               "Description": "Remove System.Web.Http namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingSystem.Web.Http"
+                "NotContains": "usingSystem.Web.Http;"
               }
             }
           ]
@@ -284,7 +284,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace MapSignalR with UseSignalR\r\nAdd a method to configure services\r\nAdd a method to explain how to setup UseSignalR\r\nAdd Microsoft.AspNetCore.Builder\r\nAdd Microsoft.Extensions.DependencyInjection\r\nRemove Owin\r\n",
+          "Description": "Add Microsoft.AspNetCore.SignalR package and replace MapSignalR with UseSignalR. Add a comment to add a configure services method. Add Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection namespaces.",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -298,7 +298,7 @@
               "Value": "Microsoft.AspNetCore.Builder",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Builder",
+                "Contains": "usingMicrosoft.AspNetCore.Builder;",
                 "NotContains": ""
               }
             },
@@ -308,7 +308,7 @@
               "Value": "Microsoft.Extensions.DependencyInjection",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.DependencyInjection",
+                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
                 "NotContains": ""
               }
             },
@@ -328,7 +328,7 @@
               "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
-                "Contains": "ConfigureServices",
+                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddSignalR();}",
                 "NotContains": ""
               }
             },
@@ -338,7 +338,7 @@
               "Value": "Please setup your signalR hub configuration here you can use a lambda function if needed such as .AddSignalR(routes => { routes.MapHub<StronglyTypedChatHub>(\"chathub\")); }",
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
-                "Contains": "AddSignalR",
+                "Contains": "PleasesetupyoursignalRhubconfigurationhere",
                 "NotContains": ""
               }
             }
@@ -366,7 +366,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace UseErrorPage with UseDeveloperExceptionPage\r\n",
+          "Description": "Replace UseErrorPage with UseDeveloperExceptionPage.",
           "Actions": [
             {
               "Name": "ReplaceMethod",
@@ -402,7 +402,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to explain how to use FileServer and to ensure the usage of FileProvider attribute\r\n",
+          "Description": "Add a comment to explain how to use FileServerOptions and to ensure the usage of FileProvider attribute.",
           "Actions": [
             {
               "Name": "AddComment",
@@ -410,7 +410,7 @@
               "Value": "Please replace the FileSystem property inside of the new FileServerOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
-                "Contains": "FileProvider",
+                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewFileServerOptionswithFileProvider",
                 "NotContains": ""
               }
             }
@@ -438,7 +438,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace UseErrorPage with UseErrorPage\r\n",
+          "Description": "Add Microsoft.Extensions.DependencyInjection namespace. Add a comment to add ConfigureServices method and explain how to use FileProvider attribute inside of DirectoryBrowsingOptions class.",
           "Actions": [
             {
               "Name": "AddComment",
@@ -446,7 +446,7 @@
               "Value": "Please replace the FileSystem property inside of the new DirectoryBrowsingOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
-                "Contains": "FileProvider",
+                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewDirectoryBrowsingOptionswithFileProvider",
                 "NotContains": ""
               }
             },
@@ -456,7 +456,7 @@
               "Value": "Microsoft.Extensions.DependencyInjection",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.DependencyInjection",
+                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
                 "NotContains": ""
               }
             },
@@ -466,7 +466,7 @@
               "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
-                "Contains": "ConfigureServices",
+                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddDirectoryBrowser();}",
                 "NotContains": ""
               }
             }
