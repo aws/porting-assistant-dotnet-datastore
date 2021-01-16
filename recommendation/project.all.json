@@ -19,6 +19,31 @@
           "Preferred": "Yes",
           "TargetFrameworks": [
             {
+              "Name": "netstandard2.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "",
+          "Actions": [            
+            {
+              "Name": "MigrateConfig",
+              "Type": "Project",
+              "Value": "",
+              "Description": "Migrate settings from web.config file to appsettings.json."
+            },
+            {
+              "Name": "MigrateProjectFile",
+              "Type": "ProjectFile",
+              "Value": "",
+              "Description": "Migrate csproj file to core"
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
               "Name": "netcoreapp3.1",
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
