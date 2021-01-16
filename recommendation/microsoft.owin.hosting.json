@@ -1,0 +1,126 @@
+﻿{
+  "Name": "Microsoft.Owin.Hosting",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Owin",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Hosting",
+      "Value": "Microsoft.Owin.Hosting",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Hosting, Microsoft.AspNetCore.Server.Kestrel and remove Microsoft.Owin.Hosting and Owin.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Hosting",
+              "Description": "Add package Microsoft.AspNetCore.Hosting"
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Server.Kestrel",
+              "Description": "Add package Microsoft.AspNetCore.Server.Kestrel"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Hosting",
+              "Description": "Add Microsoft.AspNetCore.Hosting namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Hosting;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Server.Kestrel",
+              "Description": "Add Microsoft.AspNetCore.Server.Kestrel namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Server.Kestrel;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Hosting",
+              "Description": "Remove Microsoft.Owin.Hosting namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin.Hosting;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingOwin;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Start",
+      "Value": "Microsoft.Owin.Hosting.WebApp.Start<TStartup>",
+      "KeyType": "Name",
+      "ContainingType": "WebApp",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace WebApp.Start.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start();",
+              "Description": "Add a comment to explain how to replace WebApp.Start.",
+              "ActionValidation": {
+                "Contains": "ReplaceMicrosoft.Owin.Hosting.WebApp.StartwithWebHostBuilder",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

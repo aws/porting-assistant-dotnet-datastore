@@ -1,0 +1,352 @@
+﻿{
+  "Name": "Microsoft.Owin",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Owin",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin",
+      "Value": "Microsoft.Owin",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin and Owin.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add package Microsoft.AspNetCore.Owin"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add Microsoft.AspNetCore.Owin namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Owin;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingOwin;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IOwinContext",
+      "Value": "Microsoft.Owin.IOwinContext",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace IOwinContext with HttpContext and add Microsoft.AspNetCore.Http.HttpContext namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "HttpContext",
+              "Description": "Replace IOwinContext with HttpContext",
+              "ActionValidation": {
+                "Contains": "HttpContext",
+                "NotContains": "IOwinContext"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "OwinMiddleware",
+      "Value": "Microsoft.Owin.OwinMiddleware",
+      "KeyType": "BaseClass",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to remove the base class of OwinMiddleware.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Class",
+              "Value": "Please remove the base class here : OwinMiddleware",
+              "Description": "Add a comment to remove the base class OwinMiddleware",
+              "ActionValidation": {
+                "Contains": "Pleaseremovethebaseclasshere:OwinMiddleware",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "OwinMiddleware",
+      "Value": "Microsoft.Owin.OwinMiddleware",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace OwinMiddleware with RequestDelegate and add Microsoft.AspNetCore.Http.RequestDelegate namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "RequestDelegate",
+              "Description": "Replace OwinMiddleware with RequestDelegate",
+              "ActionValidation": {
+                "Contains": "RequestDelegate",
+                "NotContains": "OwinMiddleware"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Namespace",
+      "Name": "StaticFiles",
+      "Value": "Microsoft.Owin.StaticFiles",
+      "KeyType": "Method",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.StaticFiles and Microsoft.Extensions.FileProviders.Physical packages. Add Microsoft.Extensions.FileProviders and Microsoft.AspNetCore.StaticFiles namespaces. Remove Microsoft.Owin.StaticFiles and Microsoft.Owin.FileSystems namespaces.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.StaticFiles",
+              "Description": "Add package Microsoft.AspNetCore.StaticFiles"
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.Extensions.FileProviders.Physical",
+              "Description": "Add package Microsoft.Extensions.FileProviders.Physical"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Extensions.FileProviders",
+              "Description": "Add Microsoft.Extensions.FileProviders",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.Extensions.FileProviders;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.StaticFiles",
+              "Description": "Add Microsoft.AspNetCore.StaticFiles",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.StaticFiles;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.StaticFiles",
+              "Description": "Remove Microsoft.Owin.StaticFiles namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin.StaticFiles;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.FileSystems",
+              "Description": "Remove Microsoft.Owin.FileSystems namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin.FileSystems;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Invoke",
+      "Value": "Microsoft.Owin.OwinMiddleware.Invoke(Microsoft.Owin.IOwinContext)",
+      "KeyType": "Name",
+      "ContainingType": "OwinMiddleware",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace Next with a globally declared RequestDelegate _next which is initialized in the constructor with the next element of the pipeline.",
+              "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
+              "ActionValidation": {
+                "Contains": "PleasereplaceNextwithagloballydeclaredRequestDelegate_next",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Get",
+      "Value": "Microsoft.Owin.IReadableStringCollection.Get(string)",
+      "KeyType": "Name",
+      "ContainingType": "IReadableStringCollection",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace the Get method with TryGetValue.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace Get with TryGetValue.",
+              "Description": "Add a comment to explain how to replace IOwinContext.Request.Headers.Get with TryGetValue instead.",
+              "ActionValidation": {
+                "Contains": "PleasereplaceGetwithTryGetValue.",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

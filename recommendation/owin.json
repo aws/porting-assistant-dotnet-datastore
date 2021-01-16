@@ -1,0 +1,478 @@
+﻿{
+  "Name": "Owin",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Owin",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Class",
+      "Name": "IAppBuilder",
+      "Value": "Owin.IAppBuilder",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace IAppBuilder with IApplicationBuilder and add the Microsoft.AspNetCore.Builder namespace and the Microsoft.AspNetCore.Diagnostics package and remove the Owin namespace.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Diagnostics",
+              "Description": "Add package Microsoft.AspNetCore.Diagnostics"
+            },
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "IApplicationBuilder",
+              "Description": "Replace IAppBuilder with IApplicationBuilder",
+              "ActionValidation": {
+                "Contains": "IApplicationBuilder",
+                "NotContains": "IAppBuilder"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Builder",
+              "Description": "Add Microsoft.AspNetCore.Builder namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Builder;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingOwin;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Use",
+      "Value": "Owin.IAppBuilder.Use(object, params object[])",
+      "KeyType": "Name",
+      "ContainingType": "IAppBuilder",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with .UseOwin.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
+              "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
+              "ActionValidation": {
+                "Contains": "ReplaceOwin.IAppBuilder.Usewith.UseOwin",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Use",
+      "Value": "Owin.IAppBuilder.Use<T>(params object[])",
+      "KeyType": "Name",
+      "ContainingType": "AppBuilderUseExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with either .UseMiddleware<MiddlewareNameHere> or .UseOwin.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "If this format is used \".Use<MiddlewareNameHere>\" replace with Microsoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere> otherwise replace with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
+              "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to either UseMiddleWare or UseOwin.",
+              "ActionValidation": {
+                "Contains": "replacewithMicrosoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere>otherwisereplacewith.UseOwin",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Use",
+      "Value": "Owin.IAppBuilder.Use(System.Func<Microsoft.Owin.IOwinContext, System.Func<System.Threading.Tasks.Task>, System.Threading.Tasks.Task>)",
+      "KeyType": "Name",
+      "ContainingType": "AppBuilderUseExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to help replace Owin.IAppBuilder.Use with .UseOwin.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
+              "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
+              "ActionValidation": {
+                "Contains": "ReplaceOwin.IAppBuilder.Usewith.UseOwin",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "UseWebApi",
+      "Value": "Owin.IAppBuilder.UseWebApi(System.Web.Http.HttpConfiguration)",
+      "KeyType": "Name",
+      "ContainingType": "WebApiAppBuilderExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace UseWebApi with UseEndpoints and add a comment to create a configure services method. Add Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection namespaces and remove System.Web.Http namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethod",
+              "Type": "Method",
+              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseEndpoints",
+              "Description": "Replace UseWebApi with UseEndpoints",
+              "ActionValidation": {
+                "Contains": "UseEndpoints",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
+              "Description": "Add a comment on adding a new configureservices method.",
+              "ActionValidation": {
+                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddControllers();}",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } );",
+              "Description": "Add a comment on how to setup your MVC controller in startup class.",
+              "ActionValidation": {
+                "Contains": "IApplicationBuilder.UseEndpoints(endpoints=>{endpoints.MapControllers();});",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Builder",
+              "Description": "Add Microsoft.AspNetCore.Builder namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Builder;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Extensions.DependencyInjection",
+              "Description": "Add Microsoft.AspNetCore.Builder namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Http",
+              "Description": "Remove System.Web.Http namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingSystem.Web.Http;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "MapSignalR",
+      "Value": "Owin.IAppBuilder.MapSignalR()",
+      "KeyType": "Name",
+      "ContainingType": "OwinExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.SignalR package and replace MapSignalR with UseSignalR. Add a comment to add a configure services method. Add Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection namespaces.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.SignalR",
+              "Description": "Add package Microsoft.AspNetCore.SignalR"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Builder",
+              "Description": "Add Microsoft.AspNetCore.Builder namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Builder;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Extensions.DependencyInjection",
+              "Description": "Add Microsoft.AspNetCore.Builder namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethod",
+              "Type": "Method",
+              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseSignalR",
+              "Description": "Replace MapSignalR with UseSignalR",
+              "ActionValidation": {
+                "Contains": "UseSignalR",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
+              "Description": "Add a comment on adding a new configureservices method.",
+              "ActionValidation": {
+                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddSignalR();}",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please setup your signalR hub configuration here you can use a lambda function if needed such as .AddSignalR(routes => { routes.MapHub<StronglyTypedChatHub>(\"chathub\")); }",
+              "Description": "Add a comment on how to setup your MVC controller in startup class.",
+              "ActionValidation": {
+                "Contains": "PleasesetupyoursignalRhubconfigurationhere",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "UseErrorPage",
+      "Value": "Owin.IAppBuilder.UseErrorPage()",
+      "KeyType": "Name",
+      "ContainingType": "ErrorPageExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace UseErrorPage with UseDeveloperExceptionPage.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethod",
+              "Type": "Method",
+              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseDeveloperExceptionPage",
+              "Description": "Replace UseErrorPage with UseDeveloperExceptionPage",
+              "ActionValidation": {
+                "Contains": "UseDeveloperExceptionPage",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "UseFileServer",
+      "Value": "Owin.IAppBuilder.UseFileServer(Microsoft.Owin.StaticFiles.FileServerOptions)",
+      "KeyType": "Name",
+      "ContainingType": "FileServerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to use FileServerOptions and to ensure the usage of FileProvider attribute.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace the FileSystem property inside of the new FileServerOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
+              "Description": "Add a comment on how to setup your MVC controller in startup class.",
+              "ActionValidation": {
+                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewFileServerOptionswithFileProvider",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "UseDirectoryBrowser",
+      "Value": "Owin.IAppBuilder.UseDirectoryBrowser(Microsoft.Owin.StaticFiles.DirectoryBrowserOptions)",
+      "KeyType": "Name",
+      "ContainingType": "DirectoryBrowserExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.Extensions.DependencyInjection namespace. Add a comment to add ConfigureServices method and explain how to use FileProvider attribute inside of DirectoryBrowsingOptions class.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace the FileSystem property inside of the new DirectoryBrowsingOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
+              "Description": "Add a comment on how to setup your MVC controller in startup class.",
+              "ActionValidation": {
+                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewDirectoryBrowsingOptionswithFileProvider",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Extensions.DependencyInjection",
+              "Description": "Add Microsoft.AspNetCore.Builder namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
+              "Description": "Add a comment on adding a new configureservices method.",
+              "ActionValidation": {
+                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddDirectoryBrowser();}",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
