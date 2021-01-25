@@ -147,6 +147,19 @@
                 "Contains": "Pleaseremovethebaseclasshere:OwinMiddleware",
                 "NotContains": ""
               }
+            },
+            {
+              "Name": "ReplaceMethodModifiers",
+              "Type": "Class",
+              "Value": {
+                "methodName": "Invoke",
+                "modifiers": "public"
+              },
+              "Description": "Remove the override modifier from the invoke method in owin middleware.",
+              "ActionValidation": {
+                "Contains": "public",
+                "NotContains": "override"
+              }
             }
           ]
         }
