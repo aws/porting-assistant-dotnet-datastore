@@ -136,7 +136,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to explain how to remove the base class of OwinMiddleware.",
+          "Description": "Remove the base class of OwinMiddleware and replace the method modifiers for the invoke method to only public so as to remove the override modifier.",
           "Actions": [
             {
               "Name": "RemoveBaseClass",
@@ -155,7 +155,7 @@
                 "methodName": "Invoke",
                 "modifiers": "public"
               },
-              "Description": "Remove the override modifier from the invoke method in owin middleware.",
+              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier.",
               "ActionValidation": {
                 "Contains": "public",
                 "NotContains": "override"
