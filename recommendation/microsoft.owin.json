@@ -162,17 +162,17 @@
               }
             },
             {
-              "Name": "AddGlobalExpression",
+              "Name": "AddExpression",
               "Type": "Class",
-              "Value": "RequestDelegate _next = null;",
+              "Value": "RequestDelegate _next = null; //CTA Change",
               "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
               "ActionValidation": {
-                "Contains": "RequestDelegate_next=null;",
+                "Contains": "RequestDelegate_next=null;//CTAChange",
                 "NotContains": ""
               }
             },
             {
-              "Name": "AddConstructorExpression",
+              "Name": "AppendConstructorExpression",
               "Type": "Class",
               "Value": "_next = next;",
               "Description": "Add a new expression in the constructor to initialize the new variable of _next to the next element in the pipeline.",
