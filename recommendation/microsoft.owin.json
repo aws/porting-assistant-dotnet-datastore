@@ -136,7 +136,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Remove the base class for owin middleware, remove the override method modifier for the invoke method, add a new gloable xpression for RequestDelegate _next, initialize it in the constructor and remove the constructor intializer base(next).",
+          "Description": "Remove the base class of OwinMiddleware and replace the method modifiers for the invoke method to only public so as to remove the override modifier.",
           "Actions": [
             {
               "Name": "RemoveBaseClass",
@@ -159,36 +159,6 @@
               "ActionValidation": {
                 "Contains": "public",
                 "NotContains": "override"
-              }
-            },
-            {
-              "Name": "AddExpression",
-              "Type": "Class",
-              "Value": "RequestDelegate _next = null; //CTA Change",
-              "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
-              "ActionValidation": {
-                "Contains": "RequestDelegate_next=null;//CTAChange",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "AppendConstructorExpression",
-              "Type": "Class",
-              "Value": "_next = next;",
-              "Description": "Add a new expression in the constructor to initialize the new variable of _next to the next element in the pipeline.",
-              "ActionValidation": {
-                "Contains": "_next=next;",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "RemoveConstructorInitializer",
-              "Type": "Class",
-              "Value": "next",
-              "Description": "Remove the base initializer for the constructor.",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": ":base(next)"
               }
             }
           ]
@@ -322,7 +292,7 @@
     {
       "Type": "Method",
       "Name": "Invoke",
-      "Value": "Microsoft.Owin.OwinMiddleware.Invoke",
+      "Value": "Microsoft.Owin.OwinMiddleware.Invoke(Microsoft.Owin.IOwinContext)",
       "KeyType": "Name",
       "ContainingType": "OwinMiddleware",
       "RecommendedActions": [
@@ -339,15 +309,15 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+          "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
           "Actions": [
             {
-              "Name": "ReplaceMethod",
+              "Name": "AddComment",
               "Type": "Method",
-              "Value": "_next.Invoke",
-              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "Value": "Please replace Next with a globally declared RequestDelegate _next which is initialized in the constructor with the next element of the pipeline.",
+              "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
               "ActionValidation": {
-                "Contains": "_next.Invoke",
+                "Contains": "PleasereplaceNextwithagloballydeclaredRequestDelegate_next",
                 "NotContains": ""
               }
             }
