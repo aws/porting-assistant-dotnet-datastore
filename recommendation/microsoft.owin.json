@@ -3,7 +3,7 @@
   "Version": "1.0.0",
   "Packages": [
     {
-      "Name": "Owin",
+      "Name": "Microsoft.Owin",
       "Type": "Nuget"
     }
   ],
@@ -136,7 +136,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Remove the base class of OwinMiddleware and replace the method modifiers for the invoke method to only public so as to remove the override modifier.",
+          "Description": "Remove the base class for owin middleware, remove the override method modifier for the invoke method, add a new gloable xpression for RequestDelegate _next, initialize it in the constructor and remove the constructor intializer base(next).",
           "Actions": [
             {
               "Name": "RemoveBaseClass",
@@ -159,6 +159,36 @@
               "ActionValidation": {
                 "Contains": "public",
                 "NotContains": "override"
+              }
+            },
+            {
+              "Name": "AddExpression",
+              "Type": "Class",
+              "Value": "RequestDelegate _next = null; //CTA Change",
+              "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
+              "ActionValidation": {
+                "Contains": "RequestDelegate_next=null;//CTAChange",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AppendConstructorExpression",
+              "Type": "Class",
+              "Value": "_next = next;",
+              "Description": "Add a new expression in the constructor to initialize the new variable of _next to the next element in the pipeline.",
+              "ActionValidation": {
+                "Contains": "_next=next;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveConstructorInitializer",
+              "Type": "Class",
+              "Value": "next",
+              "Description": "Remove the base initializer for the constructor.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": ":base(next)"
               }
             }
           ]
@@ -212,86 +242,8 @@
       ]
     },
     {
-      "Type": "Namespace",
-      "Name": "StaticFiles",
-      "Value": "Microsoft.Owin.StaticFiles",
-      "KeyType": "Method",
-      "ContainingType": "",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Add Microsoft.AspNetCore.StaticFiles and Microsoft.Extensions.FileProviders.Physical packages. Add Microsoft.Extensions.FileProviders and Microsoft.AspNetCore.StaticFiles namespaces. Remove Microsoft.Owin.StaticFiles and Microsoft.Owin.FileSystems namespaces.",
-          "Actions": [
-            {
-              "Name": "AddPackage",
-              "Type": "Package",
-              "Value": "Microsoft.AspNetCore.StaticFiles",
-              "Description": "Add package Microsoft.AspNetCore.StaticFiles"
-            },
-            {
-              "Name": "AddPackage",
-              "Type": "Package",
-              "Value": "Microsoft.Extensions.FileProviders.Physical",
-              "Description": "Add package Microsoft.Extensions.FileProviders.Physical"
-            },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Extensions.FileProviders",
-              "Description": "Add Microsoft.Extensions.FileProviders",
-              "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.FileProviders;",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.StaticFiles",
-              "Description": "Add Microsoft.AspNetCore.StaticFiles",
-              "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.StaticFiles;",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Owin.StaticFiles",
-              "Description": "Remove Microsoft.Owin.StaticFiles namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.StaticFiles;"
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Owin.FileSystems",
-              "Description": "Remove Microsoft.Owin.FileSystems namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.FileSystems;"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "Type": "Method",
-      "Name": "Invoke",
+      "Name": "Microsoft.Owin.OwinMiddleware.Invoke(Microsoft.Owin.IOwinContext)",
       "Value": "Microsoft.Owin.OwinMiddleware.Invoke(Microsoft.Owin.IOwinContext)",
       "KeyType": "Name",
       "ContainingType": "OwinMiddleware",
@@ -309,15 +261,15 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
+          "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
           "Actions": [
             {
-              "Name": "AddComment",
+              "Name": "ReplaceMethod",
               "Type": "Method",
-              "Value": "Please replace Next with a globally declared RequestDelegate _next which is initialized in the constructor with the next element of the pipeline.",
-              "Description": "Add a comment to explain how to replace the Next variable with a globallly declared _next.",
+              "Value": "_next.Invoke",
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
               "ActionValidation": {
-                "Contains": "PleasereplaceNextwithagloballydeclaredRequestDelegate_next",
+                "Contains": "_next.Invoke",
                 "NotContains": ""
               }
             }
@@ -327,7 +279,7 @@
     },
     {
       "Type": "Method",
-      "Name": "Get",
+      "Name": "Microsoft.Owin.IReadableStringCollection.Get(string)",
       "Value": "Microsoft.Owin.IReadableStringCollection.Get(string)",
       "KeyType": "Name",
       "ContainingType": "IReadableStringCollection",
