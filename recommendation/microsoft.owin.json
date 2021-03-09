@@ -136,7 +136,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Remove the base class for owin middleware, remove the override method modifier for the invoke method, add a new gloable xpression for RequestDelegate _next, initialize it in the constructor and remove the constructor intializer base(next).",
+          "Description": "Remove the base class for owin middleware, remove the override method modifier for the invoke method, add a new global expression for RequestDelegate _next, initialize it in the constructor and remove the constructor intializer base(next).",
           "Actions": [
             {
               "Name": "RemoveBaseClass",
@@ -164,10 +164,10 @@
             {
               "Name": "AddExpression",
               "Type": "Class",
-              "Value": "RequestDelegate _next = null; //CTA Change",
+              "Value": "RequestDelegate _next = null; //PortingAssistant Change",
               "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
               "ActionValidation": {
-                "Contains": "RequestDelegate_next=null;//CTAChange",
+                "Contains": "RequestDelegate_next=null;//PortingAssistantChange",
                 "NotContains": ""
               }
             },
