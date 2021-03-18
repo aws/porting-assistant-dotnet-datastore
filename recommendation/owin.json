@@ -201,9 +201,12 @@
           "Description": "Replace UseWebApi with UseEndpoints and add a comment to create a configure services method. Add Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection namespaces and remove System.Web.Http namespace.",
           "Actions": [
             {
-              "Name": "ReplaceMethod",
+              "Name": "ReplaceOnlyMethod",
               "Type": "Method",
-              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseEndpoints",
+              "Value": {
+                "oldMethod": "UseWebApi",
+                "newMethod": "UseEndpoints"
+              },
               "Description": "Replace UseWebApi with UseEndpoints",
               "ActionValidation": {
                 "Contains": "UseEndpoints",
@@ -313,9 +316,12 @@
               }
             },
             {
-              "Name": "ReplaceMethod",
+              "Name": "ReplaceOnlyMethod",
               "Type": "Method",
-              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseSignalR",
+              "Value": {
+                "oldMethod": "MapSignalR",
+                "newMethod": "UseSignalR"
+              },
               "Description": "Replace MapSignalR with UseSignalR",
               "ActionValidation": {
                 "Contains": "UseSignalR",
@@ -369,9 +375,12 @@
           "Description": "Replace UseErrorPage with UseDeveloperExceptionPage.",
           "Actions": [
             {
-              "Name": "ReplaceMethod",
+              "Name": "ReplaceOnlyMethod",
               "Type": "Method",
-              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseDeveloperExceptionPage",
+              "Value": {
+                "oldMethod": "UseErrorPage",
+                "newMethod": "UseDeveloperExceptionPage"
+              },
               "Description": "Replace UseErrorPage with UseDeveloperExceptionPage",
               "ActionValidation": {
                 "Contains": "UseDeveloperExceptionPage",
