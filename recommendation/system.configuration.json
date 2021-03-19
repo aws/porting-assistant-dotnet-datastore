@@ -1,0 +1,78 @@
+{
+  "Name": "System.Configuration",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "System.Configuration",
+      "Type": "SDK"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "ElementAccess",
+      "Name": "ConfigurationManager.ConnectionStrings",
+      "Value": "System.Configuration.ConnectionStringSettingsCollection.ConfigurationManager.ConnectionStrings",
+      "ContainingType": "ConnectionStringSettingsCollection",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Update configuration to retrieve connection string from appSettings.json file.",
+          "Actions": [
+            {
+              "Name": "ReplaceElementAccess",
+              "Type": "ElementAccess",
+              "Value": "ConfigurationManager.Configuration.GetSection(\"ConnectionStrings\")",
+              "Description": "Update configuration to retrieve connection string from appSettings.json file.",
+              "ActionValidation": {
+                "Contains": "ConfigurationManager.Configuration.GetSection",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "MemberAccess",
+      "Name": "ConnectionString",
+      "Value": "System.Configuration.ConnectionStringSettings.ConnectionString",
+      "ContainingType": "ConnectionStringSettings",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Remove ConnectionString accessor.",
+          "Actions": [
+            {
+              "Name": "RemoveMemberAccess",
+              "Type": "MemberAccess",
+              "Value": "",
+              "Description": "Remove ConnectionString accessor."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
