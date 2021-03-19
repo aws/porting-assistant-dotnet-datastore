@@ -3,7 +3,7 @@
   "Version": "1.0.0",
   "Packages": [
     {
-      "Name": "Owin",
+      "Name": "Microsoft.Owin.Hosting",
       "Type": "Nuget"
     }
   ],
@@ -88,8 +88,44 @@
     },
     {
       "Type": "Method",
-      "Name": "Start",
-      "Value": "Microsoft.Owin.Hosting.WebApp.Start<TStartup>",
+      "Name": "Microsoft.Owin.Hosting.WebApp.Start<TStartup>(Microsoft.Owin.Hosting.StartOptions)",
+      "Value": "Microsoft.Owin.Hosting.WebApp.Start<TStartup>(Microsoft.Owin.Hosting.StartOptions)",
+      "KeyType": "Name",
+      "ContainingType": "WebApp",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace WebApp.Start.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start();",
+              "Description": "Add a comment to explain how to replace WebApp.Start.",
+              "ActionValidation": {
+                "Contains": "ReplaceMicrosoft.Owin.Hosting.WebApp.StartwithWebHostBuilder",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Hosting.WebApp.Start<TStartup>(string)",
+      "Value": "Microsoft.Owin.Hosting.WebApp.Start<TStartup>(string)",
       "KeyType": "Name",
       "ContainingType": "WebApp",
       "RecommendedActions": [
