@@ -3,7 +3,7 @@
   "Version": "1.0.0",
   "Packages": [
     {
-      "Name": "Owin",
+      "Name": "Microsoft.Owin",
       "Type": "Nuget"
     }
   ],
@@ -235,84 +235,6 @@
               "ActionValidation": {
                 "Contains": "usingMicrosoft.AspNetCore.Http;",
                 "NotContains": ""
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "Namespace",
-      "Name": "StaticFiles",
-      "Value": "Microsoft.Owin.StaticFiles",
-      "KeyType": "Method",
-      "ContainingType": "",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Add Microsoft.AspNetCore.StaticFiles and Microsoft.Extensions.FileProviders.Physical packages. Add Microsoft.Extensions.FileProviders and Microsoft.AspNetCore.StaticFiles namespaces. Remove Microsoft.Owin.StaticFiles and Microsoft.Owin.FileSystems namespaces.",
-          "Actions": [
-            {
-              "Name": "AddPackage",
-              "Type": "Package",
-              "Value": "Microsoft.AspNetCore.StaticFiles",
-              "Description": "Add package Microsoft.AspNetCore.StaticFiles"
-            },
-            {
-              "Name": "AddPackage",
-              "Type": "Package",
-              "Value": "Microsoft.Extensions.FileProviders.Physical",
-              "Description": "Add package Microsoft.Extensions.FileProviders.Physical"
-            },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Extensions.FileProviders",
-              "Description": "Add Microsoft.Extensions.FileProviders",
-              "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.FileProviders;",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.StaticFiles",
-              "Description": "Add Microsoft.AspNetCore.StaticFiles",
-              "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.StaticFiles;",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Owin.StaticFiles",
-              "Description": "Remove Microsoft.Owin.StaticFiles namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.StaticFiles;"
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Owin.FileSystems",
-              "Description": "Remove Microsoft.Owin.FileSystems namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.FileSystems;"
               }
             }
           ]

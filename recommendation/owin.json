@@ -384,42 +384,6 @@
     },
     {
       "Type": "Method",
-      "Name": "UseFileServer",
-      "Value": "Owin.IAppBuilder.UseFileServer(Microsoft.Owin.StaticFiles.FileServerOptions)",
-      "KeyType": "Name",
-      "ContainingType": "FileServerExtensions",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Add a comment to explain how to use FileServerOptions and to ensure the usage of FileProvider attribute.",
-          "Actions": [
-            {
-              "Name": "AddComment",
-              "Type": "Method",
-              "Value": "Please replace the FileSystem property inside of the new FileServerOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
-              "Description": "Add a comment on how to setup your MVC controller in startup class.",
-              "ActionValidation": {
-                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewFileServerOptionswithFileProvider",
-                "NotContains": ""
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "Method",
       "Name": "UseDirectoryBrowser",
       "Value": "Owin.IAppBuilder.UseDirectoryBrowser(Microsoft.Owin.StaticFiles.DirectoryBrowserOptions)",
       "KeyType": "Name",
@@ -440,16 +404,6 @@
           ],
           "Description": "Add Microsoft.Extensions.DependencyInjection namespace. Add a comment to add ConfigureServices method and explain how to use FileProvider attribute inside of DirectoryBrowsingOptions class.",
           "Actions": [
-            {
-              "Name": "AddComment",
-              "Type": "Method",
-              "Value": "Please replace the FileSystem property inside of the new DirectoryBrowsingOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
-              "Description": "Add a comment on how to setup your MVC controller in startup class.",
-              "ActionValidation": {
-                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewDirectoryBrowsingOptionswithFileProvider",
-                "NotContains": ""
-              }
-            },
             {
               "Name": "AddDirective",
               "Type": "Using",
