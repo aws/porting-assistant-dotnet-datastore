@@ -1,0 +1,48 @@
+{
+  "Name": "Microsoft.Owin.FileSystems",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.FileSystems",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Class",
+      "Name": "PhysicalFileSystem",
+      "Value": "Microsoft.Owin.FileSystems.PhysicalFileSystem",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace PhysicalFileSystem with PhysicalFileProvider.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "PhysicalFileProvider",
+              "Description": "Replace PhysicalFileSystem with PhysicalFileProvider",
+              "ActionValidation": {
+                "Contains": "PhysicalFileProvider",
+                "NotContains": "PhysicalFileSystem"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
