@@ -72,7 +72,7 @@
     },
     {
       "Type": "Method",
-      "Name": "Use",
+      "Name": "Owin.IAppBuilder.Use(object, params object[])",
       "Value": "Owin.IAppBuilder.Use(object, params object[])",
       "KeyType": "Name",
       "ContainingType": "IAppBuilder",
@@ -108,7 +108,7 @@
     },
     {
       "Type": "Method",
-      "Name": "Use",
+      "Name": "Owin.IAppBuilder.Use<T>(params object[])",
       "Value": "Owin.IAppBuilder.Use<T>(params object[])",
       "KeyType": "Name",
       "ContainingType": "AppBuilderUseExtensions",
@@ -144,7 +144,7 @@
     },
     {
       "Type": "Method",
-      "Name": "Use",
+      "Name": "Owin.IAppBuilder.Use(System.Func<Microsoft.Owin.IOwinContext, System.Func<System.Threading.Tasks.Task>, System.Threading.Tasks.Task>)",
       "Value": "Owin.IAppBuilder.Use(System.Func<Microsoft.Owin.IOwinContext, System.Func<System.Threading.Tasks.Task>, System.Threading.Tasks.Task>)",
       "KeyType": "Name",
       "ContainingType": "AppBuilderUseExtensions",
@@ -180,7 +180,7 @@
     },
     {
       "Type": "Method",
-      "Name": "UseWebApi",
+      "Name": "Owin.IAppBuilder.UseWebApi(System.Web.Http.HttpConfiguration)",
       "Value": "Owin.IAppBuilder.UseWebApi(System.Web.Http.HttpConfiguration)",
       "KeyType": "Name",
       "ContainingType": "WebApiAppBuilderExtensions",
@@ -269,7 +269,7 @@
     },
     {
       "Type": "Method",
-      "Name": "MapSignalR",
+      "Name": "Owin.IAppBuilder.MapSignalR()",
       "Value": "Owin.IAppBuilder.MapSignalR()",
       "KeyType": "Name",
       "ContainingType": "OwinExtensions",
@@ -354,7 +354,7 @@
     },
     {
       "Type": "Method",
-      "Name": "UseErrorPage",
+      "Name": "Owin.IAppBuilder.UseErrorPage()",
       "Value": "Owin.IAppBuilder.UseErrorPage()",
       "KeyType": "Name",
       "ContainingType": "ErrorPageExtensions",
@@ -393,43 +393,7 @@
     },
     {
       "Type": "Method",
-      "Name": "UseFileServer",
-      "Value": "Owin.IAppBuilder.UseFileServer(Microsoft.Owin.StaticFiles.FileServerOptions)",
-      "KeyType": "Name",
-      "ContainingType": "FileServerExtensions",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Add a comment to explain how to use FileServerOptions and to ensure the usage of FileProvider attribute.",
-          "Actions": [
-            {
-              "Name": "AddComment",
-              "Type": "Method",
-              "Value": "Please replace the FileSystem property inside of the new FileServerOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
-              "Description": "Add a comment on how to setup your MVC controller in startup class.",
-              "ActionValidation": {
-                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewFileServerOptionswithFileProvider",
-                "NotContains": ""
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "Method",
-      "Name": "UseDirectoryBrowser",
+      "Name": "Owin.IAppBuilder.UseDirectoryBrowser(Microsoft.Owin.StaticFiles.DirectoryBrowserOptions)",
       "Value": "Owin.IAppBuilder.UseDirectoryBrowser(Microsoft.Owin.StaticFiles.DirectoryBrowserOptions)",
       "KeyType": "Name",
       "ContainingType": "DirectoryBrowserExtensions",
@@ -449,16 +413,6 @@
           ],
           "Description": "Add Microsoft.Extensions.DependencyInjection namespace. Add a comment to add ConfigureServices method and explain how to use FileProvider attribute inside of DirectoryBrowsingOptions class.",
           "Actions": [
-            {
-              "Name": "AddComment",
-              "Type": "Method",
-              "Value": "Please replace the FileSystem property inside of the new DirectoryBrowsingOptions with FileProvider instead, if FileSystem is not initialized please add FileProvider.",
-              "Description": "Add a comment on how to setup your MVC controller in startup class.",
-              "ActionValidation": {
-                "Contains": "PleasereplacetheFileSystempropertyinsideofthenewDirectoryBrowsingOptionswithFileProvider",
-                "NotContains": ""
-              }
-            },
             {
               "Name": "AddDirective",
               "Type": "Using",

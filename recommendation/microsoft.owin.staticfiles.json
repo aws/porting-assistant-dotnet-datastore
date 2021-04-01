@@ -1,0 +1,216 @@
+{
+  "Name": "Microsoft.Owin.StaticFiles",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.StaticFiles",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "StaticFiles",
+      "Value": "Microsoft.Owin.StaticFiles",
+      "KeyType": "Method",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.StaticFiles and Microsoft.Extensions.FileProviders.Physical packages. Add Microsoft.Extensions.FileProviders and Microsoft.AspNetCore.StaticFiles namespaces. Remove Microsoft.Owin.StaticFiles and Microsoft.Owin.FileSystems namespaces.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.StaticFiles",
+              "Description": "Add package Microsoft.AspNetCore.StaticFiles"
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.Extensions.FileProviders.Physical",
+              "Description": "Add package Microsoft.Extensions.FileProviders.Physical"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Extensions.FileProviders",
+              "Description": "Add Microsoft.Extensions.FileProviders",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.Extensions.FileProviders;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.StaticFiles",
+              "Description": "Add Microsoft.AspNetCore.StaticFiles",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.StaticFiles;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.StaticFiles",
+              "Description": "Remove Microsoft.Owin.StaticFiles namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin.StaticFiles;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.FileSystems",
+              "Description": "Remove Microsoft.Owin.FileSystems namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin.FileSystems;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "ObjectCreation",
+      "Name": "Microsoft.Owin.StaticFiles.FileServerOptions.FileServerOptions()",
+      "Value": "Microsoft.Owin.StaticFiles.FileServerOptions.FileServerOptions()",
+      "KeyType": "Name",
+      "ContainingType": "FileServerOptions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace FileServerOptions' FileSystem with FileProvider and PhysicalFileSystem with PhysicalFileProvider.",
+          "Actions": [
+            {
+              "Name": "ReplaceOrAddObjectPropertyIdentifier",
+              "Type": "ObjectCreation",
+              "Value": {
+                "oldMember": "FileSystem",
+                "newMember": "FileProvider",
+                "newValueIfAdding": "new PhysicalFileProvider(@\"\")"
+              },
+              "Description": "Replace FileServerOptions' FileSystem with FileProvider",
+              "ActionValidation": {
+                "Contains": "FileProvider",
+                "NotContains": "FileSystem"
+              }
+            },
+            {
+              "Name": "ReplaceObjectPropertyValue",
+              "Type": "ObjectCreation",
+              "Value": {
+                "oldMember": "PhysicalFileSystem",
+                "newMember": "PhysicalFileProvider"
+              },
+              "Description": "Replace PhysicalFileSystem with PhysicalFileProvider",
+              "ActionValidation": {
+                "Contains": "PhysicalFileProvider",
+                "NotContains": "PhysicalFileSystem"
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "ObjectCreation",
+              "Value": "If FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
+              "Description": "Add a comment to explain how to initialize FileProvider correctly.",
+              "ActionValidation": {
+                "Contains": "IfFileSystemwasnotpresentbeforeFileProviderwasadded,pleaseinitializethisnewvalue.",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "ObjectCreation",
+      "Name": "Microsoft.Owin.StaticFiles.DirectoryBrowserOptions.DirectoryBrowserOptions()",
+      "Value": "Microsoft.Owin.StaticFiles.DirectoryBrowserOptions.DirectoryBrowserOptions()",
+      "KeyType": "Name",
+      "ContainingType": "DirectoryBrowserOptions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace DirectoryBrowserOptions' FileSystem with FileProvider and PhysicalFileSystem with PhysicalFileProvider.",
+          "Actions": [
+            {
+              "Name": "ReplaceOrAddObjectPropertyIdentifier",
+              "Type": "ObjectCreation",
+              "Value": {
+                "oldMember": "FileSystem",
+                "newMember": "FileProvider",
+                "newValueIfAdding": "new PhysicalFileProvider(@\"\")"
+              },
+              "Description": "Replace DirectoryBrowserOptions' FileSystem with FileProvider",
+              "ActionValidation": {
+                "Contains": "FileProvider",
+                "NotContains": "FileSystem"
+              }
+            },
+            {
+              "Name": "ReplaceObjectPropertyValue",
+              "Type": "ObjectCreation",
+              "Value": {
+                "oldMember": "PhysicalFileSystem",
+                "newMember": "PhysicalFileProvider"
+              },
+              "Description": "Replace PhysicalFileSystem with PhysicalFileProvider",
+              "ActionValidation": {
+                "Contains": "PhysicalFileProvider",
+                "NotContains": "PhysicalFileSystem"
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "ObjectCreation",
+              "Value": "If FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
+              "Description": "Add a comment to explain how to initialize FileProvider correctly.",
+              "ActionValidation": {
+                "Contains": "IfFileSystemwasnotpresentbeforeFileProviderwasadded,pleaseinitializethisnewvalue.",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
