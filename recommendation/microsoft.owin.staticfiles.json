@@ -129,7 +129,7 @@
                 "oldMember": "PhysicalFileSystem",
                 "newMember": "PhysicalFileProvider"
               },
-              "Description": "Replace PhysicalFileSystem with PhysicalFileProvider",
+              "Description": "Replace FileServerOptions' PhysicalFileSystem with PhysicalFileProvider",
               "ActionValidation": {
                 "Contains": "PhysicalFileProvider",
                 "NotContains": "PhysicalFileSystem"
@@ -138,11 +138,12 @@
             {
               "Name": "AddComment",
               "Type": "ObjectCreation",
-              "Value": "If FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
-              "Description": "Add a comment to explain how to initialize FileProvider correctly.",
+              "Value": "For FileServerOptions, if FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
+              "Description": "Add a comment to explain how to initialize FileProvider correctly for FileServerOptions.",
               "ActionValidation": {
-                "Contains": "IfFileSystemwasnotpresentbeforeFileProviderwasadded,pleaseinitializethisnewvalue.",
-                "NotContains": ""
+                "Contains": "For FileServerOptions, if FileSystem was not present before FileProvider was added, please initialize this new value.",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -192,7 +193,7 @@
                 "oldMember": "PhysicalFileSystem",
                 "newMember": "PhysicalFileProvider"
               },
-              "Description": "Replace PhysicalFileSystem with PhysicalFileProvider",
+              "Description": "Replace DirectoryBrowserOptions' PhysicalFileSystem with PhysicalFileProvider",
               "ActionValidation": {
                 "Contains": "PhysicalFileProvider",
                 "NotContains": "PhysicalFileSystem"
@@ -201,11 +202,12 @@
             {
               "Name": "AddComment",
               "Type": "ObjectCreation",
-              "Value": "If FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
-              "Description": "Add a comment to explain how to initialize FileProvider correctly.",
+              "Value": "For DirectoryBrowserOptions, if FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
+              "Description": "Add a comment to explain how to initialize FileProvider correctly for DirectoryBrowserOptions.",
               "ActionValidation": {
-                "Contains": "IfFileSystemwasnotpresentbeforeFileProviderwasadded,pleaseinitializethisnewvalue.",
-                "NotContains": ""
+                "Contains": "For DirectoryBrowserOptions, if FileSystem was not present before FileProvider was added, please initialize this new value.",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
