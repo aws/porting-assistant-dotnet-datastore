@@ -1,140 +1,191 @@
 {
-  "Name": "System.Web",
-  "Version": "1.0.0",
-  "Source": "Github",
-  "Packages": [
-    {
-      "Name": "System.Web",
-      "Type": "SDK"
-    }
-  ],
-  "Recommendations": [
-    {
-      "Type": "Method",
-      "Name": "System.Web.HttpResponse.AppendHeader(string, string)",
-      "Value": "System.Web.HttpResponse.AppendHeader(string, string)",
-      "KeyType": "Name",
-      "ContainingType": "HttpResponse",
-      "RecommendedActions": [
+    "Name": "System.Web",
+    "Version": "1.0.0",
+    "Source": "Github",
+    "Packages": [
         {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Replace method AppendHeader with this.Response.Headers.Add. In the replacement, \"this\" refers to the controller object.",
-          "Actions": [
-            {
-              "Name": "ReplaceMethod",
-              "Type": "Method",
-              "Value": "this.Response.Headers.Add",
-              "Description": "Replace AppendHeader with a new method to add to headers.",
-              "ActionValidation":{"Contains":"this.Response.Headers.Add", "NotContains":""}
-            },
-            {
-              "Name": "AddComment",
-              "Type": "Method",
-              "Value": "In this context, this is a Controller object",
-              "Description": "Add a comment to explain what \"this\" refers to.",
-              "ActionValidation":{"Contains":"thisisaControllerobject", "NotContains":""}
-            }
-          ]
+            "Name": "System.Web",
+            "Type": "SDK"
         }
-      ]
-    },
-    {
-      "Type": "Method",
-      "Name": "System.Web.HttpServerUtilityBase.HtmlEncode(string)",
-      "Value": "System.Web.HttpServerUtilityBase.HtmlEncode(string)",
-      "KeyType": "Name",
-      "ContainingType": "HttpServerUtilityBase",
-      "RecommendedActions": [
+    ],
+    "Recommendations": [
         {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Replace HtmlEncode with a new method HtmlEncoder.Default.Encode in namepsace System.Text.Encodings.Web.",
-          "Actions": [
-            {
-              "Name": "ReplaceMethod",
-              "Type": "Method",
-              "Value": "HtmlEncoder.Default.Encode",
-              "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode.",
-              "ActionValidation":{"Contains":"HtmlEncoder.Default.Encode", "NotContains":""}
-            },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "System.Text.Encodings.Web",
-              "Description": "Add System.Text.Encodings.Web.",
-              "ActionValidation":{"Contains":"usingSystem.Text.Encodings.Web;", "NotContains":""}
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "Class",
-      "Name": "HttpContextBase",
-      "Value": "System.Web.HttpContextBase",
-      "KeyType": "Identifier",
-      "ContainingType": "",
-      "RecommendedActions": [
+            "Type": "Method",
+            "Name": "System.Web.HttpResponse.AppendHeader(string, string)",
+            "Value": "System.Web.HttpResponse.AppendHeader(string, string)",
+            "KeyType": "Name",
+            "ContainingType": "HttpResponse",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "Yes",
+                    "TargetFrameworks": [
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
+                    ],
+                    "Description": "Replace method AppendHeader with this.Response.Headers.Add. In the replacement, \"this\" refers to the controller object.",
+                    "Actions": [
+                        {
+                            "Name": "ReplaceMethod",
+                            "Type": "Method",
+                            "Value": "this.Response.Headers.Add",
+                            "Description": "Replace AppendHeader with a new method to add to headers.",
+                            "ActionValidation": {
+                                "Contains": "this.Response.Headers.Add",
+                                "NotContains": ""
+                            }
+                        },
+                        {
+                            "Name": "AddComment",
+                            "Type": "Method",
+                            "Value": "In this context, this is a Controller object",
+                            "Description": "Add a comment to explain what \"this\" refers to.",
+                            "ActionValidation": {
+                                "Contains": "thisisaControllerobject",
+                                "NotContains": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Replace HttpContextBase in namespace System.Web with HttpContext in namespace Microsoft.AspNetCore.Http.",
-          "Actions": [
-            {
-              "Name": "ReplaceIdentifier",
-              "Type": "Identifier",
-              "Value": "HttpContext",
-              "Description": "Replace HttpContextBase with HttpContext.",
-              "ActionValidation":{"Contains":"HttpContext", "NotContains":""}
-            },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Http",
-              "Description": "Add Microsoft.AspNetCore.Http namespace.",
-              "ActionValidation":{"Contains":"usingMicrosoft.AspNetCore.Http;", "NotContains":""}
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "System.Web",
-              "Description": "Remove System.Web namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"usingSystem.Web;"}
-            }
-          ]
+            "Type": "Method",
+            "Name": "System.Web.HttpServerUtilityBase.HtmlEncode(string)",
+            "Value": "System.Web.HttpServerUtilityBase.HtmlEncode(string)",
+            "KeyType": "Name",
+            "ContainingType": "HttpServerUtilityBase",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "Yes",
+                    "TargetFrameworks": [
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
+                    ],
+                    "Description": "Replace HtmlEncode with a new method HtmlEncoder.Default.Encode in namepsace System.Text.Encodings.Web.",
+                    "Actions": [
+                        {
+                            "Name": "ReplaceMethod",
+                            "Type": "Method",
+                            "Value": "HtmlEncoder.Default.Encode",
+                            "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode.",
+                            "ActionValidation": {
+                                "Contains": "HtmlEncoder.Default.Encode",
+                                "NotContains": ""
+                            }
+                        },
+                        {
+                            "Name": "AddDirective",
+                            "Type": "Using",
+                            "Value": "System.Text.Encodings.Web",
+                            "Description": "Add System.Text.Encodings.Web.",
+                            "ActionValidation": {
+                                "Contains": "usingSystem.Text.Encodings.Web;",
+                                "NotContains": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Type": "Class",
+            "Name": "HttpContextBase",
+            "Value": "System.Web.HttpContextBase",
+            "KeyType": "Identifier",
+            "ContainingType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "Yes",
+                    "TargetFrameworks": [
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
+                    ],
+                    "Description": "Replace HttpContextBase in namespace System.Web with HttpContext in namespace Microsoft.AspNetCore.Http.",
+                    "Actions": [
+                        {
+                            "Name": "ReplaceIdentifier",
+                            "Type": "Identifier",
+                            "Value": "HttpContext",
+                            "Description": "Replace HttpContextBase with HttpContext.",
+                            "ActionValidation": {
+                                "Contains": "HttpContext",
+                                "NotContains": ""
+                            }
+                        },
+                        {
+                            "Name": "AddDirective",
+                            "Type": "Using",
+                            "Value": "Microsoft.AspNetCore.Http",
+                            "Description": "Add Microsoft.AspNetCore.Http namespace.",
+                            "ActionValidation": {
+                                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                                "NotContains": ""
+                            }
+                        },
+                        {
+                            "Name": "RemoveDirective",
+                            "Type": "Using",
+                            "Value": "System.Web",
+                            "Description": "Remove System.Web namespace.",
+                            "ActionValidation": {
+                                "Contains": "",
+                                "NotContains": "usingSystem.Web;"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -1,82 +1,102 @@
 {
-  "Name": "System.Collections.Specialized",
-  "Version": "1.0.0",
-  "Packages": [
-    {
-      "Name": "System.Collections.Specialized",
-      "Type": "SDK"
-    }
-  ],
-  "Recommendations": [
-	{
-      "Type": "ElementAccess",
-      "Name": "ConfigurationManager.AppSettings",
-      "Value": "System.Collections.Specialized.NameValueCollection.ConfigurationManager.AppSettings",
-	  "ContainingType":"NameValueCollection",
-      "RecommendedActions": [
+    "Name": "System.Collections.Specialized",
+    "Version": "1.0.0",
+    "Packages": [
         {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],          
-          "Description": "Update configuration to retrieve connection string from appSettings.json file.",
-          "Actions": [
-            {
-              "Name": "ReplaceElementAccess",
-              "Type": "ElementAccess",
-              "Value": "ConfigurationManager.Configuration.GetSection(\"appSettings\")",
-              "Description": "Update configuration to retrieve connection string from appSettings.json file.",
-              "ActionValidation": {
-                "Contains": "ConfigurationManager.Configuration.GetSection",
-                "NotContains": ""
-              }
-            }
-          ]
+            "Name": "System.Collections.Specialized",
+            "Type": "SDK"
         }
-      ]
-    },
-	{
-      "Type": "ElementAccess",
-      "Name": "WebConfigurationManager.AppSettings",
-      "Value": "System.Collections.Specialized.NameValueCollection.WebConfigurationManager.AppSettings",
-	  "ContainingType":"NameValueCollection",
-      "RecommendedActions": [
+    ],
+    "Recommendations": [
         {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Update configuration to retrieve appSettings from appSettings.json file.",
-          "Actions": [
-            {
-              "Name": "ReplaceElementAccess",
-              "Type": "ElementAccess",
-              "Value": "ConfigurationManager.Configuration.GetSection(\"appSettings\")",
-              "Description": "Update configuration to retrieve appSettings from appSettings.json file.",
-              "ActionValidation": {
-                "Contains": "ConfigurationManager.Configuration.GetSection",
-                "NotContains": ""
-              }
-            }
-          ]
+            "Type": "ElementAccess",
+            "Name": "ConfigurationManager.AppSettings",
+            "Value": "System.Collections.Specialized.NameValueCollection.ConfigurationManager.AppSettings",
+            "ContainingType": "NameValueCollection",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "Yes",
+                    "TargetFrameworks": [
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
+                    ],
+                    "Description": "Update configuration to retrieve connection string from appSettings.json file.",
+                    "Actions": [
+                        {
+                            "Name": "ReplaceElementAccess",
+                            "Type": "ElementAccess",
+                            "Value": "ConfigurationManager.Configuration.GetSection(\"appSettings\")",
+                            "Description": "Update configuration to retrieve connection string from appSettings.json file.",
+                            "ActionValidation": {
+                                "Contains": "ConfigurationManager.Configuration.GetSection",
+                                "NotContains": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Type": "ElementAccess",
+            "Name": "WebConfigurationManager.AppSettings",
+            "Value": "System.Collections.Specialized.NameValueCollection.WebConfigurationManager.AppSettings",
+            "ContainingType": "NameValueCollection",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "Yes",
+                    "TargetFrameworks": [
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
+                    ],
+                    "Description": "Update configuration to retrieve appSettings from appSettings.json file.",
+                    "Actions": [
+                        {
+                            "Name": "ReplaceElementAccess",
+                            "Type": "ElementAccess",
+                            "Value": "ConfigurationManager.Configuration.GetSection(\"appSettings\")",
+                            "Description": "Update configuration to retrieve appSettings from appSettings.json file.",
+                            "ActionValidation": {
+                                "Contains": "ConfigurationManager.Configuration.GetSection",
+                                "NotContains": ""
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
