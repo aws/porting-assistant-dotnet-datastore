@@ -18,8 +18,24 @@
                     "Source": "Amazon",
                     "Preferred": "yes",
                     "TargetFrameworks": [
-                        "net5.0",
-                        "netcoreapp3.1"
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
                     ],
                     "Description": "Use a different constructor that does not take ExpressionType. Then override NodeType and Type properties to provide the values that would be specified to this constructor.",
                     "Actions": []

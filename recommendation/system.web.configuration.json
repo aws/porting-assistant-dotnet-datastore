@@ -1,78 +1,98 @@
 {
-  "Name": "System.Web.Configuration",
-  "Version": "1.0.0",
-  "Packages": [
-    {
-      "Name": "System.Web.Configuration",
-      "Type": "SDK"
-    }
-  ],
-  "Recommendations": [
-    {
-      "Type": "ElementAccess",
-      "Name": "WebConfigurationManager.ConnectionStrings",
-      "Value": "System.Configuration.ConnectionStringSettingsCollection.WebConfigurationManager.ConnectionStrings",
-	  "ContainingType":"ConnectionStringSettingsCollection",
-      "RecommendedActions": [
+    "Name": "System.Web.Configuration",
+    "Version": "1.0.0",
+    "Packages": [
         {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],          
-          "Description": "",
-          "Actions": [
-            {
-              "Name": "ReplaceElementAccess",
-              "Type": "ElementAccess",
-              "Value": "ConfigurationManager.Configuration.GetSection(\"ConnectionStrings\")",
-              "Description": "Update configuration to retrieve connection string from appSettings.json file.",
-              "ActionValidation": {
-                "Contains": "ConfigurationManager.Configuration.GetSection",
-                "NotContains": ""
-              }
-            }
-          ]
+            "Name": "System.Web.Configuration",
+            "Type": "SDK"
         }
-      ]
-    },
-	{
-      "Type": "MemberAccess",
-      "Name": "ConnectionString",
-      "Value": "System.Configuration.ConnectionStringSettings.ConnectionString",
-	  "ContainingType":"ConnectionStringSettings",
-      "RecommendedActions": [
+    ],
+    "Recommendations": [
         {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Remove ConnectionString accessor.",
-          "Actions": [
-            {
-              "Name": "RemoveMemberAccess",
-              "Type": "MemberAccess",
-              "Value": "",
-              "Description": "Remove ConnectionString accessor."
-            }
-          ]
+            "Type": "ElementAccess",
+            "Name": "WebConfigurationManager.ConnectionStrings",
+            "Value": "System.Configuration.ConnectionStringSettingsCollection.WebConfigurationManager.ConnectionStrings",
+            "ContainingType": "ConnectionStringSettingsCollection",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "Yes",
+                    "TargetFrameworks": [
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
+                    ],
+                    "Description": "",
+                    "Actions": [
+                        {
+                            "Name": "ReplaceElementAccess",
+                            "Type": "ElementAccess",
+                            "Value": "ConfigurationManager.Configuration.GetSection(\"ConnectionStrings\")",
+                            "Description": "Update configuration to retrieve connection string from appSettings.json file.",
+                            "ActionValidation": {
+                                "Contains": "ConfigurationManager.Configuration.GetSection",
+                                "NotContains": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Type": "MemberAccess",
+            "Name": "ConnectionString",
+            "Value": "System.Configuration.ConnectionStringSettings.ConnectionString",
+            "ContainingType": "ConnectionStringSettings",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "Yes",
+                    "TargetFrameworks": [
+                        {
+                            "Name": "netcoreapp3.1",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        },
+                        {
+                            "Name": "net5.0",
+                            "TargetCPU": [
+                                "x86",
+                                "x64",
+                                "ARM32",
+                                "ARM64"
+                            ]
+                        }
+                    ],
+                    "Description": "Remove ConnectionString accessor.",
+                    "Actions": [
+                        {
+                            "Name": "RemoveMemberAccess",
+                            "Type": "MemberAccess",
+                            "Value": "",
+                            "Description": "Remove ConnectionString accessor."
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
