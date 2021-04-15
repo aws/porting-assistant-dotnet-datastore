@@ -90,7 +90,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Replace IOwinContext with HttpContext and add Microsoft.AspNetCore.Http.HttpContext namespace.",
+          "Description": "Replace IOwinContext with HttpContext and add Microsoft.AspNetCore.Http namespace.",
           "Actions": [
             {
               "Name": "ReplaceIdentifier",
@@ -100,6 +100,98 @@
               "ActionValidation": {
                 "Contains": "HttpContext",
                 "NotContains": "IOwinContext"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IOwinResponse",
+      "Value": "Microsoft.Owin.IOwinResponse",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace IOwinResponse with HttpResponse and add Microsoft.AspNetCore.Http namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "HttpResponse",
+              "Description": "Replace IOwinResponse with HttpResponse",
+              "ActionValidation": {
+                "Contains": "HttpResponse",
+                "NotContains": "IOwinResponse"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IOwinRequest",
+      "Value": "Microsoft.Owin.IOwinRequest",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace IOwinRequest with HttpRequest and add Microsoft.AspNetCore.Http namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "HttpRequest",
+              "Description": "Replace IOwinRequest with HttpRequest",
+              "ActionValidation": {
+                "Contains": "HttpRequest",
+                "NotContains": "IOwinRequest"
               }
             },
             {
