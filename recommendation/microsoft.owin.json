@@ -22,7 +22,52 @@
             {
               "Name": "netcoreapp3.1",
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin and Owin.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {"Name":"Microsoft.AspNetCore.Owin", "Version":"3.1.14"},
+              "Description": "Add package Microsoft.AspNetCore.Owin"
             },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add Microsoft.AspNetCore.Owin namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Owin;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingOwin;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
             {
               "Name": "net5.0",
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
