@@ -427,6 +427,114 @@
           ]
         }
       ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Owin.IAppBuilder.CreatePerOwinContext<T>(System.Func<T>)",
+      "Value": "Owin.IAppBuilder.CreatePerOwinContext<T>(System.Func<T>)",
+      "KeyType": "Name",
+      "ContainingType": "AppBuilderExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<T>) with a service in ConfigureServices method.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace CreatePerOwinContext<T>(System.Func<T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { /* Register your service here instead of using CreatePerOwinContext */ }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+              "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<T>) with a service in ConfigureServices method.",
+              "ActionValidation": {
+                "Contains": "Please replace CreatePerOwinContext<T>(System.Func<T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { /* Register your service here instead of using CreatePerOwinContext */ }.",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Owin.IAppBuilder.CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>)",
+      "Value": "Owin.IAppBuilder.CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>)",
+      "KeyType": "Name",
+      "ContainingType": "AppBuilderExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) with a service in ConfigureServices method.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { /* Register your service here instead of using CreatePerOwinContext */ }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+              "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) with a service in ConfigureServices method.",
+              "ActionValidation": {
+                "Contains": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { /* Register your service here instead of using CreatePerOwinContext */ }.",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Owin.IAppBuilder.CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>)",
+      "Value": "Owin.IAppBuilder.CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>)",
+      "KeyType": "Name",
+      "ContainingType": "AppBuilderExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) with a service in ConfigureServices method.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { /* Register your service here instead of using CreatePerOwinContext */ }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+              "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) with a service in ConfigureServices method.",
+              "ActionValidation": {
+                "Contains": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { /* Register your service here instead of using CreatePerOwinContext */ }.",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
