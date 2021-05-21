@@ -48,7 +48,7 @@
               "Value": "Microsoft.Extensions.FileProviders",
               "Description": "Add Microsoft.Extensions.FileProviders",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.FileProviders;",
+                "Contains": "using Microsoft.Extensions.FileProviders;",
                 "NotContains": ""
               }
             },
@@ -58,7 +58,7 @@
               "Value": "Microsoft.AspNetCore.StaticFiles",
               "Description": "Add Microsoft.AspNetCore.StaticFiles",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.StaticFiles;",
+                "Contains": "using Microsoft.AspNetCore.StaticFiles;",
                 "NotContains": ""
               }
             },
@@ -69,7 +69,7 @@
               "Description": "Remove Microsoft.Owin.StaticFiles namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.StaticFiles;"
+                "NotContains": "using Microsoft.Owin.StaticFiles;"
               }
             },
             {
@@ -79,7 +79,7 @@
               "Description": "Remove Microsoft.Owin.FileSystems namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin.FileSystems;"
+                "NotContains": "using Microsoft.Owin.FileSystems;"
               }
             }
           ]
@@ -138,10 +138,10 @@
             {
               "Name": "AddComment",
               "Type": "ObjectCreation",
-              "Value": "If FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
+              "Value": "If FileSystem was not present before FileProvider was added to the FileServerOptions declaration, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be a good starting point.",
               "Description": "Add a comment to explain how to initialize FileProvider correctly.",
               "ActionValidation": {
-                "Contains": "IfFileSystemwasnotpresentbeforeFileProviderwasadded,pleaseinitializethisnewvalue.",
+                "Contains": "If FileSystem was not present before FileProvider was added to the FileServerOptions declaration, please initialize this new value.",
                 "NotContains": ""
               }
             }
@@ -201,10 +201,10 @@
             {
               "Name": "AddComment",
               "Type": "ObjectCreation",
-              "Value": "If FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be  agood starting point.",
+              "Value": "If FileSystem was not present before FileProvider was added to the DirectoryBrowserOptions declaration, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be a good starting point.",
               "Description": "Add a comment to explain how to initialize FileProvider correctly.",
               "ActionValidation": {
-                "Contains": "IfFileSystemwasnotpresentbeforeFileProviderwasadded,pleaseinitializethisnewvalue.",
+                "Contains": "If FileSystem was not present before FileProvider was added to the DirectoryBrowserOptions declaration, please initialize this new value.",
                 "NotContains": ""
               }
             }

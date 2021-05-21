@@ -87,7 +87,7 @@
               "Value": "Microsoft.AspNetCore.Owin",
               "Description": "Add Microsoft.AspNetCore.Owin namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Owin;",
+                "Contains": "using Microsoft.AspNetCore.Owin;",
                 "NotContains": ""
               }
             },
@@ -98,7 +98,7 @@
               "Description": "Remove Microsoft.Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin;"
+                "NotContains": "using Microsoft.Owin;"
               }
             },
             {
@@ -108,7 +108,7 @@
               "Description": "Remove Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingOwin;"
+                "NotContains": "using Owin;"
               }
             }
           ]
@@ -153,7 +153,7 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
                 "NotContains": ""
               }
             }
@@ -200,11 +200,7 @@
                 "methodName": "Invoke",
                 "modifiers": "public"
               },
-              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier.",
-              "ActionValidation": {
-                "Contains": "public",
-                "NotContains": "override"
-              }
+              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier."
             },
             {
               "Name": "AddExpression",
@@ -212,7 +208,7 @@
               "Value": "RequestDelegate _next = null; //PortingAssistant Change",
               "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
               "ActionValidation": {
-                "Contains": "RequestDelegate_next=null;//PortingAssistant Change",
+                "Contains": "RequestDelegate _next = null; //PortingAssistant Change",
                 "NotContains": ""
               }
             },
@@ -222,7 +218,7 @@
               "Value": "_next = next;",
               "Description": "Add a new expression in the constructor to initialize the new variable of _next to the next element in the pipeline.",
               "ActionValidation": {
-                "Contains": "_next=next;",
+                "Contains": "_next = next;",
                 "NotContains": ""
               }
             },
@@ -278,7 +274,7 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
                 "NotContains": ""
               }
             }
@@ -350,7 +346,7 @@
               "Value": "Please replace Get with TryGetValue.",
               "Description": "Add a comment to explain how to replace IOwinContext.Request.Headers.Get with TryGetValue instead.",
               "ActionValidation": {
-                "Contains": "PleasereplaceGetwithTryGetValue.",
+                "Contains": "Please replace Get with TryGetValue.",
                 "NotContains": ""
               }
             }
