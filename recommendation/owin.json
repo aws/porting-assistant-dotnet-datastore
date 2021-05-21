@@ -99,7 +99,8 @@
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
               "ActionValidation": {
                 "Contains": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); })",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -135,7 +136,8 @@
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to either UseMiddleWare or UseOwin.",
               "ActionValidation": {
                 "Contains": "replace with Microsoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere> otherwise replace with .UseOwin",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -171,7 +173,8 @@
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
               "ActionValidation": {
                 "Contains": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -220,7 +223,8 @@
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
                 "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             },
             {
@@ -230,7 +234,8 @@
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
                 "Contains": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } );",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             },
             {
@@ -335,7 +340,8 @@
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
                 "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             },
             {
@@ -345,7 +351,8 @@
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
                 "Contains": "Please setup your signalR hub configuration here you can use a lambda function if needed such as .AddSignalR(routes => { routes.MapHub<StronglyTypedChatHub>",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -430,7 +437,8 @@
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
                 "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]

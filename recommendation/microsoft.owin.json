@@ -297,10 +297,10 @@
             {
               "Name": "AddExpression",
               "Type": "Class",
-              "Value": "RequestDelegate _next = null; //PortingAssistant Change",
+              "Value": "RequestDelegate _next = null;",
               "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
               "ActionValidation": {
-                "Contains": "RequestDelegate _next = null; //PortingAssistant Change",
+                "Contains": "RequestDelegate_next=null;",
                 "NotContains": ""
               }
             },
@@ -439,7 +439,8 @@
               "Description": "Add a comment to explain how to replace IOwinContext.Request.Headers.Get with TryGetValue instead.",
               "ActionValidation": {
                 "Contains": "Please replace Get with TryGetValue.",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]

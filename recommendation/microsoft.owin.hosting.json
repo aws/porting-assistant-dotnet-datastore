@@ -115,7 +115,8 @@
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
                 "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); Start options can be added into the new format as needed.",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -151,7 +152,8 @@
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
                 "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
-                "NotContains": ""
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
