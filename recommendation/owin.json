@@ -444,6 +444,286 @@
           ]
         }
       ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Owin.IAppBuilder.UseOpenIdConnectAuthentication(string, string)",
+      "Value": "Owin.IAppBuilder.UseOpenIdConnectAuthentication(string, string)",
+      "KeyType": "Name",
+      "ContainingType": "OpenIdConnectAuthenticationExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "3.1.15"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect version 3.1.15"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Owin.IAppBuilder.UseOpenIdConnectAuthentication(Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationOptions)",
+      "Value": "Owin.IAppBuilder.UseOpenIdConnectAuthentication(Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationOptions)",
+      "KeyType": "Name",
+      "ContainingType": "OpenIdConnectAuthenticationExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "3.1.15"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect version 3.1.15"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

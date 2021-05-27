@@ -446,6 +446,52 @@
           ]
         }
       ]
+    },
+    {
+      "Type": "Class",
+      "Name": "PathString",
+      "Value": "Microsoft.Owin.PathString",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Http namespace if PathString is being used.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin;"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
