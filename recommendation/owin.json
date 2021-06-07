@@ -204,11 +204,12 @@
           "Description": "Replace UseWebApi with UseEndpoints and add a comment to create a configure services method. Add Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection namespaces and remove System.Web.Http namespace.",
           "Actions": [
             {
-              "Name": "ReplaceMethodOnly",
+              "Name": "ReplaceMethodAndParameters",
               "Type": "Method",
               "Value": {
                 "oldMethod": "UseWebApi",
-                "newMethod": "UseEndpoints"
+                "newMethod": "UseEndpoints",
+                "newParameters": "(endpoints => { endpoints.MapControllers(); })"
               },
               "Description": "Replace UseWebApi with UseEndpoints",
               "ActionValidation": {
@@ -223,17 +224,6 @@
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
                 "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
-                "NotContains": "",
-                "CheckComments": "True"
-              }
-            },
-            {
-              "Name": "AddComment",
-              "Type": "Method",
-              "Value": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } );",
-              "Description": "Add a comment on how to setup your MVC controller in startup class.",
-              "ActionValidation": {
-                "Contains": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } );",
                 "NotContains": "",
                 "CheckComments": "True"
               }
