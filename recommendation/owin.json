@@ -52,7 +52,7 @@
               "Value": "Microsoft.AspNetCore.Builder",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Builder;",
+                "Contains": "using Microsoft.AspNetCore.Builder;",
                 "NotContains": ""
               }
             },
@@ -63,7 +63,7 @@
               "Description": "Remove Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingOwin;"
+                "NotContains": "using Owin;"
               }
             }
           ]
@@ -98,8 +98,9 @@
               "Value": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
               "ActionValidation": {
-                "Contains": "ReplaceOwin.IAppBuilder.Usewith.UseOwin",
-                "NotContains": ""
+                "Contains": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); })",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -134,8 +135,9 @@
               "Value": "If this format is used \".Use<MiddlewareNameHere>\" replace with Microsoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere> otherwise replace with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to either UseMiddleWare or UseOwin.",
               "ActionValidation": {
-                "Contains": "replacewithMicrosoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere>otherwisereplacewith.UseOwin",
-                "NotContains": ""
+                "Contains": "replace with Microsoft.AspNetCore.Builder.IApplicationBuilder.UseMiddleware<MiddlewareNameHere> otherwise replace with .UseOwin",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -170,8 +172,9 @@
               "Value": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke being the function you wanted to call in your lambda function.",
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use to UseOwin.",
               "ActionValidation": {
-                "Contains": "ReplaceOwin.IAppBuilder.Usewith.UseOwin",
-                "NotContains": ""
+                "Contains": "Replace Owin.IAppBuilder.Use with .UseOwin(pipeline => { pipeline(next => Invoke); }) with Invoke",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -201,9 +204,12 @@
           "Description": "Replace UseWebApi with UseEndpoints and add a comment to create a configure services method. Add Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection namespaces and remove System.Web.Http namespace.",
           "Actions": [
             {
-              "Name": "ReplaceMethod",
+              "Name": "ReplaceMethodOnly",
               "Type": "Method",
-              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseEndpoints",
+              "Value": {
+                "oldMethod": "UseWebApi",
+                "newMethod": "UseEndpoints"
+              },
               "Description": "Replace UseWebApi with UseEndpoints",
               "ActionValidation": {
                 "Contains": "UseEndpoints",
@@ -216,8 +222,9 @@
               "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
-                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddControllers();}",
-                "NotContains": ""
+                "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             },
             {
@@ -226,8 +233,9 @@
               "Value": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } );",
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
-                "Contains": "IApplicationBuilder.UseEndpoints(endpoints=>{endpoints.MapControllers();});",
-                "NotContains": ""
+                "Contains": "Please setup your routes here you can use a lambda function if needed such as IApplicationBuilder.UseEndpoints(endpoints => { endpoints.MapControllers(); } );",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             },
             {
@@ -236,7 +244,7 @@
               "Value": "Microsoft.AspNetCore.Builder",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Builder;",
+                "Contains": "using Microsoft.AspNetCore.Builder;",
                 "NotContains": ""
               }
             },
@@ -246,7 +254,7 @@
               "Value": "Microsoft.Extensions.DependencyInjection",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
+                "Contains": "using Microsoft.Extensions.DependencyInjection;",
                 "NotContains": ""
               }
             },
@@ -257,7 +265,7 @@
               "Description": "Remove System.Web.Http namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingSystem.Web.Http;"
+                "NotContains": "using System.Web.Http;"
               }
             }
           ]
@@ -298,7 +306,7 @@
               "Value": "Microsoft.AspNetCore.Builder",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Builder;",
+                "Contains": "using Microsoft.AspNetCore.Builder;",
                 "NotContains": ""
               }
             },
@@ -308,14 +316,17 @@
               "Value": "Microsoft.Extensions.DependencyInjection",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
+                "Contains": "using Microsoft.Extensions.DependencyInjection;",
                 "NotContains": ""
               }
             },
             {
-              "Name": "ReplaceMethod",
+              "Name": "ReplaceMethodOnly",
               "Type": "Method",
-              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseSignalR",
+              "Value": {
+                "oldMethod": "MapSignalR",
+                "newMethod": "UseSignalR"
+              },
               "Description": "Replace MapSignalR with UseSignalR",
               "ActionValidation": {
                 "Contains": "UseSignalR",
@@ -328,8 +339,9 @@
               "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
-                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddSignalR();}",
-                "NotContains": ""
+                "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             },
             {
@@ -338,8 +350,9 @@
               "Value": "Please setup your signalR hub configuration here you can use a lambda function if needed such as .AddSignalR(routes => { routes.MapHub<StronglyTypedChatHub>(\"chathub\")); }",
               "Description": "Add a comment on how to setup your MVC controller in startup class.",
               "ActionValidation": {
-                "Contains": "PleasesetupyoursignalRhubconfigurationhere",
-                "NotContains": ""
+                "Contains": "Please setup your signalR hub configuration here you can use a lambda function if needed such as .AddSignalR(routes => { routes.MapHub<StronglyTypedChatHub>",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]
@@ -369,9 +382,12 @@
           "Description": "Replace UseErrorPage with UseDeveloperExceptionPage.",
           "Actions": [
             {
-              "Name": "ReplaceMethod",
+              "Name": "ReplaceMethodOnly",
               "Type": "Method",
-              "Value": "Microsoft.AspNetCore.Builder.IApplicationBuilder.UseDeveloperExceptionPage",
+              "Value": {
+                "oldMethod": "UseErrorPage",
+                "newMethod": "UseDeveloperExceptionPage"
+              },
               "Description": "Replace UseErrorPage with UseDeveloperExceptionPage",
               "ActionValidation": {
                 "Contains": "UseDeveloperExceptionPage",
@@ -410,7 +426,7 @@
               "Value": "Microsoft.Extensions.DependencyInjection",
               "Description": "Add Microsoft.AspNetCore.Builder namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Extensions.DependencyInjection;",
+                "Contains": "using Microsoft.Extensions.DependencyInjection;",
                 "NotContains": ""
               }
             },
@@ -420,8 +436,9 @@
               "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
-                "Contains": "publicvoidConfigureServices(IServiceCollectionservices){services.AddDirectoryBrowser();}",
-                "NotContains": ""
+                "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]

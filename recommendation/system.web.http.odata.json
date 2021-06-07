@@ -13,7 +13,7 @@
       "Type": "Attribute",
       "Name": "EnableQuery",
       "Value": "System.Web.Http.OData.EnableQueryAttribute.EnableQueryAttribute()",
-      "KeyType": "Name", //Value to change to
+      "KeyType": "Name",
       "ContainingType": "EnableQueryAttribute",
       "RecommendedActions": [
         {
@@ -36,14 +36,14 @@
               "Type": "Using",
               "Value": "System.Web.Http.OData",
               "Description": "Remove System.Web.Http.OData namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"usingSystem.Web.Http.OData;"}
+              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Http.OData;"}
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNet.OData",
               "Description": "Add Microsoft.AspNet.OData namespace.",
-              "ActionValidation":{"Contains":"usingMicrosoft.AspNet.OData;", "NotContains":""}
+              "ActionValidation":{"Contains":"using Microsoft.AspNet.OData;", "NotContains":""}
             },
             {
               "Name": "AddPackage",
