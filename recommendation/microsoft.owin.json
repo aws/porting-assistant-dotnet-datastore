@@ -29,7 +29,10 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": {"Name":"Microsoft.AspNetCore.Owin", "Version":"3.1.14"},
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Owin",
+                "Version": "3.1.14"
+              },
               "Description": "Add package Microsoft.AspNetCore.Owin"
             },
             {
@@ -411,6 +414,52 @@
       ]
     },
     {
+      "Type": "Class",
+      "Name": "IReadableStringCollection",
+      "Value": "Microsoft.Owin.IReadableStringCollection",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace IReadableStringCollection with IQueryCollection and add Microsoft.AspNetCore.Http.RequestDelegate namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "IQueryCollection",
+              "Description": "Replace IReadableStringCollection with IQueryCollection.",
+              "ActionValidation": {
+                "Contains": "IQueryCollection",
+                "NotContains": "IReadableStringCollection"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "Type": "Method",
       "Name": "Microsoft.Owin.IReadableStringCollection.Get(string)",
       "Value": "Microsoft.Owin.IReadableStringCollection.Get(string)",
@@ -441,6 +490,217 @@
                 "Contains": "Please replace Get with TryGetValue.",
                 "NotContains": "",
                 "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.IOwinContext.Get<T>(string)",
+      "Value": "Microsoft.Owin.IOwinContext.Get<T>(string)",
+      "KeyType": "Name",
+      "ContainingType": "IOwinContext",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace the Get method with Items collection.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
+              "Description": "Add a comment to explain how to replace IOwinContext.Get with HttpContext.Items instead.",
+              "ActionValidation": {
+                "Contains": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "RequestCookieCollection",
+      "Value": "Microsoft.Owin.RequestCookieCollection",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace RequestCookieCollection with IRequestCookieCollection and add Microsoft.AspNetCore.Http.RequestDelegate namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "IRequestCookieCollection",
+              "Description": "Replace RequestCookieCollection with IRequestCookieCollection.",
+              "ActionValidation": {
+                "Contains": "IRequestCookieCollection",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "ResponseCookieCollection",
+      "Value": "Microsoft.Owin.ResponseCookieCollection",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace ResponseCookieCollection with IResponseCookies and add Microsoft.AspNetCore.Http.RequestDelegate namespace.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "IResponseCookies",
+              "Description": "Replace ResponseCookieCollection with IResponseCookies.",
+              "ActionValidation": {
+                "Contains": "IResponseCookies",
+                "NotContains": "ResponseCookieCollection"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IHeaderDictionary",
+      "Value": "Microsoft.Owin.IHeaderDictionary",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Http namespace.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "PathString",
+      "Value": "Microsoft.Owin.PathString",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Http namespace if PathString is being used.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingMicrosoft.Owin;"
               }
             }
           ]
