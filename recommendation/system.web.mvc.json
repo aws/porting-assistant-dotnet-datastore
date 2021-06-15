@@ -36,14 +36,20 @@
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Mvc",
               "Description": "Add Microsoft.AspNetCore.Mvc namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.AspNetCore.Mvc;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web.Mvc",
               "Description": "Remove System.Web.Mvc namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Mvc;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
             }
           ]
         }
@@ -76,7 +82,10 @@
               "Type": "AttributeList",
               "Value": "This attribute is not available anymore. An alternative is using ViewComponents:\nSample:\n\npublic class SampleViewComponent : ViewComponent\n    {\n        private readonly InjectedService _injectedService;\n\n        public SampleViewComponent (InjectedService injectedService)\n        {\n            _injectedService = injectedService;\n        }\n\n\n       public IViewComponentResult Invoke(int parameter)\n        {\n            var object = _injectedService.SampleFunction(parameter);\n        // No name is specified, returns the view SampleView (same name as component)\n            return View(object);\n        }\n    }\n\nThen use this to call the view component from any view:\n\n    @await Component.InvokeAsync(\"SampleView\", new { parameter = \"\"})\n\nhttps://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-3.1",
               "Description": "ChildActionOnly attribute is not available anymore.",
-              "ActionValidation":{"Contains":"ViewComponents:", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "ViewComponents:",
+                "NotContains": ""
+              }
             }
           ]
         }
@@ -109,14 +118,20 @@
               "Type": "Using",
               "Value": "System.Web.Mvc",
               "Description": "Remove System.Web.Mvc namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Mvc;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Authorization",
               "Description": "Add Microsoft.AspNetCore.Authorization namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.AspNetCore.Authorization;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authorization;",
+                "NotContains": ""
+              }
             }
           ]
         }
@@ -149,14 +164,20 @@
               "Type": "Using",
               "Value": "System.Web.Mvc",
               "Description": "Remove System.Web.Mvc namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Mvc;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Authorization",
               "Description": "Add Microsoft.AspNetCore.Authorization namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.AspNetCore.Authorization;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authorization;",
+                "NotContains": ""
+              }
             }
           ]
         }
@@ -189,14 +210,20 @@
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Mvc.Rendering",
               "Description": "Add Microsoft.AspNetCore.Mvc.Rendering namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.AspNetCore.Mvc.Rendering;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc.Rendering;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web.Mvc",
               "Description": "Remove System.Web.Mvc namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Mvc;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
             }
           ]
         }
@@ -229,14 +256,20 @@
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.AspNetCore.Http;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web.Mvc",
               "Description": "Remove System.Web.Mvc namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Mvc;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
             }
           ]
         }
@@ -269,14 +302,427 @@
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Mvc.Filters",
               "Description": "Add Microsoft.AspNetCore.Mvc.Filters namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.AspNetCore.Mvc.Filters;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc.Filters;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web.Mvc",
               "Description": "Remove System.Web.Mvc namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Mvc;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "System.Web.Mvc.Controller.HttpNotFound()",
+      "Value": "System.Web.Mvc.Controller.HttpNotFound()",
+      "KeyType": "Name",
+      "ContainingType": "Controller",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace HttpNotFound with NotFound and replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "HttpNotFound",
+                "newMethod": "NotFound"
+              },
+              "Description": "Replace HttpNotFound with NotFound",
+              "ActionValidation": {
+                "NotContains": "HttpNotFound"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "System.Web.Mvc.Controller.HttpNotFound(string)",
+      "Value": "System.Web.Mvc.Controller.HttpNotFound(string)",
+      "KeyType": "Name",
+      "ContainingType": "Controller",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace HttpNotFound with NotFound and replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "HttpNotFound",
+                "newMethod": "NotFound"
+              },
+              "Description": "Replace HttpNotFound with NotFound",
+              "ActionValidation": {
+                "NotContains": "HttpNotFound"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "System.Web.Mvc.IDependencyResolver.GetService(*)",
+      "Value": "System.Web.Mvc.IDependencyResolver.GetService(*)",
+      "KeyType": "Name",
+      "ContainingType": "IDependencyResolver",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace DependencyResolver.Current.GetService with HttpContext.RequestServices.GetService and replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodWithObject",
+              "Type": "Method",
+              "Value": {
+                "newMethod": "HttpContext.RequestServices.GetService"
+              },
+              "Description": "Replace object invoking GetService",
+              "ActionValidation": {
+                "Contains": "HttpContext.RequestServices.GetService",
+                "NotContains": "DependencyResolver.Current.GetService"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "System.Web.Mvc.IDependencyResolver.GetService<*>()",
+      "Value": "System.Web.Mvc.IDependencyResolver.GetService<*>()",
+      "KeyType": "Name",
+      "ContainingType": "DependencyResolverExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace DependencyResolver.Current.GetService with HttpContext.RequestServices.GetService and replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodWithObjectAddType",
+              "Type": "Method",
+              "Value": {
+                "newMethod": "HttpContext.RequestServices.GetService"
+              },
+              "Description": "Replace object invoking GetService",
+              "ActionValidation": {
+                "Contains": "HttpContext.RequestServices.GetService",
+                "NotContains": "DependencyResolver.Current.GetService"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "System.Web.Mvc.DependencyResolver.SetResolver(System.Web.Mvc.IDependencyResolver)",
+      "Value": "System.Web.Mvc.DependencyResolver.SetResolver(System.Web.Mvc.IDependencyResolver)",
+      "KeyType": "Name",
+      "ContainingType": "DependencyResolver",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment: Use the startup class to register dependency containers.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "This method is not supported. Use the startup class to register dependency containers",
+              "Description": "Use the startup class to register dependency containers",
+              "ActionValidation": {
+                "Contains": "This method is not supported. Use the startup class to register dependency containers",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "System.Web.Mvc.Controller.TryUpdateModel(*)",
+      "Value": "System.Web.Mvc.Controller.TryUpdateModel(*)",
+      "KeyType": "Name",
+      "ContainingType": "Controller",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace TryUpdateModel with TryUpdateModelAsync and replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "TryUpdateModel",
+                "newMethod": "TryUpdateModelAsync"
+              },
+              "Description": "Replace TryUpdateModel with TryUpdateModelAsync",
+              "ActionValidation": {
+                "Contains": "TryUpdateModelAsync"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "This updated method might require the parameters to be re-organized",
+              "Description": "Add a comment to inform the user to reorganize the parameters",
+              "ActionValidation": {
+                "Contains": "This method might require the parameters to be re-organized",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "System.Web.Mvc.Controller.TryUpdateModel<*>(*)",
+      "Value": "System.Web.Mvc.Controller.TryUpdateModel<*>(*)",
+      "KeyType": "Name",
+      "ContainingType": "Controller",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace TryUpdateModel with TryUpdateModelAsync and replace System.Web.Mvc namespace with Microsoft.AspNetCore.Mvc.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "TryUpdateModel",
+                "newMethod": "TryUpdateModelAsync"
+              },
+              "Description": "Replace TryUpdateModel with TryUpdateModelAsync",
+              "ActionValidation": {
+                "Contains": "TryUpdateModelAsync"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Mvc",
+              "Description": "Add Microsoft.AspNetCore.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Mvc;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web.Mvc",
+              "Description": "Remove System.Web.Mvc namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Mvc;"
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "This updated method might require the parameters to be re-organized",
+              "Description": "Add a comment to inform the user to reorganize the parameters",
+              "ActionValidation": {
+                "Contains": "This method might require the parameters to be re-organized",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
             }
           ]
         }
