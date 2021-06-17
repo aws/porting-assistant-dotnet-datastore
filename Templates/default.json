@@ -1,0 +1,220 @@
+{
+  "FeatureGroups": [
+    {
+      "FeatureScope": "SourceCode",
+      "CompiledFeatureAssemblies": [
+        {
+          "AssemblyPath": "CTA.FeatureDetection.ProjectType.dll",
+          "CompiledFeatureNamespaces": [
+            {
+              "Namespace": "CTA.FeatureDetection.ProjectType.CompiledFeatures",
+              "CompiledFeatureMetadata": [
+                {
+                  "Name": "AspNetMvcFeature",
+                  "ClassName": "AspNetMvcFeature"
+                },
+                {
+                  "Name": "AspNetWebApiFeature",
+                  "ClassName": "AspNetWebApiFeature"
+                },
+                {
+                  "Name": "AspNetCoreMvcFeature",
+                  "ClassName": "AspNetCoreMvcFeature"
+                },
+                {
+                  "Name": "AspNetCoreWebApiFeature",
+                  "ClassName": "AspNetCoreWebApiFeature"
+                },
+                {
+                  "Name": "WebClassLibraryFeature",
+                  "ClassName": "WebClassLibraryFeature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "AssemblyPath": "CTA.FeatureDetection.AuthType.dll",
+          "CompiledFeatureNamespaces": [
+            {
+              "Namespace": "CTA.FeatureDetection.AuthType.CompiledFeatures",
+              "CompiledFeatureMetadata": [
+                {
+                  "Name": "WindowsAuthenticationFeature",
+                  "ClassName": "WindowsAuthenticationFeature"
+                },
+                {
+                  "Name": "WindowsAuthorizationFeature",
+                  "ClassName": "WindowsAuthorizationFeature"
+                },
+                {
+                  "Name": "WindowsAuthorizationRolesFeature",
+                  "ClassName": "WindowsAuthorizationRolesFeature"
+                },
+                {
+                  "Name": "WindowsImpersonationFeature",
+                  "ClassName": "WindowsImpersonationFeature"
+                },
+                {
+                  "Name": "FederatedAuthenticationFeature",
+                  "ClassName": "FederatedAuthenticationFeature"
+                },
+                {
+                  "Name": "FormsAuthenticationFeature",
+                  "ClassName": "FormsAuthenticationFeature"
+                },
+                {
+                  "Name": "FormsAuthenticationWithMembershipFeature",
+                  "ClassName": "FormsAuthenticationWithMembershipFeature"
+                },
+                {
+                  "Name": "OpenIdFeature",
+                  "ClassName": "OpenIdFeature"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ConfiguredFeatures": []
+    },
+    {
+      "FeatureScope": "Project",
+      "CompiledFeatureAssemblies": [],
+      "ConfiguredFeatures": [
+        {
+          "Name": "Db2ProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "IBM.Data.DB2"
+              }
+            }
+          }
+        },
+        {
+          "Name": "MySqlProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "MySql.Data.MySqlClient"
+              }
+            }
+          }
+        },
+        {
+          "Name": "OracleProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "Oracle.ManagedDataAccess.Client"
+              }
+            }
+          }
+        },
+        {
+          "Name": "PostgresProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "Npgsql"
+              }
+            }
+          }
+        },
+        {
+          "Name": "SqliteEf6ProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "System.Data.SQLite.EF6"
+              }
+            }
+          }
+        },
+        {
+          "Name": "SqliteProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "System.Data.SQLite"
+              }
+            }
+          }
+        },
+        {
+          "Name": "SqlServerCompact35ProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "System.Data.SqlServerCe.3.5"
+              }
+            }
+          }
+        },
+        {
+          "Name": "SqlServerCompact40ProviderFeature",
+          "Condition": {
+            "Type": "XmlFileQuery",
+            "Properties": {
+              "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+              "XmlElementPath": "configuration/entityFramework/providers/provider",
+              "XmlElementAttributes": {
+                "invariantName": "System.Data.SqlServerCe.4.0"
+              }
+            }
+          }
+        },
+        {
+          "Name": "SqlServerProviderFeature",
+          "ConditionGroup": {
+            "JoinOperator": "Any",
+            "Conditions": [
+              {
+                "Type": "XmlFileQuery",
+                "Properties": {
+                  "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+                  "XmlElementPath": "configuration/entityFramework/providers/provider",
+                  "XmlElementAttributes": {
+                    "invariantName": "System.Data.SqlClient"
+                  }
+                }
+              },
+              {
+                "Type": "XmlFileQuery",
+                "Properties": {
+                  "FileNamePatterns": [ ".*(app.config)$", ".*(web.config)$" ],
+                  "XmlElementPath": "configuration/connectionStrings/add",
+                  "XmlElementAttributes": {
+                    "providerName": "System.Data.SqlClient"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
