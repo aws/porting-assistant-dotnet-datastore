@@ -1,0 +1,58 @@
+{
+  "Name": "Microsoft.AspNet.Identity.Owin",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.AspNet.Identity.Owin",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.AspNet.Identity.Owin",
+      "Value": "Microsoft.AspNet.Identity.Owin",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Identity and remove Microsoft.AspNet.Identity.Owin.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Identity",
+              "Description": "Add Microsoft.AspNetCore.Identity namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Identity;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNet.Identity.Owin",
+              "Description": "Remove Microsoft.AspNet.Identity.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.AspNet.Identity.Owin;"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
