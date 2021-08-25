@@ -1094,6 +1094,274 @@
           ]
         }
       ]
+    },
+    {
+      "Type": "Class",
+      "Name": "Microsoft.Owin.Security.AuthenticationDescription",
+      "Value": "Microsoft.Owin.Security.AuthenticationDescription",
+      "KeyType": "Identifier",
+      "ContainingType": "Microsoft.Owin.Security",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace Microsoft.Owin.Security.AuthenticationDescription with Microsoft.AspNetCore.Authentication.AuthenticationScheme.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "AuthenticationScheme",
+              "Description": "Replace AuthenticationDescription with AuthenticationScheme",
+              "ActionValidation": {
+                "Contains": "AuthenticationScheme",
+                "NotContains": "AuthenticationDescription"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfo()",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfo()",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfo() add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfo invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfo invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync()",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync()",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync() add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync(string, string)",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync(string, string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync(string, string) add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync(string) method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync(string) method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalAuthenticationTypes()",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalAuthenticationTypes()",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalAuthenticationTypes() add a comment to explain how to use the SignInManager.GetExternalAuthenticationSchemesAsync() method to replace the IAuthenticationManager.GetExternalAuthenticationTypes invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalAuthenticationSchemesAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalAuthenticationSchemesAsync(string) method to replace the IAuthenticationManager.GetExternalAuthenticationTypes invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalAuthenticationSchemesAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRemembered(string)",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRemembered(string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRemembered(string) add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRemembered invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRemembered(TUser) method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRemembered invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRemembered(TUser) method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRememberedAsync(string)",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRememberedAsync(string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRememberedAsync(string) add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRememberedAsync invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRememberedAsync(TUser) method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRememberedAsync invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRememberedAsync(TUser) method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
