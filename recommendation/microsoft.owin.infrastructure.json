@@ -1,0 +1,186 @@
+{
+  "Name": "Microsoft.Owin.Infrastructure",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Infrastructure",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Infrastructure",
+      "Value": "Microsoft.Owin.Infrastructure",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.WebUtilities and remove Microsoft.Owin.Infrastructure.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.WebUtilities",
+              "Description": "Add Microsoft.AspNetCore.WebUtilities namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.WebUtilities;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Infrastructure",
+              "Description": "Remove Microsoft.Owin.Infrastructure namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Infrastructure;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, string)",
+      "Value": "Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, string)",
+      "KeyType": "",
+      "ContainingType": "WebUtilities",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, string) add a comment to explain how to replace the AddQueryString(string, string) invocation and replace WebUtilities.AddQueryString with QueryHelpers.AddQueryString.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace your parameters as the AddQueryString(string, string) method has been deprecated and you must either use the AddQueryString(string, string, string) method or the AddQueryString(string, System.Collections.Generic.IDictionary<string, string>) method.",
+              "Description": "Add a comment to explain how to replace the AddQueryString(string, string) invocation.",
+              "ActionValidation": {
+                "Contains": "Please replace your parameters as the AddQueryString(string, string) method has been deprecated and you must either use the AddQueryString(string, string, string) method or the AddQueryString(string, System.Collections.Generic.IDictionary<string, string>) method.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "WebUtilities.AddQueryString",
+                "newMethod": "QueryHelpers.AddQueryString"
+              },
+              "Description": "Replace WebUtilities.AddQueryString with QueryHelpers.AddQueryString.",
+              "ActionValidation": {
+                "Contains": "QueryHelpers.AddQueryString",
+                "NotContains": "WebUtilities.AddQueryString"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, System.Collections.Generic.IDictionary<string, string>)",
+      "Value": "Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, System.Collections.Generic.IDictionary<string, string>)",
+      "KeyType": "",
+      "ContainingType": "WebUtilities",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, System.Collections.Generic.IDictionary<string, string>) with Microsoft.AspNetCore.WebUtilities.QueryHelpers.AddQueryString(string, System.Collections.Generic.IDictionary<string, string>).",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "WebUtilities.AddQueryString",
+                "newMethod": "QueryHelpers.AddQueryString"
+              },
+              "Description": "Replace WebUtilities.AddQueryString with QueryHelpers.AddQueryString.",
+              "ActionValidation": {
+                "Contains": "QueryHelpers.AddQueryString",
+                "NotContains": "WebUtilities.AddQueryString"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, string, string)",
+      "Value": "Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, string, string)",
+      "KeyType": "",
+      "ContainingType": "WebUtilities",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace Microsoft.Owin.Infrastructure.WebUtilities.AddQueryString(string, string, string) with Microsoft.AspNetCore.WebUtilities.QueryHelpers.AddQueryString(string, string, string).",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "WebUtilities.AddQueryString",
+                "newMethod": "QueryHelpers.AddQueryString"
+              },
+              "Description": "Replace WebUtilities.AddQueryString with QueryHelpers.AddQueryString.",
+              "ActionValidation": {
+                "Contains": "QueryHelpers.AddQueryString",
+                "NotContains": "WebUtilities.AddQueryString"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
