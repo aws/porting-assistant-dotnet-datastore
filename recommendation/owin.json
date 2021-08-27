@@ -834,6 +834,78 @@
           ]
         }
       ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Owin.IAppBuilder.UseGoogleAuthentication(Microsoft.Owin.Security.Google.GoogleOAuth2AuthenticationOptions)",
+      "Value": "Owin.IAppBuilder.UseGoogleAuthentication(Microsoft.Owin.Security.Google.GoogleOAuth2AuthenticationOptions)",
+      "KeyType": "Name",
+      "ContainingType": "GoogleAuthenticationExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For .Net 5 add latest Microsoft.AspNetCore.Authentication.Google package and add a comment to explain how to add google authentication.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+              "Description": "Add a comment to explain how to add google authentication.",
+              "ActionValidation": {
+                "Contains": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.Google",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.Google"
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.Google package version 3.1.18 and add a comment to explain how to add google authentication.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+              "Description": "Add a comment to explain how to add google authentication.",
+              "ActionValidation": {
+                "Contains": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.Google",
+                "Version": "3.1.18"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Authentication.Google version 3.1.18"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
