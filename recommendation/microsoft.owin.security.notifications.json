@@ -1,0 +1,132 @@
+{
+  "Name": "Microsoft.Owin.Security.Notifications",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security.Notifications",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.Notifications",
+      "Value": "Microsoft.Owin.Security.Notifications",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect package and remove Microsoft.Owin.Security.Notifications.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.Notifications",
+              "Description": "Remove Microsoft.Owin.Security.Notifications namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.Notifications;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.Notifications.RedirectToIdentityProviderNotification<TMessage, TOptions>.HandleResponse()",
+      "Value": "Microsoft.Owin.Security.Notifications.RedirectToIdentityProviderNotification<TMessage, TOptions>.HandleResponse()",
+      "KeyType": "",
+      "ContainingType": "RedirectToIdentityProviderNotification",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.Notifications.RedirectToIdentityProviderNotification<TMessage, TOptions>.HandleResponse() add a comment to explain how to replace the class RedirectToIdentityProviderNotification with RedirectContext class.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace RedirectToIdentityProviderNotification with RedirectContext. The constructor for this new class takes the following parameters: new RedirectContext(HttpContext, AuthenticationScheme, OpenIdConnectOptions, AuthenticationProperties);",
+              "Description": "Add a comment to explain how to replace the RedirectToIdentityProviderNotification class with the RedirectContext class.",
+              "ActionValidation": {
+                "Contains": "Please replace RedirectToIdentityProviderNotification with RedirectContext. The constructor for this new class takes the following parameters: new RedirectContext(HttpContext, AuthenticationScheme, OpenIdConnectOptions, AuthenticationProperties);",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.Notifications.BaseNotification<TOptions>.HandleResponse()",
+      "Value": "Microsoft.Owin.Security.Notifications.BaseNotification<TOptions>.HandleResponse()",
+      "KeyType": "",
+      "ContainingType": "BaseNotification",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.Notifications.BaseNotification<TOptions>.HandleResponse() add a comment to explain how to replace the class BaseNotification.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace BaseNotification with a class from the Microsoft.AspNetCore.Authentication.OpenIdConnect namespace. The MessageReceivedContext class is a good candidate. Its constructor takes the following parameters: new MessageReceivedContext(HttpContext, AuthenticationScheme, OpenIdConnectOptions, AuthenticationProperties);",
+              "Description": "Add a comment to explain how to replace the BaseNotification class.",
+              "ActionValidation": {
+                "Contains": "Please replace BaseNotification with a class from the Microsoft.AspNetCore.Authentication.OpenIdConnect namespace. The MessageReceivedContext class is a good candidate. Its constructor takes the following parameters: new MessageReceivedContext(HttpContext, AuthenticationScheme, OpenIdConnectOptions, AuthenticationProperties);",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
