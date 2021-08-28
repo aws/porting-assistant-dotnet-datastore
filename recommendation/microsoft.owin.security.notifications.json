@@ -22,13 +22,9 @@
             {
               "Name": "net5.0",
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect package and remove Microsoft.Owin.Security.Notifications.",
+          "Description": "For .Net 5 add Microsoft.AspNetCore.Authentication.OpenIdConnect package and remove Microsoft.Owin.Security.Notifications directive and add Microsoft.AspNetCore.Authentication.OpenIdConnect directive.",
           "Actions": [
             {
               "Name": "AddDirective",
@@ -49,6 +45,54 @@
                 "Contains": "",
                 "NotContains": "using Microsoft.Owin.Security.Notifications;"
               }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.OpenIdConnect package version 3.1.18 and remove Microsoft.Owin.Security.Notifications directive and add Microsoft.AspNetCore.Authentication.OpenIdConnect directive.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.Notifications",
+              "Description": "Remove Microsoft.Owin.Security.Notifications namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.Notifications;"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "3.1.18"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect version 3.1.18"
             }
           ]
         }
