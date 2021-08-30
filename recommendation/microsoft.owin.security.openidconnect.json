@@ -1,138 +1,138 @@
 {
-	"Name": "Microsoft.Owin.Security.OpenIdConnect",
-	"Version": "1.0.0",
-	"Packages": [
-		{
-			"Name": "Microsoft.Owin.Security.OpenIdConnect",
-			"Type": "Nuget"
-		}
-	],
-	"Recommendations": [
-		{
-			"Type": "Namespace",
-			"Name": "Microsoft.Owin.Security.OpenIdConnect",
-			"Value": "Microsoft.Owin.Security.OpenIdConnect",
-			"KeyType": "Name",
-			"ContainingType": "",
-			"RecommendedActions": [
-				{
-					"Source": "Amazon",
-					"Preferred": "Yes",
-					"TargetFrameworks": [
-						{
-							"Name": "net5.0",
-							"TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-						}
-					],
-					"Description": "For .Net 5 add latest Microsoft.AspNetCore.Authentication.Google package and add a comment to explain how to add google authentication.",
-					"Actions": [
-						{
-							"Name": "AddDirective",
-							"Type": "Using",
-							"Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
-							"Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect namespace",
-							"ActionValidation": {
-								"Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
-								"NotContains": ""
-							}
-						},
-						{
-							"Name": "RemoveDirective",
-							"Type": "Using",
-							"Value": "Microsoft.Owin.Security.OpenIdConnect",
-							"Description": "Remove Microsoft.Owin.Security.OpenIdConnect namespace",
-							"ActionValidation": {
-								"Contains": "",
-								"NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
-							}
-						},
-						{
-							"Name": "AddPackage",
-							"Type": "Package",
-							"Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
-							"Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
-						}
-					]
-				},
-				{
-					"Source": "Amazon",
-					"Preferred": "Yes",
-					"TargetFrameworks": [
-						{
-							"Name": "netcoreapp3.1",
-							"TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-						}
-					],
-					"Description": "For .Net Core add Microsoft.AspNetCore.Authentication.Google package version 3.1.18 and add a comment to explain how to add google authentication.",
-					"Actions": [
-						{
-							"Name": "AddDirective",
-							"Type": "Using",
-							"Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
-							"Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect namespace",
-							"ActionValidation": {
-								"Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
-								"NotContains": ""
-							}
-						},
-						{
-							"Name": "RemoveDirective",
-							"Type": "Using",
-							"Value": "Microsoft.Owin.Security.OpenIdConnect",
-							"Description": "Remove Microsoft.Owin.Security.OpenIdConnect namespace",
-							"ActionValidation": {
-								"Contains": "",
-								"NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
-							}
-						},
-						{
-							"Name": "AddPackage",
-							"Type": "Package",
-							"Value": {
-								"Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
-								"Version": "3.1.18"
-							},
-							"Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect version 3.1.18"
-						}
-					]
-				}
-			]
+  "Name": "Microsoft.Owin.Security.OpenIdConnect",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security.OpenIdConnect",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.OpenIdConnect",
+      "Value": "Microsoft.Owin.Security.OpenIdConnect",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For .Net 5 add latest Microsoft.AspNetCore.Authentication.Google package and add a comment to explain how to add google authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.Google package version 3.1.18 and add a comment to explain how to add google authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "3.1.18"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect version 3.1.18"
+            }
+			    ]
+			  }
+		  ]
 		},
-		{
-			"Type": "Class",
-			"Name": "OpenIdConnectAuthenticationOptions",
-			"Value": "Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationOptions",
-			"KeyType": "Identifier",
-			"ContainingType": "OpenIdConnectAuthenticationOptions",
-			"RecommendedActions": [
-				{
-					"Source": "Amazon",
-					"Preferred": "Yes",
-					"TargetFrameworks": [
-						{
-							"Name": "netcoreapp3.1",
-							"TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-						},
-						{
-							"Name": "net5.0",
-							"TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-						}
-					],
-					"Description": "Replace OpenIdConnectAuthenticationOptions with OpenIdConnectOptions.",
-					"Actions": [
-						{
-							"Name": "ReplaceIdentifier",
-							"Type": "Identifier",
-							"Value": "OpenIdConnectOptions",
-							"Description": "Replace OpenIdConnectAuthenticationOptions with OpenIdConnectOptions",
-							"ActionValidation": {
-								"Contains": "OpenIdConnectOptions",
-								"NotContains": "OpenIdConnectAuthenticationOptions"
-							}
-						}
-					]
-				}
-			]
-		}
-	]
+    {
+      "Type": "Class",
+      "Name": "OpenIdConnectAuthenticationOptions",
+      "Value": "Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationOptions",
+      "KeyType": "Identifier",
+      "ContainingType": "OpenIdConnectAuthenticationOptions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace OpenIdConnectAuthenticationOptions with OpenIdConnectOptions.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "OpenIdConnectOptions",
+              "Description": "Replace OpenIdConnectAuthenticationOptions with OpenIdConnectOptions",
+              "ActionValidation": {
+                "Contains": "OpenIdConnectOptions",
+                "NotContains": "OpenIdConnectAuthenticationOptions"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
