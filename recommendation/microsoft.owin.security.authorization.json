@@ -1,0 +1,58 @@
+{
+  "Name": "Microsoft.Owin.Security.Authorization",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security.Authorization",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.Authorization",
+      "Value": "Microsoft.Owin.Security.Authorization",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Remove Microsoft.Owin.Security.Authorization directive and add Microsoft.AspNetCore.Authorization directive.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authorization",
+              "Description": "Add Microsoft.AspNetCore.Authorization namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authorization;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.Authorization",
+              "Description": "Remove Microsoft.Owin.Security.Authorization namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.Authorization;"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
