@@ -1,0 +1,122 @@
+{
+  "Name": "Microsoft.Owin.Security.DataHandler.Encoder",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security.DataHandler.Encoder",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.DataHandler.Encoder",
+      "Value": "Microsoft.Owin.Security.DataHandler.Encoder",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Remove Microsoft.Owin.Security.DataHandler.Encoder.",
+          "Actions": [
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.DataHandler.Encoder",
+              "Description": "Remove Microsoft.Owin.Security.DataHandler.Encoder namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.DataHandler.Encoder;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Encode(byte[])",
+      "Value": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Encode(byte[])",
+      "KeyType": "",
+      "ContainingType": "ITextEncoder",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace the ITextEncoder.Encode method.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+              "Description": "Add a comment to explain how to replace the ITextEncoder.Encode method.",
+              "ActionValidation": {
+                "Contains": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Decode(string)",
+      "Value": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Decode(string)",
+      "KeyType": "",
+      "ContainingType": "ITextEncoder",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace the ITextEncoder.Decode method.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+              "Description": "Add a comment to explain how to replace the ITextEncoder.Decode method.",
+              "ActionValidation": {
+                "Contains": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
