@@ -66,10 +66,6 @@
                 {
                   "Name": "FormsAuthenticationWithMembershipFeature",
                   "ClassName": "FormsAuthenticationWithMembershipFeature"
-                },
-                {
-                  "Name": "OpenIdFeature",
-                  "ClassName": "OpenIdFeature"
                 }
               ]
             }
@@ -84,6 +80,9 @@
       "ConfiguredFeatures": [
         {
           "Name": "Db2ProviderFeature",
+          "FeatureCategory": "DbProvider", 
+          "Description": "This project uses the DB2 database provider.", 
+          "IsLinuxCompatible": true, 
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -97,6 +96,9 @@
         },
         {
           "Name": "MySqlProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the MySQL database provider.",
+          "IsLinuxCompatible": true,
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -110,6 +112,9 @@
         },
         {
           "Name": "OracleProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the Oracle database provider.",
+          "IsLinuxCompatible": true,
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -123,6 +128,9 @@
         },
         {
           "Name": "PostgresProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the Postgres database provider.",
+          "IsLinuxCompatible": true,
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -136,6 +144,9 @@
         },
         {
           "Name": "SqliteEf6ProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the Sqlite EF6 database provider.",
+          "IsLinuxCompatible": true,
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -149,6 +160,9 @@
         },
         {
           "Name": "SqliteProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the Sqlite database provider.",
+          "IsLinuxCompatible": true,
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -162,6 +176,9 @@
         },
         {
           "Name": "SqlServerCompact35ProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the SQL Server Compact 3.5 database provider.",
+          "IsLinuxCompatible": false,
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -175,6 +192,9 @@
         },
         {
           "Name": "SqlServerCompact40ProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the SQL Server Compact 4.0 database provider.",
+          "IsLinuxCompatible": false,
           "Condition": {
             "Type": "XmlFileQuery",
             "Properties": {
@@ -188,6 +208,9 @@
         },
         {
           "Name": "SqlServerProviderFeature",
+          "FeatureCategory": "DbProvider",
+          "Description": "This project uses the SQL Server database provider.",
+          "IsLinuxCompatible": true,
           "ConditionGroup": {
             "JoinOperator": "Any",
             "Conditions": [
