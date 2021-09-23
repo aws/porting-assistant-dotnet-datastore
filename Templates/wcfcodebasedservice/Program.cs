@@ -1,5 +1,6 @@
 /*
 using CoreWCF.Configuration;
+using System.Net;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
