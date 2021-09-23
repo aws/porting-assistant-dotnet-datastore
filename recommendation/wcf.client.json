@@ -1,0 +1,55 @@
+{
+  "Name": "WCF.Client",
+  "Version": "1.0.0",
+  "Source": "Github",
+  "Packages": [
+    {
+      "Name": "Project",
+      "Type": "Project"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Project",
+      "Name": "Project",
+      "Value": "WCFClient",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "",
+          "Actions": [            
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "System.ServiceModel.Primitives",
+              "Description": "Add package System.ServiceModel.Primitives."
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "System.ServiceModel.Http",
+              "Description": "Add package System.ServiceModel.Http."
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "System.ServiceModel.NetTcp",
+              "Description": "Add package System.ServiceModel.NetTcp."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
