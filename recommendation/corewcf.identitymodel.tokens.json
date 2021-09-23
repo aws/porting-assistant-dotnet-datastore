@@ -1,0 +1,49 @@
+{
+  "Name": "System.IdentityModel.Tokens",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Type": "SDK",
+      "Name": "System.IdentityModel.Tokens"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Value": "System.IdentityModel.Tokens",
+      "Name": "System.IdentityModel.Tokens",
+      "KeyType": "Name",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace System.IdentityModel.Tokens with CoreWCF.IdentityModel.Tokens Namespace. Check CoreWCF.IdentityModel.Tokens Compatibility at https://github.com/CoreWCF/CoreWCF/releases",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "CoreWCF.IdentityModel.Tokens",
+              "Description": "Add CoreWCF.IdentityModel.Tokens Namespace."
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.IdentityModel.Tokens",
+              "Description": "Remove System.IdentityModel.Tokens Namespace."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

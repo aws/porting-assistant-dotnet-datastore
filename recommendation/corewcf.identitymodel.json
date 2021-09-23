@@ -1,0 +1,49 @@
+{
+  "Name": "System.IdentityModel",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Type": "SDK",
+      "Name": "System.IdentityModel"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Value": "System.IdentityModel",
+      "Name": "System.IdentityModel",
+      "KeyType": "Name",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace System.IdentityModel with CoreWCF.IdentityModel Namespace. Check CoreWCF.IdentityModel Compatibility at https://github.com/CoreWCF/CoreWCF/releases",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "CoreWCF.IdentityModel",
+              "Description": "Add CoreWCF.IdentityModel Namespace."
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.IdentityModel",
+              "Description": "Remove System.IdentityModel Namespace."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
