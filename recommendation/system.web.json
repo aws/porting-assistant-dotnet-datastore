@@ -103,52 +103,6 @@
       ]
     },
     {
-      "Type": "Method",
-      "Name": "System.Web.HttpContext.Response.Write(string)",
-      "Value": "System.Web.HttpContext.Response.Write(string)",
-      "KeyType": "Name",
-      "ContainingType": "IHttpHandler",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Replace HttpContext.Response.Write with a new method HttpContext.Response.WriteAsync in namepsace Microsoft.AspNetCore.Http.",
-          "Actions": [
-            {
-              "Name": "ReplaceMethodWithObject",
-              "Type": "Method",
-              "Value": "Microsoft.AspNetCore.Http.HttpContext.Response.WriteAsync",
-              "Description": "Replace HttpContext.Response.Write with a new method: HttpContext.Response.WriteAsync.",
-              "ActionValidation": {
-                "Contains": "Microsoft.AspNetCore.Http.HttpContext.Response.WriteAsync",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Http",
-              "Description": "Add Microsoft.AspNetCore.Http namespace.",
-              "ActionValidation": {
-                "Contains": "using Microsoft.AspNetCore.Http;",
-                "NotContains": ""
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "Type": "Class",
       "Name": "HttpContextBase",
       "Value": "System.Web.HttpContextBase",
