@@ -246,7 +246,11 @@
                 "existingMethodName": "ProcessRequest",
                 "newMethodName": "Invoke"
               },
-              "Description": "Replace method name"
+              "Description": "Replace method name",
+              "ActionValidation": {
+                "Contains": "Invoke",
+                "NotContains": ""
+              }
             },
             {
               "Name": "ReplaceMethodModifiers",
@@ -255,7 +259,11 @@
                 "methodName": "Invoke",
                 "modifiers": "public async"
               },
-              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier."
+              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier.",
+              "ActionValidation": {
+                "Contains": "public async",
+                "NotContains": ""
+              }
             },
             {
               "Name": "ChangeMethodToReturnTaskType",
@@ -388,7 +396,11 @@
                 "methodName": "Invoke",
                 "modifiers": "public async"
               },
-              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier."
+              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier.",
+              "ActionValidation": {
+                "Contains": "public async",
+                "NotContains": ""
+              }
             },
             {
               "Name": "AddParametersToMethod",
