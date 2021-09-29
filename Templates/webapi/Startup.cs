@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.HttpOverrides;
 
 namespace #NAMESPACEPLACEHOLDER#
 {
@@ -28,6 +29,11 @@ namespace #NAMESPACEPLACEHOLDER#
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.Configure<ForwardedHeadersOptions>(options =>
+            {
+                options.ForwardedHeaders =
+                ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+            });
             //Added Services
         }
 
@@ -38,6 +44,7 @@ namespace #NAMESPACEPLACEHOLDER#
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseForwardedHeaders();
 
             app.UseHttpsRedirection();
             
@@ -45,7 +52,6 @@ namespace #NAMESPACEPLACEHOLDER#
 
             app.UseRouting();
 
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

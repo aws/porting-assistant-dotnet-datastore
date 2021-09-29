@@ -36,14 +36,21 @@
               "Type": "Method",
               "Value": "this.Response.Headers.Add",
               "Description": "Replace AppendHeader with a new method to add to headers.",
-              "ActionValidation":{"Contains":"this.Response.Headers.Add", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "this.Response.Headers.Add",
+                "NotContains": ""
+              }
             },
             {
               "Name": "AddComment",
               "Type": "Method",
               "Value": "In this context, this is a Controller object",
               "Description": "Add a comment to explain what \"this\" refers to.",
-              "ActionValidation":{"Contains":"In this context, this is a Controller object", "NotContains":"", "CheckComments": "True"}
+              "ActionValidation": {
+                "Contains": "In this context, this is a Controller object",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
             }
           ]
         }
@@ -76,14 +83,20 @@
               "Type": "Method",
               "Value": "HtmlEncoder.Default.Encode",
               "Description": "Replace HtmlEncode with a new method: HtmlEncoder.Default.Encode.",
-              "ActionValidation":{"Contains":"HtmlEncoder.Default.Encode", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "HtmlEncoder.Default.Encode",
+                "NotContains": ""
+              }
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "System.Text.Encodings.Web",
               "Description": "Add System.Text.Encodings.Web.",
-              "ActionValidation":{"Contains":"using System.Text.Encodings.Web;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using System.Text.Encodings.Web;",
+                "NotContains": ""
+              }
             }
           ]
         }
@@ -116,21 +129,333 @@
               "Type": "Identifier",
               "Value": "HttpContext",
               "Description": "Replace HttpContextBase with HttpContext.",
-              "ActionValidation":{"Contains":"HttpContext", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "HttpContext",
+                "NotContains": ""
+              }
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.AspNetCore.Http;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Web",
               "Description": "Remove System.Web namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IHttpHandler",
+      "Value": "System.Web.IHttpHandler",
+      "KeyType": "BaseClass",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Remove IHttpHandler in namespace System.Web and replace HttpContext in namespace Microsoft.AspNetCore.Http.",
+          "Actions": [
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web",
+              "Description": "Remove System.Web namespace.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web;"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace.",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "System.Threading.Tasks",
+              "Description": "Add System.Threading.Tasks namespace",
+              "ActionValidation": {
+                "Contains": "using System.Threading.Tasks;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveBaseClass",
+              "Type": "Class",
+              "Value": "IHttpHandler",
+              "Description": "Remove the base class IHttpHandler",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": ":IHttpHandler"
+              }
+            },
+            {
+              "Name": "AddExpression",
+              "Type": "Class",
+              "Value": "RequestDelegate _next = null;",
+              "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
+              "ActionValidation": {
+                "Contains": "RequestDelegate_next = null;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "CreateConstructor",
+              "Type": "Class",
+              "Value": {
+                "types": "RequestDelegate",
+                "identifiers": "next"
+              },
+              "Description": "Create a new constructor"
+            },
+            {
+              "Name": "ChangeMethodName",
+              "Type": "Class",
+              "Value": {
+                "existingMethodName": "ProcessRequest",
+                "newMethodName": "Invoke"
+              },
+              "Description": "Replace method name",
+              "ActionValidation": {
+                "Contains": "Invoke",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodModifiers",
+              "Type": "Class",
+              "Value": {
+                "methodName": "Invoke",
+                "modifiers": "public async"
+              },
+              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier.",
+              "ActionValidation": {
+                "Contains": "public async",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ChangeMethodToReturnTaskType",
+              "Type": "Class",
+              "Value": "Invoke",
+              "Description": "Replace method return type to Task type",
+              "ActionValidation": {
+                "Contains": "Task",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IHttpModule",
+      "Value": "System.Web.IHttpModule",
+      "KeyType": "BaseClass",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Remove IHttpHandler in namespace System.Web and replace HttpContext in namespace Microsoft.AspNetCore.Http.",
+          "Actions": [
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Web",
+              "Description": "Remove System.Web namespace.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web;"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace.",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "System.Threading.Tasks",
+              "Description": "Add System.Threading.Tasks namespace",
+              "ActionValidation": {
+                "Contains": "using System.Threading.Tasks;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveBaseClass",
+              "Type": "Class",
+              "Value": "IHttpModule",
+              "Description": "Remove the base class IHttpModule",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": ":IHttpModule"
+              }
+            },
+            {
+              "Name": "CreateConstructor",
+              "Type": "Class",
+              "Value": {
+                "types": "RequestDelegate",
+                "identifiers": "next"
+              },
+              "Description": "Create a new constructor"
+            },
+            {
+              "Name": "AppendConstructorExpression",
+              "Type": "Class",
+              "Value": "_next = next;",
+              "Description": "Add a new expression in the constructor to initialize the new variable of _next to the next element in the pipeline.",
+              "ActionValidation": {
+                "Contains": "_next = next;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddExpression",
+              "Type": "Class",
+              "Value": "RequestDelegate _next = null;",
+              "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
+              "ActionValidation": {
+                "Contains": "RequestDelegate_next = null;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveMethodParameters",
+              "Type": "Class",
+              "Value": "Application_BeginRequest",
+              "Description": "Remove parameters from the method"
+            },
+            {
+              "Name": "ChangeMethodName",
+              "Type": "Class",
+              "Value": {
+                "existingMethodName": "Application_BeginRequest",
+                "newMethodName": "Invoke"
+              },
+              "Description": "Replace method name",
+              "ActionValidation": {
+                "Contains": "Invoke",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodModifiers",
+              "Type": "Class",
+              "Value": {
+                "methodName": "Invoke",
+                "modifiers": "public async"
+              },
+              "Description": "Replace all the invoke method modifiers with only public in order to remove the override modifier.",
+              "ActionValidation": {
+                "Contains": "public async",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddParametersToMethod",
+              "Type": "Class",
+              "Value": {
+                "methodName": "Invoke",
+                "types": "HttpContext",
+                "identifiers": "context"
+              },
+              "Description": "Adding parameters to the method.",
+              "ActionValidation": {
+                "Contains": "HttpContext",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddExpressionToMethod",
+              "Type": "Class",
+              "Value": {
+                "methodName": "Invoke",
+                "expression": "await _next.Invoke(context);"
+              },
+              "Description": "Adding expression to the method.",
+              "ActionValidation": {
+                "Contains": "await _next.Invoke(context);",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ChangeMethodToReturnTaskType",
+              "Type": "Class",
+              "Value": "Invoke",
+              "Description": "Replace method return type to Task type",
+              "ActionValidation": {
+                "Contains": "Task",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "CommentMethod",
+              "Type": "Class",
+              "Value": {
+                "methodName": "Init",
+                "comment": "This method is used to register events."
+              },
+              "Description": "Commenting out method which have to be ported manually."
+            },
+            {
+              "Name": "CommentMethod",
+              "Type": "Class",
+              "Value": {
+                "comment": "Create a seperate middleware module with the logic in this method and inject the middleware in the correponding location in request pipeline (startup.cs).",
+                "methodName": "Application_EndRequest"
+              },
+              "Description": "Commenting out method which have to be ported manually."
             }
           ]
         }
