@@ -1,0 +1,97 @@
+{
+  "Name": "Microsoft.Owin.Logging",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Logging",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Logging",
+      "Value": "Microsoft.Owin.Logging",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.Extensions.Logging and remove Microsoft.Owin.Logging.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Extensions.Logging",
+              "Description": "Add Microsoft.Extensions.Logging namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.Extensions.Logging;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Logging",
+              "Description": "Remove Microsoft.Owin.Logging namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Logging;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Logging.ILogger.WriteInformation(string)",
+      "Value": "Microsoft.Owin.Logging.ILogger.WriteInformation(string)",
+      "KeyType": "",
+      "ContainingType": "LoggerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Logging.ILogger.WriteInformation(string) replace WriteInformation with LogInformation.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "WriteInformation",
+                "newMethod": "LogInformation"
+              },
+              "Description": "Replace WriteInformation with LogInformation.",
+              "ActionValidation": {
+                "Contains": "LogInformation",
+                "NotContains": "WriteInformation"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
