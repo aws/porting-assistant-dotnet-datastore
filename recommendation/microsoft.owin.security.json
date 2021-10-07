@@ -1,0 +1,1367 @@
+{
+  "Name": "Microsoft.Owin.Security",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security",
+      "Value": "Microsoft.Owin.Security",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin.Security, Microsoft.Owin and Owin.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Owin",
+                "Version": "3.1.14"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Owin"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add Microsoft.AspNetCore.Owin namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Owin;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security",
+              "Description": "Remove Microsoft.Owin.Security namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Owin;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin.Security, Microsoft.Owin and Owin.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add package Microsoft.AspNetCore.Owin"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add Microsoft.AspNetCore.Owin namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Owin;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security",
+              "Description": "Remove Microsoft.Owin.Security namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Owin;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "AuthenticationProperties",
+      "Value": "Microsoft.Owin.Security.AuthenticationProperties",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Authentication namespace if AuthenticationProperties is being used and remove Microsoft.Owin.Security.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security",
+              "Description": "Remove Microsoft.Owin.Security namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "IAuthenticationManager",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Authentication namespace if AuthenticationProperties is being used and remove Microsoft.Owin.Security.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "HttpContext",
+              "Description": "Replace IAuthenticationManager with HttpContext",
+              "ActionValidation": {
+                "Contains": "HttpContext",
+                "NotContains": "IAuthenticationManager"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Http",
+              "Description": "Add Microsoft.AspNetCore.Http namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(string[])",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(string[])",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Authentication namespace if AuthenticationProperties is being used and remove Microsoft.Owin.Security.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceParametersOnly",
+              "Type": "Method",
+              "Value": "()",
+              "Description": "Remove parameters of AuthenticateAsync.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "This method does not take a list of string as a parameter, it can only accept a single scheme or no parameters.",
+              "Description": "Add a comment to explain how to use the parameters for the ChallengeAsync api.",
+              "ActionValidation": {
+                "Contains": "Please use your AuthenticationProperties object with this AuthenticateAsync api.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.Challenge(params string[])",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.Challenge(params string[])",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Challenge(params string[]) add Microsoft.AspNetCore.Authentication namespace replace Challenge api with ChallengeAsync, remove all parameters and add an await operator. Also adds a comment to explain how to include AuthenticationProperties object and scheme.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "Challenge",
+                "newMethod": "ChallengeAsync",
+                "newParameters": "()"
+              },
+              "Description": "Replace method name from Challenge to ChallengeAsync and remove all parameters.",
+              "ActionValidation": {
+                "Contains": "ChallengeAsync",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please use your AuthenticationProperties object with this ChallengeAsync api if needed. You can also include a scheme.",
+              "Description": "Add a comment to explain how to use the parameters for the ChallengeAsync api.",
+              "ActionValidation": {
+                "Contains": "Please use your AuthenticationProperties object with this ChallengeAsync api if needed. You can also include a scheme.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddAwaitOperator",
+              "Type": "Expression",
+              "Value": "",
+              "Description": "Add the await operator to ChallengeAsync.",
+              "ActionValidation": {
+                "Contains": "await",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties, params string[])",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties, params string[])",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Challenge(Microsoft.Owin.Security.AuthenticationProperties, params string[]) add Microsoft.AspNetCore.Authentication namespace replace Challenge api with ChallengeAsync, remove all parameters and add an await operator.. Also adds a comment to explain how to include AuthenticationProperties object and scheme.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "Challenge",
+                "newMethod": "ChallengeAsync",
+                "newParameters": "()"
+              },
+              "Description": "Replace method name from Challenge to ChallengeAsync and remove all parameters.",
+              "ActionValidation": {
+                "Contains": "ChallengeAsync",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please use your AuthenticationProperties object with this ChallengeAsync api if needed. You can also include a scheme.",
+              "Description": "Add a comment to explain how to use the parameters for the ChallengeAsync api.",
+              "ActionValidation": {
+                "Contains": "Please use your AuthenticationProperties object with this ChallengeAsync api if needed. You can also include a scheme.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddAwaitOperator",
+              "Type": "Expression",
+              "Value": "",
+              "Description": "Add the await operator to ChallengeAsync.",
+              "ActionValidation": {
+                "Contains": "await",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes()",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes()",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes() add a comment to explain this method has been deprecated.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "This method is now deprecated and most authentication methods can be accessed directly from the HttpContext class through their Microsoft.AspNetCore.Authentication namespace extension.",
+              "Description": "Add a comment to explain this method has been deprecated.",
+              "ActionValidation": {
+                "Contains": "This method is now deprecated and most authentication methods can be accessed directly from the HttpContext class through their Microsoft.AspNetCore.Authentication namespace extension.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.SignIn(params System.Security.Claims.ClaimsIdentity[])",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.SignIn(params System.Security.Claims.ClaimsIdentity[])",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.SignIn(params System.Security.Claims.ClaimsIdentity[]) add directive Microsoft.AspNetCore.Authentication, add a comment to explain parameters, add an await operator and replace the method SignIn with SignInAsync.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "SignIn",
+                "newMethod": "SignInAsync"
+              },
+              "Description": "Replace method name from SignIn to SignInAsync and remove all parameters.",
+              "ActionValidation": {
+                "Contains": "SignInAsync",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please use a ClaimsPrincipal object to wrap your list of ClaimsIdentity to pass it to this method as a parameter, you can also include a scheme and an AuthenticationProperties object as well.",
+              "Description": "Add a comment to explain how to use the parameters for the SignInAsync api.",
+              "ActionValidation": {
+                "Contains": "Please use a ClaimsPrincipal object to wrap your list of ClaimsIdentity to pass it to this method as a parameter, you can also include a scheme and an AuthenticationProperties object as well.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddAwaitOperator",
+              "Type": "Expression",
+              "Value": "",
+              "Description": "Add the await operator to SignInAsync.",
+              "ActionValidation": {
+                "Contains": "await",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties, params System.Security.Claims.ClaimsIdentity[])",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties, params System.Security.Claims.ClaimsIdentity[])",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties, params System.Security.Claims.ClaimsIdentity[]) add directive Microsoft.AspNetCore.Authentication, add a comment to explain parameters, add an await operator and replace the method SignIn with SignInAsync.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "SignIn",
+                "newMethod": "SignInAsync"
+              },
+              "Description": "Replace method name from SignIn to SignInAsync and remove all parameters.",
+              "ActionValidation": {
+                "Contains": "SignInAsync",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please use a ClaimsPrincipal object to wrap your list of ClaimsIdentity to pass it to this method as a parameter, you can also include a scheme and an AuthenticationProperties object as well.",
+              "Description": "Add a comment to explain how to use the parameters for the SignInAsync api.",
+              "ActionValidation": {
+                "Contains": "Please use a ClaimsPrincipal object to wrap your list of ClaimsIdentity to pass it to this method as a parameter, you can also include a scheme and an AuthenticationProperties object as well.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddAwaitOperator",
+              "Type": "Expression",
+              "Value": "",
+              "Description": "Add the await operator to SignInAsync.",
+              "ActionValidation": {
+                "Contains": "await",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.SignOut(params string[])",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.SignOut(params string[])",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.SignOut(params string[]) add directive Microsoft.AspNetCore.Authentication, add a comment to explain parameters, add an await operator and replace the method SignOut with SignOutAsync.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "SignOut",
+                "newMethod": "SignOutAsync",
+                "newParameters": "()"
+              },
+              "Description": "Replace method name from SignOut to SignOutAsync and remove all parameters.",
+              "ActionValidation": {
+                "Contains": "SignOutAsync",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You can only pass in a single scheme as a parameter and you can also include an AuthenticationProperties object as well.",
+              "Description": "Add a comment to explain how to use the parameters for the SignOutAsync api.",
+              "ActionValidation": {
+                "Contains": "You can only pass in a single scheme as a parameter and you can also include an AuthenticationProperties object as well.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddAwaitOperator",
+              "Type": "Expression",
+              "Value": "",
+              "Description": "Add the await operator to SignOutAsync.",
+              "ActionValidation": {
+                "Contains": "await",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties, params string[])",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties, params string[])",
+      "KeyType": "",
+      "ContainingType": "IAuthenticationManager",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties, params string[]) add directive Microsoft.AspNetCore.Authentication, add a comment to explain parameters, add an await operator and replace the method SignOut with SignOutAsync.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "SignOut",
+                "newMethod": "SignOutAsync",
+                "newParameters": "()"
+              },
+              "Description": "Replace method name from SignOut to SignOutAsync and remove all parameters.",
+              "ActionValidation": {
+                "Contains": "SignOutAsync",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You can only pass in a single scheme as a parameter and you can also include an AuthenticationProperties object as well.",
+              "Description": "Add a comment to explain how to use the parameters for the SignOutAsync api.",
+              "ActionValidation": {
+                "Contains": "You can only pass in a single scheme as a parameter and you can also include an AuthenticationProperties object as well.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddAwaitOperator",
+              "Type": "Expression",
+              "Value": "",
+              "Description": "Add the await operator to SignOutAsync.",
+              "ActionValidation": {
+                "Contains": "await",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "Microsoft.Owin.Security.AuthenticationTicket",
+      "Value": "Microsoft.Owin.Security.AuthenticationTicket",
+      "KeyType": "Identifier",
+      "ContainingType": "Microsoft.Owin.Security",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.AuthenticationTicket add directive Microsoft.AspNetCore.Authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "ObjectCreation",
+      "Name": "Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties)",
+      "Value": "Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties)",
+      "KeyType": "Name",
+      "ContainingType": "AuthenticationTicket",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties) add directive Microsoft.AspNetCore.Authentication, add a comment to explain the new parameters requirements.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "ObjectCreation",
+              "Value": "Please use a ClaimsPrincipal object to wrap your ClaimsIdentity parameter to pass to this method, you can optionally include an AuthenticationProperties object and must include a scheme.",
+              "Description": "Add a comment to explain how to use the parameters for the AuthenticationTicket constructor.",
+              "ActionValidation": {
+                "Contains": "Please use a ClaimsPrincipal object to wrap your list of ClaimsIdentity to pass it to this method as a parameter, you can also include an AuthenticationProperties object and a scheme as well.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData)",
+      "Value": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData)",
+      "KeyType": "",
+      "ContainingType": "ISecureDataFormat",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData) add directive Microsoft.AspNetCore.Authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string)",
+      "Value": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string)",
+      "KeyType": "",
+      "ContainingType": "ISecureDataFormat",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string) add directive Microsoft.AspNetCore.Authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "Microsoft.Owin.Security.AuthenticationTicket",
+      "Value": "Microsoft.Owin.Security.AuthenticationTicket",
+      "KeyType": "Identifier",
+      "ContainingType": "Microsoft.Owin.Security",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.AuthenticationTicket add directive Microsoft.AspNetCore.Authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "ObjectCreation",
+      "Name": "Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties)",
+      "Value": "Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties)",
+      "KeyType": "Name",
+      "ContainingType": "AuthenticationTicket",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties) add directive Microsoft.AspNetCore.Authentication, add a comment to explain the new parameters requirements.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "ObjectCreation",
+              "Value": "Please use a ClaimsPrincipal object to wrap your ClaimsIdentity parameter to pass to this method, you can optionally include an AuthenticationProperties object and must include a scheme.",
+              "Description": "Add a comment to explain how to use the parameters for the AuthenticationTicket constructor.",
+              "ActionValidation": {
+                "Contains": "Please use a ClaimsPrincipal object to wrap your list of ClaimsIdentity to pass it to this method as a parameter, you can also include an AuthenticationProperties object and a scheme as well.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData)",
+      "Value": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData)",
+      "KeyType": "",
+      "ContainingType": "ISecureDataFormat",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData) add directive Microsoft.AspNetCore.Authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string)",
+      "Value": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string)",
+      "KeyType": "",
+      "ContainingType": "ISecureDataFormat",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string) add directive Microsoft.AspNetCore.Authentication.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.OAuth",
+      "Value": "Microsoft.Owin.Security.OAuth",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to setup OAuth in .net core.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Using",
+              "Value": "OAuth is now handled by using the public void ConfigureServices(IServiceCollection services) method in the Startup.cs class. The basic process is to use services.AddAuthentication(options => and then set a series of options. We can chain unto that the actual OAuth settings call services.AddOAuth(\"Auth_Service_here_such_as_GitHub_Canvas...\", options =>. Also remember to add a call to IApplicationBuilder.UseAuthentication() in your public void Configure(IApplicationBuilder app, IHostingEnvironment env) method. Please ensure this call comes before setting up your routes.",
+              "Description": "Add a comment to explain how to setup OAuth in .net core.",
+              "ActionValidation": {
+                "Contains": "OAuth is now handled by using the public void ConfigureServices(IServiceCollection services) method in the Startup.cs class. The basic process is to use services.AddAuthentication(options => and then set a series of options. We can chain unto that the actual OAuth settings call services.AddOAuth(\"Auth_Service_here_such_as_GitHub_Canvas...\", options =>. Also remember to add a call to IApplicationBuilder.UseAuthentication() in your public void Configure(IApplicationBuilder app, IHostingEnvironment env) method. Please ensure this call comes before setting up your routes.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "Microsoft.Owin.Security.AuthenticationDescription",
+      "Value": "Microsoft.Owin.Security.AuthenticationDescription",
+      "KeyType": "Identifier",
+      "ContainingType": "Microsoft.Owin.Security",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Replace Microsoft.Owin.Security.AuthenticationDescription with Microsoft.AspNetCore.Authentication.AuthenticationScheme.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "AuthenticationScheme",
+              "Description": "Replace AuthenticationDescription with AuthenticationScheme",
+              "ActionValidation": {
+                "Contains": "AuthenticationScheme",
+                "NotContains": "AuthenticationDescription"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfo()",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfo()",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfo() add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfo invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfo invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync()",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync()",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync() add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync(string, string)",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync(string, string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalLoginInfoAsync(string, string) add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync(string) method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalLoginInfoAsync(string) method to replace the IAuthenticationManager.GetExternalLoginInfoAsync invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalLoginInfoAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalAuthenticationTypes()",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.GetExternalAuthenticationTypes()",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.GetExternalAuthenticationTypes() add a comment to explain how to use the SignInManager.GetExternalAuthenticationSchemesAsync() method to replace the IAuthenticationManager.GetExternalAuthenticationTypes invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalAuthenticationSchemesAsync method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.GetExternalAuthenticationSchemesAsync(string) method to replace the IAuthenticationManager.GetExternalAuthenticationTypes invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the GetExternalAuthenticationSchemesAsync method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRemembered(string)",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRemembered(string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRemembered(string) add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRemembered invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRemembered(TUser) method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRemembered invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRemembered(TUser) method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRememberedAsync(string)",
+      "Value": "Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRememberedAsync(string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationManagerExtensions",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.IAuthenticationManager.TwoFactorBrowserRememberedAsync(string) add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRememberedAsync invocation.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRememberedAsync(TUser) method to replace this invocation.",
+              "Description": "Add a comment to explain how to use the SignInManager.IsTwoFactorClientRememberedAsync(TUser) method to replace the IAuthenticationManager.TwoFactorBrowserRememberedAsync invocation.",
+              "ActionValidation": {
+                "Contains": "You must declare a Microsoft.AspNetCore.Identity.SignInManager<TUser> object and access the TwoFactorBrowserRememberedAsync(TUser) method to replace this invocation.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
