@@ -1,0 +1,152 @@
+{
+  "Name": "Microsoft.Owin.Security.DataHandler",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security.DataHandler",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.DataHandler",
+      "Value": "Microsoft.Owin.Security.DataHandler",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Authentication and remove Microsoft.Owin.Security.DataHandler.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.DataHandler",
+              "Description": "Remove Microsoft.Owin.Security.DataHandler namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.DataHandler;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Encode(byte[])",
+      "Value": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Encode(byte[])",
+      "KeyType": "",
+      "ContainingType": "ITextEncoder",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace the ITextEncoder.Encode method.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+              "Description": "Add a comment to explain how to replace the ITextEncoder.Encode method.",
+              "ActionValidation": {
+                "Contains": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.DataHandler.Encoder",
+              "Description": "Remove Microsoft.Owin.Security.DataHandler.Encoder namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.DataHandler.Encoder;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Decode(string)",
+      "Value": "Microsoft.Owin.Security.DataHandler.Encoder.ITextEncoder.Decode(string)",
+      "KeyType": "",
+      "ContainingType": "ITextEncoder",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to replace the ITextEncoder.Decode method.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+              "Description": "Add a comment to explain how to replace the ITextEncoder.Decode method.",
+              "ActionValidation": {
+                "Contains": "Please replace the ITextEncoder with its appropriate class either Microsoft.AspNetCore.WebUtilities.Base64UrlTextEncoder to encode and decode URLs or System.Text.Encoding for general encoding needs.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.DataHandler.Encoder",
+              "Description": "Remove Microsoft.Owin.Security.DataHandler.Encoder namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.DataHandler.Encoder;"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
