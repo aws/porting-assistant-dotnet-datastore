@@ -1,0 +1,173 @@
+{
+  "Name": "Microsoft.Owin.Security.DataProtection",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security.DataProtection",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.DataProtection",
+      "Value": "Microsoft.Owin.Security.DataProtection",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.DataProtection and remove Microsoft.Owin.Security.DataProtection.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.DataProtection",
+              "Description": "Add Microsoft.AspNetCore.DataProtection namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.DataProtection;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.DataProtection",
+              "Description": "Remove Microsoft.Owin.Security.DataProtection namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.DataProtection;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.DataProtection.IDataProtectionProvider.Create(params string[])",
+      "Value": "Microsoft.Owin.Security.DataProtection.IDataProtectionProvider.Create(params string[])",
+      "KeyType": "",
+      "ContainingType": "IDataProtectionProvider",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.DataProtection.IDataProtectionProvider.Create(params string[]) replace Create method with CreateProtector.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "Create",
+                "newMethod": "CreateProtector"
+              },
+              "Description": "Replace Create api with CreateProtector.",
+              "ActionValidation": {
+                "Contains": "CreateProtector",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "ObjectCreation",
+      "Name": "Microsoft.Owin.Security.DataProtection.DpapiDataProtectionProvider.DpapiDataProtectionProvider()",
+      "Value": "Microsoft.Owin.Security.DataProtection.DpapiDataProtectionProvider.DpapiDataProtectionProvider()",
+      "KeyType": "Name",
+      "ContainingType": "DpapiDataProtectionProvider",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "When a DpapiDataProtectionProvider class is found add a comment to explain how to replace it with IDataProtectionProvider through dependency injection.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "ObjectCreation",
+              "Value": "DpapiDataProtectionProvider should be replaced with a Dependency injection for the IDataProtectionProvider interface. Please include a parameter with this interface to replace this class.",
+              "Description": "Add a comment to explain how to replace DpapiDataProtectionProvider in .net core with IDataProtectionProvider.",
+              "ActionValidation": {
+                "Contains": "DpapiDataProtectionProvider should be replaced with a Dependency injection for the IDataProtectionProvider interface. Please include a parameter with this interface to replace this class.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.DataProtection.DpapiDataProtectionProvider.Create(params string[])",
+      "Value": "Microsoft.Owin.Security.DataProtection.DpapiDataProtectionProvider.Create(params string[])",
+      "KeyType": "",
+      "ContainingType": "DpapiDataProtectionProvider",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.DataProtection.DpapiDataProtectionProvider.Create(params string[]) replace Create method with CreateProtector.",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "Create",
+                "newMethod": "CreateProtector"
+              },
+              "Description": "Replace Create api with CreateProtector.",
+              "ActionValidation": {
+                "Contains": "CreateProtector",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
