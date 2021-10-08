@@ -11,7 +11,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.HttpOverrides;
 
 namespace #NAMESPACEPLACEHOLDER#
 {
@@ -29,11 +28,6 @@ namespace #NAMESPACEPLACEHOLDER#
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.Configure<ForwardedHeadersOptions>(options =>
-            {
-                options.ForwardedHeaders =
-                ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
-            });
             //Added Services
         }
 
@@ -50,13 +44,14 @@ namespace #NAMESPACEPLACEHOLDER#
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseForwardedHeaders();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             
             //Added Middleware
 
             app.UseRouting();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
