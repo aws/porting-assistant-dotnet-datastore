@@ -22,86 +22,22 @@
             {
               "Name": "netcoreapp3.1",
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin.Security, Microsoft.Owin and Owin.",
-          "Actions": [
-            {
-              "Name": "AddPackage",
-              "Type": "Package",
-              "Value": {
-                "Name": "Microsoft.AspNetCore.Owin",
-                "Version": "3.1.14"
-              },
-              "Description": "Add package Microsoft.AspNetCore.Owin"
             },
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Owin",
-              "Description": "Add Microsoft.AspNetCore.Owin namespace",
-              "ActionValidation": {
-                "Contains": "using Microsoft.AspNetCore.Owin;",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Owin.Security",
-              "Description": "Remove Microsoft.Owin.Security namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "using Microsoft.Owin.Security;"
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Owin",
-              "Description": "Remove Microsoft.Owin namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "using Microsoft.Owin;"
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Owin",
-              "Description": "Remove Owin namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "using Owin;"
-              }
-            }
-          ]
-        },
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
             {
               "Name": "net5.0",
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin.Security, Microsoft.Owin and Owin.",
+          "Description": "Remove Microsoft.Owin.Security.OAuth, Microsoft.Owin.Security.",
           "Actions": [
             {
-              "Name": "AddPackage",
-              "Type": "Package",
-              "Value": "Microsoft.AspNetCore.Owin",
-              "Description": "Add package Microsoft.AspNetCore.Owin"
-            },
-            {
-              "Name": "AddDirective",
+              "Name": "RemoveDirective",
               "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Owin",
-              "Description": "Add Microsoft.AspNetCore.Owin namespace",
+              "Value": "Microsoft.Owin.Security.OAuth",
+              "Description": "Remove Microsoft.Owin.Security.OAuth namespace",
               "ActionValidation": {
-                "Contains": "using Microsoft.AspNetCore.Owin;",
-                "NotContains": ""
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OAuth;"
               }
             },
             {
@@ -112,26 +48,6 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Microsoft.Owin.Security;"
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Microsoft.Owin",
-              "Description": "Remove Microsoft.Owin namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "using Microsoft.Owin;"
-              }
-            },
-            {
-              "Name": "RemoveDirective",
-              "Type": "Using",
-              "Value": "Owin",
-              "Description": "Remove Owin namespace",
-              "ActionValidation": {
-                "Contains": "",
-                "NotContains": "using Owin;"
               }
             }
           ]
@@ -204,7 +120,7 @@
               "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
             }
           ],
-          "Description": "Add Microsoft.AspNetCore.Authentication namespace if AuthenticationProperties is being used and remove Microsoft.Owin.Security.",
+          "Description": "Add Microsoft.AspNetCore.Http namespace and replace IAuthenticationManager with HttpContext.",
           "Actions": [
             {
               "Name": "ReplaceIdentifier",
@@ -741,161 +657,6 @@
               "Description": "Add the await operator to SignOutAsync.",
               "ActionValidation": {
                 "Contains": "await",
-                "NotContains": ""
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "Class",
-      "Name": "Microsoft.Owin.Security.AuthenticationTicket",
-      "Value": "Microsoft.Owin.Security.AuthenticationTicket",
-      "KeyType": "Identifier",
-      "ContainingType": "Microsoft.Owin.Security",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "For Microsoft.Owin.Security.AuthenticationTicket add directive Microsoft.AspNetCore.Authentication.",
-          "Actions": [
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Authentication",
-              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
-              "ActionValidation": {
-                "Contains": "using Microsoft.AspNetCore.Authentication;",
-                "NotContains": ""
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "ObjectCreation",
-      "Name": "Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties)",
-      "Value": "Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties)",
-      "KeyType": "Name",
-      "ContainingType": "AuthenticationTicket",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "For Microsoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties) add directive Microsoft.AspNetCore.Authentication, add a comment to explain the new parameters requirements.",
-          "Actions": [
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Authentication",
-              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
-              "ActionValidation": {
-                "Contains": "using Microsoft.AspNetCore.Authentication;",
-                "NotContains": ""
-              }
-            },
-            {
-              "Name": "AddComment",
-              "Type": "ObjectCreation",
-              "Value": "Please use a ClaimsPrincipal object to wrap your ClaimsIdentity parameter to pass to this method, you can optionally include an AuthenticationProperties object and must include a scheme.",
-              "Description": "Add a comment to explain how to use the parameters for the AuthenticationTicket constructor.",
-              "ActionValidation": {
-                "Contains": "Please use a ClaimsPrincipal object to wrap your list of ClaimsIdentity to pass it to this method as a parameter, you can also include an AuthenticationProperties object and a scheme as well.",
-                "NotContains": "",
-                "CheckComments": "True"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "Method",
-      "Name": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData)",
-      "Value": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData)",
-      "KeyType": "",
-      "ContainingType": "ISecureDataFormat",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "For Microsoft.Owin.Security.ISecureDataFormat<TData>.Protect(TData) add directive Microsoft.AspNetCore.Authentication.",
-          "Actions": [
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Authentication",
-              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
-              "ActionValidation": {
-                "Contains": "using Microsoft.AspNetCore.Authentication;",
-                "NotContains": ""
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Type": "Method",
-      "Name": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string)",
-      "Value": "Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string)",
-      "KeyType": "",
-      "ContainingType": "ISecureDataFormat",
-      "RecommendedActions": [
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
-            {
-              "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            },
-            {
-              "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
-            }
-          ],
-          "Description": "For Microsoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string) add directive Microsoft.AspNetCore.Authentication.",
-          "Actions": [
-            {
-              "Name": "AddDirective",
-              "Type": "Using",
-              "Value": "Microsoft.AspNetCore.Authentication",
-              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
-              "ActionValidation": {
-                "Contains": "using Microsoft.AspNetCore.Authentication;",
                 "NotContains": ""
               }
             }
