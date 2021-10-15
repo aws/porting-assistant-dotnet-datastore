@@ -1,0 +1,67 @@
+{
+  "Name": "CoreWCF.ConfigurationBased.Project",
+  "Version": "1.0.0",
+  "Source": "Github",
+  "Packages": [
+    {
+      "Name": "Project",
+      "Type": "Project"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Project",
+      "Name": "Project",
+      "Value": "WCFConfigBasedService",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "",
+          "Actions": [  
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "CoreWCF.Primitives",
+              "Description": "Add package CoreWCF.Primitives."
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "CoreWCF.Http",
+              "Description": "Add package CoreWCF.Http."
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "CoreWCF.NetTcp",
+              "Description": "Add package CoreWCF.NetTcp."
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore",
+              "Description": "Add package Microsoft.AspNetCore."
+            },          
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "CoreWCF.ConfigurationManager",
+              "Description": "Add package CoreWCF.ConfigurationManager."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
