@@ -706,6 +706,43 @@
           ]
         }
       ]
+    },
+    {
+      "Type": "ObjectCreation",
+      "Name": "Microsoft.Owin.QueryString.QueryString(string, string)",
+      "Value": "Microsoft.Owin.QueryString.QueryString(string, string)",
+      "KeyType": "Name",
+      "ContainingType": "QueryString",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a comment to explain how to set the new parameters for QueryString.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "ObjectCreation",
+              "Value": "This method only takes a single parameter for the value of the new query string or none at all.",
+              "Description": "Add a comment to explain how to set the new parameters for QueryString.",
+              "ActionValidation": {
+                "Contains": "This method only take a single parameter for the value of the new query string or none at all.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
