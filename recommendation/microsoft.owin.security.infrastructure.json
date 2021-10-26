@@ -1,0 +1,324 @@
+{
+  "Name": "Microsoft.Owin.Security.Infrastructure",
+  "Version": "1.0.0",
+  "Packages": [
+    {
+      "Name": "Microsoft.Owin.Security.Infrastructure",
+      "Type": "Nuget"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Type": "Namespace",
+      "Name": "Microsoft.Owin.Security.Infrastructure",
+      "Value": "Microsoft.Owin.Security.Infrastructure",
+      "KeyType": "Name",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Authentication and remove Microsoft.Owin.Security.Infrastructure.",
+          "Actions": [
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.Infrastructure",
+              "Description": "Remove Microsoft.Owin.Security.Infrastructure namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.Infrastructure;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "AuthenticationTokenCreateContext",
+      "Value": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenCreateContext",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Authentication namespace and replace AuthenticationTokenCreateContext with TicketSerializer.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "TicketSerializer",
+              "Description": "Replace AuthenticationTokenCreateContext with TicketSerializer",
+              "ActionValidation": {
+                "Contains": "TicketSerializer",
+                "NotContains": "AuthenticationTokenCreateContext"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Class",
+      "Name": "AuthenticationTokenReceiveContext",
+      "Value": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenReceiveContext",
+      "KeyType": "Identifier",
+      "ContainingType": "",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "Add Microsoft.AspNetCore.Authentication namespace and replace AuthenticationTokenReceiveContext with TicketSerializer.",
+          "Actions": [
+            {
+              "Name": "ReplaceIdentifier",
+              "Type": "Identifier",
+              "Value": "TicketSerializer",
+              "Description": "Replace AuthenticationTokenReceiveContext with TicketSerializer",
+              "ActionValidation": {
+                "Contains": "TicketSerializer",
+                "NotContains": "AuthenticationTokenReceiveContext"
+              }
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication",
+              "Description": "Add Microsoft.AspNetCore.Authentication",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication;",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenCreateContext.SerializeTicket()",
+      "Value": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenCreateContext.SerializeTicket()",
+      "KeyType": "",
+      "ContainingType": "AuthenticationTokenCreateContext",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.Infrastructure.AuthenticationTokenCreateContext.SerializeTicket() add a comment to explain the new return type and replace SerializeTicket with Serialize.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add a new parameter as the new method requires Microsoft.AspNetCore.Authentication.AuthenticationTicket to be passed in. The new return type is also a byte[].",
+              "Description": "Add a comment to explain how to replace the SerializeTicket invocation.",
+              "ActionValidation": {
+                "Contains": "Please add a new parameter as the new method requires Microsoft.AspNetCore.Authentication.AuthenticationTicket to be passed in. The new return type is also a byte[].",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "SerializeTicket",
+                "newMethod": "Serialize"
+              },
+              "Description": "Replace SerializeTicket with Serialize.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenReceiveContext.DeserializeTicket(string)",
+      "Value": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenReceiveContext.DeserializeTicket(string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationTokenReceiveContext",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.Infrastructure.AuthenticationTokenReceiveContext.DeserializeTicket(string) add a comment to explain the new return type and replace DeserializeTicket with Deserialize.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please change the parameter type from string to a byte[]. This is also the data type returned by the TicketSerializer.Serialize method. This new method also returns the actual Microsoft.AspNetCore.Authentication.AuthenticationTicket object serialized with the TicketSerializer.Serialize method.",
+              "Description": "Add a comment to explain how to replace the DeserializeTicket invocation.",
+              "ActionValidation": {
+                "Contains": "Please change the parameter type from string to a byte[]. This is also the data type returned by the TicketSerializer.Serialize method.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "ReplaceMethodOnly",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "DeserializeTicket",
+                "newMethod": "Deserialize"
+              },
+              "Description": "Replace DeserializeTicket with Deserialize.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenCreateContext.SetToken(string)",
+      "Value": "Microsoft.Owin.Security.Infrastructure.AuthenticationTokenCreateContext.SetToken(string)",
+      "KeyType": "",
+      "ContainingType": "AuthenticationTokenCreateContext",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.Infrastructure.AuthenticationTokenCreateContext.SetToken(string) add a comment to explain the new methods to write information.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please use instead the methods of the TicketSerializer class: WriteIdentity, WriteClaim, Write for AuthenticationTicket or the ReadIdentity, ReadClaim, Read for AuthenticationTicket.",
+              "Description": "Add a comment to explain how to replace the SetToken invocation.",
+              "ActionValidation": {
+                "Contains": "Please use instead the methods of the TicketSerializer class: WriteIdentity, WriteClaim, Write for AuthenticationTicket or the ReadIdentity, ReadClaim, Read for AuthenticationTicket.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Method",
+      "Name": "Microsoft.Owin.Security.Infrastructure.SecurityHelper.LookupChallenge(string, Microsoft.Owin.Security.AuthenticationMode)",
+      "Value": "Microsoft.Owin.Security.Infrastructure.SecurityHelper.LookupChallenge(string, Microsoft.Owin.Security.AuthenticationMode)",
+      "KeyType": "",
+      "ContainingType": "SecurityHelper",
+      "RecommendedActions": [
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "netcoreapp3.1",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            },
+            {
+              "Name": "net5.0",
+              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+            }
+          ],
+          "Description": "For Microsoft.Owin.Security.Infrastructure.SecurityHelper.LookupChallenge(string, Microsoft.Owin.Security.AuthenticationMode) add a comment to explain how to handle authentication related events.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please use UseAuthentication() in your Configure method in your Startup class and in your ConfigureServices method in your Startup class use AddAuthentication to set all your various options and middleware as needed.",
+              "Description": "Add a comment to explain how to replace the LookupChallenge invocation.",
+              "ActionValidation": {
+                "Contains": "Please use UseAuthentication() in your Configure method in your Startup class and in your ConfigureServices method in your Startup class use AddAuthentication to set all your various options and middleware as needed.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
