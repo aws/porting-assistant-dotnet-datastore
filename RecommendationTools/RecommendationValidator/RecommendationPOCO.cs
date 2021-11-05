@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RecommendationValidator
 {
-    public class RecommendationPOJO
+    public class RecommendationPOCO
     {
         /*
          * The namespace this file applies to

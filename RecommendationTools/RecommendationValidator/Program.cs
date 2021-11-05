@@ -2,7 +2,6 @@
 using System.IO;
 using CommandLine;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace RecommendationValidator
 {
@@ -22,7 +21,7 @@ namespace RecommendationValidator
                                Environment.Exit(-1);
                            }
                            string recommendationText = File.ReadAllText(o.FilePath);
-                           JsonConvert.DeserializeObject<RecommendationPOJO>(recommendationText);
+                           JsonConvert.DeserializeObject<RecommendationPOCO>(recommendationText);
 
                        }
                        catch (Exception e)
