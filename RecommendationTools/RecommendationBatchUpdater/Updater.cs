@@ -18,7 +18,8 @@ namespace RecommendationBatchUpdater
                     {
                         foreach (var recommendedAction in recommendation.RecommendedActions)
                         {
-                            if (!recommendedAction.TargetFrameworks.Contains(frameworkToAdd))
+                            if (!recommendedAction.TargetFrameworks.Contains(frameworkToAdd) 
+                                && recommendedAction.TargetFrameworks.Contains("net5.0"))
                             {
                                 recommendedAction.TargetFrameworks = recommendedAction.TargetFrameworks.Append(frameworkToAdd).ToArray();
                             }
@@ -42,7 +43,10 @@ namespace RecommendationBatchUpdater
                     {
                         foreach (var recommendedAction in recommendation.RecommendedActions)
                         {
-                            if (recommendedAction.TargetFrameworks.All(f => f.Name != frameworkToAdd))
+                            // Assuming frameworkToAdd > net5.0,
+                            // only add it if net5.0 is already in TargetFrameworks
+                            if (recommendedAction.TargetFrameworks.All(f => f.Name != frameworkToAdd) 
+                                && recommendedAction.TargetFrameworks.Any(f => f.Name == "net5.0"))
                             {
                                 recommendedAction.TargetFrameworks.Add(new TargetFramework
                                 {
