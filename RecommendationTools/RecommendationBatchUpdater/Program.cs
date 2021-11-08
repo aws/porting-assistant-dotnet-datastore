@@ -13,13 +13,12 @@ namespace RecommendationBatchUpdater
                     try
                     {
                         // ADD/MODIFY CODE HERE TO UPDATE RECOMMENDATIONS AND/OR RULES FILES
-
-                        //var recommendations = Loader.LoadBatchRecommendations(o.Directory);
-                        //Updater.BatchAddFramework(recommendations,"net6.0");
+                        var recommendations = Loader.LoadBatchRecommendations(o.Directory);
+                        Updater.BatchAddFramework(recommendations, "net6.0");
                         //Saver.SaveBatch(recommendations);
 
-                        //var rules = Loader.LoadBatchRules(o.Directory);
-                        //Updater.BatchAddFramework(rules,"net6.0");
+                        var rules = Loader.LoadBatchRules(o.Directory);
+                        Updater.BatchAddFramework(rules, "net6.0");
                         //Saver.SaveBatch(rules);
                     }
                     catch (Exception e)
