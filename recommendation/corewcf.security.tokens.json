@@ -3,15 +3,15 @@
   "Version": "1.0.0",
   "Packages": [
     {
-      "Type": "SDK",
-      "Name": "CoreWCF.Security.Tokens"
+      "Name": "CoreWCF.Security.Tokens",
+      "Type": "SDK"
     }
   ],
   "Recommendations": [
     {
       "Type": "Namespace",
-      "Value": "System.ServiceModel.Security.Tokens",
       "Name": "System.ServiceModel.Security.Tokens",
+      "Value": "System.ServiceModel.Security.Tokens",
       "KeyType": "Name",
       "RecommendedActions": [
         {
@@ -20,11 +20,30 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Replace System.ServiceModel.Security.Tokens with CoreWCF.Security.Tokens Namespace. Check CoreWCF.Security.Tokens Compatibility at https://github.com/CoreWCF/CoreWCF/releases",

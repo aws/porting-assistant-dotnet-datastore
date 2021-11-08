@@ -21,17 +21,41 @@
           "TargetFrameworks": [
             {
               "Name": "netstandard2.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
-          ],          
+          ],
           "Description": "Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore. Also, package Microsoft.EntityFrameworkCore will be added.",
           "Actions": [
             {
@@ -45,14 +69,20 @@
               "Type": "Using",
               "Value": "Microsoft.EntityFrameworkCore",
               "Description": "Add Microsoft.EntityFrameworkCore namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.EntityFrameworkCore;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.EntityFrameworkCore;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.Entity",
               "Description": "Remove System.Data.Entity namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Data.Entity;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Data.Entity;"
+              }
             }
           ]
         }
@@ -71,15 +101,39 @@
           "TargetFrameworks": [
             {
               "Name": "netstandard2.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Add an OnConfiguring method to set the connection string. In addition, System.Data.Entity namespace will be replaced with Microsoft.EntityFrameworkCore.",
@@ -89,21 +143,30 @@
               "Type": "Class",
               "Value": "protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { /* Use Configuration from static ConfigurationManager to access connection string in appsettings.json. Example below: optionsBuilder.UseSqlServer(ConfigurationManager.Configuration.GetConnectionString(\"CONNECTIONSTRINGNAME\")); */ base.OnConfiguring(optionsBuilder); }",
               "Description": "Add a method to configure the connection string.",
-              "ActionValidation":{"Contains":"OnConfiguring(DbContextOptionsBuilder", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "OnConfiguring(DbContextOptionsBuilder",
+                "NotContains": ""
+              }
             },
             {
               "Name": "AddDirective",
               "Type": "Using",
               "Value": "Microsoft.EntityFrameworkCore",
               "Description": "Add Microsoft.EntityFrameworkCore namespace.",
-              "ActionValidation":{"Contains":"using Microsoft.EntityFrameworkCore;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "using Microsoft.EntityFrameworkCore;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.Entity",
               "Description": "Remove System.Data.Entity namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Data.Entity;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Data.Entity;"
+              }
             }
           ]
         }

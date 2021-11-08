@@ -12,7 +12,7 @@
       "Type": "ElementAccess",
       "Name": "WebConfigurationManager.ConnectionStrings",
       "Value": "System.Configuration.ConnectionStringSettingsCollection.WebConfigurationManager.ConnectionStrings",
-	  "ContainingType":"ConnectionStringSettingsCollection",
+      "ContainingType": "ConnectionStringSettingsCollection",
       "RecommendedActions": [
         {
           "Source": "Amazon",
@@ -20,13 +20,32 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
-          ],          
+          ],
           "Description": "",
           "Actions": [
             {
@@ -44,17 +63,20 @@
               "Type": "Using",
               "Value": "System.Web.Configuration",
               "Description": "Remove System.Web.Configuration namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"using System.Web.Configuration;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Web.Configuration;"
+              }
             }
           ]
         }
       ]
     },
-	{
+    {
       "Type": "MemberAccess",
       "Name": "ConnectionString",
       "Value": "System.Configuration.ConnectionStringSettings.ConnectionString",
-	  "ContainingType":"ConnectionStringSettings",
+      "ContainingType": "ConnectionStringSettings",
       "RecommendedActions": [
         {
           "Source": "Amazon",
@@ -62,11 +84,30 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Remove ConnectionString accessor.",

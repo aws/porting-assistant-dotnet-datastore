@@ -3,15 +3,15 @@
   "Version": "1.0.0",
   "Packages": [
     {
-      "Type": "SDK",
-      "Name": "CoreWCF.Channels"
+      "Name": "CoreWCF.Channels",
+      "Type": "SDK"
     }
   ],
   "Recommendations": [
     {
       "Type": "Namespace",
-      "Value": "System.ServiceModel.Channels",
       "Name": "System.ServiceModel.Channels",
+      "Value": "System.ServiceModel.Channels",
       "KeyType": "Name",
       "RecommendedActions": [
         {
@@ -20,11 +20,30 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Replace System.ServiceModel.Channels with CoreWCF.Channels Namespace. Check CoreWCF Compatibility at https://github.com/CoreWCF/CoreWCF/releases",
