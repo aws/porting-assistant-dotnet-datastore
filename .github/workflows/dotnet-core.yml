@@ -18,6 +18,6 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-      run: dotnet restore RecommendationTools/RecommendationValidator.sln
+      run: dotnet restore RecommendationTools/RecommendationTools.sln
     - name: Validate
       run: for FILE in ./recommendation/*.recommendation.json ; do dotnet run --project RecommendationTools/RecommendationValidator/RecommendationValidator.csproj --path $FILE; done
