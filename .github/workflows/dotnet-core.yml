@@ -17,7 +17,13 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.301
+    - name: Setup .NET Core 5
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.301
     - name: Install dependencies
       run: dotnet restore RecommendationTools/RecommendationTools.sln
+    - name: Build
+      run: dotnet build --configuration Release --no-restore RecommendationTools/RecommendationTools.sln
     - name: Validate
       run: for FILE in ./recommendation/*.recommendation.json ; do dotnet run --project RecommendationTools/RecommendationValidator/RecommendationValidator.csproj --path $FILE; done
