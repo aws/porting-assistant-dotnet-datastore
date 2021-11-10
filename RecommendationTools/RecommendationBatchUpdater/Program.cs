@@ -12,7 +12,12 @@ namespace RecommendationBatchUpdater
                 {
                     try
                     {
-                        // ADD/MODIFY CODE HERE TO UPDATE RECOMMENDATIONS AND/OR RULES FILES
+                        ///////////////////////////////////////////////////////////////////////////
+                        // ADD/MODIFY CODE BELOW TO UPDATE RECOMMENDATIONS AND/OR RULES FILES    //
+                        // NOTE: We need to verify compatibility of packages added by rules with //
+                        //   the target framework being added.                                   //
+                        ///////////////////////////////////////////////////////////////////////////
+                        
                         var recommendations = Loader.LoadBatchRecommendations(o.Directory);
                         Updater.BatchAddFramework(recommendations, "net6.0");
                         //Saver.SaveBatch(recommendations);

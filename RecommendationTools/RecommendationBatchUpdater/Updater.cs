@@ -28,7 +28,7 @@ namespace RecommendationBatchUpdater
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine($"Failed to save recommendation to {filePath}: {e}");
+                    Console.WriteLine($"Failed to save add target framework {frameworkToAdd} to {filePath}: {e}");
                 }
             }
         }
@@ -59,7 +59,7 @@ namespace RecommendationBatchUpdater
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine($"Failed to save rule to {filePath}: {e}");
+                    Console.WriteLine($"Failed to save add target framework {frameworkToAdd} to {filePath}: {e}");
                 }
             }
         }
