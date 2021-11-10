@@ -8,7 +8,7 @@ using System.IO;
 using System.Web.Mvc;
 using System.Web.Configuration;
 
-namespace MvcMusicStore.Controllers
+namespace #NAMESPACEPLACEHOLDER#
 {
     public class MonolithService : Controller
     {
