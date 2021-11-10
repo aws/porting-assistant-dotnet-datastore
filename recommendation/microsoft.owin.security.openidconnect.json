@@ -38,7 +38,7 @@
               ]
             }
           ],
-          "Description": "For .Net 5 add latest Microsoft.AspNetCore.Authentication.Google package and add a comment to explain how to add google authentication.",
+          "Description": "For .Net 5 and later, add Microsoft.AspNetCore.Authentication.OpenIdConnect package version 5.0.12",
           "Actions": [
             {
               "Name": "AddDirective",
@@ -63,7 +63,10 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "5.0.12"
+              },
               "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
             }
           ]
@@ -82,7 +85,7 @@
               ]
             }
           ],
-          "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.Google package version 3.1.18 and add a comment to explain how to add google authentication.",
+          "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.OpenIdConnect package version 3.1.18.",
           "Actions": [
             {
               "Name": "AddDirective",
