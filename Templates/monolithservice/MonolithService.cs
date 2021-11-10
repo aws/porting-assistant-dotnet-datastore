@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Configuration;
 
-namespace Modernize.Web.Mvc.Controllers
+namespace #NAMESPACEPLACEHOLDER#
 {
     public static class MonolithService
     {
