@@ -21,10 +21,24 @@
           "TargetFrameworks": [
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
-          "Description": "For .Net 5 add latest Microsoft.AspNetCore.Authentication.Google package and add a comment to explain how to add google authentication.",
+          "Description": "For .Net 5 and later, add Microsoft.AspNetCore.Authentication.OpenIdConnect package version 5.0.12",
           "Actions": [
             {
               "Name": "AddDirective",
@@ -49,7 +63,10 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "5.0.12"
+              },
               "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
             }
           ]
@@ -60,10 +77,15 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
-          "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.Google package version 3.1.18 and add a comment to explain how to add google authentication.",
+          "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.OpenIdConnect package version 3.1.18.",
           "Actions": [
             {
               "Name": "AddDirective",
@@ -94,10 +116,10 @@
               },
               "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect version 3.1.18"
             }
-			    ]
-			  }
-		  ]
-		},
+          ]
+        }
+      ]
+    },
     {
       "Type": "Class",
       "Name": "OpenIdConnectAuthenticationOptions",
@@ -111,11 +133,30 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Replace OpenIdConnectAuthenticationOptions with OpenIdConnectOptions.",

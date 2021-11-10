@@ -1,7 +1,6 @@
 {
   "Name": "System.Data.SqlClient",
   "Version": "1.0.0",
-  "Source": "Github",
   "Packages": [
     {
       "Name": "System.Data",
@@ -22,15 +21,39 @@
           "TargetFrameworks": [
             {
               "Name": "netstandard2.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Add the package Microsoft.Data.SqlClient to the project. In addition, System.Data.SqlClient namespace will be replaced with Microsoft.Data.SqlClient.",
@@ -46,14 +69,20 @@
               "Type": "Using",
               "Value": "Microsoft.Data.SqlClient",
               "Description": "Add Microsoft.Data.SqlClient namespace.",
-              "ActionValidation":{"Contains":"usingMicrosoft.Data.SqlClient;", "NotContains":""}
+              "ActionValidation": {
+                "Contains": "usingMicrosoft.Data.SqlClient;",
+                "NotContains": ""
+              }
             },
             {
               "Name": "RemoveDirective",
               "Type": "Using",
               "Value": "System.Data.SqlClient",
               "Description": "Remove System.Data.SqlClient namespace.",
-              "ActionValidation":{"Contains":"", "NotContains":"usingSystem.Data.SqlClient;"}
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "usingSystem.Data.SqlClient;"
+              }
             }
           ]
         }

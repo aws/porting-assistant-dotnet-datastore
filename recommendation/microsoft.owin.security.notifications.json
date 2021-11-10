@@ -21,10 +21,24 @@
           "TargetFrameworks": [
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
-          "Description": "For .Net 5 add Microsoft.AspNetCore.Authentication.OpenIdConnect package and remove Microsoft.Owin.Security.Notifications directive and add Microsoft.AspNetCore.Authentication.OpenIdConnect directive.",
+          "Description": "For .Net 5 and later, add Microsoft.AspNetCore.Authentication.OpenIdConnect package version 5.0.12 and remove Microsoft.Owin.Security.Notifications directive and add Microsoft.AspNetCore.Authentication.OpenIdConnect directive.",
           "Actions": [
             {
               "Name": "AddDirective",
@@ -49,7 +63,10 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "5.0.12"
+              },
               "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
             }
           ]
@@ -60,7 +77,12 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "For .Net Core add Microsoft.AspNetCore.Authentication.OpenIdConnect package version 3.1.18 and remove Microsoft.Owin.Security.Notifications directive and add Microsoft.AspNetCore.Authentication.OpenIdConnect directive.",
@@ -111,11 +133,30 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "For Microsoft.Owin.Security.Notifications.RedirectToIdentityProviderNotification<TMessage, TOptions>.HandleResponse() add a comment to explain how to replace the class RedirectToIdentityProviderNotification with RedirectContext class.",
@@ -148,11 +189,30 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "For Microsoft.Owin.Security.Notifications.BaseNotification<TOptions>.HandleResponse() add a comment to explain how to replace the class BaseNotification.",
