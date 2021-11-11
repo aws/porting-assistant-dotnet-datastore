@@ -5,29 +5,24 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Http;
 using System.IO;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Configuration;
 
 namespace #NAMESPACEPLACEHOLDER#
 {
-    public class MonolithService : Controller
+    public static class MonolithService
     {
         private static string ServiceHost = WebConfigurationManager.AppSettings["ServiceHost"];
         private static string ServicePort = WebConfigurationManager.AppSettings["ServicePort"];
         private static string ServiceUrl = $"https://{ServiceHost}";
-        private static MonolithService _service = new MonolithService();
 
-        public static async Task<string> CreateRequest()
+        public static async Task<string> CreateRequest(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
         {
-            return await _service.CreateRequestWork();
-        }
-
-        private async Task<string> CreateRequestWork()
-        {
-            string actionName = this.ControllerContext.RouteData.Values["action"].ToString();
-            string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();
-            var httpMethod = new HttpMethod(HttpContext.Request.HttpMethod);
-            var currentUri = HttpContext.Request.Url;
+            string actionName = controllerContext.RouteData.Values["action"].ToString();
+            string controllerName = controllerContext.RouteData.Values["controller"].ToString();
+            var httpMethod = new HttpMethod(httpContext.Request.HttpMethod);
+            var currentUri = httpContext.Request.Url;
             var uriBuilder = new UriBuilder($"{ServiceUrl}/{controllerName}/{actionName}")
             {
                 Host = ServiceHost,
@@ -37,7 +32,7 @@ namespace #NAMESPACEPLACEHOLDER#
                 Path = currentUri.PathAndQuery
             };
             var requestMessage = new HttpRequestMessage(httpMethod, uriBuilder.Uri);
-            var currentHeaders = HttpContext.Request.Headers.Keys;
+            var currentHeaders = httpContext.Request.Headers.Keys;
             //ViewBag
             //ViewData
             //TempData
@@ -49,11 +44,11 @@ namespace #NAMESPACEPLACEHOLDER#
             var client = new HttpClient(handler);
             if (httpMethod == HttpMethod.Post || httpMethod == HttpMethod.Put)
             {
-                var streamReader = new StreamReader(HttpContext.Request.InputStream).ReadToEnd();
+                var streamReader = new StreamReader(httpContext.Request.InputStream).ReadToEnd();
                 requestMessage.Content = new StringContent(streamReader);
-                requestMessage.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(Request.ContentType);
-                requestMessage.Content.Headers.ContentEncoding.Add(Request.ContentEncoding.HeaderName);
-                requestMessage.Content.Headers.ContentLength = Request.ContentLength;
+                requestMessage.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(httpRequest.ContentType);
+                requestMessage.Content.Headers.ContentEncoding.Add(httpRequest.ContentEncoding.HeaderName);
+                requestMessage.Content.Headers.ContentLength = httpRequest.ContentLength;
             }
             for (int i = 0; i < currentHeaders.Count; i++)
             {
@@ -65,11 +60,11 @@ namespace #NAMESPACEPLACEHOLDER#
                     }
                     else if (currentHeaders[i].StartsWith("Content-"))
                     {
-                        requestMessage.Content.Headers.TryAddWithoutValidation(currentHeaders[i], this.ControllerContext.HttpContext.Request.Headers[currentHeaders[i]]);
+                        requestMessage.Content.Headers.TryAddWithoutValidation(currentHeaders[i], controllerContext.HttpContext.Request.Headers[currentHeaders[i]]);
                     }
                     else
                     {
-                        requestMessage.Headers.TryAddWithoutValidation(currentHeaders[i], this.ControllerContext.HttpContext.Request.Headers[currentHeaders[i]]);
+                        requestMessage.Headers.TryAddWithoutValidation(currentHeaders[i], controllerContext.HttpContext.Request.Headers[currentHeaders[i]]);
                     }
                 }
                 catch (Exception ex)
