@@ -1,31 +1,30 @@
 {
-  "Name": "System.Globalization",
-  "Version": "1.0.0",
-  "Packages": [
-    {
-      "Name": "System.Globalization",
-      "Type": "SDK"
-    }
-  ],
-  "Recommendations": [
-    {
-      "Type": "Method",
-      "Name": "",
-      "Value": "System.Globalization.CultureInfo.GetCultureInfo(string)",
-      "KeyType": "",
-      "RecommendedActions": [
+    "Name": "System.Globalization",
+    "Version": "1.0.0",
+    "Packages": [
         {
-          "Source": "Amazon",
-          "Preferred": "yes",
-          "TargetFrameworks": [
-            "net5.0",
-            "netcoreapp3.1",
-            "net6.0"
-          ],
-          "Description": "Use System.Globalization.CultureInfo.#ctor(String).",
-          "Actions": []
+            "Type": "SDK",
+            "Name": "System.Globalization"
         }
-      ]
-    }
-  ]
+    ],
+    "Recommendations": [
+        {
+            "Type": "Method",
+            "Value": "System.Globalization.CultureInfo.GetCultureInfo(string)",
+            "Name": "",
+            "KeyType": "",
+            "RecommendedActions": [
+                {
+                    "Source": "Amazon",
+                    "Preferred": "yes",
+                    "TargetFrameworks": [
+                        "net5.0",
+                        "netcoreapp3.1"
+                    ],
+                    "Description": "Use System.Globalization.CultureInfo.#ctor(String).",
+                    "Actions": []
+                }
+            ]
+        }
+    ]
 }
