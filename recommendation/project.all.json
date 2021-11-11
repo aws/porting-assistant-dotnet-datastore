@@ -55,7 +55,40 @@
                 "ARM32",
                 "ARM64"
               ]
+            }
+          ],
+          "Description": "",
+          "Actions": [
+            {
+              "Name": "ArchiveFiles",
+              "Type": "Project",
+              "Value": "BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config",
+              "Description": "Archive files that are no longer used in core projects."
             },
+            {
+              "Name": "CreateNet3FolderHierarchy",
+              "Type": "Project",
+              "Value": "",
+              "Description": "Create folder hierarchy based on type of project\r\nCreated Startup.cs and Program.cs files based on type of project"
+            },
+            {
+              "Name": "MigrateConfig",
+              "Type": "Project",
+              "Value": "",
+              "Description": "Migrate settings from web.config file to appsettings.json."
+            },
+            {
+              "Name": "MigrateProjectFile",
+              "Type": "ProjectFile",
+              "Value": "",
+              "Description": "Migrate csproj file to core"
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
             {
               "Name": "net5.0",
               "TargetCPU": [
@@ -64,7 +97,40 @@
                 "ARM32",
                 "ARM64"
               ]
+            }
+          ],
+          "Description": "",
+          "Actions": [
+            {
+              "Name": "ArchiveFiles",
+              "Type": "Project",
+              "Value": "BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config",
+              "Description": "Archive files that are no longer used in core projects."
             },
+            {
+              "Name": "CreateNet5FolderHierarchy",
+              "Type": "Project",
+              "Value": "",
+              "Description": "Create folder hierarchy based on type of project\r\nCreated Startup.cs and Program.cs files based on type of project"
+            },
+            {
+              "Name": "MigrateConfig",
+              "Type": "Project",
+              "Value": "",
+              "Description": "Migrate settings from web.config file to appsettings.json."
+            },
+            {
+              "Name": "MigrateProjectFile",
+              "Type": "ProjectFile",
+              "Value": "",
+              "Description": "Migrate csproj file to core."
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
             {
               "Name": "net6.0",
               "TargetCPU": [
@@ -84,7 +150,7 @@
               "Description": "Archive files that are no longer used in core projects."
             },
             {
-              "Name": "CreateNetCoreFolderHierarchy",
+              "Name": "CreateNet6FolderHierarchy",
               "Type": "Project",
               "Value": "",
               "Description": "Create folder hierarchy based on type of project\r\nCreated Startup.cs and Program.cs files based on type of project"
@@ -99,7 +165,7 @@
               "Name": "MigrateProjectFile",
               "Type": "ProjectFile",
               "Value": "",
-              "Description": "Migrate csproj file to core"
+              "Description": "Migrate csproj file to core."
             }
           ]
         }
