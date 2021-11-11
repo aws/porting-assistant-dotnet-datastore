@@ -9,15 +9,38 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Configuration;
 
-namespace #NAMESPACEPLACEHOLDER#
+namespace Modernize.Web.Mvc.Controllers
 {
     public static class MonolithService
     {
         private static string ServiceHost = WebConfigurationManager.AppSettings["ServiceHost"];
         private static string ServicePort = WebConfigurationManager.AppSettings["ServicePort"];
         private static string ServiceUrl = $"https://{ServiceHost}";
+        private static HttpClientHandler handler = new HttpClientHandler()
+        {
+            AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+        };
+        private static HttpClient client = new HttpClient(handler);
 
-        public static async Task<string> CreateRequest(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
+        public static async Task<string> CreateRequestAsync(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
+        {
+            var requestMessage = ConstructRequest(controllerContext, httpContext, httpRequest);
+
+            var result = await client.SendAsync(requestMessage).ConfigureAwait(false);
+            var stringResult = await result.Content.ReadAsStringAsync().ConfigureAwait(false);
+            return stringResult;
+        }
+
+        public static string CreateRequest(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
+        {
+            var requestMessage = ConstructRequest(controllerContext, httpContext, httpRequest);
+
+            var result = client.SendAsync(requestMessage).Result;
+            var stringResult = result.Content.ReadAsStringAsync().Result;
+            return stringResult;
+        }
+
+        private static HttpRequestMessage ConstructRequest(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
         {
             string actionName = controllerContext.RouteData.Values["action"].ToString();
             string controllerName = controllerContext.RouteData.Values["controller"].ToString();
@@ -37,11 +60,7 @@ namespace #NAMESPACEPLACEHOLDER#
             //ViewData
             //TempData
             // Pass as key/value pairs and initialize?
-            var handler = new HttpClientHandler()
-            {
-                AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
-            };
-            var client = new HttpClient(handler);
+            
             if (httpMethod == HttpMethod.Post || httpMethod == HttpMethod.Put)
             {
                 var streamReader = new StreamReader(httpContext.Request.InputStream).ReadToEnd();
@@ -71,9 +90,7 @@ namespace #NAMESPACEPLACEHOLDER#
                 {
                 }
             }
-            var result = await client.SendAsync(requestMessage);
-            var stringResult = await result.Content.ReadAsStringAsync();
-            return stringResult;
+            return requestMessage;
         }
     }
 }
