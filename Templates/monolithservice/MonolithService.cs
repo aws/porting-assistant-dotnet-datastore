@@ -8,6 +8,7 @@ using System.IO;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Configuration;
+using System.Web.Routing;
 
 namespace Modernize.Web.Mvc.Controllers
 {
@@ -22,30 +23,74 @@ namespace Modernize.Web.Mvc.Controllers
         };
         private static HttpClient client = new HttpClient(handler);
 
-        public static async Task<string> CreateRequestAsync(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
-        {
-            var requestMessage = ConstructRequest(controllerContext, httpContext, httpRequest);
 
+        public static async Task<string> CreateRequestAsync(HttpRequestMessage httpRequest, System.Web.Http.Routing.IHttpRouteData routeData)
+        {
+            string actionName = routeData.Values["action"].ToString();
+            string controllerName = routeData.Values["controller"].ToString();
+            var httpMessage = GetRequestMessage(httpRequest, controllerName, actionName);
+            return await InvokeRequestAsync(httpMessage);
+        }
+
+        public static string CreateRequest(HttpRequestMessage httpRequest, System.Web.Http.Routing.IHttpRouteData routeData)
+        {
+            string actionName = routeData.Values["action"].ToString();
+            string controllerName = routeData.Values["controller"].ToString();
+            var httpMessage = GetRequestMessage(httpRequest, controllerName, actionName);
+            return InvokeRequest(httpMessage);
+        }
+
+
+        public static async Task<string> CreateRequestAsync(HttpRequestBase httpRequest, System.Web.Routing.RouteData routeData)
+        {
+            string actionName = routeData.Values["action"].ToString();
+            string controllerName = routeData.Values["controller"].ToString();
+            var httpMessage = GetRequestMessage(httpRequest, controllerName, actionName);
+            return await InvokeRequestAsync(httpMessage);
+        }
+
+        public static string CreateRequest(HttpRequestBase httpRequest, System.Web.Routing.RouteData routeData)
+        {
+            string actionName = routeData.Values["action"].ToString();
+            string controllerName = routeData.Values["controller"].ToString();
+            var httpMessage = GetRequestMessage(httpRequest, controllerName, actionName);
+            return InvokeRequest(httpMessage);
+        }
+
+        private static async Task<string> InvokeRequestAsync(HttpRequestMessage requestMessage)
+        {
             var result = await client.SendAsync(requestMessage).ConfigureAwait(false);
             var stringResult = await result.Content.ReadAsStringAsync().ConfigureAwait(false);
             return stringResult;
         }
 
-        public static string CreateRequest(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
+        private static string InvokeRequest(HttpRequestMessage requestMessage)
         {
-            var requestMessage = ConstructRequest(controllerContext, httpContext, httpRequest);
-
             var result = client.SendAsync(requestMessage).Result;
             var stringResult = result.Content.ReadAsStringAsync().Result;
             return stringResult;
         }
 
-        private static HttpRequestMessage ConstructRequest(ControllerContext controllerContext, HttpContextBase httpContext, HttpRequestBase httpRequest)
+        private static HttpRequestMessage GetRequestMessage(HttpRequestMessage httpRequestMessage, string controllerName, string actionName)
         {
-            string actionName = controllerContext.RouteData.Values["action"].ToString();
-            string controllerName = controllerContext.RouteData.Values["controller"].ToString();
-            var httpMethod = new HttpMethod(httpContext.Request.HttpMethod);
-            var currentUri = httpContext.Request.Url;
+            var currentUri = httpRequestMessage.RequestUri;
+            var uriBuilder = new UriBuilder($"{ServiceUrl}/{controllerName}/{actionName}")
+            {
+                Host = ServiceHost,
+                Port = int.Parse(ServicePort),
+                Fragment = currentUri.Fragment,
+                Scheme = currentUri.Scheme,
+                Path = currentUri.PathAndQuery
+            };
+
+            var newRequest = httpRequestMessage;
+            newRequest.RequestUri = uriBuilder.Uri;
+            return newRequest;
+        }
+        private static HttpRequestMessage GetRequestMessage(HttpRequestBase httpRequest, string controllerName, string actionName)
+        {
+            var httpMethod = new HttpMethod(httpRequest.HttpMethod);
+            var currentUri = httpRequest.Url;
             var uriBuilder = new UriBuilder($"{ServiceUrl}/{controllerName}/{actionName}")
             {
                 Host = ServiceHost,
@@ -55,15 +100,11 @@ namespace Modernize.Web.Mvc.Controllers
                 Path = currentUri.PathAndQuery
             };
             var requestMessage = new HttpRequestMessage(httpMethod, uriBuilder.Uri);
-            var currentHeaders = httpContext.Request.Headers.Keys;
-            //ViewBag
-            //ViewData
-            //TempData
-            // Pass as key/value pairs and initialize?
-            
+            var currentHeaders = httpRequest.Headers.Keys;
+
             if (httpMethod == HttpMethod.Post || httpMethod == HttpMethod.Put)
             {
-                var streamReader = new StreamReader(httpContext.Request.InputStream).ReadToEnd();
+                var streamReader = new StreamReader(httpRequest.InputStream).ReadToEnd();
                 requestMessage.Content = new StringContent(streamReader);
                 requestMessage.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(httpRequest.ContentType);
                 requestMessage.Content.Headers.ContentEncoding.Add(httpRequest.ContentEncoding.HeaderName);
@@ -79,11 +120,11 @@ namespace Modernize.Web.Mvc.Controllers
                     }
                     else if (currentHeaders[i].StartsWith("Content-"))
                     {
-                        requestMessage.Content.Headers.TryAddWithoutValidation(currentHeaders[i], controllerContext.HttpContext.Request.Headers[currentHeaders[i]]);
+                        requestMessage.Content.Headers.TryAddWithoutValidation(currentHeaders[i], httpRequest.Headers[currentHeaders[i]]);
                     }
                     else
                     {
-                        requestMessage.Headers.TryAddWithoutValidation(currentHeaders[i], controllerContext.HttpContext.Request.Headers[currentHeaders[i]]);
+                        requestMessage.Headers.TryAddWithoutValidation(currentHeaders[i], httpRequest.Headers[currentHeaders[i]]);
                     }
                 }
                 catch (Exception ex)
@@ -94,5 +135,6 @@ namespace Modernize.Web.Mvc.Controllers
         }
     }
 }
+
 
 */
