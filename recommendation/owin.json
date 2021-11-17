@@ -757,16 +757,76 @@
           "Preferred": "Yes",
           "TargetFrameworks": [
             {
-              "Name": "net5.0",
+              "Name": "net6.0",
               "TargetCPU": [
                 "x86",
                 "x64",
                 "ARM32",
                 "ARM64"
               ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
             },
             {
-              "Name": "net6.0",
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
               "TargetCPU": [
                 "x86",
                 "x64",
@@ -919,16 +979,76 @@
           "Preferred": "Yes",
           "TargetFrameworks": [
             {
-              "Name": "net5.0",
+              "Name": "net6.0",
               "TargetCPU": [
                 "x86",
                 "x64",
                 "ARM32",
                 "ARM64"
               ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
             },
             {
-              "Name": "net6.0",
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
               "TargetCPU": [
                 "x86",
                 "x64",
@@ -1081,15 +1201,6 @@
           "Preferred": "Yes",
           "TargetFrameworks": [
             {
-              "Name": "net5.0",
-              "TargetCPU": [
-                "x86",
-                "x64",
-                "ARM32",
-                "ARM64"
-              ]
-            },
-            {
               "Name": "net6.0",
               "TargetCPU": [
                 "x86",
@@ -1099,7 +1210,52 @@
               ]
             }
           ],
-          "Description": "For .Net 5 and later, add Microsoft.AspNetCore.Authentication.Google package version 5.0.12 and add a comment to explain how to add google authentication.",
+          "Description": "For .Net 6, add latest Microsoft.AspNetCore.Authentication.Google package version and add a comment to explain how to add google authentication.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+              "Description": "Add a comment to explain how to add google authentication.",
+              "ActionValidation": {
+                "Contains": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.Google",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.Google"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.Google",
+              "Description": "Remove Microsoft.Owin.Security.Google",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.Google;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            }
+          ],
+          "Description": "For .Net 5, add Microsoft.AspNetCore.Authentication.Google package version 5.0.12 and add a comment to explain how to add google authentication.",
           "Actions": [
             {
               "Name": "AddComment",

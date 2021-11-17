@@ -45,7 +45,25 @@
                 "ARM32",
                 "ARM64"
               ]
-            },
+            }
+          ],
+          "Description": "Add System.Runtime.Caching package",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "System.Runtime.Caching",
+                "Version": "5.0.0"
+              },
+              "Description": "Add System.Runtime.Caching package"
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
             {
               "Name": "net6.0",
               "TargetCPU": [
@@ -61,10 +79,7 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": {
-                "Name": "System.Runtime.Caching",
-                "Version": "5.0.0"
-              },
+              "Value": "System.Runtime.Caching",
               "Description": "Add System.Runtime.Caching package"
             }
           ]
