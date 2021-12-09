@@ -84,7 +84,55 @@
                 "ARM32",
                 "ARM64"
               ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin and Owin.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Owin",
+                "Version": "5.0.12"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Owin"
             },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add Microsoft.AspNetCore.Owin namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Owin;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Owin;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
             {
               "Name": "net6.0",
               "TargetCPU": [
@@ -100,10 +148,7 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": {
-                "Name": "Microsoft.AspNetCore.Owin",
-                "Version": "5.0.12"
-              },
+              "Value": "Microsoft.AspNetCore.Owin",
               "Description": "Add package Microsoft.AspNetCore.Owin"
             },
             {
