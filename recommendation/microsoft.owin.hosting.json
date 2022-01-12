@@ -149,7 +149,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); Start options can be added into the new format as needed.",
+              "Value": {
+                "comment": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); Start options can be added into the new format as needed.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
                 "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); Start options can be added into the new format as needed.",
@@ -205,12 +208,15 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
+              "Value": {
+                "comment": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
-                "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
-                "NotContains": "",
-                "CheckComments": "True"
+                 "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
+                 "NotContains": "",
+                 "CheckComments": "True"
               }
             }
           ]

@@ -176,7 +176,10 @@
             {
               "Name": "AddComment",
               "Type": "ObjectCreation",
-              "Value": "For FileServerOptions, if FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be a good starting point.",
+              "Value": {
+                "comment": "For FileServerOptions, if FileSystem was not present before FileProvider was added, please initialize this new value.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to initialize FileProvider correctly for FileServerOptions.",
               "ActionValidation": {
                 "Contains": "For FileServerOptions, if FileSystem was not present before FileProvider was added, please initialize this new value.",
@@ -259,7 +262,10 @@
             {
               "Name": "AddComment",
               "Type": "ObjectCreation",
-              "Value": "For DirectoryBrowserOptions, if FileSystem was not present before FileProvider was added, please initialize this new value. Using the value from RequestPath with System.IO.Directory.GetCurrentDirectory() as a prefix may be a good starting point.",
+              "Value": {
+                "comment": "For DirectoryBrowserOptions, if FileSystem was not present before FileProvider was added, please initialize this new value.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to initialize FileProvider correctly for DirectoryBrowserOptions.",
               "ActionValidation": {
                 "Contains": "For DirectoryBrowserOptions, if FileSystem was not present before FileProvider was added, please initialize this new value.",

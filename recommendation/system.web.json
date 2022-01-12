@@ -62,7 +62,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "In this context, this is a Controller object",
+              "Value": {
+                "comment": "In this context, this is a Controller object",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain what \"this\" refers to.",
               "ActionValidation": {
                 "Contains": "In this context, this is a Controller object",
@@ -508,7 +511,8 @@
               "Type": "Class",
               "Value": {
                 "methodName": "Init",
-                "comment": "This method is used to register events."
+                "comment": "This method is used to register events.",
+                "dontUseCTAPrefix": ""
               },
               "Description": "Commenting out method which have to be ported manually."
             },
@@ -517,7 +521,8 @@
               "Type": "Class",
               "Value": {
                 "comment": "Create a seperate middleware module with the logic in this method and inject the middleware in the correponding location in request pipeline (startup.cs).",
-                "methodName": "Application_EndRequest"
+                "methodName": "Application_EndRequest",
+                "dontUseCTAPrefix": ""
               },
               "Description": "Commenting out method which have to be ported manually."
             }
