@@ -117,7 +117,10 @@
             {
               "Name": "AddComment",
               "Type": "AttributeList",
-              "Value": "This attribute is not available anymore. An alternative is using ViewComponents:\nSample:\n\npublic class SampleViewComponent : ViewComponent\n    {\n        private readonly InjectedService _injectedService;\n\n        public SampleViewComponent (InjectedService injectedService)\n        {\n            _injectedService = injectedService;\n        }\n\n\n       public IViewComponentResult Invoke(int parameter)\n        {\n            var object = _injectedService.SampleFunction(parameter);\n        // No name is specified, returns the view SampleView (same name as component)\n            return View(object);\n        }\n    }\n\nThen use this to call the view component from any view:\n\n    @await Component.InvokeAsync(\"SampleView\", new { parameter = \"\"})\n\nhttps://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-3.1",
+              "Value": {
+                "comment": "This attribute is not available anymore. An alternative is using ViewComponents:\nSample:\n\npublic class SampleViewComponent : ViewComponent\n    {\n        private readonly InjectedService _injectedService;\n\n        public SampleViewComponent (InjectedService injectedService)\n        {\n            _injectedService = injectedService;\n        }\n\n\n       public IViewComponentResult Invoke(int parameter)\n        {\n            var object = _injectedService.SampleFunction(parameter);\n        // No name is specified, returns the view SampleView (same name as component)\n            return View(object);\n        }\n    }\n\nThen use this to call the view component from any view:\n\n    @await Component.InvokeAsync(\"SampleView\", new { parameter = \"\"})\n\nhttps://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-3.1",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "ChildActionOnly attribute is not available anymore.",
               "ActionValidation": {
                 "Contains": "ViewComponents:",
@@ -808,7 +811,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "This method is not supported. Use the startup class to register dependency containers",
+              "Value": {
+                "comment": "This method is not supported. Use the startup class to register dependency containers",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Use the startup class to register dependency containers",
               "ActionValidation": {
                 "Contains": "This method is not supported. Use the startup class to register dependency containers",
@@ -897,7 +903,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "This updated method might require the parameters to be re-organized",
+              "Value": {
+                "comment": "This updated method might require the parameters to be re-organized",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to inform the user to reorganize the parameters",
               "ActionValidation": {
                 "Contains": "This updated method might require the parameters to be re-organized",
@@ -986,7 +995,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "This updated method might require the parameters to be re-organized",
+              "Value": {
+                "comment": "This updated method might require the parameters to be re-organized",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to inform the user to reorganize the parameters",
               "ActionValidation": {
                 "Contains": "This updated method might require the parameters to be re-organized",

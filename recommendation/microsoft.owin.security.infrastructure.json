@@ -247,7 +247,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add a new parameter as the new method requires Microsoft.AspNetCore.Authentication.AuthenticationTicket to be passed in. The new return type is also a byte[].",
+              "Value": {
+                "comment": "Please add a new parameter as the new method requires Microsoft.AspNetCore.Authentication.AuthenticationTicket to be passed in. The new return type is also a byte[].",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace the SerializeTicket invocation.",
               "ActionValidation": {
                 "Contains": "Please add a new parameter as the new method requires Microsoft.AspNetCore.Authentication.AuthenticationTicket to be passed in. The new return type is also a byte[].",
@@ -316,7 +319,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please change the parameter type from string to a byte[]. This is also the data type returned by the TicketSerializer.Serialize method. This new method also returns the actual Microsoft.AspNetCore.Authentication.AuthenticationTicket object serialized with the TicketSerializer.Serialize method.",
+              "Value": {
+                "comment": "Please change the parameter type from string to a byte[]. This is also the data type returned by the TicketSerializer.Serialize method.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace the DeserializeTicket invocation.",
               "ActionValidation": {
                 "Contains": "Please change the parameter type from string to a byte[]. This is also the data type returned by the TicketSerializer.Serialize method.",
@@ -385,7 +391,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please use instead the methods of the TicketSerializer class: WriteIdentity, WriteClaim, Write for AuthenticationTicket or the ReadIdentity, ReadClaim, Read for AuthenticationTicket.",
+              "Value": {
+                "comment": "Please use instead the methods of the TicketSerializer class: WriteIdentity, WriteClaim, Write for AuthenticationTicket or the ReadIdentity, ReadClaim, Read for AuthenticationTicket.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace the SetToken invocation.",
               "ActionValidation": {
                 "Contains": "Please use instead the methods of the TicketSerializer class: WriteIdentity, WriteClaim, Write for AuthenticationTicket or the ReadIdentity, ReadClaim, Read for AuthenticationTicket.",
@@ -441,7 +450,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please use UseAuthentication() in your Configure method in your Startup class and in your ConfigureServices method in your Startup class use AddAuthentication to set all your various options and middleware as needed.",
+              "Value": {
+                "comment": "Please use UseAuthentication() in your Configure method in your Startup class and in your ConfigureServices method in your Startup class use AddAuthentication to set all your various options and middleware as needed.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace the LookupChallenge invocation.",
               "ActionValidation": {
                 "Contains": "Please use UseAuthentication() in your Configure method in your Startup class and in your ConfigureServices method in your Startup class use AddAuthentication to set all your various options and middleware as needed.",
