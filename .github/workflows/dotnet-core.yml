@@ -17,7 +17,7 @@ jobs:
       run: |
           git clone https://github.com/awslabs/git-secrets.git target
           cd target
-          ./install.ps1
+          sudo make install
           echo "Git-secrets installation completed"
           git secrets --register-aws --global
           echo "Added aws secret templates"
