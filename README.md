@@ -6,7 +6,7 @@ Porting Assistant for .NET quickly scans .NET Framework applications to identify
 ### Porting Assistant Dotnet DataStore
 This repository contains the location of data store in S3. The data store contains data files that show package and API compatibility with .NET Core and .NET Standard. 
 
-* Porting assistant uses these data files for finding the compatibility of packages and their APIs
+* Porting assistant uses these data files for finding the compatibility of packages and their APIs.
 * For each NuGet package in nuget.org, a separate Json file is defined. Each file captures compatibility information of all its packaged versions.
 * It shows compatibility information for all the NuGet packages available in nuget.org - 211k unique packages, 2.5 millions packaged versions (The numbers could change over time).
 
