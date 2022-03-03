@@ -11,11 +11,12 @@ namespace PostSyncTests
     /// <summary>
     /// These tests are made to be run automatically after a merge and sync to the public S3 bucket. This is needed
     /// in order to validate that the public S3 bucket is up to date with the repository and that the sync is working.
-    /// If running these tests in a feature branch with changes to the recommendation files, the tests should fail.
+    /// This test always uses the master branch, not your local feature branch since that is what should always be in
+    /// sync with S3.
     /// </summary>
     public class S3SyncTests
     {
-        private const string S3UrlPrefix = "https://s3.us-west-2.amazonaws.com/aws.portingassistant.dotnet.datastore/recommendationsync/recommendation";
+        private const string S3UrlPrefix = "https://s3.us-west-2.amazonaws.com/aws.portingassistant.dotnet.datastore/recommendationsync";
         private const string TempExtractDir = "masterBranchCode";
 
         [TearDown]
@@ -38,14 +39,18 @@ namespace PostSyncTests
             Directory.CreateDirectory(TempExtractDir);
             ZipFile.ExtractToDirectory("github.zip", "masterBranchCode");
             var pathToRepoRecs = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\recommendation";
+            var pathToRepoTemplates = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\Templates";
 
-            var allRepoRecs = Directory.EnumerateFiles(pathToRepoRecs).ToList();
+            var allRepoFilesToCheck = Directory.EnumerateFiles(pathToRepoRecs, "*", SearchOption.AllDirectories).ToList();
+            var allRepoTemplates = Directory.EnumerateFiles(pathToRepoTemplates, "*", SearchOption.AllDirectories).ToList();
+
+            allRepoFilesToCheck.AddRange(allRepoTemplates);
 
             Assert.Multiple(async () =>
             {
-                foreach(var file in allRepoRecs)
+                foreach(var file in allRepoFilesToCheck)
                 {
-                    var s3ObjectPath = $"{S3UrlPrefix}/{file.Split('\\').Last()}";
+                    var s3ObjectPath = $"{S3UrlPrefix}/{file.Replace(@"masterBranchCode\porting-assistant-dotnet-datastore-master\", "").Replace(@"\", "/")}";
                     var s3Content = await httpClient.GetStringAsync(s3ObjectPath);
                     var localContent = await File.ReadAllTextAsync(file);
                     localContent = localContent.Replace("\r\n", "\n", StringComparison.Ordinal);
