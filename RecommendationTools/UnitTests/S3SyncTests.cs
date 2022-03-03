@@ -37,7 +37,7 @@ namespace PostSyncTests
             var zipBytes = await httpClient.GetByteArrayAsync("https://github.com/aws/porting-assistant-dotnet-datastore/archive/refs/heads/master.zip");
             await File.WriteAllBytesAsync("github.zip", zipBytes);
             Directory.CreateDirectory(TempExtractDir);
-            ZipFile.ExtractToDirectory("github.zip", "masterBranchCode");
+            ZipFile.ExtractToDirectory("github.zip", TempExtractDir);
             var pathToRepoRecs = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\recommendation";
             var pathToRepoTemplates = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\Templates";
 
@@ -50,7 +50,7 @@ namespace PostSyncTests
             {
                 foreach(var file in allRepoFilesToCheck)
                 {
-                    var s3ObjectPath = $"{S3UrlPrefix}/{file.Replace(@"masterBranchCode\porting-assistant-dotnet-datastore-master\", "").Replace(@"\", "/")}";
+                    var s3ObjectPath = $"{S3UrlPrefix}/{file.Replace(@$"{TempExtractDir}\porting-assistant-dotnet-datastore-master\", "").Replace(@"\", "/")}";
                     var s3Content = await httpClient.GetStringAsync(s3ObjectPath);
                     var localContent = await File.ReadAllTextAsync(file);
                     localContent = localContent.Replace("\r\n", "\n", StringComparison.Ordinal);
