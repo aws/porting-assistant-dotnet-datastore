@@ -1,0 +1,15 @@
+﻿!Template
+TagName: asp:TemplateField
+
+Invocations:
+  - !AddUsingDirective
+    NamespaceName: BlazorWebFormsComponents
+
+Templates:
+    Default: |
+        <TemplateField
+            ItemTemplate=#ItemTemplate#
+            HeaderText=#HeaderText#
+            Visible=#Visible:ComponentBoolean#>
+            #InnerHtml#
+        </TemplateField>

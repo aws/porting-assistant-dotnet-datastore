@@ -1,0 +1,30 @@
+﻿!Template
+TagName: asp:RadioButton
+CodeBehindType: System.UI.Web.WebControls.RadioButton
+CodeBehindHandler: Default
+
+Conditions:
+  - !HasAttribute
+    AttributeName: Text
+    ForTemplates: [WithLabel]
+
+Templates:
+    WithLabel: |
+        <input
+            id=#ID#
+            class=#CssClass#
+            type="radio"
+            name=#GroupName#
+            checked=#Checked:HtmlBoolean#
+            disabled=#Enabled:InvertedHtmlBoolean#/>
+        <label for=#ID#>
+            #Text#
+        </label>
+    WithoutLabel: |
+        <input
+            id=#ID#
+            class=#CssClass#
+            type="radio"
+            name=#GroupName#
+            checked=#Checked:HtmlBoolean#
+            disabled=#Enabled:InvertedHtmlBoolean#/>
