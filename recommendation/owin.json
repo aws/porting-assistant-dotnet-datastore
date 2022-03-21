@@ -147,7 +147,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Invoke being the function you wanted to call in your lambda function.",
+              "Value": {
+                "comment": "Invoke being the function you wanted to call in your lambda function.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to migrate Owin.IAppBuilder.Use(object, params object[]) to UseOwin.",
               "ActionValidation": {
                 "Contains": "Invoke being the function you wanted to call in your lambda function.",
@@ -275,7 +278,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
+              "Value": {
+                "comment": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
                 "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddControllers(); }",
@@ -411,7 +417,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
+              "Value": {
+                "comment": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
                 "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddSignalR(); }",
@@ -535,7 +544,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
+              "Value": {
+                "comment": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment on adding a new configureservices method.",
               "ActionValidation": {
                 "Contains": "Please add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { services.AddDirectoryBrowser(); }",
@@ -601,7 +613,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please replace CreatePerOwinContext<T>(System.Func<T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+              "Value": {
+                "comment": "Please replace CreatePerOwinContext<T>(System.Func<T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<T>) with a service in ConfigureServices method.",
               "ActionValidation": {
                 "Contains": "Please replace CreatePerOwinContext<T>(System.Func<T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }.",
@@ -667,7 +682,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+              "Value": {
+                "comment": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) with a service in ConfigureServices method.",
               "ActionValidation": {
                 "Contains": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }.",
@@ -733,7 +751,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+              "Value": {
+                "comment": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }. For example, app.CreatePerOwinContext(ApplicationDbContext.Create); would become: services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(config.GetConnectionString(\"DefaultConnection\"))); ",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) with a service in ConfigureServices method.",
               "ActionValidation": {
                 "Contains": "Please replace CreatePerOwinContext<T>(System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>, System.Action<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, T>) and add a new ConfigureServices method: public void ConfigureServices(IServiceCollection services) { Register your service here instead of using CreatePerOwinContext }.",
@@ -756,15 +777,6 @@
           "Source": "Amazon",
           "Preferred": "Yes",
           "TargetFrameworks": [
-            {
-              "Name": "net5.0",
-              "TargetCPU": [
-                "x86",
-                "x64",
-                "ARM32",
-                "ARM64"
-              ]
-            },
             {
               "Name": "net6.0",
               "TargetCPU": [
@@ -794,7 +806,82 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Value": {
+                "comment": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "dontUseCTAPrefix": ""
+              },
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": {
+                "comment": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
               "ActionValidation": {
                 "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
@@ -866,7 +953,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Value": {
+                "comment": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
               "ActionValidation": {
                 "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
@@ -919,15 +1009,6 @@
           "Preferred": "Yes",
           "TargetFrameworks": [
             {
-              "Name": "net5.0",
-              "TargetCPU": [
-                "x86",
-                "x64",
-                "ARM32",
-                "ARM64"
-              ]
-            },
-            {
               "Name": "net6.0",
               "TargetCPU": [
                 "x86",
@@ -956,7 +1037,82 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Value": {
+                "comment": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "dontUseCTAPrefix": ""
+              },
+              "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
+              "ActionValidation": {
+                "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Authentication.OpenIdConnect;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.OpenIdConnect",
+              "Description": "Remove Microsoft.Owin.Security.OpenIdConnect",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.OpenIdConnect;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            }
+          ],
+          "Description": "Replace the UseOpenIdConnectAuthentication(string, string) with UseAuthentication and add a comment to explain how to add services.AddAuthentication().AddOpenIdConnect().",
+          "Actions": [
+            {
+              "Name": "ReplaceMethodAndParameters",
+              "Type": "Method",
+              "Value": {
+                "oldMethod": "UseOpenIdConnectAuthentication",
+                "newMethod": "UseAuthentication",
+                "newParameters": "()"
+              },
+              "Description": "Replace the OwinMiddleware Next variable with a newly declared one _next.",
+              "ActionValidation": {
+                "Contains": "UseAuthentication()",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": {
+                "comment": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
               "ActionValidation": {
                 "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
@@ -1028,7 +1184,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+              "Value": {
+                "comment": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to add a reference to services.AddAuthentication().AddOpenIdConnect()",
               "ActionValidation": {
                 "Contains": "Please add services.AddAuthentication().AddOpenIdConnect(); inside of your public void ConfigureServices(IServiceCollection services) method. You can also optionally add your OpenIdConnectOptions.",
@@ -1081,15 +1240,6 @@
           "Preferred": "Yes",
           "TargetFrameworks": [
             {
-              "Name": "net5.0",
-              "TargetCPU": [
-                "x86",
-                "x64",
-                "ARM32",
-                "ARM64"
-              ]
-            },
-            {
               "Name": "net6.0",
               "TargetCPU": [
                 "x86",
@@ -1099,12 +1249,63 @@
               ]
             }
           ],
-          "Description": "For .Net 5 and later, add Microsoft.AspNetCore.Authentication.Google package version 5.0.12 and add a comment to explain how to add google authentication.",
+          "Description": "For .Net 6, add latest Microsoft.AspNetCore.Authentication.Google package version and add a comment to explain how to add google authentication.",
           "Actions": [
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+              "Value": {
+                "comment": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+                "dontUseCTAPrefix": ""
+              },
+              "Description": "Add a comment to explain how to add google authentication.",
+              "ActionValidation": {
+                "Contains": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+                "NotContains": "",
+                "CheckComments": "True"
+              }
+            },
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.AspNetCore.Authentication.Google",
+              "Description": "Add package Microsoft.AspNetCore.Authentication.Google"
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin.Security.Google",
+              "Description": "Remove Microsoft.Owin.Security.Google",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin.Security.Google;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net5.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            }
+          ],
+          "Description": "For .Net 5, add Microsoft.AspNetCore.Authentication.Google package version 5.0.12 and add a comment to explain how to add google authentication.",
+          "Actions": [
+            {
+              "Name": "AddComment",
+              "Type": "Method",
+              "Value": {
+                "comment": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to add google authentication.",
               "ActionValidation": {
                 "Contains": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
@@ -1152,7 +1353,10 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+              "Value": {
+                "comment": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to add google authentication.",
               "ActionValidation": {
                 "Contains": "Please add IApplicationBuilder.UseAuthentication() in your configure method. Within your public void ConfigureServices(IServiceCollection services) method please add services.AddAuthentication().AddGoogle(options => { IConfigurationSection googleAuthNSection = Configuration.GetSection(\"Authentication:Google\"); options.ClientId = googleAuthNSection[\"ClientId\"]; options.ClientSecret = googleAuthNSection[\"ClientSecret\"]; } );",

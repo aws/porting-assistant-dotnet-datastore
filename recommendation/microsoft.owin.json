@@ -84,7 +84,55 @@
                 "ARM32",
                 "ARM64"
               ]
+            }
+          ],
+          "Description": "Add a reference to Microsoft.AspNetCore.Owin and remove Microsoft.Owin and Owin.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Owin",
+                "Version": "5.0.12"
+              },
+              "Description": "Add package Microsoft.AspNetCore.Owin"
             },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.AspNetCore.Owin",
+              "Description": "Add Microsoft.AspNetCore.Owin namespace",
+              "ActionValidation": {
+                "Contains": "using Microsoft.AspNetCore.Owin;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Microsoft.Owin",
+              "Description": "Remove Microsoft.Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Microsoft.Owin;"
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "Owin",
+              "Description": "Remove Owin namespace",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using Owin;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
             {
               "Name": "net6.0",
               "TargetCPU": [
@@ -100,10 +148,7 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": {
-                "Name": "Microsoft.AspNetCore.Owin",
-                "Version": "5.0.12"
-              },
+              "Value": "Microsoft.AspNetCore.Owin",
               "Description": "Add package Microsoft.AspNetCore.Owin"
             },
             {
@@ -658,12 +703,15 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please replace Get with TryGetValue.",
+              "Value": {
+                "comment": "Please replace Get with TryGetValue.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace IOwinContext.Request.Headers.Get with TryGetValue instead.",
               "ActionValidation": {
-                "Contains": "Please replace Get with TryGetValue.",
-                "NotContains": "",
-                "CheckComments": "True"
+                 "Contains": "Please replace Get with TryGetValue.",
+                 "NotContains": "",
+                 "CheckComments": "True"
               }
             }
           ]
@@ -714,12 +762,15 @@
             {
               "Name": "AddComment",
               "Type": "Method",
-              "Value": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
+              "Value": {
+                "comment": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace IOwinContext.Get with HttpContext.Items instead.",
               "ActionValidation": {
-                "Contains": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
-                "NotContains": "",
-                "CheckComments": "True"
+                 "Contains": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
+                 "NotContains": "",
+                 "CheckComments": "True"
               }
             }
           ]
@@ -1020,7 +1071,10 @@
             {
               "Name": "AddComment",
               "Type": "ObjectCreation",
-              "Value": "This method only takes a single parameter for the value of the new query string or none at all.",
+              "Value": {
+                "comment": "This method only take a single parameter for the value of the new query string or none at all.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to set the new parameters for QueryString.",
               "ActionValidation": {
                 "Contains": "This method only take a single parameter for the value of the new query string or none at all.",

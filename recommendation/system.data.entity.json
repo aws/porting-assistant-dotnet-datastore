@@ -56,7 +56,7 @@
               ]
             }
           ],
-          "Description": "Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore. Also, package Microsoft.EntityFrameworkCore will be added.",
+          "Description": "Add package Microsoft.EntityFrameworkCore. Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore.",
           "Actions": [
             {
               "Name": "AddPackage",
@@ -65,6 +65,50 @@
                 "Name": "Microsoft.EntityFrameworkCore",
                 "Version": "5.0.12"
               },
+              "Description": "Add reference to Microsoft.EntityFrameworkCore."
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "Microsoft.EntityFrameworkCore",
+              "Description": "Add Microsoft.EntityFrameworkCore namespace.",
+              "ActionValidation": {
+                "Contains": "using Microsoft.EntityFrameworkCore;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Data.Entity",
+              "Description": "Remove System.Data.Entity namespace.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Data.Entity;"
+              }
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
+            {
+              "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            }
+          ],
+          "Description": "Add package Microsoft.EntityFrameworkCore. Replace System.Data.Entity namespace with Microsoft.EntityFrameworkCore.",
+          "Actions": [
+            {
+              "Name": "AddPackage",
+              "Type": "Package",
+              "Value": "Microsoft.EntityFrameworkCore",
               "Description": "Add reference to Microsoft.EntityFrameworkCore."
             },
             {

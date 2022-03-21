@@ -1,17 +1,16 @@
-{
-  "Name": "System.Runtime.Caching",
+﻿{
+  "Name": "System.Linq.Dynamic",
   "Version": "1.0.0",
   "Packages": [
     {
-      "Name": "System.Runtime.Caching",
       "Type": "Nuget"
     }
   ],
   "Recommendations": [
     {
       "Type": "Namespace",
-      "Name": "System.Runtime.Caching",
-      "Value": "System.Runtime.Caching",
+      "Name": "System.Linq.Dynamic",
+      "Value": "System.Linq.Dynamic",
       "KeyType": "Name",
       "ContainingType": "",
       "RecommendedActions": [
@@ -19,15 +18,6 @@
           "Source": "Amazon",
           "Preferred": "Yes",
           "TargetFrameworks": [
-            {
-              "Name": "netstandard2.1",
-              "TargetCPU": [
-                "x86",
-                "x64",
-                "ARM32",
-                "ARM64"
-              ]
-            },
             {
               "Name": "netcoreapp3.1",
               "TargetCPU": [
@@ -45,25 +35,7 @@
                 "ARM32",
                 "ARM64"
               ]
-            }
-          ],
-          "Description": "Add System.Runtime.Caching package",
-          "Actions": [
-            {
-              "Name": "AddPackage",
-              "Type": "Package",
-              "Value": {
-                "Name": "System.Runtime.Caching",
-                "Version": "5.0.0"
-              },
-              "Description": "Add System.Runtime.Caching package"
-            }
-          ]
-        },
-        {
-          "Source": "Amazon",
-          "Preferred": "Yes",
-          "TargetFrameworks": [
+            },
             {
               "Name": "net6.0",
               "TargetCPU": [
@@ -74,13 +46,33 @@
               ]
             }
           ],
-          "Description": "Add System.Runtime.Caching package",
+          "Description": "Add a reference to System.Linq.Dynamic.Core",
           "Actions": [
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": "System.Runtime.Caching",
-              "Description": "Add System.Runtime.Caching package"
+              "Value": "System.Linq.Dynamic.Core",
+              "Description": "Add package System.Linq.Dynamic.Core"
+            },
+            {
+              "Name": "AddDirective",
+              "Type": "Using",
+              "Value": "System.Linq.Dynamic.Core",
+              "Description": "Add System.Linq.Dynamic.Core namespace.",
+              "ActionValidation": {
+                "Contains": "using System.Linq.Dynamic.Core;",
+                "NotContains": ""
+              }
+            },
+            {
+              "Name": "RemoveDirective",
+              "Type": "Using",
+              "Value": "System.Linq.Dynamic",
+              "Description": "Remove System.Linq.Dynamic namespace.",
+              "ActionValidation": {
+                "Contains": "",
+                "NotContains": "using System.Linq.Dynamic;"
+              }
             }
           ]
         }
