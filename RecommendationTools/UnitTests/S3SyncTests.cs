@@ -40,11 +40,14 @@ namespace PostSyncTests
             ZipFile.ExtractToDirectory("github.zip", TempExtractDir);
             var pathToRepoRecs = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\recommendation";
             var pathToRepoTemplates = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\Templates";
+            var pathToTagConfigs = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\tagconfigs";
 
             var allRepoFilesToCheck = Directory.EnumerateFiles(pathToRepoRecs, "*", SearchOption.AllDirectories).ToList();
             var allRepoTemplates = Directory.EnumerateFiles(pathToRepoTemplates, "*", SearchOption.AllDirectories).ToList();
+            var allRepoConfigs = Directory.EnumerateFiles(pathToTagConfigs, "*", SearchOption.AllDirectories).ToList();
 
             allRepoFilesToCheck.AddRange(allRepoTemplates);
+            allRepoFilesToCheck.AddRange(allRepoConfigs);
 
             Assert.Multiple(async () =>
             {
