@@ -1,0 +1,16 @@
+﻿!Template
+TagName: asp:BoundField
+
+Invocations:
+  - !AddUsingDirective
+    NamespaceName: BlazorWebFormsComponents
+
+Templates:
+    Default: |
+        <BoundField
+            DataField=#DataField#
+            DataFormatString=#DataFormatString#
+            HeaderText=#HeaderText#
+            Visible=#Visible:ComponentBoolean#>
+            #InnerHtml#
+        </BoundField>

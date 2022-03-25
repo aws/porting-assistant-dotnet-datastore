@@ -1,0 +1,48 @@
+﻿!Template
+TagName: asp:TextBox
+CodeBehindType: System.Web.UI.WebControls.TextBox
+CodeBehindHandler: Default
+
+Conditions:
+  - !HasAttributeWithValue
+    AttributeName: TextMode
+    AttributeValue: MultiLine
+    ForTemplates: [TextArea]
+  - !HasAttributeWithValue
+    AttributeName: TextMode
+    AttributeValue: Password
+    ForTemplates: [Password]
+
+Templates:
+    TextArea: |
+        <textarea
+            id=#ID#
+            class=#CssClass#
+            maxlength=#MaxLength#
+            rows=#Rows#
+            cols=#Columns#
+            @onchange=#OnTextChanged:TextChanged:EventHandler#
+            readonly=#ReadOnly:HtmlBoolean#
+            disabled=#Enabled:InvertedHtmlBoolean#>
+            #Text#
+        </textarea>
+    Password: |
+        <input
+            id=#ID#
+            class=#CssClass#
+            value=#Text#
+            maxlength=#MaxLength#
+            type="password"
+            @onchange=#OnTextChanged:TextChanged:EventHandler#
+            readonly=#ReadOnly:HtmlBoolean#
+            disabled=#Enabled:InvertedHtmlBoolean#>
+    Default: |
+        <input
+            id=#ID#
+            class=#CssClass#
+            value=#Text#
+            maxlength=#MaxLength#
+            type="text"
+            @onchange=#OnTextChanged:TextChanged:EventHandler#
+            readonly=#ReadOnly:HtmlBoolean#
+            disabled=#Enabled:InvertedHtmlBoolean#>
