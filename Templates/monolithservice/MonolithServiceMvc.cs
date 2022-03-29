@@ -10,7 +10,7 @@ using System.Web.Mvc;
 using System.Web.Configuration;
 using System.Web.Routing;
 
-namespace Modernize.Web.Mvc.Controllers
+namespace #NAMESPACEPLACEHOLDER#
 {
     public static class MonolithService
     {
