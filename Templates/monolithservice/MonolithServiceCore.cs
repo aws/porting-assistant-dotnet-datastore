@@ -3,7 +3,7 @@
 using Microsoft.AspNetCore.Http.Extensions;
 using System.Net;
 
-namespace Modernize.Web.Mvc.Controllers
+namespace #NAMESPACEPLACEHOLDER#
 {
     public static class MonolithService
     {
