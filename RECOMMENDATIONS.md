@@ -3,7 +3,7 @@ These are recommended actions to apply for - APIs, namespaces and packages - tha
 
 ## Recommendation Files
 
-Recommendations files are used to create mappings that can be used when porting a .net framework project to .net core. Each namespace will have its own file, and the data from the namespace file will be used when analyzing the compatibility and possible replacements for artifacts inside that namespace.
+Recommendations files are used to create mappings that can be used when porting a .NET framework project to .NET core. Each namespace will have its own file, and the data from the namespace file will be used when analyzing the compatibility and possible replacements for artifacts inside that namespace.
 
 **The recommendation file will have the following properties:**
 
