@@ -24,6 +24,7 @@ from botocore.exceptions import ClientError
 from ldap3 import Connection, SASL, KERBEROS
 from ldap3.core.rdns import ReverseDnsSetting
 import dns.resolver
+import base64
 
 """
 Constants
@@ -33,6 +34,7 @@ KEYTAB_FILE_NAME = "krb5.keytab"
 CONF_FILE_NAME = "/etc/krb5.conf"
 SECRET_ARN = "secret_arn"
 DIRECTORY_NAME = "directory_name"
+KRB5_CONF = "krb5.conf"
 REGION_NAME = "region_name"
 SERVICE_PRINCIPAL_NAME = "service_principal_name"
 KRB_TICKET_REFRESH_PERIOD = "krb_ticket_refresh_period"
@@ -90,14 +92,15 @@ def get_secret(region_name_arg, secret_arn_arg):
         except KeyError as _:
             print("ERROR* Secret doesn't contain password", flush=True)
         domain = secret_dict.get(DIRECTORY_NAME)
+        krb5_conf = secret_dict.get(KRB5_CONF)
         # Missing values are handled in the caller
-        return username, password, domain
+        return username, password, domain, krb5_conf
     except ClientError as e:
         if e.response['Error']['Code'] == 'ResourceNotFoundException':
             print("The requested secret " + secret_arn_arg + " was not found",
                   flush=True)
             # Retry this because the secret can be created later
-            return None, None, None
+            return None, None, None, None
         elif e.response['Error']['Code'] == 'InvalidRequestException':
             print("The request was invalid due to:", e, flush=True)
             raise  # there is no point to retry because there is nothing that can change
@@ -113,12 +116,12 @@ def get_secret(region_name_arg, secret_arn_arg):
         elif e.response['Error']['Code'] == 'InternalServiceError':
             print("An error occurred on service side:", e, flush=True)
             # Retry this, the service can fix itself
-            return None, None, None
+            return None, None, None, None
         elif e.response['Error']['Code'] == 'AccessDeniedException':
             print(f"Access denied when reading secret {secret_arn_arg}. Check your container execution role:",
                   e, flush=True)
             # Retry this, they can fix the role without restarting
-            return None, None, None
+            return None, None, None, None
         # All other exceptions will be caught in the caller
         raise
 
@@ -418,8 +421,13 @@ def main():
         try:
             # get_secret returns None for username and/or password in cases where retry makes sense, like
             # secret not found, and returns None for username and password
-            username_new, password_new, domain_new = get_secret(env_vars[REGION_NAME], env_vars[SECRET_ARN])
+            username_new, password_new, domain_new, krb5_conf = get_secret(env_vars[REGION_NAME], env_vars[SECRET_ARN])
             print(f"Got username {username_new} password {password_new} and domain name {domain_new} from secret")
+
+            # Write krb5.conf if provided via secret
+            if krb5_conf:
+                with open(CONF_FILE_NAME, "w") as f:
+                    f.write(base64.b64decode(krb5_conf)
 
             if username_new is not None and password_new is not None:
                 if domain_new is not None:
