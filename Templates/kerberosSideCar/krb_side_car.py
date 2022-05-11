@@ -55,7 +55,7 @@ def get_secret(region_name_arg, secret_arn_arg):
     :type region_name_arg: basestring such as "us-west-1"
     :param secret_arn_arg: Secret ARN for AWS Secrets Manager secret
     :type secret_arn_arg: basestring such as "arn:aws:secretsmanager:us-west-1...
-    :return: username, password, domain in str or None if there is an error
+    :return: username, password, domain, krb5.conf in str or None if there is an error
     :rtype: tuple of 3 str or 3 None
     """
 
