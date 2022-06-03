@@ -53,9 +53,14 @@
               "Name": "ReplaceMethodWithObject",
               "Type": "Method",
               "Value": "this.Response.Headers.Add",
+              "VbValue": "Me.Response.Headers.Add",
               "Description": "Replace AppendHeader with a new method to add to headers.",
               "ActionValidation": {
                 "Contains": "this.Response.Headers.Add",
+                "NotContains": ""
+              },
+              "VbValidation" :{
+                "Contains": "Me.Response.Headers.Add",
                 "NotContains": ""
               }
             },
@@ -136,6 +141,10 @@
               "ActionValidation": {
                 "Contains": "using System.Text.Encodings.Web;",
                 "NotContains": ""
+              },
+              "VbValidation": {
+                "Contains": "Imports System.Text.Encodings.Web",
+                "NotContains": ""
               }
             }
           ]
@@ -201,6 +210,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Http;",
                 "NotContains": ""
+              },
+              "VbValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
+                "NotContains": ""
               }
             },
             {
@@ -211,6 +224,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using System.Web;"
+              },
+              "VbValidation": {
+                "Contains": "",
+                "NotContains": "Imports System.Web"
               }
             }
           ]
@@ -251,6 +268,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using System.Web;"
+              },
+              "VbValidation": {
+                "Contains": "",
+                "NotContains": "Imports System.Web"
               }
             },
             {
@@ -261,6 +282,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Http;",
                 "NotContains": ""
+              },
+              "VbValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
+                "NotContains": ""
               }
             },
             {
@@ -270,6 +295,10 @@
               "Description": "Add System.Threading.Tasks namespace",
               "ActionValidation": {
                 "Contains": "using System.Threading.Tasks;",
+                "NotContains": ""
+              },
+              "VbValidation":{
+                "Contains": "Imports System.Threading.Tasks",
                 "NotContains": ""
               }
             },
@@ -287,9 +316,14 @@
               "Name": "AddExpression",
               "Type": "Class",
               "Value": "RequestDelegate _next = null;",
+              "VbValue": "Public Shared _next As RequestDelegate = Nothing",
               "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
               "ActionValidation": {
                 "Contains": "RequestDelegate_next = null;",
+                "NotContains": ""
+              },
+              "VbValidation": {
+                "Contains": "Public Shared _next As RequestDelegate = Nothing",
                 "NotContains": ""
               }
             },
@@ -376,6 +410,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using System.Web;"
+              },
+              "VbValidation": {
+                "Contains": "",
+                "NotContains": "Imports System.Web"
               }
             },
             {
@@ -386,6 +424,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Http;",
                 "NotContains": ""
+              },
+              "VbValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
+                "NotContains": ""
               }
             },
             {
@@ -395,6 +437,10 @@
               "Description": "Add System.Threading.Tasks namespace",
               "ActionValidation": {
                 "Contains": "using System.Threading.Tasks;",
+                "NotContains": ""
+              },
+              "VbValidation":{
+                "Contains": "Imports System.Threading.Tasks",
                 "NotContains": ""
               }
             },
@@ -425,15 +471,24 @@
               "ActionValidation": {
                 "Contains": "_next = next;",
                 "NotContains": ""
+              },
+              "VbValidation": {
+                "Contains": "_next = next;",
+                "NotContains": ""
               }
             },
             {
               "Name": "AddExpression",
               "Type": "Class",
               "Value": "RequestDelegate _next = null;",
+              "VbValue": "Public Shared _next As RequestDelegate = Nothing",
               "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
               "ActionValidation": {
                 "Contains": "RequestDelegate_next = null;",
+                "NotContains": ""
+              },
+              "VbValidation": {
+                "Contains": "Public Shared _next As RequestDelegate = Nothing",
                 "NotContains": ""
               }
             },
@@ -490,9 +545,17 @@
                 "methodName": "Invoke",
                 "expression": "await _next.Invoke(context);"
               },
+              "VbValue": {
+                "methodName": "Invoke",
+                "expression": "Await _next.Invoke(context)"
+              },
               "Description": "Adding expression to the method.",
               "ActionValidation": {
                 "Contains": "await _next.Invoke(context);",
+                "NotContains": ""
+              },
+              "VbValidation" : {
+                "Contains": "Await _next.Invoke(context)",
                 "NotContains": ""
               }
             },
