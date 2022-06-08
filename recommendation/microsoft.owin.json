@@ -46,7 +46,11 @@
               "Value": "Microsoft.AspNetCore.Owin",
               "Description": "Add Microsoft.AspNetCore.Owin namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Owin;",
+                "Contains": "using Microsoft.AspNetCore.Owin;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Owin",
                 "NotContains": ""
               }
             },
@@ -57,7 +61,11 @@
               "Description": "Remove Microsoft.Owin namespace",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingMicrosoft.Owin;"
+                "NotContains": "using Microsoft.Owin;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Microsoft.Owin"
               }
             },
             {
@@ -68,6 +76,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "usingOwin;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Owin"
               }
             }
           ]
@@ -105,6 +117,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Owin;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Owin",
+                "NotContains": ""
               }
             },
             {
@@ -115,6 +131,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Microsoft.Owin;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Microsoft.Owin"
               }
             },
             {
@@ -125,6 +145,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Owin;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Owin"
               }
             }
           ]
@@ -159,6 +183,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Owin;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Owin",
+                "NotContains": ""
               }
             },
             {
@@ -169,6 +197,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Microsoft.Owin;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Microsoft.Owin"
               }
             },
             {
@@ -179,6 +211,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Owin;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Owin"
               }
             }
           ]
@@ -244,6 +280,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Http;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
+                "NotContains": ""
               }
             }
           ]
@@ -307,7 +347,11 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
                 "NotContains": ""
               }
             }
@@ -372,7 +416,11 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
                 "NotContains": ""
               }
             }
@@ -429,6 +477,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": ":OwinMiddleware"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Inherits OwinMiddleware"
               }
             },
             {
@@ -444,9 +496,14 @@
               "Name": "AddExpression",
               "Type": "Class",
               "Value": "RequestDelegate _next = null;",
+              "VbValue": "Private _next as RequestDelegate = Nothing",
               "Description": "Add a new global variable to replace the OwinMiddleware global abstract variable of Next.",
               "ActionValidation": {
                 "Contains": "RequestDelegate_next=null;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Private _next as RequestDelegate = Nothing",
                 "NotContains": ""
               }
             },
@@ -454,9 +511,14 @@
               "Name": "AppendConstructorExpression",
               "Type": "Class",
               "Value": "_next = next;",
+              "VbValue": "_next = [next]",
               "Description": "Add a new expression in the constructor to initialize the new variable of _next to the next element in the pipeline.",
               "ActionValidation": {
                 "Contains": "_next = next;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "_next = [next]",
                 "NotContains": ""
               }
             },
@@ -464,10 +526,15 @@
               "Name": "RemoveConstructorInitializer",
               "Type": "Class",
               "Value": "next",
+              "VbValue": "[next]",
               "Description": "Remove the base initializer for the constructor.",
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": ":base(next)"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "MyBase.New(next)"
               }
             }
           ]
@@ -532,6 +599,10 @@
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
                 "NotContains": ""
               }
             }
@@ -651,7 +722,11 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
                 "NotContains": ""
               }
             }
@@ -766,12 +841,21 @@
                 "comment": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
                 "dontUseCTAPrefix": ""
               },
+              "VbValue": {
+                "comment": "Please replace Get with Items",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace IOwinContext.Get with HttpContext.Items instead.",
               "ActionValidation": {
                  "Contains": "Please replace Get with Items. Such as (Casting_Type)context.Items[\"String_To_Search_For\"];",
                  "NotContains": "",
                  "CheckComments": "True"
-              }
+              },
+              "VbActionValidation": {
+                "Contains": "Please replace Get with Items;",
+                "NotContains": "",
+                "CheckComments": "True"
+             }
             }
           ]
         }
@@ -834,7 +918,11 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
                 "NotContains": ""
               }
             }
@@ -899,7 +987,11 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
                 "NotContains": ""
               }
             }
@@ -956,6 +1048,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Http;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
+                "NotContains": ""
               }
             }
           ]
@@ -1009,7 +1105,11 @@
               "Value": "Microsoft.AspNetCore.Http",
               "Description": "Add Microsoft.AspNetCore.Http namespace",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.AspNetCore.Http;",
+                "Contains": "using Microsoft.AspNetCore.Http;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Http",
                 "NotContains": ""
               }
             },
