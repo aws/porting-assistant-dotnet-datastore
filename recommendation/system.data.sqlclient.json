@@ -70,7 +70,11 @@
               "Value": "Microsoft.Data.SqlClient",
               "Description": "Add Microsoft.Data.SqlClient namespace.",
               "ActionValidation": {
-                "Contains": "usingMicrosoft.Data.SqlClient;",
+                "Contains": "using Microsoft.Data.SqlClient;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.Data.SqlClient",
                 "NotContains": ""
               }
             },
@@ -81,7 +85,11 @@
               "Description": "Remove System.Data.SqlClient namespace.",
               "ActionValidation": {
                 "Contains": "",
-                "NotContains": "usingSystem.Data.SqlClient;"
+                "NotContains": "using System.Data.SqlClient;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports System.Data.SqlClient"
               }
             }
           ]

@@ -75,6 +75,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.EntityFrameworkCore;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.EntityFrameworkCore",
+                "NotContains": ""
               }
             },
             {
@@ -85,6 +89,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using System.Data.Entity;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports System.Data.Entity"
               }
             }
           ]
@@ -119,6 +127,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.EntityFrameworkCore;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.EntityFrameworkCore",
+                "NotContains": ""
               }
             },
             {
@@ -129,6 +141,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using System.Data.Entity;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports System.Data.Entity"
               }
             }
           ]
@@ -189,9 +205,14 @@
               "Name": "AddMethod",
               "Type": "Class",
               "Value": "protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { /* Use Configuration from static ConfigurationManager to access connection string in appsettings.json. Example below: optionsBuilder.UseSqlServer(ConfigurationManager.Configuration.GetConnectionString(\"CONNECTIONSTRINGNAME\")); */ base.OnConfiguring(optionsBuilder); }",
+              "VbValue": "Protected Overrides Sub OnConfiguring(optionsBuilder As DbContextOptionsBuilder) End Sub",
               "Description": "Add a method to configure the connection string.",
               "ActionValidation": {
                 "Contains": "OnConfiguring(DbContextOptionsBuilder",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "OnConfiguring(optionsBuilder As DbContextOptionsBuilder",
                 "NotContains": ""
               }
             },
@@ -203,6 +224,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.EntityFrameworkCore;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.EntityFrameworkCore",
+                "NotContains": ""
               }
             },
             {
@@ -213,6 +238,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using System.Data.Entity;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports System.Data.Entity"
               }
             }
           ]
