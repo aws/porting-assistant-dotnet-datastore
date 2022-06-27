@@ -69,6 +69,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Hosting;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Hosting",
+                "NotContains": ""
               }
             },
             {
@@ -78,6 +82,10 @@
               "Description": "Add Microsoft.AspNetCore.Server.Kestrel namespace",
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.Server.Kestrel;",
+                "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.Server.Kestrel",
                 "NotContains": ""
               }
             },
@@ -89,6 +97,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Microsoft.Owin.Hosting;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Microsoft.Owin.Hosting"
               }
             },
             {
@@ -99,6 +111,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Owin;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Owin"
               }
             }
           ]
@@ -153,9 +169,18 @@
                 "comment": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); Start options can be added into the new format as needed.",
                 "dontUseCTAPrefix": ""
               },
+              "VbValue": {
+                "comment": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder. Start options can be added into the new format as needed.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
                 "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); Start options can be added into the new format as needed.",
+                "NotContains": "",
+                "CheckComments": "True"
+              },
+              "VbActionValidation": {
+                "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder. Start options can be added into the new format as needed.",
                 "NotContains": "",
                 "CheckComments": "True"
               }
@@ -212,11 +237,20 @@
                 "comment": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
                 "dontUseCTAPrefix": ""
               },
+              "VbValue": {
+                "comment": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder. UseStartup can contain the TStartup class used before.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
                  "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
                  "NotContains": "",
                  "CheckComments": "True"
+              },
+              "VbActionValidation": {
+                "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder. UseStartup can contain the TStartup class used before.",
+                "NotContains": "",
+                "CheckComments": "True"
               }
             }
           ]

@@ -57,6 +57,10 @@
               "ActionValidation": {
                 "Contains": "using Microsoft.AspNetCore.WebUtilities;",
                 "NotContains": ""
+              },
+              "VbActionValidation": {
+                "Contains": "Imports Microsoft.AspNetCore.WebUtilities",
+                "NotContains": ""
               }
             },
             {
@@ -67,6 +71,10 @@
               "ActionValidation": {
                 "Contains": "",
                 "NotContains": "using Microsoft.Owin.Infrastructure;"
+              },
+              "VbActionValidation": {
+                "Contains": "",
+                "NotContains": "Imports Microsoft.Owin.Infrastructure"
               }
             }
           ]
@@ -121,12 +129,21 @@
                 "comment": "Please replace your parameters as the AddQueryString(string, string) method has been deprecated and you must either use the AddQueryString(string, string, string) method or the AddQueryString(string, System.Collections.Generic.IDictionary<string, string>) method.",
                 "dontUseCTAPrefix": ""
               },
+              "VbValue": {
+                "comment": "Please replace your parameters as the AddQueryString(string, string) method has been deprecated and you must either use the AddQueryString(string, string, string) method or the AddQueryString(string, System.Collections.Generic.IDictionary(Of string, string)) method.",
+                "dontUseCTAPrefix": ""
+              },
               "Description": "Add a comment to explain how to replace the AddQueryString(string, string) invocation.",
               "ActionValidation": {
                  "Contains": "Please replace your parameters as the AddQueryString(string, string) method has been deprecated and you must either use the AddQueryString(string, string, string) method or the AddQueryString(string, System.Collections.Generic.IDictionary<string, string>) method.",
                  "NotContains": "",
                  "CheckComments": "True"
-              }
+              },
+              "VbActionValidation": {
+                "Contains": "Please replace your parameters as the AddQueryString(string, string) method has been deprecated and you must either use the AddQueryString(string, string, string) method or the AddQueryString(string, System.Collections.Generic.IDictionary(Of string, string)) method",
+                "NotContains": "",
+                "CheckComments": "True"
+             }
             },
             {
               "Name": "ReplaceMethodOnly",
