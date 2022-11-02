@@ -41,13 +41,16 @@ namespace PostSyncTests
             var pathToRepoRecs = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\recommendation";
             var pathToRepoTemplates = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\Templates";
             var pathToTagConfigs = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\tagconfigs";
+            var clientConfigs = $@"{TempExtractDir}\porting-assistant-dotnet-datastore-master\ClientConfiguration";
 
             var allRepoFilesToCheck = Directory.EnumerateFiles(pathToRepoRecs, "*", SearchOption.AllDirectories).ToList();
             var allRepoTemplates = Directory.EnumerateFiles(pathToRepoTemplates, "*", SearchOption.AllDirectories).ToList();
             var allRepoConfigs = Directory.EnumerateFiles(pathToTagConfigs, "*", SearchOption.AllDirectories).ToList();
+            var allClientConfigs = Directory.EnumerateFiles(clientConfigs, "*", SearchOption.AllDirectories).ToList();
 
             allRepoFilesToCheck.AddRange(allRepoTemplates);
             allRepoFilesToCheck.AddRange(allRepoConfigs);
+            allRepoFilesToCheck.AddRange(allClientConfigs);
 
             Assert.Multiple(async () =>
             {
