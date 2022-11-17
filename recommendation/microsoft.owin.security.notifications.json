@@ -27,9 +27,18 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
-          "Description": "For .Net 6, add latest Microsoft.AspNetCore.Authentication.OpenIdConnect package version and remove Microsoft.Owin.Security.Notifications directive and add Microsoft.AspNetCore.Authentication.OpenIdConnect directive.",
+          "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect package version and remove Microsoft.Owin.Security.Notifications directive and add Microsoft.AspNetCore.Authentication.OpenIdConnect directive.",
           "Actions": [
             {
               "Name": "AddDirective",
@@ -62,7 +71,10 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "6.0.11"
+              },
               "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
             }
           ]
@@ -216,6 +228,15 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "For Microsoft.Owin.Security.Notifications.RedirectToIdentityProviderNotification<TMessage, TOptions>.HandleResponse() add a comment to explain how to replace the class RedirectToIdentityProviderNotification with RedirectContext class.",
@@ -269,6 +290,15 @@
             },
             {
               "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net7.0",
               "TargetCPU": [
                 "x86",
                 "x64",

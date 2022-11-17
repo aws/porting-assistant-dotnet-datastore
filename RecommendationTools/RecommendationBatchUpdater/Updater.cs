@@ -8,7 +8,7 @@ namespace RecommendationBatchUpdater
 {
     public class Updater
     {
-        public static void BatchAddFramework(Dictionary<string, RecommendationPOCO> recommendations, string frameworkToAdd)
+        public static void BatchAddFramework(Dictionary<string, RecommendationPOCO> recommendations, string frameworkToAdd, string mostRecentFrameworkAdded)
         {
             foreach (var (filePath, recommendationRoot) in recommendations)
             {
@@ -19,7 +19,7 @@ namespace RecommendationBatchUpdater
                         foreach (var recommendedAction in recommendation.RecommendedActions)
                         {
                             if (!recommendedAction.TargetFrameworks.Contains(frameworkToAdd) 
-                                && recommendedAction.TargetFrameworks.Contains("net5.0"))
+                                && recommendedAction.TargetFrameworks.Contains(mostRecentFrameworkAdded))
                             {
                                 recommendedAction.TargetFrameworks = recommendedAction.TargetFrameworks.Append(frameworkToAdd).ToArray();
                             }
@@ -33,7 +33,7 @@ namespace RecommendationBatchUpdater
             }
         }
 
-        public static void BatchAddFramework(Dictionary<string, RulePOCO> recommendations, string frameworkToAdd)
+        public static void BatchAddFramework(Dictionary<string, RulePOCO> recommendations, string frameworkToAdd, string mostRecentFrameworkAdded)
         {
             foreach (var (filePath, recommendationRoot) in recommendations)
             {
@@ -43,10 +43,10 @@ namespace RecommendationBatchUpdater
                     {
                         foreach (var recommendedAction in recommendation.RecommendedActions)
                         {
-                            // Assuming frameworkToAdd > net5.0,
-                            // only add it if net5.0 is already in TargetFrameworks
+                            // Assuming frameworkToAdd > net6.0,
+                            // only add it if net6.0 is already in TargetFrameworks
                             if (recommendedAction.TargetFrameworks.All(f => f.Name != frameworkToAdd) 
-                                && recommendedAction.TargetFrameworks.Any(f => f.Name == "net5.0"))
+                                && recommendedAction.TargetFrameworks.Any(f => f.Name == mostRecentFrameworkAdded))
                             {
                                 recommendedAction.TargetFrameworks.Add(new TargetFramework
                                 {

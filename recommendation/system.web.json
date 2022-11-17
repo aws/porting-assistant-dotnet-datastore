@@ -45,6 +45,15 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Replace method AppendHeader with this.Response.Headers.Add. In the replacement, \"this\" refers to the controller object.",
@@ -59,7 +68,7 @@
                 "Contains": "this.Response.Headers.Add",
                 "NotContains": ""
               },
-              "VbActionValidation" :{
+              "VbActionValidation": {
                 "Contains": "Me.Response.Headers.Add",
                 "NotContains": ""
               }
@@ -113,6 +122,15 @@
             },
             {
               "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net7.0",
               "TargetCPU": [
                 "x86",
                 "x64",
@@ -188,6 +206,15 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Replace HttpContextBase in namespace System.Web with HttpContext in namespace Microsoft.AspNetCore.Http.",
@@ -247,15 +274,39 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net6.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Remove IHttpHandler in namespace System.Web and replace HttpContext in namespace Microsoft.AspNetCore.Http.",
@@ -297,7 +348,7 @@
                 "Contains": "using System.Threading.Tasks;",
                 "NotContains": ""
               },
-              "VbActionValidation":{
+              "VbActionValidation": {
                 "Contains": "Imports System.Threading.Tasks",
                 "NotContains": ""
               }
@@ -389,15 +440,39 @@
           "TargetFrameworks": [
             {
               "Name": "netcoreapp3.1",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net5.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             },
             {
               "Name": "net6.0",
-              "TargetCPU": [ "x86", "x64", "ARM32", "ARM64" ]
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Remove IHttpHandler in namespace System.Web and replace HttpContext in namespace Microsoft.AspNetCore.Http.",
@@ -439,7 +514,7 @@
                 "Contains": "using System.Threading.Tasks;",
                 "NotContains": ""
               },
-              "VbActionValidation":{
+              "VbActionValidation": {
                 "Contains": "Imports System.Threading.Tasks",
                 "NotContains": ""
               }
@@ -554,7 +629,7 @@
                 "Contains": "await _next.Invoke(context);",
                 "NotContains": ""
               },
-              "VbActionValidation" : {
+              "VbActionValidation": {
                 "Contains": "Await _next.Invoke(context)",
                 "NotContains": ""
               }
@@ -595,4 +670,3 @@
     }
   ]
 }
-

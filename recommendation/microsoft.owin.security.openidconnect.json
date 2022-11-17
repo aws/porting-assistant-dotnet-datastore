@@ -27,9 +27,18 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
-          "Description": "For .Net 6, add latest Microsoft.AspNetCore.Authentication.OpenIdConnect package version",
+          "Description": "Add Microsoft.AspNetCore.Authentication.OpenIdConnect package version",
           "Actions": [
             {
               "Name": "AddDirective",
@@ -62,7 +71,10 @@
             {
               "Name": "AddPackage",
               "Type": "Package",
-              "Value": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "Value": {
+                "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+                "Version": "6.0.11"
+              },
               "Description": "Add package Microsoft.AspNetCore.Authentication.OpenIdConnect."
             }
           ]
@@ -110,7 +122,6 @@
                 "Contains": "",
                 "NotContains": "Imports Microsoft.Owin.Security.OpenIdConnect"
               }
-              
             },
             {
               "Name": "AddPackage",
@@ -211,6 +222,15 @@
             },
             {
               "Name": "net6.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
+            },
+            {
+              "Name": "net7.0",
               "TargetCPU": [
                 "x86",
                 "x64",
