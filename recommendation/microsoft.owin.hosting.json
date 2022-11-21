@@ -45,6 +45,15 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Add a reference to Microsoft.AspNetCore.Hosting, Microsoft.AspNetCore.Server.Kestrel and remove Microsoft.Owin.Hosting and Owin.",
@@ -158,6 +167,15 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Add a comment to explain how to replace WebApp.Start.",
@@ -226,6 +244,15 @@
                 "ARM32",
                 "ARM64"
               ]
+            },
+            {
+              "Name": "net7.0",
+              "TargetCPU": [
+                "x86",
+                "x64",
+                "ARM32",
+                "ARM64"
+              ]
             }
           ],
           "Description": "Add a comment to explain how to replace WebApp.Start.",
@@ -243,9 +270,9 @@
               },
               "Description": "Add a comment to explain how to replace WebApp.Start.",
               "ActionValidation": {
-                 "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
-                 "NotContains": "",
-                 "CheckComments": "True"
+                "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder such as: var host = new WebHostBuilder().UseKestrel().UseUrls(URL_HERE).UseStartup<Startup>().Build(); host.Start(); UseStartup can contain the TStartup class used before.",
+                "NotContains": "",
+                "CheckComments": "True"
               },
               "VbActionValidation": {
                 "Contains": "Replace Microsoft.Owin.Hosting.WebApp.Start with WebHostBuilder. UseStartup can contain the TStartup class used before.",

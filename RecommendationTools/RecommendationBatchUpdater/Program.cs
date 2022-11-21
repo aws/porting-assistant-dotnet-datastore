@@ -15,15 +15,17 @@ namespace RecommendationBatchUpdater
                         ///////////////////////////////////////////////////////////////////////////
                         // ADD/MODIFY CODE BELOW TO UPDATE RECOMMENDATIONS AND/OR RULES FILES    //
                         // NOTE: We need to verify compatibility of packages added by rules with //
-                        //   the target framework being added.                                   //
+                        //       the target framework being added.                               //
                         ///////////////////////////////////////////////////////////////////////////
-                        
+                        const string PreviousDotnetVersion = "net6.0";
+                        const string NextDotnetVersion = "net7.0";
+
                         var recommendations = Loader.LoadBatchRecommendations(o.Directory);
-                        Updater.BatchAddFramework(recommendations, "net6.0");
+                        Updater.BatchAddFramework(recommendations, NextDotnetVersion, PreviousDotnetVersion);
                         //Saver.SaveBatch(recommendations);
 
                         var rules = Loader.LoadBatchRules(o.Directory);
-                        Updater.BatchAddFramework(rules, "net6.0");
+                        Updater.BatchAddFramework(rules, NextDotnetVersion, PreviousDotnetVersion);
                         //Saver.SaveBatch(rules);
                     }
                     catch (Exception e)
