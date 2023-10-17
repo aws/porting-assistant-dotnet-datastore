@@ -17,8 +17,8 @@ namespace RecommendationBatchUpdater
                         // NOTE: We need to verify compatibility of packages added by rules with //
                         //       the target framework being added.                               //
                         ///////////////////////////////////////////////////////////////////////////
-                        const string PreviousDotnetVersion = "net6.0";
-                        const string NextDotnetVersion = "net7.0";
+                        const string PreviousDotnetVersion = "net7.0";
+                        const string NextDotnetVersion = "net8.0";
 
                         var recommendations = Loader.LoadBatchRecommendations(o.Directory);
                         Updater.BatchAddFramework(recommendations, NextDotnetVersion, PreviousDotnetVersion);
