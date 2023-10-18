@@ -202,7 +202,47 @@
                 "ARM32",
                 "ARM64"
               ]
+            }
+          ],
+          "Description": "",
+          "Actions": [
+            {
+              "Name": "ArchiveFiles",
+              "Type": "Project",
+              "Value": "BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config",
+              "VbValue": "BundleConfig.vb,FilterConfig.vb,RouteConfig.vb,WebApiConfig.vb,global.asax.vb,global.asax,AssemblyInfo.vb,packages.config",
+              "Description": "Archive files that are no longer used in core projects."
             },
+            {
+              "Name": "CreateNet7FolderHierarchy",
+              "Type": "Project",
+              "Value": "",
+              "Description": "Create folder hierarchy based on type of project\r\nCreated Startup.cs and Program.cs files based on type of project"
+            },
+            {
+              "Name": "MigrateConfig",
+              "Type": "Project",
+              "Value": "",
+              "Description": "Migrate settings from web.config file to appsettings.json."
+            },
+            {
+              "Name": "MigrateProjectFile",
+              "Type": "ProjectFile",
+              "Value": "",
+              "Description": "Migrate csproj file to core."
+            },
+            {
+              "Name": "WebFormsPorting",
+              "Type": "ProjectType",
+              "Value": "",
+              "Description": "Perform WebForms specific porting steps"
+            }
+          ]
+        },
+        {
+          "Source": "Amazon",
+          "Preferred": "Yes",
+          "TargetFrameworks": [
             {
               "Name": "net8.0",
               "TargetCPU": [
@@ -223,7 +263,7 @@
               "Description": "Archive files that are no longer used in core projects."
             },
             {
-              "Name": "CreateNet6FolderHierarchy",
+              "Name": "CreateNet8FolderHierarchy",
               "Type": "Project",
               "Value": "",
               "Description": "Create folder hierarchy based on type of project\r\nCreated Startup.cs and Program.cs files based on type of project"
