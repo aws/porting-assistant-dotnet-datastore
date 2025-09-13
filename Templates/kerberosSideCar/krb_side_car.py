@@ -21,24 +21,29 @@ import socket
 from datetime import datetime
 import boto3
 from botocore.exceptions import ClientError
-from ldap3 import Server, Connection, SASL, KERBEROS, Tls
+from ldap3 import Connection, SASL, KERBEROS
 from ldap3.core.rdns import ReverseDnsSetting
 import dns.resolver
+import base64
 
 """
 Constants
 """
-KINIT_DELAY_IN_SECS = 60 * 45
+DEFAULT_KERBEROS_REFRESH = 60 * 45
 KEYTAB_FILE_NAME = "krb5.keytab"
+CONF_FILE_NAME = "/etc/krb5.conf"
 SECRET_ARN = "secret_arn"
 DIRECTORY_NAME = "directory_name"
+KRB5_CONF = "krb5.conf"
 REGION_NAME = "region_name"
 SERVICE_PRINCIPAL_NAME = "service_principal_name"
 KRB_TICKET_REFRESH_PERIOD = "krb_ticket_refresh_period"
 KRB_DIR = "krb_dir"
 USERNAME_KEY = "username"
 PASSWORD_KEY = "password"
-MAX_FAILURES_IN_ABOUT_A_DAY = 24
+MAX_FAILURES = 24
+FAILURE_RETRY_PERIOD = "failure_retry_period"
+DEFAULT_FAILURE_RETRY_PERIOD = 30
 
 
 def get_secret(region_name_arg, secret_arn_arg):
@@ -50,8 +55,8 @@ def get_secret(region_name_arg, secret_arn_arg):
     :type region_name_arg: basestring such as "us-west-1"
     :param secret_arn_arg: Secret ARN for AWS Secrets Manager secret
     :type secret_arn_arg: basestring such as "arn:aws:secretsmanager:us-west-1...
-    :return: Secrets in string or None if there is an error
-    :rtype: basestring or none
+    :return: username, password, domain, krb5.conf in str or None if there is an error
+    :rtype: tuple of 3 str or 3 None
     """
 
     session = boto3.session.Session()
@@ -64,22 +69,6 @@ def get_secret(region_name_arg, secret_arn_arg):
         get_secret_value_response = client.get_secret_value(
             SecretId=secret_arn_arg
         )
-    except ClientError as e:
-        if e.response['Error']['Code'] == 'ResourceNotFoundException':
-            print("The requested secret " + secret_arn_arg + " was not found",
-                  flush=True)
-        elif e.response['Error']['Code'] == 'InvalidRequestException':
-            print("The request was invalid due to:", e, flush=True)
-        elif e.response['Error']['Code'] == 'InvalidParameterException':
-            print("The request had invalid params:", e, flush=True)
-        elif e.response['Error']['Code'] == 'DecryptionFailure':
-            print(
-                "The requested secret can't be decrypted using the provided KMS "
-                "key:",
-                e, flush=True)
-        elif e.response['Error']['Code'] == 'InternalServiceError':
-            print("An error occurred on service side:", e, flush=True)
-    else:
         # Secrets Manager decrypts the secret value using the associated KMS CMK
         # Depending on whether the secret was a string or binary, only one of
         # these fields will be populated
@@ -90,18 +79,51 @@ def get_secret(region_name_arg, secret_arn_arg):
             binary_secret_data = get_secret_value_response['SecretBinary']
             secret = binary_secret_data
 
-    secret_string = json.loads(secret)
-    username = secret_string[USERNAME_KEY]
-    password = secret_string[PASSWORD_KEY]
-
-    if username is None or password is None:
-        """
-        If Secrets Manager is not properly configured, the program will exit
-        """
-        print("ERROR* Secret not available from Secrets Manager", flush=True)
-        sys.exit(1)
-
-    return username, password
+        try:
+            secret_dict = json.loads(secret)
+        except ValueError as _:
+            print("ERROR* Secret doesn't contain valid JSON", flush=True)
+        try:
+            username = secret_dict[USERNAME_KEY]
+        except KeyError as _:
+            print("ERROR* Secret doesn't contain username", flush=True)
+        try:
+            password = secret_dict[PASSWORD_KEY]
+        except KeyError as _:
+            print("ERROR* Secret doesn't contain password", flush=True)
+        domain = secret_dict.get(DIRECTORY_NAME)
+        krb5_conf = secret_dict.get(KRB5_CONF)
+        # Missing values are handled in the caller
+        return username, password, domain, krb5_conf
+    except ClientError as e:
+        if e.response['Error']['Code'] == 'ResourceNotFoundException':
+            print("The requested secret " + secret_arn_arg + " was not found",
+                  flush=True)
+            # Retry this because the secret can be created later
+            return None, None, None, None
+        elif e.response['Error']['Code'] == 'InvalidRequestException':
+            print("The request was invalid due to:", e, flush=True)
+            raise  # there is no point to retry because there is nothing that can change
+        elif e.response['Error']['Code'] == 'InvalidParameterException':
+            print("The request had invalid params:", e, flush=True)
+            raise  # there is no point to retry because there is nothing that can change
+        elif e.response['Error']['Code'] == 'DecryptionFailure':
+            print(
+                "The requested secret can't be decrypted using the provided KMS "
+                "key:",
+                e, flush=True)
+            raise  # there is no point to retry because there is nothing that can change
+        elif e.response['Error']['Code'] == 'InternalServiceError':
+            print("An error occurred on service side:", e, flush=True)
+            # Retry this, the service can fix itself
+            return None, None, None, None
+        elif e.response['Error']['Code'] == 'AccessDeniedException':
+            print(f"Access denied when reading secret {secret_arn_arg}. Check your container execution role:",
+                  e, flush=True)
+            # Retry this, they can fix the role without restarting
+            return None, None, None, None
+        # All other exceptions will be caught in the caller
+        raise
 
 
 def get_dc_server_names(directory_name_arg):
@@ -209,6 +231,23 @@ def create_keytab(username_arg, password_arg, directory_name_arg,
     return
 
 
+def update_krb5_conf(directory_name_arg: str, krb5_conf_filename: str) -> None:
+    """
+    Replaces realm and domain names in krb5.conf with the parameter
+    Throws exception if keytab creation fails.
+    :param directory_name_arg: Directory name of AD domain such as example.com
+    :param krb5_conf_filename: file location of krb5.conf
+    """
+    with open(krb5_conf_filename, 'r') as krb5_conf_file:
+        lines = krb5_conf_file.readlines()
+    for i, line in enumerate(lines):
+        lines[i] = line.replace(
+            "{REPLACE_WITH_DEFAULT_REALM}", directory_name_arg.upper()).replace(
+                "{REPLACE_WITH_DOMAIN_NAME}", directory_name_arg)
+    with open(krb5_conf_filename, 'r') as krb5_conf_file:
+        krb5_conf_file.writelines(lines)
+
+
 def execute_kinit_cmd(username_arg, password_arg, directory_name_arg):
     """
     Get kerberos tickets by executing the kinit command
@@ -250,16 +289,21 @@ def read_env():
     :return: Environment variables
     :rtype: Dictionary
     """
-    secret_arn = str(os.environ.get('CREDENTIALS_SECRET_ARN'))
-    directory_name = str(os.environ.get('DOMAIN_NAME'))
-    region_name = str(os.environ.get('AWS_REGION'))
-    service_principal_name = str(os.environ.get('SERVICE_PRINCIPAL_NAME'))
-    krb_ticket_refresh_period = os.environ.get(
-        "KRB_TICKET_REFRESH_PERIOD_IN_SECS")
-    if krb_ticket_refresh_period is None or not isinstance(
-            krb_ticket_refresh_period, int):
-        krb_ticket_refresh_period = KINIT_DELAY_IN_SECS
-    krb_dir = str(os.getenv("KRB_DIR"))
+    secret_arn = os.environ.get('CREDENTIALS_SECRET_ARN')
+    directory_name = os.environ.get('DOMAIN_NAME')
+    region_name = os.environ.get('AWS_REGION')
+    service_principal_name = os.environ.get('SERVICE_PRINCIPAL_NAME')
+    try:
+        krb_ticket_refresh_period = int(os.environ.get("KRB_TICKET_REFRESH_PERIOD_IN_SECS"))
+    except (TypeError, ValueError) as _:
+        print(f"Invalid value for env KRB_TICKET_REFRESH_PERIOD_IN_SECS, using default {DEFAULT_KERBEROS_REFRESH}")
+        krb_ticket_refresh_period = DEFAULT_KERBEROS_REFRESH
+    try:
+        failure_retry_period = int(os.environ.get("FAILURE_RETRY_PERIOD"))
+    except (TypeError, ValueError) as _:
+        print(f"Invalid value for env FAILURE_RETRY_PERIOD, using default {DEFAULT_FAILURE_RETRY_PERIOD}")
+        failure_retry_period = DEFAULT_FAILURE_RETRY_PERIOD
+    krb_dir = os.getenv("KRB_DIR")
 
     if not secret_arn or not directory_name or not region_name or not krb_dir \
             or not service_principal_name:
@@ -295,6 +339,7 @@ def read_env():
                 REGION_NAME: region_name,
                 SERVICE_PRINCIPAL_NAME: service_principal_name,
                 KRB_TICKET_REFRESH_PERIOD: krb_ticket_refresh_period,
+                FAILURE_RETRY_PERIOD: failure_retry_period,
                 KRB_DIR: krb_dir}
     return env_vars
 
@@ -339,7 +384,7 @@ def check_ldap_info(env_vars):
             print("LDAP check done", flush=True)
             ldap_check_status = True
             break
-        except:
+        except Exception as _:
             print("LDAP check failed using DNS server = " + server, flush=True)
             continue
     if not ldap_check_status:
@@ -360,64 +405,54 @@ def main():
 
     username = None
     password = None
-    for num_retries in range(5):
-        try:
-            username, password = get_secret(env_vars[REGION_NAME],
-                                            env_vars[SECRET_ARN])
-            break
-        except:
-            print("[%s] ERROR** JSON error while loading secrets from secrets "
-                  "manager" % num_retries,
-                  flush=True)
-            sys.exit(1)
-
-    if username is None or password is None:
-        """
-        If Secrets Manager is not properly configured, the program will exit
-        """
-        print("ERROR** Secret not available from Secrets Manager", flush=True)
-        sys.exit(1)
-
-    # AD Sanity check, these can be extended later
-    try:
-        execute_kinit_cmd(username, password, env_vars[DIRECTORY_NAME])
-        check_ldap_info(env_vars)
-    except:
-        print("Warning** LDAP access failed")
+    domain = None
 
     """
-    Kerberos ticket refresh every KINIT_DELAY_IN_SECS
+    Kerberos ticket refresh every DEFAULT_KERBEROS_REFRESH
     The grace period for Kerberos even if passwords change, is about an hour
-    KINIT_DELAY_IN_SECS is set to 45 minutes
+    DEFAULT_KERBEROS_REFRESH is set to 45 minutes
     """
     keytab_filename = env_vars[KRB_DIR] + "/" + KEYTAB_FILE_NAME
     num_failures = 0
     while True:
-        if num_failures > MAX_FAILURES_IN_ABOUT_A_DAY:
+        if num_failures > MAX_FAILURES:
             print("ERROR** Max failures reached, exiting", flush=True)
             sys.exit(1)
         try:
-            username_new, password_new = get_secret(env_vars[REGION_NAME],
-                                                    env_vars[SECRET_ARN])
+            # get_secret returns None for username and/or password in cases where retry makes sense, like
+            # secret not found, and returns None for username and password
+            username_new, password_new, domain_new, krb5_conf = get_secret(env_vars[REGION_NAME], env_vars[SECRET_ARN])
+            print(f"Got username {username_new} password {password_new} and domain name {domain_new} from secret")
 
-            execute_kinit_cmd(username_new, password_new, env_vars[DIRECTORY_NAME])
+            # Write krb5.conf if provided via secret
+            if krb5_conf:
+                with open(CONF_FILE_NAME, "w") as f:
+                    f.write(base64.b64decode(krb5_conf)
 
-            if not os.path.isfile(keytab_filename):
-                create_keytab(username_new, password_new, env_vars[DIRECTORY_NAME],
-                              env_vars[SERVICE_PRINCIPAL_NAME], keytab_filename)
+            if username_new is not None and password_new is not None:
+                if domain_new is not None:
+                    env_vars[DIRECTORY_NAME] = domain_new
+                if domain != env_vars[DIRECTORY_NAME]:
+                    domain = env_vars[DIRECTORY_NAME]
+                    update_krb5_conf(CONF_FILE_NAME, env_vars[DIRECTORY_NAME])
+                execute_kinit_cmd(username_new, password_new, env_vars[DIRECTORY_NAME])
 
-            if username_new != username or password_new != password:
-                print(
-                    "Credentials change detected at " + str(datetime.now()) +
-                    "creating a new keytab file", flush=True)
-                if os.path.isfile(keytab_filename):
-                    os.remove(keytab_filename)
-                username = username_new
-                password = password_new
-                create_keytab(username, password, env_vars[DIRECTORY_NAME],
-                              env_vars[SERVICE_PRINCIPAL_NAME], keytab_filename)
-            num_failures = 0
-        except:
+                # Only create keytab if service principal is set in env
+                if env_vars[SERVICE_PRINCIPAL_NAME] and (username_new != username or password_new != password):
+                    print(
+                        "Credentials change detected at " + str(datetime.now()) +
+                        "creating a new keytab file", flush=True)
+                    if os.path.isfile(keytab_filename):
+                        os.remove(keytab_filename)
+                    username = username_new
+                    password = password_new
+                    create_keytab(username, password, env_vars[DIRECTORY_NAME],
+                                  env_vars[SERVICE_PRINCIPAL_NAME], keytab_filename)
+                num_failures = 0
+                time.sleep(env_vars[KRB_TICKET_REFRESH_PERIOD])
+            else:
+                time.sleep(env_vars[FAILURE_RETRY_PERIOD])
+        except Exception as _:
             num_failures = num_failures + 1
             print("ERROR** JSON error while loading secrets from secrets manager",
                   flush=True)
@@ -426,8 +461,7 @@ def main():
             traceback.print_exception(exc_type, exc_value, exc_traceback,
                                       limit=5, file=sys.stdout)
             traceback.print_exc(limit=5, file=sys.stdout)
-
-        time.sleep(env_vars[KRB_TICKET_REFRESH_PERIOD])
+            time.sleep(env_vars[FAILURE_RETRY_PERIOD])
 
 
 if __name__ == "__main__":
